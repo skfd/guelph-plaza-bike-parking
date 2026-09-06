@@ -1,0 +1,8687 @@
+{
+ "generated": "2026-09-05",
+ "rule": "open-air, multi-tenant retail with shared surface parking; enclosed malls listed separately",
+ "plazas": [
+  {
+   "id": 208650724,
+   "type": "way",
+   "name": "Campus Estates Plaza",
+   "tags": {
+    "landuse": "retail",
+    "name": "Campus Estates Plaza",
+    "source": "Bing"
+   },
+   "racks": [],
+   "rack_count": 0,
+   "capacity": 0,
+   "capacity_untagged": 0,
+   "verdict": "none mapped",
+   "nearest_rack_m": 167,
+   "nearest_rack": {
+    "id": 13062612120,
+    "type": "node",
+    "lat": 43.5249647,
+    "lon": -80.2259842
+   },
+   "tenant_names": [
+    "BarBurrito",
+    "Campus Drugmart IDA",
+    "Campus Estates Hairstyling",
+    "Canada Post",
+    "Chatime",
+    "City Pizza",
+    "Cora",
+    "Fabutan",
+    "Harvard Dental",
+    "Harvard Variety",
+    "K Cleaner and Tailor",
+    "Motion Plus Physio",
+    "No Frills",
+    "Osmow's",
+    "Ray's Chinese",
+    "The Owl of Minerva",
+    "The Shakespeare Arms"
+   ],
+   "lat": 43.524802926605595,
+   "lon": -80.22241302828759,
+   "area_ha": 2.7923403346798747,
+   "bbox": [
+    43.52397576598413,
+    -80.22416251585722,
+    43.525732249618805,
+    -80.2207647856066
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.22225550000002,
+       43.5257424
+      ],
+      [
+       -80.2207707,
+       43.5252728
+      ],
+      [
+       -80.2209015,
+       43.5249835
+      ],
+      [
+       -80.2218827,
+       43.5243148
+      ],
+      [
+       -80.2223275,
+       43.524153599999984
+      ],
+      [
+       -80.2226676,
+       43.524091899999995
+      ],
+      [
+       -80.22326940000002,
+       43.5240682
+      ],
+      [
+       -80.2237992,
+       43.5239733
+      ],
+      [
+       -80.2241589,
+       43.5242579
+      ],
+      [
+       -80.2239571,
+       43.5244153
+      ],
+      [
+       -80.22225550000002,
+       43.5257424
+      ]
+     ]
+    ]
+   },
+   "image": "img/w208650724.png",
+   "zoom": 18
+  },
+  {
+   "id": 556632268,
+   "type": "way",
+   "name": "Clair Marketplace",
+   "tags": {
+    "landuse": "retail",
+    "name": "Clair Marketplace"
+   },
+   "racks": [],
+   "rack_count": 0,
+   "capacity": 0,
+   "capacity_untagged": 0,
+   "verdict": "nearby only",
+   "nearest_rack_m": 78,
+   "nearest_rack": {
+    "id": 12823796244,
+    "type": "node",
+    "lat": 43.5007524,
+    "lon": -80.1887785
+   },
+   "tenant_names": [
+    "COBS Bread",
+    "Centurion Coffee",
+    "Chocolats Favoris",
+    "EasyFinancial",
+    "Five Guys",
+    "Great Clips",
+    "Hakim Optical",
+    "Kelsey's",
+    "Longo's",
+    "M&M Food Market",
+    "Mary Brown's",
+    "Mobile Klinik",
+    "Pita Land",
+    "PowerYoga Canada",
+    "RC Smoke And Gifts",
+    "Reid's Heritage Homes Discovery Centre",
+    "Sherwin-Williams",
+    "Studio So Lara",
+    "The Bone & Biscuit Co."
+   ],
+   "lat": 43.498941635511756,
+   "lon": -80.18920554581862,
+   "area_ha": 3.295459198081031,
+   "bbox": [
+    43.497773837826394,
+    -80.19080517920523,
+    43.50005273870272,
+    -80.1876402642862
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.1907915,
+       43.498798099999995
+      ],
+      [
+       -80.189101,
+       43.500053
+      ],
+      [
+       -80.1889166,
+       43.5000618
+      ],
+      [
+       -80.1876526,
+       43.4991327
+      ],
+      [
+       -80.1881683,
+       43.49873339999999
+      ],
+      [
+       -80.1883346,
+       43.498584
+      ],
+      [
+       -80.1884553,
+       43.49843369999999
+      ],
+      [
+       -80.1885539,
+       43.4983423
+      ],
+      [
+       -80.1893458,
+       43.4977635
+      ],
+      [
+       -80.1907915,
+       43.498798099999995
+      ]
+     ]
+    ]
+   },
+   "image": "img/w556632268.png",
+   "zoom": 18
+  },
+  {
+   "id": 217504192,
+   "type": "way",
+   "name": "Clairfield Commons",
+   "tags": {
+    "landuse": "retail",
+    "name": "Clairfield Commons",
+    "operator": "First Capital"
+   },
+   "racks": [],
+   "rack_count": 0,
+   "capacity": 0,
+   "capacity_untagged": 0,
+   "verdict": "nearby only",
+   "nearest_rack_m": 51,
+   "nearest_rack": {
+    "id": 12823720971,
+    "type": "node",
+    "lat": 43.5013764,
+    "lon": -80.1898493
+   },
+   "tenant_names": [
+    "Clair Dental Centre",
+    "Food Basics",
+    "Iris",
+    "Kenzo",
+    "PetSmart",
+    "Pierogi House",
+    "Pizza Nova",
+    "Scotiabank",
+    "Shoeless Joe's",
+    "Starbucks",
+    "Subway",
+    "TD"
+   ],
+   "lat": 43.50012217637909,
+   "lon": -80.19080782030177,
+   "area_ha": 3.0253792369997003,
+   "bbox": [
+    43.49901753655107,
+    -80.1923361022098,
+    43.50125134138294,
+    -80.18929091681494
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.1905836,
+       43.501260499999994
+      ],
+      [
+       -80.1893373,
+       43.50034829999999
+      ],
+      [
+       -80.1893036,
+       43.50030349999999
+      ],
+      [
+       -80.190999,
+       43.4990086
+      ],
+      [
+       -80.191072,
+       43.4990086
+      ],
+      [
+       -80.1922341,
+       43.4998678
+      ],
+      [
+       -80.1923239,
+       43.49993289999999
+      ],
+      [
+       -80.1905836,
+       43.501260499999994
+      ]
+     ]
+    ]
+   },
+   "image": "img/w217504192.png",
+   "zoom": 18
+  },
+  {
+   "id": 833377075,
+   "type": "way",
+   "name": "Edinburgh Market Place",
+   "tags": {
+    "landuse": "retail",
+    "name": "Edinburgh Market Place"
+   },
+   "racks": [
+    {
+     "id": 12335509795,
+     "type": "node",
+     "lat": 43.5210681,
+     "lon": -80.2333315,
+     "tags": {
+      "access": "yes",
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "wall_loops",
+      "bike_ride": "no",
+      "capacity": "10",
+      "colour": "silver",
+      "covered": "no",
+      "fee": "no",
+      "indoor": "no",
+      "source": "streetlevel imagery"
+     }
+    },
+    {
+     "id": 12335525353,
+     "type": "node",
+     "lat": 43.5217808,
+     "lon": -80.2348474,
+     "tags": {
+      "access": "yes",
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "bike_ride": "no",
+      "covered": "no",
+      "fee": "no",
+      "indoor": "no",
+      "source": "survey"
+     }
+    },
+    {
+     "id": 13963396495,
+     "type": "node",
+     "lat": 43.5204972,
+     "lon": -80.2336822,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "capacity": "8"
+     }
+    }
+   ],
+   "rack_count": 3,
+   "capacity": 18,
+   "capacity_untagged": 1,
+   "verdict": "has parking",
+   "nearest_rack_m": 0,
+   "nearest_rack": {
+    "id": 12335509795,
+    "type": "node",
+    "lat": 43.5210681,
+    "lon": -80.2333315
+   },
+   "tenant_names": [
+    "Chubbs",
+    "Edinburgh Clinic and Pharmacy",
+    "Marble Slab Creamery",
+    "Massage Addict",
+    "Metro",
+    "Mucho Burrito",
+    "Petculture",
+    "Rogers",
+    "Scaddabush",
+    "Spiritleaf",
+    "Staples",
+    "Swiss Chalet",
+    "TD",
+    "Topper's Pizza",
+    "Williams Fresh Cafe",
+    "Wok Box"
+   ],
+   "lat": 43.521343869565,
+   "lon": -80.23407057335554,
+   "area_ha": 3.9840884889525894,
+   "bbox": [
+    43.52010713999894,
+    -80.2360114987409,
+    43.52245369411374,
+    -80.23224365953604
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.233959,
+       43.5224652
+      ],
+      [
+       -80.23225890000002,
+       43.521251899999996
+      ],
+      [
+       -80.2338088,
+       43.5200924
+      ],
+      [
+       -80.2359921,
+       43.521644399999985
+      ],
+      [
+       -80.2354147,
+       43.52207169999999
+      ],
+      [
+       -80.2343793,
+       43.5221339
+      ],
+      [
+       -80.233959,
+       43.5224652
+      ]
+     ]
+    ]
+   },
+   "image": "img/w833377075.png",
+   "zoom": 18
+  },
+  {
+   "id": 332330004,
+   "type": "way",
+   "name": "Grange & Victoria Plaza",
+   "tags": {
+    "landuse": "retail",
+    "name": "Grange & Victoria Plaza"
+   },
+   "racks": [
+    {
+     "id": 12530496793,
+     "type": "node",
+     "lat": 43.5581346,
+     "lon": -80.2297153,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "capacity": "8",
+      "covered": "no"
+     }
+    }
+   ],
+   "rack_count": 1,
+   "capacity": 8,
+   "capacity_untagged": 0,
+   "verdict": "has parking",
+   "nearest_rack_m": 0,
+   "nearest_rack": {
+    "id": 12530496793,
+    "type": "node",
+    "lat": 43.5581346,
+    "lon": -80.2297153
+   },
+   "tenant_names": [
+    "Buck or Two Plus",
+    "CIBC",
+    "Home Hardware",
+    "Planet Bean Coffee",
+    "Super Happy Garden",
+    "Victoria's Pizza"
+   ],
+   "lat": 43.55758820713065,
+   "lon": -80.23014626723807,
+   "area_ha": 3.405200223278709,
+   "bbox": [
+    43.556563949848574,
+    -80.2319809723034,
+    43.55848078356107,
+    -80.2287515785122
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.2319634,
+       43.557947399999996
+      ],
+      [
+       -80.23192010000001,
+       43.55799799999999
+      ],
+      [
+       -80.2316321,
+       43.5581695
+      ],
+      [
+       -80.2314756,
+       43.5582267
+      ],
+      [
+       -80.2312897,
+       43.55826110000001
+      ],
+      [
+       -80.2308985,
+       43.5582762
+      ],
+      [
+       -80.2306672,
+       43.558274499999996
+      ],
+      [
+       -80.2300146,
+       43.5582836
+      ],
+      [
+       -80.2296171,
+       43.55833569999999
+      ],
+      [
+       -80.2292843,
+       43.55842189999999
+      ],
+      [
+       -80.22908020000001,
+       43.55848300000001
+      ],
+      [
+       -80.2289672,
+       43.5582721
+      ],
+      [
+       -80.2289754,
+       43.5581042
+      ],
+      [
+       -80.2289761,
+       43.558091100000006
+      ],
+      [
+       -80.2289946,
+       43.5577414
+      ],
+      [
+       -80.2287711,
+       43.5569503
+      ],
+      [
+       -80.2300557,
+       43.55655100000001
+      ],
+      [
+       -80.2309475,
+       43.557158
+      ],
+      [
+       -80.2316284,
+       43.5576509
+      ],
+      [
+       -80.2317624,
+       43.5577436
+      ],
+      [
+       -80.2319581,
+       43.557900299999986
+      ],
+      [
+       -80.2319634,
+       43.557947399999996
+      ]
+     ]
+    ]
+   },
+   "image": "img/w332330004.png",
+   "zoom": 18
+  },
+  {
+   "id": 197749304,
+   "type": "way",
+   "name": "Hartsland Market Square",
+   "tags": {
+    "landuse": "retail",
+    "name": "Hartsland Market Square"
+   },
+   "merged": [
+    217385469
+   ],
+   "racks": [],
+   "rack_count": 0,
+   "capacity": 0,
+   "capacity_untagged": 0,
+   "verdict": "none mapped",
+   "nearest_rack_m": 449,
+   "nearest_rack": {
+    "id": 14139961003,
+    "type": "node",
+    "lat": 43.5112366,
+    "lon": -80.2264761
+   },
+   "tenant_names": [
+    "Anytime Fitness",
+    "Dollarama",
+    "Golden Fish and Chips",
+    "Hasty Market",
+    "Kortright Animal Hospital",
+    "Loblaw Pharmacy",
+    "Pharmasave",
+    "Running Room",
+    "Scotiabank",
+    "Spice Roots",
+    "The Fat Duck",
+    "Victoria\u2019s Pizza",
+    "Zehrs"
+   ],
+   "lat": 43.51341255038617,
+   "lon": -80.21918850521855,
+   "area_ha": 4.5588082757842185,
+   "bbox": [
+    43.51229222312229,
+    -80.22150950867676,
+    43.51475583910086,
+    -80.21700427538127
+   ],
+   "geom_ll": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -80.2214999,
+        43.51303969999999
+       ],
+       [
+        -80.2206016,
+        43.5137359
+       ],
+       [
+        -80.21951,
+        43.51296359999999
+       ],
+       [
+        -80.2204054,
+        43.5122847
+       ],
+       [
+        -80.2214999,
+        43.51303969999999
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -80.2170237,
+        43.51325349999998
+       ],
+       [
+        -80.2181842,
+        43.512372899999995
+       ],
+       [
+        -80.2203181,
+        43.513891799999996
+       ],
+       [
+        -80.219148,
+        43.514770500000004
+       ],
+       [
+        -80.2170237,
+        43.51325349999998
+       ]
+      ]
+     ]
+    ]
+   },
+   "image": "img/w197749304.png",
+   "zoom": 17
+  },
+  {
+   "id": 197805877,
+   "type": "way",
+   "name": "Kortright Plaza",
+   "tags": {
+    "landuse": "retail",
+    "name": "Kortright Plaza"
+   },
+   "racks": [],
+   "rack_count": 0,
+   "capacity": 0,
+   "capacity_untagged": 0,
+   "verdict": "none mapped",
+   "nearest_rack_m": 406,
+   "nearest_rack": {
+    "id": 14139961003,
+    "type": "node",
+    "lat": 43.5112366,
+    "lon": -80.2264761
+   },
+   "tenant_names": [
+    "Guardian",
+    "Vitality Chiropractic Care",
+    "shop=butcher",
+    "shop=hairdresser"
+   ],
+   "lat": 43.508443362756644,
+   "lon": -80.23087605313701,
+   "area_ha": 0.7560803981131017,
+   "bbox": [
+    43.50795878695833,
+    -80.23174382355718,
+    43.50905045783749,
+    -80.23021994230098
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.2309128,
+       43.50795320000001
+      ],
+      [
+       -80.2311095,
+       43.50801289999999
+      ],
+      [
+       -80.2315153,
+       43.50805929999999
+      ],
+      [
+       -80.231741,
+       43.508181400000005
+      ],
+      [
+       -80.2305679,
+       43.50905279999999
+      ],
+      [
+       -80.23022310000002,
+       43.508801999999996
+      ],
+      [
+       -80.2303647,
+       43.5083454
+      ],
+      [
+       -80.2309128,
+       43.50795320000001
+      ]
+     ]
+    ]
+   },
+   "image": "img/w197805877.png",
+   "zoom": 18
+  },
+  {
+   "id": 344325628,
+   "type": "way",
+   "name": "Melran Mall",
+   "tags": {
+    "addr:city": "Guelph",
+    "addr:housenumber": "355",
+    "addr:interpolation": "all",
+    "addr:postcode": "N1K 1S5",
+    "addr:province": "Ontario",
+    "addr:street": "Elmira Road North",
+    "addr:unit": "100-140",
+    "building": "commercial",
+    "building:levels": "1",
+    "name": "Melran Mall",
+    "smoking": "no"
+   },
+   "racks": [],
+   "rack_count": 0,
+   "capacity": 0,
+   "capacity_untagged": 0,
+   "verdict": "none mapped",
+   "nearest_rack_m": 873,
+   "nearest_rack": {
+    "id": 12798111182,
+    "type": "node",
+    "lat": 43.5383516,
+    "lon": -80.2948074
+   },
+   "tenant_names": [
+    "All Blue Solutions",
+    "Automatis Integrated",
+    "Cerniuk Construction Ltd.",
+    "Community of Christ",
+    "Desjardins Insurance",
+    "Dixon Distilled Spirits",
+    "Emily Smith Accounting & Tax Services",
+    "Fife Financial Services",
+    "Fixed Gear Brewing Co.",
+    "Greencor Electric Inc.",
+    "IKONIK Incorporated",
+    "Izaak De Rijcke Law Office",
+    "JABE Reporting & Transcription Service",
+    "KH&A",
+    "Lovely Pao",
+    "Melran Holdings",
+    "Merry Maids",
+    "Ontario Fruit & Vegetable Grower's Association",
+    "Project Iron",
+    "Romero's Restaurant",
+    "RosmarDrywall Ltd.",
+    "The Tool Doctor",
+    "UK 2 Canada Pension Transfers",
+    "Vision in White",
+    "Wajax"
+   ],
+   "lat": 43.53402505286278,
+   "lon": -80.30526234273334,
+   "area_ha": 0.962445843523425,
+   "bbox": [
+    43.53319903211477,
+    -80.3065180492992,
+    43.53482166368991,
+    -80.30411271463748
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.3065121,
+       43.533718199999996
+      ],
+      [
+       -80.3049242,
+       43.5348266
+      ],
+      [
+       -80.3047686,
+       43.534787699999995
+      ],
+      [
+       -80.3047096,
+       43.53481099999998
+      ],
+      [
+       -80.3044227,
+       43.5345991
+      ],
+      [
+       -80.3041302,
+       43.534383199999986
+      ],
+      [
+       -80.3041678,
+       43.53435989999999
+      ],
+      [
+       -80.3041195,
+       43.5342316
+      ],
+      [
+       -80.3055572,
+       43.5331932
+      ],
+      [
+       -80.3059381,
+       43.53327489999998
+      ],
+      [
+       -80.305863,
+       43.5334965
+      ],
+      [
+       -80.305584,
+       43.5334343
+      ],
+      [
+       -80.3044233,
+       43.5342934
+      ],
+      [
+       -80.3044908,
+       43.5344802
+      ],
+      [
+       -80.304537,
+       43.53451489999999
+      ],
+      [
+       -80.3045776,
+       43.5345439
+      ],
+      [
+       -80.3048471,
+       43.534594399999996
+      ],
+      [
+       -80.3061902,
+       43.53363649999999
+      ],
+      [
+       -80.3061526,
+       43.53355489999999
+      ],
+      [
+       -80.3064316,
+       43.53350039999999
+      ],
+      [
+       -80.3065121,
+       43.533718199999996
+      ]
+     ]
+    ]
+   },
+   "image": "img/w344325628.png",
+   "zoom": 18
+  },
+  {
+   "id": 287908722,
+   "type": "way",
+   "name": "Pergola Commons",
+   "tags": {
+    "landuse": "retail",
+    "name": "Pergola Commons"
+   },
+   "racks": [
+    {
+     "id": 9768470959,
+     "type": "node",
+     "lat": 43.5019513,
+     "lon": -80.1852148,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "bollard",
+      "mapillary": "688473382247655",
+      "survey:date": "2022-05-17"
+     }
+    },
+    {
+     "id": 11479641171,
+     "type": "node",
+     "lat": 43.500771,
+     "lon": -80.186253,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "mapillary": "542079840652423",
+      "source:position": "Mapillary 2022-11-22",
+      "survey:date": "2022-11-22"
+     }
+    },
+    {
+     "id": 11479926870,
+     "type": "node",
+     "lat": 43.500808,
+     "lon": -80.186197,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "mapillary": "542079840652423",
+      "source:position": "Mapillary 2022-11-22",
+      "survey:date": "2022-11-22"
+     }
+    },
+    {
+     "id": 13233440059,
+     "type": "node",
+     "lat": 43.5013097,
+     "lon": -80.1863417,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "capacity": "1",
+      "colour": "black",
+      "covered": "no",
+      "indoor": "no",
+      "mapillary": "652266136036141"
+     }
+    }
+   ],
+   "rack_count": 4,
+   "capacity": 1,
+   "capacity_untagged": 3,
+   "verdict": "has parking",
+   "nearest_rack_m": 0,
+   "nearest_rack": {
+    "id": 9768470959,
+    "type": "node",
+    "lat": 43.5019513,
+    "lon": -80.1852148
+   },
+   "tenant_names": [
+    "BMO",
+    "BOSS Supplements",
+    "Booster Juice",
+    "Cherry Blossom Sushi Bar",
+    "Convenience Kitchen Food Fair",
+    "Dollarama",
+    "Galaxy Cinemas Pergola Commons",
+    "GoodLife Fitness",
+    "Guelph Village Dental",
+    "Harvey's",
+    "Holy Shakes",
+    "JYSK",
+    "Nails for You",
+    "Pita Pit",
+    "Quesada",
+    "RBC",
+    "State & Main",
+    "Sunset Grill",
+    "T.O.'s Kathi Roll Eatery",
+    "Tha\u00ef Express",
+    "The Beer Store",
+    "The Keg",
+    "Twice The Deal Pizza & Wings"
+   ],
+   "lat": 43.50098095623663,
+   "lon": -80.18650837573972,
+   "area_ha": 5.425744873684004,
+   "bbox": [
+    43.49932161665917,
+    -80.18869716282335,
+    43.502576521402766,
+    -80.18434058988495
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.1857265,
+       43.50258639999999
+      ],
+      [
+       -80.1856438,
+       43.50258399999999
+      ],
+      [
+       -80.1846275,
+       43.5019009
+      ],
+      [
+       -80.1844449,
+       43.50170809999999
+      ],
+      [
+       -80.1843543,
+       43.50155819999999
+      ],
+      [
+       -80.18461090000001,
+       43.5014143
+      ],
+      [
+       -80.1847875,
+       43.501293499999996
+      ],
+      [
+       -80.186559,
+       43.49997309999999
+      ],
+      [
+       -80.1873571,
+       43.49931209999999
+      ],
+      [
+       -80.188684,
+       43.50030459999999
+      ],
+      [
+       -80.1857265,
+       43.50258639999999
+      ]
+     ]
+    ]
+   },
+   "image": "img/w287908722.png",
+   "zoom": 17
+  },
+  {
+   "id": 354160042,
+   "type": "way",
+   "name": "Scottsdale Centre",
+   "tags": {
+    "addr:city": "Guelph",
+    "addr:housenumber": "650",
+    "addr:province": "ON",
+    "addr:street": "Scottsdale Drive",
+    "building": "retail",
+    "building:levels": "1",
+    "name": "Scottsdale Centre",
+    "roof:levels": "0"
+   },
+   "racks": [],
+   "rack_count": 0,
+   "capacity": 0,
+   "capacity_untagged": 0,
+   "verdict": "none mapped",
+   "nearest_rack_m": 159,
+   "nearest_rack": {
+    "id": 11225402345,
+    "type": "node",
+    "lat": 43.5163571,
+    "lon": -80.2369455
+   },
+   "tenant_names": [
+    "Fluffy Glaze",
+    "Gotcha Bubble Tea",
+    "Guelph BBQ",
+    "Guelph Public Library - Scottsdale Branch",
+    "Guelph Vapour Company",
+    "Hanna's Nail Bar",
+    "Paghman Kabob"
+   ],
+   "lat": 43.51479326037726,
+   "lon": -80.23760846909435,
+   "area_ha": 0.15081336750570098,
+   "bbox": [
+    43.51449242289595,
+    -80.23802818155218,
+    43.51506335346734,
+    -80.23719314245842
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.2378802,
+       43.51506719999999
+      ],
+      [
+       -80.2378403,
+       43.5150382
+      ],
+      [
+       -80.2377999,
+       43.515067399999985
+      ],
+      [
+       -80.2371986,
+       43.5146301
+      ],
+      [
+       -80.2373948,
+       43.514488199999995
+      ],
+      [
+       -80.2374803,
+       43.51455030000001
+      ],
+      [
+       -80.2374599,
+       43.51456520000001
+      ],
+      [
+       -80.2375222,
+       43.51461
+      ],
+      [
+       -80.2375868,
+       43.514657299999996
+      ],
+      [
+       -80.2376505,
+       43.51470289999999
+      ],
+      [
+       -80.2377299,
+       43.51475979999999
+      ],
+      [
+       -80.2377949,
+       43.5148081
+      ],
+      [
+       -80.2378098,
+       43.5147974
+      ],
+      [
+       -80.2378759,
+       43.5148465
+      ],
+      [
+       -80.2379372,
+       43.514891299999995
+      ],
+      [
+       -80.2380224,
+       43.5149519
+      ],
+      [
+       -80.2380214,
+       43.5149653
+      ],
+      [
+       -80.2379817,
+       43.51499460000001
+      ],
+      [
+       -80.2379643,
+       43.51499260000001
+      ],
+      [
+       -80.2379258,
+       43.5150191
+      ],
+      [
+       -80.2379271,
+       43.51503319999999
+      ],
+      [
+       -80.2378802,
+       43.51506719999999
+      ]
+     ]
+    ]
+   },
+   "image": "img/w354160042.png",
+   "zoom": 18
+  },
+  {
+   "id": 773015480,
+   "type": "way",
+   "name": "Silvercreek Business Centre",
+   "tags": {
+    "landuse": "retail",
+    "name": "Silvercreek Business Centre"
+   },
+   "racks": [],
+   "rack_count": 0,
+   "capacity": 0,
+   "capacity_untagged": 0,
+   "verdict": "nearby only",
+   "nearest_rack_m": 43,
+   "nearest_rack": {
+    "id": 12564637269,
+    "type": "node",
+    "lat": 43.5459791,
+    "lon": -80.2857285
+   },
+   "tenant_names": [
+    "B.D. Hawkins",
+    "Blue Chopstix",
+    "Burnside",
+    "Butcher Shop and Grocers",
+    "Crown Barber Shop",
+    "Diamond Flooring",
+    "Impero Bar & Grill",
+    "La Shoe",
+    "Money Direct Guelph",
+    "Papa John's",
+    "Puffle Cafe",
+    "The Strippers!"
+   ],
+   "lat": 43.54468739880338,
+   "lon": -80.28548683582358,
+   "area_ha": 2.0596702313300135,
+   "bbox": [
+    43.543779526437106,
+    -80.28675573188119,
+    43.54559658835791,
+    -80.28421398527762
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.2853903,
+       43.54377099999999
+      ],
+      [
+       -80.2867442,
+       43.5447576
+      ],
+      [
+       -80.2855908,
+       43.54560519999999
+      ],
+      [
+       -80.2842256,
+       43.54461499999999
+      ],
+      [
+       -80.2853903,
+       43.54377099999999
+      ]
+     ]
+    ]
+   },
+   "image": "img/w773015480.png",
+   "zoom": 18
+  },
+  {
+   "id": 256118290,
+   "type": "way",
+   "name": "Silvercreek Plaza",
+   "tags": {
+    "addr:city": "Guelph",
+    "addr:housenumber": "120",
+    "addr:province": "ON",
+    "addr:street": "Silvercreek Parkway North",
+    "landuse": "retail",
+    "name": "Silvercreek Plaza",
+    "note": "Sign for Silvercreek Plaza on Willow Rd lists address for the plaza itself as 120, although most of the buildings are numbered as 130. Mr Lube is the one building numbered as 120 in the plaza.",
+    "operator": "HRI"
+   },
+   "racks": [
+    {
+     "id": 9789312723,
+     "type": "node",
+     "lat": 43.5395349,
+     "lon": -80.2809789,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "bollard",
+      "mapillary": "250377763764103",
+      "survey:date": "2021-10-02"
+     }
+    },
+    {
+     "id": 9789312724,
+     "type": "node",
+     "lat": 43.5397238,
+     "lon": -80.2807121,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "mapillary": "431269568456000",
+      "survey:date": "2022-05-26"
+     }
+    },
+    {
+     "id": 9789312725,
+     "type": "node",
+     "lat": 43.5399209,
+     "lon": -80.2809956,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "bollard",
+      "mapillary": "546227280315880",
+      "survey:date": "2022-05-26"
+     }
+    },
+    {
+     "id": 9789312726,
+     "type": "node",
+     "lat": 43.5397281,
+     "lon": -80.2812448,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "mapillary": "1244990569237964",
+      "survey:date": "2022-03-05"
+     }
+    },
+    {
+     "id": 9789312727,
+     "type": "node",
+     "lat": 43.5401279,
+     "lon": -80.2817952,
+     "tags": {
+      "amenity": "bicycle_parking"
+     }
+    },
+    {
+     "id": 9789312728,
+     "type": "node",
+     "lat": 43.5403272,
+     "lon": -80.2815382,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "bollard",
+      "mapillary": "272039854924501",
+      "survey:date": "2021-10-02"
+     }
+    }
+   ],
+   "rack_count": 6,
+   "capacity": 0,
+   "capacity_untagged": 6,
+   "verdict": "has parking",
+   "nearest_rack_m": 0,
+   "nearest_rack": {
+    "id": 9789312723,
+    "type": "node",
+    "lat": 43.5395349,
+    "lon": -80.2809789
+   },
+   "tenant_names": [
+    "Adulis Caffe",
+    "Canadian Blood Services",
+    "Fixway Cellular",
+    "Guelph T.V. & Video",
+    "Habesha Grocery & Bakery",
+    "Helal Store",
+    "Little Caesars",
+    "Microplay",
+    "Money Mart",
+    "Popular Nails",
+    "R U Serious",
+    "Rogers",
+    "Saigon Oriental Music and Video",
+    "Shawarma Fusion",
+    "Shoe Per",
+    "Silvercreek Animal Hospital",
+    "Subway",
+    "Swiderek Dental",
+    "West Side Physiotherapy",
+    "Willow Smoke & Cigar",
+    "Winners"
+   ],
+   "lat": 43.539644701272195,
+   "lon": -80.28121766832699,
+   "area_ha": 2.1732795851042175,
+   "bbox": [
+    43.53868834291574,
+    -80.28255663039798,
+    43.540603245951594,
+    -80.27987336681272
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.281535,
+       43.5406137
+      ],
+      [
+       -80.2798876,
+       43.539407399999995
+      ],
+      [
+       -80.2809103,
+       43.538678
+      ],
+      [
+       -80.2825425,
+       43.53987999999998
+      ],
+      [
+       -80.281535,
+       43.5406137
+      ]
+     ]
+    ]
+   },
+   "image": "img/w256118290.png",
+   "zoom": 18
+  },
+  {
+   "id": 773015486,
+   "type": "way",
+   "name": "Silverwood Plaza",
+   "tags": {
+    "addr:city": "Guelph",
+    "addr:housenumber": "485",
+    "addr:province": "ON",
+    "addr:street": "Silvercreek Parkway North",
+    "landuse": "retail",
+    "name": "Silverwood Plaza"
+   },
+   "racks": [],
+   "rack_count": 0,
+   "capacity": 0,
+   "capacity_untagged": 0,
+   "verdict": "none mapped",
+   "nearest_rack_m": 508,
+   "nearest_rack": {
+    "id": 13233491582,
+    "type": "node",
+    "lat": 43.5555713,
+    "lon": -80.2916832
+   },
+   "tenant_names": [
+    "Burger Factory",
+    "CBI Home Health",
+    "Canadian Mental Health Association",
+    "Current Electrical Supply Inc",
+    "Investment Planning Counsel",
+    "KW Cellular & Gadgets",
+    "Medigas",
+    "San Francisco Panini",
+    "ServiceOntario",
+    "Woodlawn Veterinary Hospital"
+   ],
+   "lat": 43.55115261863848,
+   "lon": -80.29502414129107,
+   "area_ha": 1.0952507876628428,
+   "bbox": [
+    43.55046396893649,
+    -80.29598219561352,
+    43.55184251725175,
+    -80.29404403060292
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.2947217,
+       43.55045619999999
+      ],
+      [
+       -80.2959649,
+       43.5513431
+      ],
+      [
+       -80.2959716,
+       43.55137419999999
+      ],
+      [
+       -80.295338,
+       43.55185049999999
+      ],
+      [
+       -80.2940545,
+       43.5509456
+      ],
+      [
+       -80.2947217,
+       43.55045619999999
+      ]
+     ]
+    ]
+   },
+   "image": "img/w773015486.png",
+   "zoom": 18
+  },
+  {
+   "id": 772928911,
+   "type": "way",
+   "name": "SmartCentres Guelph",
+   "tags": {
+    "landuse": "retail",
+    "name": "SmartCentres Guelph"
+   },
+   "racks": [
+    {
+     "id": 12713893391,
+     "type": "node",
+     "lat": 43.5645332,
+     "lon": -80.2790766,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "colour": "silver",
+      "covered": "no",
+      "fee": "no",
+      "indoor": "no"
+     }
+    },
+    {
+     "id": 13027046604,
+     "type": "node",
+     "lat": 43.5630041,
+     "lon": -80.2823806,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "capacity": "2",
+      "colour": "black",
+      "indoor": "no"
+     }
+    }
+   ],
+   "rack_count": 2,
+   "capacity": 2,
+   "capacity_untagged": 1,
+   "verdict": "has parking",
+   "nearest_rack_m": 0,
+   "nearest_rack": {
+    "id": 12713893391,
+    "type": "node",
+    "lat": 43.5645332,
+    "lon": -80.2790766
+   },
+   "tenant_names": [
+    "Addition Elle",
+    "BMO",
+    "Bulk Barn",
+    "CIBC",
+    "Dollarama",
+    "EB Games",
+    "Guelph Dental Care",
+    "HomeSense",
+    "Magicuts",
+    "McDonald's",
+    "Meta Cannabis Co",
+    "Michaels",
+    "Nice One Nails",
+    "Penningtons",
+    "Pita Pit",
+    "Popeyes",
+    "RBC",
+    "Reitmans",
+    "Ricki's",
+    "Sally Beauty",
+    "Sweetea",
+    "Walking on a Cloud",
+    "Walmart Supercentre",
+    "amenity=shelter"
+   ],
+   "lat": 43.564796266380505,
+   "lon": -80.28105735359438,
+   "area_ha": 12.263013622692702,
+   "bbox": [
+    43.56264516769782,
+    -80.28458290267648,
+    43.566772028908225,
+    -80.27765387839462
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.2782832,
+       43.56639719999999
+      ],
+      [
+       -80.2782237,
+       43.5662408
+      ],
+      [
+       -80.2781709,
+       43.566084399999994
+      ],
+      [
+       -80.2781321,
+       43.5659484
+      ],
+      [
+       -80.2780852,
+       43.565792
+      ],
+      [
+       -80.278041,
+       43.565684
+      ],
+      [
+       -80.2779887,
+       43.5655759
+      ],
+      [
+       -80.277921,
+       43.56546049999999
+      ],
+      [
+       -80.2778587,
+       43.56536650000001
+      ],
+      [
+       -80.2777735,
+       43.56526259999999
+      ],
+      [
+       -80.2777115,
+       43.56519019999999
+      ],
+      [
+       -80.2776812,
+       43.565158
+      ],
+      [
+       -80.2776738,
+       43.5651345
+      ],
+      [
+       -80.2776741,
+       43.5650798
+      ],
+      [
+       -80.2776864,
+       43.56505229999999
+      ],
+      [
+       -80.2777125,
+       43.565031299999994
+      ],
+      [
+       -80.2786195,
+       43.56436239999999
+      ],
+      [
+       -80.2786896,
+       43.56427829999999
+      ],
+      [
+       -80.2789825,
+       43.5640751
+      ],
+      [
+       -80.2789715,
+       43.56409179999999
+      ],
+      [
+       -80.2789699,
+       43.5641076
+      ],
+      [
+       -80.2789908,
+       43.5641304
+      ],
+      [
+       -80.2790379,
+       43.56416729999999
+      ],
+      [
+       -80.2791019,
+       43.56421099999999
+      ],
+      [
+       -80.27916180000001,
+       43.5642488
+      ],
+      [
+       -80.2793732,
+       43.564385599999994
+      ],
+      [
+       -80.2797907,
+       43.56468729999999
+      ],
+      [
+       -80.2798013,
+       43.5646738
+      ],
+      [
+       -80.2798256,
+       43.56468099999999
+      ],
+      [
+       -80.2798516,
+       43.56468339999999
+      ],
+      [
+       -80.2806046,
+       43.56416349999999
+      ],
+      [
+       -80.281316,
+       43.5636125
+      ],
+      [
+       -80.2805489,
+       43.56298279999999
+      ],
+      [
+       -80.2807874,
+       43.56272969999999
+      ],
+      [
+       -80.2816808,
+       43.56338509999999
+      ],
+      [
+       -80.2827208,
+       43.5626335
+      ],
+      [
+       -80.2833139,
+       43.5630876
+      ],
+      [
+       -80.2838534,
+       43.5634746
+      ],
+      [
+       -80.2845669,
+       43.56399739999999
+      ],
+      [
+       -80.2808574,
+       43.566673599999994
+      ],
+      [
+       -80.2800849,
+       43.5661192
+      ],
+      [
+       -80.2795269,
+       43.566512499999995
+      ],
+      [
+       -80.2790831,
+       43.56623879999999
+      ],
+      [
+       -80.2787371,
+       43.56649569999999
+      ],
+      [
+       -80.2783777,
+       43.56677659999999
+      ],
+      [
+       -80.2782832,
+       43.56639719999999
+      ]
+     ]
+    ]
+   },
+   "image": "img/w772928911.png",
+   "zoom": 17
+  },
+  {
+   "id": 215069449,
+   "type": "way",
+   "name": "South City Centre",
+   "tags": {
+    "addr:city": "Guelph",
+    "addr:housenumber": "511",
+    "addr:postcode": "N1G 4S5",
+    "addr:province": "Ontario",
+    "addr:street": "Edinburgh Road South",
+    "addr:unit": "101;101A;102;201;202",
+    "building": "commercial",
+    "name": "South City Centre"
+   },
+   "racks": [],
+   "rack_count": 0,
+   "capacity": 0,
+   "capacity_untagged": 0,
+   "verdict": "none mapped",
+   "nearest_rack_m": 192,
+   "nearest_rack": {
+    "id": 13963396495,
+    "type": "node",
+    "lat": 43.5204972,
+    "lon": -80.2336822
+   },
+   "tenant_names": [],
+   "lat": 43.51868160004469,
+   "lon": -80.23321435009738,
+   "area_ha": 0.03727202695569872,
+   "bbox": [
+    43.518555637311344,
+    -80.23338787828688,
+    43.51880756243123,
+    -80.23304082117815
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.2332481,
+       43.5185547
+      ],
+      [
+       -80.2333867,
+       43.51864869999999
+      ],
+      [
+       -80.2331806,
+       43.5188085
+      ],
+      [
+       -80.233042,
+       43.5187145
+      ],
+      [
+       -80.2332481,
+       43.5185547
+      ]
+     ]
+    ]
+   },
+   "image": "img/w215069449.png",
+   "zoom": 18
+  },
+  {
+   "id": 237319873,
+   "type": "way",
+   "name": "Speedvale Centre",
+   "tags": {
+    "landuse": "retail",
+    "name": "Speedvale Centre"
+   },
+   "racks": [],
+   "rack_count": 0,
+   "capacity": 0,
+   "capacity_untagged": 0,
+   "verdict": "none mapped",
+   "nearest_rack_m": 852,
+   "nearest_rack": {
+    "id": 9768470960,
+    "type": "node",
+    "lat": 43.5600696,
+    "lon": -80.2641995
+   },
+   "tenant_names": [
+    "7-Eleven",
+    "Anytime Fitness",
+    "Baskin-Robbins",
+    "Candies of Merritt",
+    "Cash 4 You",
+    "China Express",
+    "Cornell Animal Hospital",
+    "Dollar Tree",
+    "Fabutan",
+    "Fresh Burrito",
+    "FreshCo",
+    "Great Clips",
+    "Guelph Dentist",
+    "L&D Super Coin Laundromat",
+    "LCBO",
+    "Little Caesars",
+    "M&M Food Market",
+    "Massage Addict",
+    "Nails",
+    "Pet Valu",
+    "Pharmasave",
+    "Royal Gold Jewelry",
+    "Scotiabank",
+    "Shawarma G",
+    "Speedvale Medical Clinic",
+    "Sunrise Books",
+    "Tim Hortons",
+    "Wings Up!"
+   ],
+   "lat": 43.56741605761773,
+   "lon": -80.25805077609765,
+   "area_ha": 3.775249319501871,
+   "bbox": [
+    43.56622227806598,
+    -80.25978040280344,
+    43.568613228887635,
+    -80.25628118482344
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.2597634,
+       43.5676107
+      ],
+      [
+       -80.2583086,
+       43.56862639999999
+      ],
+      [
+       -80.2562973,
+       43.567303499999994
+      ],
+      [
+       -80.2577702,
+       43.56622899999999
+      ],
+      [
+       -80.2578095,
+       43.56620949999999
+      ],
+      [
+       -80.2578577,
+       43.5662115
+      ],
+      [
+       -80.2578885,
+       43.5662212
+      ],
+      [
+       -80.2584677,
+       43.5666235
+      ],
+      [
+       -80.2596568,
+       43.5674971
+      ],
+      [
+       -80.2597634,
+       43.5676107
+      ]
+     ]
+    ]
+   },
+   "image": "img/w237319873.png",
+   "zoom": 18
+  },
+  {
+   "id": 208406209,
+   "type": "way",
+   "name": "Stone Square Plaza",
+   "tags": {
+    "landuse": "retail",
+    "name": "Stone Square Plaza",
+    "source": "Bing"
+   },
+   "racks": [
+    {
+     "id": 11225402345,
+     "type": "node",
+     "lat": 43.5163571,
+     "lon": -80.2369455,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "capacity": "6",
+      "fee": "no",
+      "mapillary": "513009574264029",
+      "source:position": "Mapillary 2023-01-03",
+      "survey:date": "2023-01-03"
+     }
+    },
+    {
+     "id": 12206912381,
+     "type": "node",
+     "lat": 43.5165081,
+     "lon": -80.2376239,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "capacity": "5"
+     }
+    },
+    {
+     "id": 12206929334,
+     "type": "node",
+     "lat": 43.5164546,
+     "lon": -80.2366642,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "capacity": "5"
+     }
+    },
+    {
+     "id": 12206930210,
+     "type": "node",
+     "lat": 43.5173519,
+     "lon": -80.2356687,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "capacity": "5"
+     }
+    }
+   ],
+   "rack_count": 4,
+   "capacity": 21,
+   "capacity_untagged": 0,
+   "verdict": "has parking",
+   "nearest_rack_m": 0,
+   "nearest_rack": {
+    "id": 11225402345,
+    "type": "node",
+    "lat": 43.5163571,
+    "lon": -80.2369455
+   },
+   "tenant_names": [
+    "Bud\u2019s Cannabis Store",
+    "Bulk Barn",
+    "CIBC",
+    "Dollarama",
+    "East Side Mario's",
+    "Farm Boy",
+    "First Choice Haircutters",
+    "Gino's Pizza",
+    "Lazeez Shawarma",
+    "Mastermind Toys",
+    "McDonald's",
+    "Meridian Credit Union",
+    "Pet Valu",
+    "Popeye's Supplements",
+    "P\u00fcr & Simple",
+    "Sleep Country",
+    "Stone Square Dental",
+    "Subway",
+    "The Corner",
+    "The Great Canadian Bagel"
+   ],
+   "lat": 43.516811959201306,
+   "lon": -80.23649113130901,
+   "area_ha": 3.426054682160806,
+   "bbox": [
+    43.51558318884145,
+    -80.23820355591337,
+    43.51804068813552,
+    -80.23477869601054
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.2359767,
+       43.5180487
+      ],
+      [
+       -80.2348579,
+       43.51724309999999
+      ],
+      [
+       -80.2347894,
+       43.51719369999999
+      ],
+      [
+       -80.2370055,
+       43.5155752
+      ],
+      [
+       -80.238154,
+       43.5164022
+      ],
+      [
+       -80.2381929,
+       43.516430199999995
+      ],
+      [
+       -80.2359767,
+       43.5180487
+      ]
+     ]
+    ]
+   },
+   "image": "img/w208406209.png",
+   "zoom": 18
+  },
+  {
+   "id": 212559744,
+   "type": "way",
+   "name": "Stonegate Plaza",
+   "tags": {
+    "addr:city": "Guelph",
+    "addr:housenumber": "292",
+    "addr:street": "Stone Road West",
+    "building": "retail",
+    "name": "Stonegate Plaza",
+    "source": "Bing"
+   },
+   "racks": [],
+   "rack_count": 0,
+   "capacity": 0,
+   "capacity_untagged": 0,
+   "verdict": "none mapped",
+   "nearest_rack_m": 128,
+   "nearest_rack": {
+    "id": 13963396495,
+    "type": "node",
+    "lat": 43.5204972,
+    "lon": -80.2336822
+   },
+   "tenant_names": [
+    "Cyber Computer",
+    "Dough Box",
+    "Edible Arrangements",
+    "Edo Japan",
+    "Manchu Wok",
+    "Menchie's",
+    "Stonegate Animal Hospital",
+    "Stonegate Dental",
+    "Time For Nail Salon",
+    "TrilliumWest Real Estate Brokerage",
+    "Wendy's",
+    "Wings Up!"
+   ],
+   "lat": 43.51903955414659,
+   "lon": -80.23387647360369,
+   "area_ha": 0.23300843958317669,
+   "bbox": [
+    43.51874870495839,
+    -80.23445553016624,
+    43.51934614181027,
+    -80.23329887512759
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.23423080000002,
+       43.518747199999986
+      ],
+      [
+       -80.2343161,
+       43.5187493
+      ],
+      [
+       -80.2344543,
+       43.51884600000001
+      ],
+      [
+       -80.2343949,
+       43.5188908
+      ],
+      [
+       -80.2343067,
+       43.51895549999998
+      ],
+      [
+       -80.2342367,
+       43.5190069
+      ],
+      [
+       -80.2341615,
+       43.51906580000001
+      ],
+      [
+       -80.2340966,
+       43.5191134
+      ],
+      [
+       -80.2340113,
+       43.5191771
+      ],
+      [
+       -80.2337849,
+       43.51934939999999
+      ],
+      [
+       -80.2336984,
+       43.51929089999998
+      ],
+      [
+       -80.23361,
+       43.5192295
+      ],
+      [
+       -80.2335519,
+       43.51918860000001
+      ],
+      [
+       -80.2334978,
+       43.5191482
+      ],
+      [
+       -80.2334313,
+       43.51910159999999
+      ],
+      [
+       -80.2333031,
+       43.519012499999995
+      ],
+      [
+       -80.2333722,
+       43.5189606
+      ],
+      [
+       -80.2333964,
+       43.518977400000004
+      ],
+      [
+       -80.2335291,
+       43.5188777
+      ],
+      [
+       -80.2338025,
+       43.519069
+      ],
+      [
+       -80.23423080000002,
+       43.518747199999986
+      ]
+     ]
+    ]
+   },
+   "image": "img/w212559744.png",
+   "zoom": 18
+  },
+  {
+   "id": 993366503,
+   "type": "way",
+   "name": "Sugarbush Plaza",
+   "tags": {
+    "addr:city": "Guelph",
+    "addr:housenumber": "400",
+    "addr:province": "ON",
+    "addr:street": "Speedvale Avenue West",
+    "landuse": "commercial",
+    "name": "Sugarbush Plaza"
+   },
+   "racks": [],
+   "rack_count": 0,
+   "capacity": 0,
+   "capacity_untagged": 0,
+   "verdict": "none mapped",
+   "nearest_rack_m": 356,
+   "nearest_rack": {
+    "id": 12798111182,
+    "type": "node",
+    "lat": 43.5383516,
+    "lon": -80.2948074
+   },
+   "tenant_names": [
+    "Most Convenient",
+    "OPSEU Guelph Regional Office",
+    "Speedvale Pet Hospital",
+    "The Nguyen's"
+   ],
+   "lat": 43.540765752230726,
+   "lon": -80.29145189584935,
+   "area_ha": 0.5089916686435664,
+   "bbox": [
+    43.54028374918476,
+    -80.29206929752927,
+    43.54124559914412,
+    -80.29078587432991
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.2916732,
+       43.54125109999998
+      ],
+      [
+       -80.2907934,
+       43.5406036
+      ],
+      [
+       -80.2911594,
+       43.54033619999999
+      ],
+      [
+       -80.2912382,
+       43.54027859999999
+      ],
+      [
+       -80.29136290000001,
+       43.54038109999999
+      ],
+      [
+       -80.2916399,
+       43.54057799999999
+      ],
+      [
+       -80.2920429,
+       43.540873
+      ],
+      [
+       -80.2920596,
+       43.5409066
+      ],
+      [
+       -80.2920616,
+       43.540941600000004
+      ],
+      [
+       -80.2920536,
+       43.54096489999999
+      ],
+      [
+       -80.2920241,
+       43.54099500000001
+      ],
+      [
+       -80.2916732,
+       43.54125109999998
+      ]
+     ]
+    ]
+   },
+   "image": "img/w993366503.png",
+   "zoom": 18
+  },
+  {
+   "id": 399321881,
+   "type": "way",
+   "name": "University Square Plaza",
+   "tags": {
+    "addr:city": "Guelph",
+    "addr:housenumber": "987",
+    "addr:postcode": "N1G 4W3",
+    "addr:province": "Ontario",
+    "addr:street": "Gordon Street",
+    "landuse": "retail",
+    "name": "University Square Plaza"
+   },
+   "merged": [
+    399342520
+   ],
+   "racks": [
+    {
+     "id": 12823764356,
+     "type": "node",
+     "lat": 43.5213605,
+     "lon": -80.2122073,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "capacity": "2",
+      "check_date": "2025-05-09",
+      "colour": "black",
+      "covered": "no",
+      "fee": "no",
+      "indoor": "no"
+     }
+    },
+    {
+     "id": 12823829004,
+     "type": "node",
+     "lat": 43.5211152,
+     "lon": -80.212976,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "capacity": "2",
+      "check_date": "2025-05-09",
+      "colour": "black",
+      "covered": "yes",
+      "fee": "no",
+      "indoor": "no"
+     }
+    }
+   ],
+   "rack_count": 2,
+   "capacity": 4,
+   "capacity_untagged": 0,
+   "verdict": "has parking",
+   "nearest_rack_m": 0,
+   "nearest_rack": {
+    "id": 12823764356,
+    "type": "node",
+    "lat": 43.5213605,
+    "lon": -80.2122073
+   },
+   "tenant_names": [
+    "Circle K",
+    "Family Chiropractic Centre",
+    "Lux Nail Spa",
+    "Papa John's",
+    "RBC",
+    "Sequoia Dental",
+    "Sketchley Cleaners",
+    "Subway",
+    "Tangles Hair Salon",
+    "Tim Hortons",
+    "Transat Travel",
+    "University Square Bakery and Deli",
+    "University Square Pharmacy"
+   ],
+   "lat": 43.521236309065294,
+   "lon": -80.21260790431003,
+   "area_ha": 1.0873613738500778,
+   "bbox": [
+    43.52056826217154,
+    -80.21350391911153,
+    43.52190433071059,
+    -80.21171186820057
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.2120232,
+       43.521592000000005
+      ],
+      [
+       -80.211718,
+       43.5214334
+      ],
+      [
+       -80.2124002,
+       43.5207434
+      ],
+      [
+       -80.2125796,
+       43.5205619
+      ],
+      [
+       -80.2134978,
+       43.5210393
+      ],
+      [
+       -80.2134802,
+       43.521057099999986
+      ],
+      [
+       -80.2130083,
+       43.52153429999999
+      ],
+      [
+       -80.2127651,
+       43.521780299999996
+      ],
+      [
+       -80.2126599,
+       43.5218868
+      ],
+      [
+       -80.2126362,
+       43.52191069999999
+      ],
+      [
+       -80.2120232,
+       43.521592000000005
+      ]
+     ]
+    ]
+   },
+   "image": "img/w399321881.png",
+   "zoom": 18
+  },
+  {
+   "id": 239062267,
+   "type": "way",
+   "tags": {
+    "landuse": "retail",
+    "source": "Bing"
+   },
+   "tenant_names": [
+    "Buck or Two",
+    "Canadian Tire",
+    "City Pizza",
+    "Spanky's BBQ",
+    "Stacked Pancake & Breakfast House",
+    "Staples",
+    "Taco Bell",
+    "amenity=shelter"
+   ],
+   "area_ha": 4.374997816911721,
+   "lat": 43.566871703401425,
+   "lon": -80.27672070669449,
+   "name": "Unnamed plaza, 10-20 Woodlawn Road East (Buck or Two, Canadian Tire, City Pizza)",
+   "unnamed": true,
+   "racks": [
+    {
+     "id": 12757840252,
+     "type": "node",
+     "lat": 43.566829,
+     "lon": -80.2757046,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "capacity": "2",
+      "colour": "silver",
+      "covered": "no",
+      "fee": "no",
+      "indoor": "no",
+      "source": "streetlevel imagery"
+     }
+    }
+   ],
+   "rack_count": 1,
+   "capacity": 2,
+   "capacity_untagged": 0,
+   "verdict": "has parking",
+   "nearest_rack_m": 0,
+   "nearest_rack": {
+    "id": 12757840252,
+    "type": "node",
+    "lat": 43.566829,
+    "lon": -80.2757046
+   },
+   "bbox": [
+    43.56535590397379,
+    -80.27817638980305,
+    43.56825016375283,
+    -80.274887711189
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.2776335,
+       43.565666900000004
+      ],
+      [
+       -80.2777116,
+       43.56585230000001
+      ],
+      [
+       -80.2777468,
+       43.565947
+      ],
+      [
+       -80.2781557,
+       43.56708849999998
+      ],
+      [
+       -80.2765034,
+       43.568260399999986
+      ],
+      [
+       -80.2749016,
+       43.567092399999986
+      ],
+      [
+       -80.2756661,
+       43.56655799999999
+      ],
+      [
+       -80.2760887,
+       43.56625180000001
+      ],
+      [
+       -80.2766843,
+       43.56581829999999
+      ],
+      [
+       -80.2773116,
+       43.56536849999999
+      ],
+      [
+       -80.2773331,
+       43.56535490000001
+      ],
+      [
+       -80.2773706,
+       43.56535099999999
+      ],
+      [
+       -80.2774001,
+       43.565351
+      ],
+      [
+       -80.2774296,
+       43.565358799999984
+      ],
+      [
+       -80.2775307,
+       43.565438499999985
+      ],
+      [
+       -80.2776335,
+       43.565666900000004
+      ]
+     ]
+    ]
+   },
+   "image": "img/w239062267.png",
+   "zoom": 17
+  },
+  {
+   "id": 773000852,
+   "type": "way",
+   "tags": {
+    "addr:city": "Guelph",
+    "addr:housenumber": "1027",
+    "addr:postcode": "N1G 4X1",
+    "addr:province": "Ontario",
+    "addr:street": "Gordon Street",
+    "landuse": "retail"
+   },
+   "tenant_names": [
+    "Beauty Queen Health Center",
+    "Centurion Coffee",
+    "Dr. A. Raco Dental Office",
+    "Home Hardware",
+    "Homelife Power Realty Inc Brokerage",
+    "Mary's Nails",
+    "Paola's Fine Cheeses",
+    "Rowe Farms",
+    "Stylers Inc."
+   ],
+   "area_ha": 0.8174673671793298,
+   "lat": 43.52064272954547,
+   "lon": -80.21120131255626,
+   "name": "Unnamed plaza, 1027 Gordon Street (Beauty Queen Health Center, Centurion Coffee, Dr. A. Raco Dental Office)",
+   "unnamed": true,
+   "racks": [],
+   "rack_count": 0,
+   "capacity": 0,
+   "capacity_untagged": 0,
+   "verdict": "nearby only",
+   "nearest_rack_m": 73,
+   "nearest_rack": {
+    "id": 12823764356,
+    "type": "node",
+    "lat": 43.5213605,
+    "lon": -80.2122073
+   },
+   "bbox": [
+    43.520135241974955,
+    -80.211987829472,
+    43.5211983652662,
+    -80.21030104388281
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.2119088,
+       43.52052659999999
+      ],
+      [
+       -80.2112622,
+       43.521205
+      ],
+      [
+       -80.2103072,
+       43.52072639999999
+      ],
+      [
+       -80.2110368,
+       43.52029069999999
+      ],
+      [
+       -80.2114016,
+       43.52013120000001
+      ],
+      [
+       -80.2119842,
+       43.520414099999996
+      ],
+      [
+       -80.2119088,
+       43.52052659999999
+      ]
+     ]
+    ]
+   },
+   "image": "img/w773000852.png",
+   "zoom": 18
+  },
+  {
+   "id": 295926707,
+   "type": "way",
+   "tags": {
+    "landuse": "retail"
+   },
+   "tenant_names": [
+    "Canada Post",
+    "Money Direct",
+    "Pizzaville",
+    "RBC",
+    "Sherwin-Williams",
+    "Shoppers Drug Mart",
+    "Willow West Dental"
+   ],
+   "area_ha": 1.3147954702513358,
+   "lat": 43.538235961116165,
+   "lon": -80.27935485124783,
+   "name": "Unnamed plaza, 104 Silvercreek Parkway North (Canada Post, Money Direct, Pizzaville)",
+   "unnamed": true,
+   "racks": [
+    {
+     "id": 9789312722,
+     "type": "node",
+     "lat": 43.5384078,
+     "lon": -80.2788913,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "bike_ride": "no",
+      "capacity": "3",
+      "colour": "black",
+      "covered": "no",
+      "fee": "no",
+      "indoor": "no",
+      "mapillary": "379515614044421",
+      "surveillance": "yes",
+      "survey:date": "2022-04-04"
+     }
+    }
+   ],
+   "rack_count": 1,
+   "capacity": 3,
+   "capacity_untagged": 0,
+   "verdict": "has parking",
+   "nearest_rack_m": 0,
+   "nearest_rack": {
+    "id": 9789312722,
+    "type": "node",
+    "lat": 43.5384078,
+    "lon": -80.2788913
+   },
+   "bbox": [
+    43.537534095785205,
+    -80.28049509343225,
+    43.53881693810531,
+    -80.27824613785378
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.2801852,
+       43.5388184
+      ],
+      [
+       -80.2795867,
+       43.53840279999999
+      ],
+      [
+       -80.2790167,
+       43.538821799999994
+      ],
+      [
+       -80.2782526,
+       43.538275199999994
+      ],
+      [
+       -80.2792574,
+       43.53752630000001
+      ],
+      [
+       -80.280484,
+       43.53840869999999
+      ],
+      [
+       -80.280484,
+       43.538466999999976
+      ],
+      [
+       -80.2801852,
+       43.5388184
+      ]
+     ]
+    ]
+   },
+   "image": "img/w295926707.png",
+   "zoom": 18
+  },
+  {
+   "id": 295926658,
+   "type": "way",
+   "tags": {
+    "landuse": "retail"
+   },
+   "tenant_names": [
+    "Growmark",
+    "Paradise Barbershop",
+    "Rexall",
+    "SV Law",
+    "Silvercreek Walk-In Clinic"
+   ],
+   "area_ha": 0.8815149926990263,
+   "lat": 43.53895290548518,
+   "lon": -80.2779087124211,
+   "name": "Unnamed plaza, 105 Silvercreek Parkway North (Growmark, Paradise Barbershop, Rexall)",
+   "unnamed": true,
+   "racks": [],
+   "rack_count": 0,
+   "capacity": 0,
+   "capacity_untagged": 0,
+   "verdict": "nearby only",
+   "nearest_rack_m": 54,
+   "nearest_rack": {
+    "id": 9789312722,
+    "type": "node",
+    "lat": 43.5384078,
+    "lon": -80.2788913
+   },
+   "bbox": [
+    43.53835995440563,
+    -80.2787337424708,
+    43.53954906570949,
+    -80.27708997882512
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.2779341,
+       43.5395544
+      ],
+      [
+       -80.2775341,
+       43.5392631
+      ],
+      [
+       -80.2770976,
+       43.5389112
+      ],
+      [
+       -80.2771648,
+       43.538863699999986
+      ],
+      [
+       -80.27788550000001,
+       43.53835459999999
+      ],
+      [
+       -80.2787264,
+       43.53897589999999
+      ],
+      [
+       -80.2779341,
+       43.5395544
+      ]
+     ]
+    ]
+   },
+   "image": "img/w295926658.png",
+   "zoom": 18
+  },
+  {
+   "id": 215068137,
+   "type": "way",
+   "tags": {
+    "landuse": "retail"
+   },
+   "tenant_names": [
+    "Best Buy",
+    "Canadian Tire",
+    "Milestones",
+    "Montana's",
+    "Subway",
+    "Walmart Supercentre"
+   ],
+   "area_ha": 7.8986650930841495,
+   "lat": 43.523075698143835,
+   "lon": -80.23196416392719,
+   "name": "Unnamed plaza, 127-201 Stone Road West (Best Buy, Canadian Tire, Milestones)",
+   "unnamed": true,
+   "racks": [
+    {
+     "id": 12030078101,
+     "type": "node",
+     "lat": 43.5228596,
+     "lon": -80.2326147,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "capacity": "10",
+      "covered": "no"
+     }
+    },
+    {
+     "id": 12335563263,
+     "type": "node",
+     "lat": 43.5215446,
+     "lon": -80.2320359,
+     "tags": {
+      "access": "yes",
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "bike_ride": "no",
+      "capacity": "6",
+      "colour": "black",
+      "fee": "no",
+      "indoor": "no"
+     }
+    },
+    {
+     "id": 13963346866,
+     "type": "node",
+     "lat": 43.5221057,
+     "lon": -80.2325281,
+     "tags": {
+      "access": "yes",
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "capacity": "8",
+      "covered": "yes",
+      "fee": "no"
+     }
+    }
+   ],
+   "rack_count": 3,
+   "capacity": 24,
+   "capacity_untagged": 0,
+   "verdict": "has parking",
+   "nearest_rack_m": 0,
+   "nearest_rack": {
+    "id": 12030078101,
+    "type": "node",
+    "lat": 43.5228596,
+    "lon": -80.2326147
+   },
+   "bbox": [
+    43.52126641473471,
+    -80.23442349231019,
+    43.52490605433781,
+    -80.22950752825693
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.233959,
+       43.5224652
+      ],
+      [
+       -80.2344043,
+       43.522784099999996
+      ],
+      [
+       -80.2343733,
+       43.522806999999986
+      ],
+      [
+       -80.2329256,
+       43.5238765
+      ],
+      [
+       -80.2330325,
+       43.523952599999994
+      ],
+      [
+       -80.2317136,
+       43.52492089999999
+      ],
+      [
+       -80.229528,
+       43.523297599999985
+      ],
+      [
+       -80.2310998,
+       43.522119
+      ],
+      [
+       -80.23225890000002,
+       43.521251899999996
+      ],
+      [
+       -80.233959,
+       43.5224652
+      ]
+     ]
+    ]
+   },
+   "image": "img/w215068137.png",
+   "zoom": 17
+  },
+  {
+   "id": 192887202,
+   "type": "way",
+   "tags": {
+    "landuse": "retail"
+   },
+   "tenant_names": [
+    "Borealis Grille & Bar",
+    "Crock A Doodle",
+    "Dr. Nafeesa Sheikh Dentistry",
+    "Edward Jones",
+    "Liberty Tax",
+    "Purba Vision",
+    "Sweet Temptations Cupcakery",
+    "Vision Travel"
+   ],
+   "area_ha": 0.4774330722646653,
+   "lat": 43.512807487560714,
+   "lon": -80.19753333630788,
+   "name": "Unnamed plaza, 1388-1398 Gordon Street (Borealis Grille & Bar, Crock A Doodle, Dr. Nafeesa Sheikh Dentistry)",
+   "unnamed": true,
+   "racks": [],
+   "rack_count": 0,
+   "capacity": 0,
+   "capacity_untagged": 0,
+   "verdict": "none mapped",
+   "nearest_rack_m": 179,
+   "nearest_rack": {
+    "id": 12327064780,
+    "type": "node",
+    "lat": 43.5138433,
+    "lon": -80.1999667
+   },
+   "bbox": [
+    43.51234066922868,
+    -80.1981434659938,
+    43.51327127798624,
+    -80.1969144598504
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.1973925,
+       43.512335400000005
+      ],
+      [
+       -80.1981355,
+       43.5129423
+      ],
+      [
+       -80.197701,
+       43.51327679999999
+      ],
+      [
+       -80.1969222,
+       43.5126876
+      ],
+      [
+       -80.1973925,
+       43.512335400000005
+      ]
+     ]
+    ]
+   },
+   "image": "img/w192887202.png",
+   "zoom": 18
+  },
+  {
+   "id": 399342895,
+   "type": "way",
+   "tags": {
+    "landuse": "retail"
+   },
+   "tenant_names": [
+    "Cavan Coffee",
+    "Domino's",
+    "Dr. Ye & Associates",
+    "Gordon Walk-In-Clinic",
+    "Guelph Family Health Team",
+    "HearingLife",
+    "J. Supply Co.",
+    "Olive Tree",
+    "Pharmasave",
+    "Shift Concussion Management",
+    "Tandoori Shawarma and Pizza",
+    "Virk Law",
+    "Win Chinese Food",
+    "Zavitz Family Chiropractic"
+   ],
+   "area_ha": 1.3044709850562433,
+   "lat": 43.50936283128752,
+   "lon": -80.19641521459403,
+   "name": "Unnamed plaza, 1499-1515 Gordon Street (Cavan Coffee, Domino's, Dr. Ye & Associates)",
+   "unnamed": true,
+   "racks": [
+    {
+     "id": 14106382405,
+     "type": "node",
+     "lat": 43.5085367,
+     "lon": -80.1959405,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "capacity": "2"
+     }
+    }
+   ],
+   "rack_count": 1,
+   "capacity": 2,
+   "capacity_untagged": 0,
+   "verdict": "has parking",
+   "nearest_rack_m": 0,
+   "nearest_rack": {
+    "id": 14106382405,
+    "type": "node",
+    "lat": 43.5085367,
+    "lon": -80.1959405
+   },
+   "bbox": [
+    43.50827656828862,
+    -80.19723750178515,
+    43.51049026731869,
+    -80.19574053409988
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.1968702,
+       43.509816999999984
+      ],
+      [
+       -80.196931,
+       43.50990920000001
+      ],
+      [
+       -80.19695070000002,
+       43.5099473
+      ],
+      [
+       -80.1969603,
+       43.50998270000001
+      ],
+      [
+       -80.1969667,
+       43.51002209999999
+      ],
+      [
+       -80.1972116,
+       43.5102308
+      ],
+      [
+       -80.19712710000002,
+       43.5102694
+      ],
+      [
+       -80.1964563,
+       43.510495299999995
+      ],
+      [
+       -80.1962712,
+       43.5100111
+      ],
+      [
+       -80.1959821,
+       43.509218399999995
+      ],
+      [
+       -80.1957649,
+       43.5086553
+      ],
+      [
+       -80.1957888,
+       43.50858649999999
+      ],
+      [
+       -80.1962172,
+       43.50826939999998
+      ],
+      [
+       -80.1968828,
+       43.50877159999999
+      ],
+      [
+       -80.1966192,
+       43.50891469999999
+      ],
+      [
+       -80.1966246,
+       43.50927339999999
+      ],
+      [
+       -80.1966793,
+       43.509477600000004
+      ],
+      [
+       -80.1967799,
+       43.5096662
+      ],
+      [
+       -80.1968702,
+       43.509816999999984
+      ]
+     ]
+    ]
+   },
+   "image": "img/w399342895.png",
+   "zoom": 18
+  },
+  {
+   "id": 773030532,
+   "type": "way",
+   "tags": {
+    "landuse": "retail"
+   },
+   "tenant_names": [
+    "Hale Veterinary Clinic",
+    "Hasty Market",
+    "Jumbo 3 for 1 Pizza & Wings",
+    "Layan Food Market"
+   ],
+   "area_ha": 0.2919628351903847,
+   "lat": 43.514003532654186,
+   "lon": -80.27597283541864,
+   "name": "Unnamed plaza, 159 Fife Road (Hale Veterinary Clinic, Hasty Market, Jumbo 3 for 1 Pizza & Wings)",
+   "unnamed": true,
+   "racks": [],
+   "rack_count": 0,
+   "capacity": 0,
+   "capacity_untagged": 0,
+   "verdict": "none mapped",
+   "nearest_rack_m": 1010,
+   "nearest_rack": {
+    "id": 13233449397,
+    "type": "node",
+    "lat": 43.5218033,
+    "lon": -80.2686556
+   },
+   "bbox": [
+    43.513632804307335,
+    -80.27643994474934,
+    43.514254770534905,
+    -80.27545654616806
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.2764358,
+       43.5139797
+      ],
+      [
+       -80.2760455,
+       43.5142519
+      ],
+      [
+       -80.2756348,
+       43.514255900000016
+      ],
+      [
+       -80.2754581,
+       43.51412489999999
+      ],
+      [
+       -80.2761233,
+       43.513630799999994
+      ],
+      [
+       -80.2764358,
+       43.5139797
+      ]
+     ]
+    ]
+   },
+   "image": "img/w773030532.png",
+   "zoom": 18
+  },
+  {
+   "id": 971832743,
+   "type": "way",
+   "tags": {
+    "landuse": "retail"
+   },
+   "tenant_names": [
+    "Fresh Salon & Spa",
+    "Greengate Medical Centre Walk-In Clinic",
+    "Guardian",
+    "Mary Brown's",
+    "Parties Plus",
+    "Plato's Closet",
+    "Style Encore",
+    "The Indian Supermarket"
+   ],
+   "area_ha": 1.0483575913813616,
+   "lat": 43.54053816380211,
+   "lon": -80.28243546761371,
+   "name": "Unnamed plaza, 170 Silvercreek Parkway North (Fresh Salon & Spa, Greengate Medical Centre Walk-In Clinic, Guardian)",
+   "unnamed": true,
+   "racks": [
+    {
+     "id": 9789312727,
+     "type": "node",
+     "lat": 43.5401279,
+     "lon": -80.2817952,
+     "tags": {
+      "amenity": "bicycle_parking"
+     }
+    },
+    {
+     "id": 9789312728,
+     "type": "node",
+     "lat": 43.5403272,
+     "lon": -80.2815382,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "bollard",
+      "mapillary": "272039854924501",
+      "survey:date": "2021-10-02"
+     }
+    }
+   ],
+   "rack_count": 2,
+   "capacity": 0,
+   "capacity_untagged": 2,
+   "verdict": "has parking",
+   "nearest_rack_m": 22,
+   "nearest_rack": {
+    "id": 9789312728,
+    "type": "node",
+    "lat": 43.5403272,
+    "lon": -80.2815382
+   },
+   "bbox": [
+    43.53988501404017,
+    -80.28334195222442,
+    43.541190764414004,
+    -80.28152814720279
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.2825425,
+       43.53987999999998
+      ],
+      [
+       -80.2833351,
+       43.5404635
+      ],
+      [
+       -80.2823299,
+       43.54119579999999
+      ],
+      [
+       -80.281535,
+       43.5406137
+      ],
+      [
+       -80.2825425,
+       43.53987999999998
+      ]
+     ]
+    ]
+   },
+   "image": "img/w971832743.png",
+   "zoom": 18
+  },
+  {
+   "id": 772999948,
+   "type": "way",
+   "tags": {
+    "landuse": "retail"
+   },
+   "tenant_names": [
+    "Buzz Hair Salon",
+    "Goldcap Realty",
+    "Retro Convenience",
+    "Van Allen Insurance"
+   ],
+   "area_ha": 0.25961524124219004,
+   "lat": 43.53592280576452,
+   "lon": -80.25511949955819,
+   "name": "Unnamed plaza, 188-196 Waterloo Avenue (Buzz Hair Salon, Goldcap Realty, Retro Convenience)",
+   "unnamed": true,
+   "racks": [],
+   "rack_count": 0,
+   "capacity": 0,
+   "capacity_untagged": 0,
+   "verdict": "none mapped",
+   "nearest_rack_m": 310,
+   "nearest_rack": {
+    "id": 12058128705,
+    "type": "node",
+    "lat": 43.5327897,
+    "lon": -80.255498
+   },
+   "bbox": [
+    43.53557624806952,
+    -80.25553286231002,
+    43.536255801391306,
+    -80.25470286491803
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.2548265,
+       43.535858000000005
+      ],
+      [
+       -80.255157,
+       43.535573799999995
+      ],
+      [
+       -80.2555293,
+       43.53586580000001
+      ],
+      [
+       -80.2551323,
+       43.5362586
+      ],
+      [
+       -80.2547058,
+       43.53601749999999
+      ],
+      [
+       -80.2548265,
+       43.535858000000005
+      ]
+     ]
+    ]
+   },
+   "image": "img/w772999948.png",
+   "zoom": 18
+  },
+  {
+   "id": 295926125,
+   "type": "way",
+   "tags": {
+    "landuse": "retail"
+   },
+   "tenant_names": [
+    "Burger King",
+    "Cashco Loans",
+    "Domino's",
+    "Kung Fu Tea",
+    "L\u2019angolo Cafe",
+    "Pita Pit",
+    "Royal Paan",
+    "The Salvation Army"
+   ],
+   "area_ha": 1.4330389517556805,
+   "lat": 43.54122485164162,
+   "lon": -80.2833804493573,
+   "name": "Unnamed plaza, 200-206 Silvercreek Parkway North (Burger King, Cashco Loans, Domino's)",
+   "unnamed": true,
+   "racks": [],
+   "rack_count": 0,
+   "capacity": 0,
+   "capacity_untagged": 0,
+   "verdict": "nearby only",
+   "nearest_rack_m": 95,
+   "nearest_rack": {
+    "id": 12164866906,
+    "type": "node",
+    "lat": 43.5408554,
+    "lon": -80.2812499
+   },
+   "bbox": [
+    43.540470422298476,
+    -80.28444026638735,
+    43.5419792677044,
+    -80.28232060616303
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.2823299,
+       43.54119579999999
+      ],
+      [
+       -80.2833351,
+       43.5404635
+      ],
+      [
+       -80.284431,
+       43.5412539
+      ],
+      [
+       -80.2834258,
+       43.5419862
+      ],
+      [
+       -80.2823299,
+       43.54119579999999
+      ]
+     ]
+    ]
+   },
+   "image": "img/w295926125.png",
+   "zoom": 18
+  },
+  {
+   "id": 539479797,
+   "type": "way",
+   "tags": {
+    "landuse": "retail"
+   },
+   "tenant_names": [
+    "Eggcetra",
+    "Ethnic Supermarket",
+    "FillStore Convenience",
+    "Guelph Eye Care",
+    "Mission Thrift Store",
+    "Nature's Salt Cave",
+    "Sunglass Cove",
+    "The Octave Music Centre",
+    "The Real Deal Sports Bar & Billiards Inc.",
+    "Tim Hortons",
+    "Top Bin Liquidation",
+    "Victoria Road Animal Hospital",
+    "shop=kiosk"
+   ],
+   "area_ha": 3.7412746049408336,
+   "lat": 43.55191110883806,
+   "lon": -80.2217239439328,
+   "name": "Unnamed plaza, 200-234 Victoria Road South (Eggcetra, Ethnic Supermarket, FillStore Convenience)",
+   "unnamed": true,
+   "racks": [
+    {
+     "id": 11461813869,
+     "type": "node",
+     "lat": 43.5518431,
+     "lon": -80.2231014,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "mapillary": "3139240169674922",
+      "source:position": "Mapillary 2022-08-13",
+      "survey:date": "2022-08-13"
+     }
+    },
+    {
+     "id": 12270389287,
+     "type": "node",
+     "lat": 43.5513785,
+     "lon": -80.2222132,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "informal",
+      "covered": "no",
+      "description": "Railing to lock bicycle to in lieu of dedicated parking."
+     }
+    }
+   ],
+   "rack_count": 2,
+   "capacity": 0,
+   "capacity_untagged": 2,
+   "verdict": "has parking",
+   "nearest_rack_m": 0,
+   "nearest_rack": {
+    "id": 11461813869,
+    "type": "node",
+    "lat": 43.5518431,
+    "lon": -80.2231014
+   },
+   "bbox": [
+    43.5507314691228,
+    -80.22352762428639,
+    43.55261743160049,
+    -80.2195910103647
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.2227496,
+       43.552576900000005
+      ],
+      [
+       -80.2224493,
+       43.552581100000005
+      ],
+      [
+       -80.2220785,
+       43.55258640000001
+      ],
+      [
+       -80.2197915,
+       43.55261879999998
+      ],
+      [
+       -80.2195931,
+       43.55245549999999
+      ],
+      [
+       -80.2217031,
+       43.5509095
+      ],
+      [
+       -80.221973,
+       43.5507209
+      ],
+      [
+       -80.2226062,
+       43.5511898
+      ],
+      [
+       -80.2230237,
+       43.5514989
+      ],
+      [
+       -80.2230611,
+       43.551526599999995
+      ],
+      [
+       -80.2232558,
+       43.5517186
+      ],
+      [
+       -80.22351130000001,
+       43.5518992
+      ],
+      [
+       -80.223511,
+       43.5520263
+      ],
+      [
+       -80.2227496,
+       43.552576900000005
+      ]
+     ]
+    ]
+   },
+   "image": "img/w539479797.png",
+   "zoom": 18
+  },
+  {
+   "id": 772951791,
+   "type": "way",
+   "tags": {
+    "landuse": "retail"
+   },
+   "tenant_names": [
+    "Barber Glass",
+    "Quick Stop Variety",
+    "Two Plus Pizza",
+    "Valeriote Market & Butchery"
+   ],
+   "area_ha": 0.7088910223225583,
+   "lat": 43.54459196748227,
+   "lon": -80.26100520241856,
+   "name": "Unnamed plaza, 204 Yorkshire Street North (Barber Glass, Quick Stop Variety, Two Plus Pizza)",
+   "unnamed": true,
+   "racks": [],
+   "rack_count": 0,
+   "capacity": 0,
+   "capacity_untagged": 0,
+   "verdict": "none mapped",
+   "nearest_rack_m": 142,
+   "nearest_rack": {
+    "id": 12810727443,
+    "type": "node",
+    "lat": 43.5434847,
+    "lon": -80.2593946
+   },
+   "bbox": [
+    43.54406833249628,
+    -80.2617690173417,
+    43.545113238196585,
+    -80.26028009330187
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.260738,
+       43.5451162
+      ],
+      [
+       -80.2603016,
+       43.5446664
+      ],
+      [
+       -80.260286,
+       43.5446302
+      ],
+      [
+       -80.2603111,
+       43.544587
+      ],
+      [
+       -80.2606773,
+       43.54436909999998
+      ],
+      [
+       -80.2612531,
+       43.544065
+      ],
+      [
+       -80.2614311,
+       43.544246799999996
+      ],
+      [
+       -80.26176270000002,
+       43.544586
+      ],
+      [
+       -80.260738,
+       43.5451162
+      ]
+     ]
+    ]
+   },
+   "image": "img/w772951791.png",
+   "zoom": 18
+  },
+  {
+   "id": 295926200,
+   "type": "way",
+   "tags": {
+    "landuse": "retail"
+   },
+   "tenant_names": [
+    "24 De Nails Ltd.",
+    "Dollarama",
+    "Downtown Dentistry",
+    "Drizzora Desserts",
+    "Fairstone Financial",
+    "Food Basics",
+    "Play It Again Sports",
+    "Renaissance Jewellery & Watch Repair",
+    "Slater\u2019s Styling",
+    "The UPS Store",
+    "The Wingery",
+    "Value Village",
+    "Victoria's Pizza",
+    "amenity=shelter",
+    "easyhome"
+   ],
+   "area_ha": 2.8447036174426787,
+   "lat": 43.543075921140144,
+   "lon": -80.28594132483771,
+   "name": "Unnamed plaza, 208-222 Silvercreek Parkway North (24 De Nails Ltd., Dollarama, Downtown Dentistry)",
+   "unnamed": true,
+   "racks": [
+    {
+     "id": 12164899589,
+     "type": "node",
+     "lat": 43.5429897,
+     "lon": -80.2850696,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "bike_ride": "no",
+      "capacity": "5",
+      "colour": "silver",
+      "covered": "no",
+      "fee": "no",
+      "indoor": "no"
+     }
+    }
+   ],
+   "rack_count": 1,
+   "capacity": 5,
+   "capacity_untagged": 0,
+   "verdict": "has parking",
+   "nearest_rack_m": 0,
+   "nearest_rack": {
+    "id": 12164899589,
+    "type": "node",
+    "lat": 43.5429897,
+    "lon": -80.2850696
+   },
+   "bbox": [
+    43.54194304712699,
+    -80.28754874017508,
+    43.54421228610503,
+    -80.2843366343947
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.2853461,
+       43.54192929999999
+      ],
+      [
+       -80.2875307,
+       43.54347489999999
+      ],
+      [
+       -80.2865148,
+       43.5442259
+      ],
+      [
+       -80.28435500000002,
+       43.542659799999996
+      ],
+      [
+       -80.2853461,
+       43.54192929999999
+      ]
+     ]
+    ]
+   },
+   "image": "img/w295926200.png",
+   "zoom": 18
+  },
+  {
+   "id": 772928910,
+   "type": "way",
+   "tags": {
+    "landuse": "retail"
+   },
+   "tenant_names": [
+    "Boston Pizza",
+    "Julia's Nail Salon",
+    "Uptown Guelph Dental",
+    "Wayfare Motel Office",
+    "Younique Scrapbook Store"
+   ],
+   "area_ha": 1.7236686163839794,
+   "lat": 43.56384507854318,
+   "lon": -80.2801513538419,
+   "name": "Unnamed plaza, 21-35 Woodlawn Road West (Boston Pizza, Julia's Nail Salon, Uptown Guelph Dental)",
+   "unnamed": true,
+   "racks": [
+    {
+     "id": 12713893391,
+     "type": "node",
+     "lat": 43.5645332,
+     "lon": -80.2790766,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "colour": "silver",
+      "covered": "no",
+      "fee": "no",
+      "indoor": "no"
+     }
+    }
+   ],
+   "rack_count": 1,
+   "capacity": 0,
+   "capacity_untagged": 1,
+   "verdict": "has parking",
+   "nearest_rack_m": 28,
+   "nearest_rack": {
+    "id": 12713893391,
+    "type": "node",
+    "lat": 43.5645332,
+    "lon": -80.2790766
+   },
+   "bbox": [
+    43.56298767149667,
+    -80.2813234280291,
+    43.56468208306806,
+    -80.27896304785499
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.2798516,
+       43.56468339999999
+      ],
+      [
+       -80.2798256,
+       43.56468099999999
+      ],
+      [
+       -80.2798013,
+       43.5646738
+      ],
+      [
+       -80.2797907,
+       43.56468729999999
+      ],
+      [
+       -80.2793732,
+       43.564385599999994
+      ],
+      [
+       -80.27916180000001,
+       43.5642488
+      ],
+      [
+       -80.2791019,
+       43.56421099999999
+      ],
+      [
+       -80.2790379,
+       43.56416729999999
+      ],
+      [
+       -80.2789908,
+       43.5641304
+      ],
+      [
+       -80.2789699,
+       43.5641076
+      ],
+      [
+       -80.2789715,
+       43.56409179999999
+      ],
+      [
+       -80.2789825,
+       43.5640751
+      ],
+      [
+       -80.2792561,
+       43.5638765
+      ],
+      [
+       -80.2796269,
+       43.5635936
+      ],
+      [
+       -80.279869,
+       43.5634243
+      ],
+      [
+       -80.28032960000002,
+       43.5630908
+      ],
+      [
+       -80.2805489,
+       43.56298279999999
+      ],
+      [
+       -80.281316,
+       43.5636125
+      ],
+      [
+       -80.2806046,
+       43.56416349999999
+      ],
+      [
+       -80.2798516,
+       43.56468339999999
+      ]
+     ]
+    ]
+   },
+   "image": "img/w772928910.png",
+   "zoom": 18
+  },
+  {
+   "id": 773015473,
+   "type": "way",
+   "tags": {
+    "landuse": "retail"
+   },
+   "tenant_names": [
+    "3 for 1 Glasses",
+    "9Round",
+    "Body Klense",
+    "Burrito Boys",
+    "Caribbean Delight",
+    "Cash Money",
+    "Coffee Stiles",
+    "Crown Bath & Kitchen",
+    "Disability Tax Results",
+    "Freshii",
+    "Guelph & District Association of Realtors",
+    "Harvey's",
+    "Instant Imprints",
+    "Investment Planning Counsel",
+    "Maple Wellness Spa",
+    "The Water Store"
+   ],
+   "area_ha": 1.6042684529558278,
+   "lat": 43.55472829294869,
+   "lon": -80.29278648005767,
+   "name": "Unnamed plaza, 221-223 Woodlawn Road West (3 for 1 Glasses, 9Round, Body Klense)",
+   "unnamed": true,
+   "racks": [],
+   "rack_count": 0,
+   "capacity": 0,
+   "capacity_untagged": 0,
+   "verdict": "nearby only",
+   "nearest_rack_m": 51,
+   "nearest_rack": {
+    "id": 13233491582,
+    "type": "node",
+    "lat": 43.5555713,
+    "lon": -80.2916832
+   },
+   "bbox": [
+    43.553958364246476,
+    -80.29392922845835,
+    43.55554837723095,
+    -80.29164102132174
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.2917123,
+       43.55494849999999
+      ],
+      [
+       -80.2916486,
+       43.5549014
+      ],
+      [
+       -80.2929206,
+       43.55398389999999
+      ],
+      [
+       -80.2930125,
+       43.553957199999985
+      ],
+      [
+       -80.2931097,
+       43.553953299999996
+      ],
+      [
+       -80.2939224,
+       43.5545432
+      ],
+      [
+       -80.2925491,
+       43.555553999999994
+      ],
+      [
+       -80.2917123,
+       43.55494849999999
+      ]
+     ]
+    ]
+   },
+   "image": "img/w773015473.png",
+   "zoom": 18
+  },
+  {
+   "id": 772950211,
+   "type": "way",
+   "tags": {
+    "landuse": "retail"
+   },
+   "tenant_names": [
+    "G&A Locks & Security",
+    "Mobility in Motion",
+    "Rainbow Variety",
+    "Royal City Restaurant"
+   ],
+   "area_ha": 1.1289724112084076,
+   "lat": 43.54439499178912,
+   "lon": -80.26695431444561,
+   "name": "Unnamed plaza, 241-249 Edinburgh Road North (G&A Locks & Security, Mobility in Motion, Rainbow Variety)",
+   "unnamed": true,
+   "racks": [],
+   "rack_count": 0,
+   "capacity": 0,
+   "capacity_untagged": 0,
+   "verdict": "none mapped",
+   "nearest_rack_m": 255,
+   "nearest_rack": {
+    "id": 12300313453,
+    "type": "node",
+    "lat": 43.5473612,
+    "lon": -80.2684421
+   },
+   "bbox": [
+    43.5435010302818,
+    -80.26798919374423,
+    43.54521257077266,
+    -80.26584544211667
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.2672841,
+       43.5452218
+      ],
+      [
+       -80.2668743,
+       43.54492049999999
+      ],
+      [
+       -80.2666635,
+       43.54453969999999
+      ],
+      [
+       -80.266417,
+       43.544178699999996
+      ],
+      [
+       -80.2660373,
+       43.54381839999999
+      ],
+      [
+       -80.2658645,
+       43.543642199999994
+      ],
+      [
+       -80.2660815,
+       43.5434888
+      ],
+      [
+       -80.2661616,
+       43.54349339999999
+      ],
+      [
+       -80.2679747,
+       43.5446988
+      ],
+      [
+       -80.2672841,
+       43.5452218
+      ]
+     ]
+    ]
+   },
+   "image": "img/w772950211.png",
+   "zoom": 18
+  },
+  {
+   "id": 773015485,
+   "type": "way",
+   "tags": {
+    "landuse": "retail"
+   },
+   "tenant_names": [
+    "Buns Master",
+    "Culligan",
+    "Hakim Optical",
+    "Mr. Sub",
+    "Old Fashioned Deli",
+    "Pho Saigon",
+    "Thanh Phat",
+    "Winnie Duyen Hair Salan & Spa",
+    "Work Authority"
+   ],
+   "area_ha": 2.045094498374264,
+   "lat": 43.5449623709416,
+   "lon": -80.28854297489512,
+   "name": "Unnamed plaza, 252 Silvercreek Parkway North (Buns Master, Culligan, Hakim Optical)",
+   "unnamed": true,
+   "racks": [],
+   "rack_count": 0,
+   "capacity": 0,
+   "capacity_untagged": 0,
+   "verdict": "nearby only",
+   "nearest_rack_m": 55,
+   "nearest_rack": {
+    "id": 12312591588,
+    "type": "node",
+    "lat": 43.543789,
+    "lon": -80.2876659
+   },
+   "bbox": [
+    43.54404536739965,
+    -80.28983397996093,
+    43.54587931886618,
+    -80.28725197444602
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.2887905,
+       43.545888899999994
+      ],
+      [
+       -80.2872649,
+       43.544782299999994
+      ],
+      [
+       -80.2882954,
+       43.5440358
+      ],
+      [
+       -80.2898211,
+       43.54514249999999
+      ],
+      [
+       -80.2887905,
+       43.545888899999994
+      ]
+     ]
+    ]
+   },
+   "image": "img/w773015485.png",
+   "zoom": 18
+  },
+  {
+   "id": 772911628,
+   "type": "way",
+   "tags": {
+    "landuse": "retail"
+   },
+   "tenant_names": [
+    "First Choice Haircutters",
+    "GoodLife Fitness",
+    "Kirtida Kitchen",
+    "Rexall",
+    "The Co-operators",
+    "Zehrs"
+   ],
+   "area_ha": 5.053073236466901,
+   "lat": 43.55838326268398,
+   "lon": -80.24798837619154,
+   "name": "Unnamed plaza, 265-297 Eramosa Road (First Choice Haircutters, GoodLife Fitness, Kirtida Kitchen)",
+   "unnamed": true,
+   "racks": [
+    {
+     "id": 13062606915,
+     "type": "node",
+     "lat": 43.5592244,
+     "lon": -80.2481245,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "colour": "silver",
+      "covered": "no"
+     }
+    }
+   ],
+   "rack_count": 1,
+   "capacity": 0,
+   "capacity_untagged": 1,
+   "verdict": "has parking",
+   "nearest_rack_m": 0,
+   "nearest_rack": {
+    "id": 13062606915,
+    "type": "node",
+    "lat": 43.5592244,
+    "lon": -80.2481245
+   },
+   "bbox": [
+    43.55662654902332,
+    -80.24924683921994,
+    43.55965759520015,
+    -80.24610821626055
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.2487218,
+       43.55967480000001
+      ],
+      [
+       -80.2467907,
+       43.5595193
+      ],
+      [
+       -80.2461157,
+       43.5590574
+      ],
+      [
+       -80.2471072,
+       43.55829859999999
+      ],
+      [
+       -80.2467746,
+       43.55804589999999
+      ],
+      [
+       -80.2474928,
+       43.557521099999995
+      ],
+      [
+       -80.2479971,
+       43.557152599999995
+      ],
+      [
+       -80.2484232,
+       43.556841299999995
+      ],
+      [
+       -80.2487042,
+       43.556635899999996
+      ],
+      [
+       -80.2487218,
+       43.55662310000001
+      ],
+      [
+       -80.248895,
+       43.5567486
+      ],
+      [
+       -80.2489796,
+       43.55680989999999
+      ],
+      [
+       -80.2492422,
+       43.55700019999998
+      ],
+      [
+       -80.2488881,
+       43.5596048
+      ],
+      [
+       -80.2487218,
+       43.55967480000001
+      ]
+     ]
+    ]
+   },
+   "image": "img/w772911628.png",
+   "zoom": 17
+  },
+  {
+   "id": 369321286,
+   "type": "way",
+   "tags": {
+    "landuse": "retail"
+   },
+   "tenant_names": [
+    "Apps Optical",
+    "Body Systems Nutrition",
+    "Brodie's Gaming & Collectables",
+    "Cyber Computer",
+    "Dairy Queen",
+    "Domino's",
+    "Dough Box",
+    "Edible Arrangements",
+    "Edo Japan",
+    "Expedia Cruises",
+    "Fire & Flower Cannabis Co",
+    "Manchu Wok",
+    "Menchie's",
+    "Q's Nails & Spa",
+    "Stonegate Animal Hospital",
+    "Stonegate Dental",
+    "Symposium Cafe Restaurant Guelph",
+    "The UPS Store",
+    "Tim Hortons",
+    "Time For Nail Salon",
+    "TrilliumWest Real Estate Brokerage",
+    "Village Orthodontics",
+    "Wendy's",
+    "Wings Up!",
+    "Wireless World Canada Repair Center",
+    "YIAYIA"
+   ],
+   "area_ha": 3.1772719087108365,
+   "lat": 43.51847066870849,
+   "lon": -80.23434965894492,
+   "name": "Unnamed plaza, 292-314 Stone Road West (Apps Optical, Body Systems Nutrition, Brodie's Gaming & Collectables)",
+   "unnamed": true,
+   "racks": [],
+   "rack_count": 0,
+   "capacity": 0,
+   "capacity_untagged": 0,
+   "verdict": "nearby only",
+   "nearest_rack_m": 38,
+   "nearest_rack": {
+    "id": 12206930210,
+    "type": "node",
+    "lat": 43.5173519,
+    "lon": -80.2356687
+   },
+   "bbox": [
+    43.517250649066064,
+    -80.23598676975944,
+    43.51968932105086,
+    -80.23271857337215
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.2359767,
+       43.5180487
+      ],
+      [
+       -80.23381890000002,
+       43.5196967
+      ],
+      [
+       -80.2327285,
+       43.51890599999999
+      ],
+      [
+       -80.2348579,
+       43.51724309999999
+      ],
+      [
+       -80.2359767,
+       43.5180487
+      ]
+     ]
+    ]
+   },
+   "image": "img/w369321286.png",
+   "zoom": 18
+  },
+  {
+   "id": 358488660,
+   "type": "way",
+   "tags": {
+    "landuse": "retail"
+   },
+   "tenant_names": [
+    "East Guelph Medical Clinic",
+    "Eastview Physiotherapy",
+    "Gino's Pizza",
+    "Guelph Lake Veterinary Hospital",
+    "Guelph Peoples Pharmacy",
+    "Hasty Market",
+    "North Eastview Family Dental",
+    "Wild Wing"
+   ],
+   "area_ha": 1.4192051590199932,
+   "lat": 43.578950603615624,
+   "lon": -80.22426748130084,
+   "name": "Unnamed plaza, 320 Eastview Road (East Guelph Medical Clinic, Eastview Physiotherapy, Gino's Pizza)",
+   "unnamed": true,
+   "racks": [],
+   "rack_count": 0,
+   "capacity": 0,
+   "capacity_untagged": 0,
+   "verdict": "none mapped",
+   "nearest_rack_m": 1589,
+   "nearest_rack": {
+    "id": 12099376342,
+    "type": "node",
+    "lat": 43.5667085,
+    "lon": -80.2123625
+   },
+   "bbox": [
+    43.578192328178396,
+    -80.22533596183541,
+    43.579708862504184,
+    -80.22319900712566
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.224427,
+       43.57971719999999
+      ],
+      [
+       -80.2232103,
+       43.5788305
+      ],
+      [
+       -80.2241079,
+       43.578184
+      ],
+      [
+       -80.2253247,
+       43.579070699999995
+      ],
+      [
+       -80.224427,
+       43.57971719999999
+      ]
+     ]
+    ]
+   },
+   "image": "img/w358488660.png",
+   "zoom": 18
+  },
+  {
+   "id": 399149070,
+   "type": "way",
+   "tags": {
+    "landuse": "retail"
+   },
+   "tenant_names": [
+    "All-Risks Insurance Brokers Limited",
+    "Asian Food Centre",
+    "Buckenham Fireplaces & Grills",
+    "Canadian Grill",
+    "City View Pools And Patio Furniture",
+    "Goodwill Community Store",
+    "Goodwill Donation Centre",
+    "Kingsway Fishing Tackle",
+    "Ngui Acupuncture Clinic",
+    "PC Repair Depot Limited",
+    "Platters Catering & Events",
+    "Polka & Volt Tattoo Studio",
+    "Portions"
+   ],
+   "area_ha": 3.4981630597175397,
+   "lat": 43.548078404367395,
+   "lon": -80.29845864226421,
+   "name": "Unnamed plaza, 340 Woodlawn Road West (All-Risks Insurance Brokers Limited, Asian Food Centre, Buckenham Fireplaces & Grills)",
+   "unnamed": true,
+   "racks": [],
+   "rack_count": 0,
+   "capacity": 0,
+   "capacity_untagged": 0,
+   "verdict": "none mapped",
+   "nearest_rack_m": 864,
+   "nearest_rack": {
+    "id": 12312591588,
+    "type": "node",
+    "lat": 43.543789,
+    "lon": -80.2876659
+   },
+   "bbox": [
+    43.54688124115661,
+    -80.30015225945817,
+    43.54927553429793,
+    -80.29676496097997
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.2988108,
+       43.5492881
+      ],
+      [
+       -80.2967815,
+       43.547853
+      ],
+      [
+       -80.2981065,
+       43.54686869999999
+      ],
+      [
+       -80.3001358,
+       43.5483038
+      ],
+      [
+       -80.2988108,
+       43.5492881
+      ]
+     ]
+    ]
+   },
+   "image": "img/w399149070.png",
+   "zoom": 18
+  },
+  {
+   "id": 772911624,
+   "type": "way",
+   "tags": {
+    "landuse": "retail"
+   },
+   "tenant_names": [
+    "Dairy Queen",
+    "Dollarama",
+    "Food Basics",
+    "Guelph Public Library - Bullfrog Mall Branch",
+    "KazaMeza",
+    "Mary Brown's",
+    "Pizza Pizza",
+    "TD",
+    "Tim Hortons"
+   ],
+   "area_ha": 2.961084878235233,
+   "lat": 43.5616269539668,
+   "lon": -80.24954355082284,
+   "name": "Unnamed plaza, 380 Eramosa Road (Dairy Queen, Dollarama, Food Basics)",
+   "unnamed": true,
+   "racks": [],
+   "rack_count": 0,
+   "capacity": 0,
+   "capacity_untagged": 0,
+   "verdict": "none mapped",
+   "nearest_rack_m": 128,
+   "nearest_rack": {
+    "id": 13062606915,
+    "type": "node",
+    "lat": 43.5592244,
+    "lon": -80.2481245
+   },
+   "bbox": [
+    43.560108376379,
+    -80.25077913851851,
+    43.56321083311442,
+    -80.24866649081659
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.2487479,
+       43.56252889999999
+      ],
+      [
+       -80.2488056,
+       43.5623486
+      ],
+      [
+       -80.2488298,
+       43.56220569999999
+      ],
+      [
+       -80.2488354,
+       43.56218249999999
+      ],
+      [
+       -80.2490164,
+       43.56098630000001
+      ],
+      [
+       -80.2490828,
+       43.560502799999995
+      ],
+      [
+       -80.2491454,
+       43.56010559999999
+      ],
+      [
+       -80.249167,
+       43.5600978
+      ],
+      [
+       -80.2492522,
+       43.56013449999999
+      ],
+      [
+       -80.2493465,
+       43.56018670000001
+      ],
+      [
+       -80.2494355,
+       43.5602457
+      ],
+      [
+       -80.2495844,
+       43.56034839999999
+      ],
+      [
+       -80.2499818,
+       43.560626
+      ],
+      [
+       -80.2507657,
+       43.5611928
+      ],
+      [
+       -80.2505565,
+       43.561361899999994
+      ],
+      [
+       -80.2506879,
+       43.56147459999999
+      ],
+      [
+       -80.2503958,
+       43.56169889999999
+      ],
+      [
+       -80.2499375,
+       43.562082
+      ],
+      [
+       -80.2498803,
+       43.56253710000001
+      ],
+      [
+       -80.249845,
+       43.562502699999996
+      ],
+      [
+       -80.2498052,
+       43.562528
+      ],
+      [
+       -80.2496326,
+       43.56267150000001
+      ],
+      [
+       -80.2490724,
+       43.5632135
+      ],
+      [
+       -80.2486693,
+       43.56298480000001
+      ],
+      [
+       -80.2487479,
+       43.56252889999999
+      ]
+     ]
+    ]
+   },
+   "image": "img/w772911624.png",
+   "zoom": 17
+  },
+  {
+   "id": 399319859,
+   "type": "way",
+   "tags": {
+    "landuse": "retail",
+    "operator": "Choice Properties"
+   },
+   "tenant_names": [
+    "BarBurrito",
+    "BodySystems Nutrition",
+    "CIBC",
+    "Chuck's Roadhouse",
+    "Firehouse Subs",
+    "First Choice Haircutters",
+    "Freshii",
+    "LCBO",
+    "Lazeez Shawarma",
+    "Lena's Nails",
+    "Meridian Credit Union",
+    "Orangetheory Fitness",
+    "Pet Valu",
+    "Pizzaville",
+    "Shoppers Drug Mart",
+    "South Street Burger",
+    "St. Louis Bar & Grill",
+    "Tim Hortons",
+    "Vision Express",
+    "Waypoint Guelph",
+    "YNCU",
+    "Zehrs",
+    "amenity=shelter",
+    "shop=supermarket"
+   ],
+   "area_ha": 5.512030336387633,
+   "lat": 43.50205429930442,
+   "lon": -80.18946553085061,
+   "name": "Unnamed plaza, 4-124 Clair Road East (BarBurrito, BodySystems Nutrition, CIBC)",
+   "unnamed": true,
+   "racks": [
+    {
+     "id": 12823720968,
+     "type": "node",
+     "lat": 43.5028758,
+     "lon": -80.1897783,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "colour": "black"
+     }
+    },
+    {
+     "id": 12823720970,
+     "type": "node",
+     "lat": 43.5027527,
+     "lon": -80.1899479,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "colour": "black"
+     }
+    },
+    {
+     "id": 12823720971,
+     "type": "node",
+     "lat": 43.5013764,
+     "lon": -80.1898493,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "check_date": "2025-05-09",
+      "colour": "silver",
+      "covered": "no",
+      "fee": "no",
+      "indoor": "no"
+     }
+    },
+    {
+     "id": 12823787991,
+     "type": "node",
+     "lat": 43.5021471,
+     "lon": -80.1887145,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "colour": "silver",
+      "covered": "no",
+      "fee": "no",
+      "indoor": "no"
+     }
+    },
+    {
+     "id": 12823796244,
+     "type": "node",
+     "lat": 43.5007524,
+     "lon": -80.1887785,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "colour": "black"
+     }
+    },
+    {
+     "id": 12823816372,
+     "type": "node",
+     "lat": 43.5015936,
+     "lon": -80.1891537,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "check_date": "2025-05-09",
+      "colour": "silver",
+      "covered": "no",
+      "fee": "no",
+      "indoor": "no"
+     }
+    },
+    {
+     "id": 12823816373,
+     "type": "node",
+     "lat": 43.5016391,
+     "lon": -80.1892194,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "check_date": "2025-05-09",
+      "colour": "silver",
+      "covered": "no",
+      "fee": "no",
+      "indoor": "no"
+     }
+    }
+   ],
+   "rack_count": 7,
+   "capacity": 0,
+   "capacity_untagged": 7,
+   "verdict": "has parking",
+   "nearest_rack_m": 0,
+   "nearest_rack": {
+    "id": 12823720968,
+    "type": "node",
+    "lat": 43.5028758,
+    "lon": -80.1897783
+   },
+   "bbox": [
+    43.5005766242079,
+    -80.1915772495947,
+    43.50358707758211,
+    -80.18738853320424
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.1915532,
+       43.5023789
+      ],
+      [
+       -80.1898855,
+       43.503584499999995
+      ],
+      [
+       -80.1898577,
+       43.503604599999996
+      ],
+      [
+       -80.1892425,
+       43.5031703
+      ],
+      [
+       -80.1887362,
+       43.50267949999999
+      ],
+      [
+       -80.1874132,
+       43.501748099999986
+      ],
+      [
+       -80.187421,
+       43.50168609999999
+      ],
+      [
+       -80.1889334,
+       43.5005579
+      ],
+      [
+       -80.1890997,
+       43.50057439999999
+      ],
+      [
+       -80.1915532,
+       43.5023789
+      ]
+     ]
+    ]
+   },
+   "image": "img/w399319859.png",
+   "zoom": 17
+  },
+  {
+   "id": 399149099,
+   "type": "way",
+   "tags": {
+    "landuse": "retail"
+   },
+   "tenant_names": [
+    "Tim Hortons",
+    "Wendy's",
+    "World of Hot Tubs",
+    "shop=convenience"
+   ],
+   "area_ha": 2.004147969702303,
+   "lat": 43.54512729473542,
+   "lon": -80.3065599656728,
+   "name": "Unnamed plaza, 415-429 Woodlawn Road West (Tim Hortons, Wendy's, World of Hot Tubs)",
+   "unnamed": true,
+   "racks": [],
+   "rack_count": 0,
+   "capacity": 0,
+   "capacity_untagged": 0,
+   "verdict": "none mapped",
+   "nearest_rack_m": 1119,
+   "nearest_rack": {
+    "id": 12798111182,
+    "type": "node",
+    "lat": 43.5383516,
+    "lon": -80.2948074
+   },
+   "bbox": [
+    43.544226550082904,
+    -80.30784294717239,
+    43.546024204549596,
+    -80.30526143078045
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.3078305,
+       43.5453144
+      ],
+      [
+       -80.3068258,
+       43.5460337
+      ],
+      [
+       -80.3052737,
+       43.5449559
+      ],
+      [
+       -80.3063332,
+       43.5442174
+      ],
+      [
+       -80.3078305,
+       43.5453144
+      ]
+     ]
+    ]
+   },
+   "image": "img/w399149099.png",
+   "zoom": 18
+  },
+  {
+   "id": 773016985,
+   "type": "way",
+   "tags": {
+    "landuse": "retail"
+   },
+   "tenant_names": [
+    "Bigelow Flooring",
+    "Coconut Coast",
+    "Neutron Electronics",
+    "Starberry Cafe"
+   ],
+   "area_ha": 0.9917442751775508,
+   "lat": 43.54314619855957,
+   "lon": -80.30661393520666,
+   "name": "Unnamed plaza, 450 Woodlawn Road West (Bigelow Flooring, Coconut Coast, Neutron Electronics)",
+   "unnamed": true,
+   "racks": [],
+   "rack_count": 0,
+   "capacity": 0,
+   "capacity_untagged": 0,
+   "verdict": "none mapped",
+   "nearest_rack_m": 1039,
+   "nearest_rack": {
+    "id": 12798111182,
+    "type": "node",
+    "lat": 43.5383516,
+    "lon": -80.2948074
+   },
+   "bbox": [
+    43.54249978355593,
+    -80.30751825933469,
+    43.54378850069981,
+    -80.30570787168904
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.3075126,
+       43.542994199999995
+      ],
+      [
+       -80.3064162,
+       43.543792799999984
+      ],
+      [
+       -80.3057134,
+       43.543306799999996
+      ],
+      [
+       -80.3068114,
+       43.542495499999994
+      ],
+      [
+       -80.3075126,
+       43.542994199999995
+      ]
+     ]
+    ]
+   },
+   "image": "img/w773016985.png",
+   "zoom": 18
+  },
+  {
+   "id": 962456073,
+   "type": "way",
+   "tags": {
+    "landuse": "retail",
+    "source": "Bing"
+   },
+   "tenant_names": [
+    "A&W",
+    "Galaxy Cinemas Guelph",
+    "Mandarin",
+    "Piper Arms",
+    "Sarmazian",
+    "Taco Bell"
+   ],
+   "area_ha": 5.234207328692171,
+   "lat": 43.54352658023126,
+   "lon": -80.30904388805818,
+   "name": "Unnamed plaza, 465-565 Woodlawn Road West (A&W, Galaxy Cinemas Guelph, Mandarin)",
+   "unnamed": true,
+   "racks": [],
+   "rack_count": 0,
+   "capacity": 0,
+   "capacity_untagged": 0,
+   "verdict": "none mapped",
+   "nearest_rack_m": 1166,
+   "nearest_rack": {
+    "id": 12798111182,
+    "type": "node",
+    "lat": 43.5383516,
+    "lon": -80.2948074
+   },
+   "bbox": [
+    43.5419860252434,
+    -80.31108584886529,
+    43.54517392628676,
+    -80.30726559440572
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.31107270000001,
+       43.543140699999995
+      ],
+      [
+       -80.3082522,
+       43.545179899999994
+      ],
+      [
+       -80.3072737,
+       43.544466099999994
+      ],
+      [
+       -80.3081113,
+       43.5438634
+      ],
+      [
+       -80.3074636,
+       43.54339439999999
+      ],
+      [
+       -80.3094241,
+       43.54197599999999
+      ],
+      [
+       -80.31107270000001,
+       43.543140699999995
+      ]
+     ]
+    ]
+   },
+   "image": "img/w962456073.png",
+   "zoom": 17
+  },
+  {
+   "id": 772926644,
+   "type": "way",
+   "tags": {
+    "landuse": "retail"
+   },
+   "tenant_names": [
+    "Helmand Kebab House",
+    "Kings Sports Bar and Grill",
+    "Laundromat",
+    "Tim Hortons",
+    "shop=convenience"
+   ],
+   "area_ha": 0.971033573498403,
+   "lat": 43.57765281882099,
+   "lon": -80.26100213322987,
+   "name": "Unnamed plaza, 486 Woodlawn Road East (Helmand Kebab House, Kings Sports Bar and Grill, Laundromat)",
+   "unnamed": true,
+   "racks": [],
+   "rack_count": 0,
+   "capacity": 0,
+   "capacity_untagged": 0,
+   "verdict": "none mapped",
+   "nearest_rack_m": 1623,
+   "nearest_rack": {
+    "id": 12757840252,
+    "type": "node",
+    "lat": 43.566829,
+    "lon": -80.2757046
+   },
+   "bbox": [
+    43.576965066876625,
+    -80.26176775846957,
+    43.57832592272343,
+    -80.26016898129897
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.2612156,
+       43.57696149999999
+      ],
+      [
+       -80.26176270000002,
+       43.5773791
+      ],
+      [
+       -80.2613336,
+       43.577686099999994
+      ],
+      [
+       -80.2615428,
+       43.57793869999999
+      ],
+      [
+       -80.2609849,
+       43.578331199999994
+      ],
+      [
+       -80.260176,
+       43.5777527
+      ],
+      [
+       -80.2602097,
+       43.57770279999999
+      ],
+      [
+       -80.2612156,
+       43.57696149999999
+      ]
+     ]
+    ]
+   },
+   "image": "img/w772926644.png",
+   "zoom": 18
+  },
+  {
+   "id": 772999958,
+   "type": "way",
+   "tags": {
+    "landuse": "retail"
+   },
+   "tenant_names": [
+    "A&W",
+    "KFC",
+    "Tim Hortons",
+    "Wendy's"
+   ],
+   "area_ha": 1.21904014159211,
+   "lat": 43.54177772830818,
+   "lon": -80.24475184439345,
+   "name": "Unnamed plaza, 50 Wellington Street East (A&W, KFC, Tim Hortons)",
+   "unnamed": true,
+   "racks": [],
+   "rack_count": 0,
+   "capacity": 0,
+   "capacity_untagged": 0,
+   "verdict": "nearby only",
+   "nearest_rack_m": 49,
+   "nearest_rack": {
+    "id": 13286323760,
+    "type": "node",
+    "lat": 43.5408863,
+    "lon": -80.2459681
+   },
+   "bbox": [
+    43.540919906178516,
+    -80.24550850991749,
+    43.542682397984755,
+    -80.24400711875175
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.2447034,
+       43.542687
+      ],
+      [
+       -80.2445728,
+       43.5426414
+      ],
+      [
+       -80.2445554,
+       43.542668
+      ],
+      [
+       -80.2443169,
+       43.54258800000001
+      ],
+      [
+       -80.2443833,
+       43.54245439999998
+      ],
+      [
+       -80.2440112,
+       43.542355799999996
+      ],
+      [
+       -80.244701,
+       43.54093530000001
+      ],
+      [
+       -80.2447136,
+       43.54092399999999
+      ],
+      [
+       -80.2447299,
+       43.5409163
+      ],
+      [
+       -80.2447503,
+       43.5409149
+      ],
+      [
+       -80.24547,
+       43.541148000000014
+      ],
+      [
+       -80.2454914,
+       43.54115569999999
+      ],
+      [
+       -80.2455,
+       43.541165899999996
+      ],
+      [
+       -80.2455053,
+       43.54117730000001
+      ],
+      [
+       -80.2455036,
+       43.5411891
+      ],
+      [
+       -80.2451675,
+       43.54184709999999
+      ],
+      [
+       -80.2449206,
+       43.5423344
+      ],
+      [
+       -80.2447034,
+       43.542687
+      ]
+     ]
+    ]
+   },
+   "image": "img/w772999958.png",
+   "zoom": 18
+  },
+  {
+   "id": 772928908,
+   "type": "way",
+   "tags": {
+    "landuse": "retail"
+   },
+   "tenant_names": [
+    "Coffee Time",
+    "End Of The Roll",
+    "Mobility in Motion",
+    "The Cannabist Shop"
+   ],
+   "area_ha": 1.214055911832317,
+   "lat": 43.56268127003734,
+   "lon": -80.2817581755122,
+   "name": "Unnamed plaza, 51-55 Woodlawn Road West (Coffee Time, End Of The Roll, Mobility in Motion)",
+   "unnamed": true,
+   "racks": [
+    {
+     "id": 13027046604,
+     "type": "node",
+     "lat": 43.5630041,
+     "lon": -80.2823806,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "capacity": "2",
+      "colour": "black",
+      "indoor": "no"
+     }
+    }
+   ],
+   "rack_count": 1,
+   "capacity": 2,
+   "capacity_untagged": 0,
+   "verdict": "has parking",
+   "nearest_rack_m": 10,
+   "nearest_rack": {
+    "id": 13027046604,
+    "type": "node",
+    "lat": 43.5630041,
+    "lon": -80.2823806
+   },
+   "bbox": [
+    43.56198200391367,
+    -80.2827285296448,
+    43.56337943453911,
+    -80.28077967018852
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.2818518,
+       43.5619765
+      ],
+      [
+       -80.2827208,
+       43.5626335
+      ],
+      [
+       -80.2816808,
+       43.56338509999999
+      ],
+      [
+       -80.2807874,
+       43.56272969999999
+      ],
+      [
+       -80.2818518,
+       43.5619765
+      ]
+     ]
+    ]
+   },
+   "image": "img/w772928908.png",
+   "zoom": 18
+  },
+  {
+   "id": 468349503,
+   "type": "way",
+   "tags": {
+    "landuse": "retail"
+   },
+   "tenant_names": [
+    "LCBO",
+    "Pizza Hut",
+    "Reserved Cannabis",
+    "Shoppers Drug Mart"
+   ],
+   "area_ha": 2.4486330567379935,
+   "lat": 43.51427206939687,
+   "lon": -80.23896090269201,
+   "name": "Unnamed plaza, 617-649 Scottsdale Drive (LCBO, Pizza Hut, Reserved Cannabis)",
+   "unnamed": true,
+   "racks": [],
+   "rack_count": 0,
+   "capacity": 0,
+   "capacity_untagged": 0,
+   "verdict": "none mapped",
+   "nearest_rack_m": 193,
+   "nearest_rack": {
+    "id": 12206912381,
+    "type": "node",
+    "lat": 43.5165081,
+    "lon": -80.2376239
+   },
+   "bbox": [
+    43.513273304200396,
+    -80.24016925788354,
+    43.51539980352149,
+    -80.23754202978795
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.2394934,
+       43.51541280000001
+      ],
+      [
+       -80.2388056,
+       43.51492569999999
+      ],
+      [
+       -80.2387361,
+       43.514873499999986
+      ],
+      [
+       -80.2382373,
+       43.51451039999999
+      ],
+      [
+       -80.2378918,
+       43.51426120000001
+      ],
+      [
+       -80.2375594,
+       43.51402019999999
+      ],
+      [
+       -80.2385903,
+       43.5132628
+      ],
+      [
+       -80.2392348,
+       43.5137611
+      ],
+      [
+       -80.2393769,
+       43.5136444
+      ],
+      [
+       -80.2394963,
+       43.513731
+      ],
+      [
+       -80.2401575,
+       43.51421040000001
+      ],
+      [
+       -80.239913,
+       43.5144452
+      ],
+      [
+       -80.2400418,
+       43.514542399999996
+      ],
+      [
+       -80.2394934,
+       43.51541280000001
+      ]
+     ]
+    ]
+   },
+   "image": "img/w468349503.png",
+   "zoom": 18
+  },
+  {
+   "id": 468349505,
+   "type": "way",
+   "tags": {
+    "landuse": "retail"
+   },
+   "tenant_names": [
+    "Fluffy Glaze",
+    "Gotcha Bubble Tea",
+    "Guelph BBQ",
+    "Guelph Public Library - Scottsdale Branch",
+    "Guelph Vapour Company",
+    "Hanna's Nail Bar",
+    "Paghman Kabob",
+    "Scottsdale Dental Centre"
+   ],
+   "area_ha": 1.0837001377156987,
+   "lat": 43.51501698676833,
+   "lon": -80.23805131112584,
+   "name": "Unnamed plaza, 630-650 Scottsdale Drive (Fluffy Glaze, Gotcha Bubble Tea, Guelph BBQ)",
+   "unnamed": true,
+   "racks": [],
+   "rack_count": 0,
+   "capacity": 0,
+   "capacity_untagged": 0,
+   "verdict": "none mapped",
+   "nearest_rack_m": 115,
+   "nearest_rack": {
+    "id": 12206912381,
+    "type": "node",
+    "lat": 43.5165081,
+    "lon": -80.2376239
+   },
+   "bbox": [
+    43.514213389184086,
+    -80.23929388643069,
+    43.51575908725178,
+    -80.23689459718831
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.239012,
+       43.515773200000005
+      ],
+      [
+       -80.2387586,
+       43.51558929999999
+      ],
+      [
+       -80.2385593,
+       43.5157338
+      ],
+      [
+       -80.23691,
+       43.51453679999998
+      ],
+      [
+       -80.2373741,
+       43.514200599999995
+      ],
+      [
+       -80.2392767,
+       43.5155815
+      ],
+      [
+       -80.239012,
+       43.515773200000005
+      ]
+     ]
+    ]
+   },
+   "image": "img/w468349505.png",
+   "zoom": 18
+  },
+  {
+   "id": 772928901,
+   "type": "way",
+   "tags": {
+    "landuse": "retail"
+   },
+   "tenant_names": [
+    "Canvision Optical Ltd",
+    "Double Double Pizza & Wings",
+    "Dutch Toko European Deli",
+    "First Choice Hair",
+    "Four Seasons Flowers",
+    "Little Short Stop",
+    "Once Upon A Child",
+    "Rexall",
+    "TD",
+    "Thai Villa Cuisine",
+    "amenity=post_office"
+   ],
+   "area_ha": 1.3334317190693996,
+   "lat": 43.55854800119063,
+   "lon": -80.26958865929444,
+   "name": "Unnamed plaza, 666 Woolwich Street (Canvision Optical Ltd, Double Double Pizza & Wings, Dutch Toko European Deli)",
+   "unnamed": true,
+   "racks": [],
+   "rack_count": 0,
+   "capacity": 0,
+   "capacity_untagged": 0,
+   "verdict": "none mapped",
+   "nearest_rack_m": 175,
+   "nearest_rack": {
+    "id": 11450121869,
+    "type": "node",
+    "lat": 43.5604024,
+    "lon": -80.2713988
+   },
+   "bbox": [
+    43.55781054805319,
+    -80.2706735799901,
+    43.559163705258996,
+    -80.26853353355179
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.2700347,
+       43.55917329999999
+      ],
+      [
+       -80.269509,
+       43.5591033
+      ],
+      [
+       -80.2685427,
+       43.558406
+      ],
+      [
+       -80.2693505,
+       43.557802099999996
+      ],
+      [
+       -80.2706623,
+       43.55874570000001
+      ],
+      [
+       -80.2700347,
+       43.55917329999999
+      ]
+     ]
+    ]
+   },
+   "image": "img/w772928901.png",
+   "zoom": 18
+  },
+  {
+   "id": 772928904,
+   "type": "way",
+   "tags": {
+    "landuse": "retail"
+   },
+   "tenant_names": [
+    "Church's Chicken",
+    "Dominion Lending Centres",
+    "Edward Jones",
+    "Family Midwifery Care of Guelph",
+    "HearingLife",
+    "Pizza Express Guelph",
+    "Royal City Foot Clinic",
+    "Tim Hortons",
+    "Uptown Grill",
+    "shop=beauty"
+   ],
+   "area_ha": 3.614302654252013,
+   "lat": 43.56037283019021,
+   "lon": -80.27226330203682,
+   "name": "Unnamed plaza, 670-698 Woolwich Street (Church's Chicken, Dominion Lending Centres, Edward Jones)",
+   "unnamed": true,
+   "racks": [
+    {
+     "id": 11450121869,
+     "type": "node",
+     "lat": 43.5604024,
+     "lon": -80.2713988,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "capacity": "4",
+      "cargo_bike": "no",
+      "colour": "silver",
+      "covered": "no",
+      "fee": "no",
+      "indoor": "no",
+      "lit": "no",
+      "mapillary": "801165794991809",
+      "panoramax": "19a6a797-0b7b-42fd-9c3c-8f9e358ef554",
+      "source": "streetlevel imagery",
+      "source:position": "Mapillary 2023-06-27",
+      "survey:date": "2023-06-27"
+     }
+    },
+    {
+     "id": 12223080895,
+     "type": "node",
+     "lat": 43.5603479,
+     "lon": -80.2733002,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands"
+     }
+    },
+    {
+     "id": 12223102222,
+     "type": "node",
+     "lat": 43.5608705,
+     "lon": -80.2721027,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands"
+     }
+    },
+    {
+     "id": 12223102223,
+     "type": "node",
+     "lat": 43.5610381,
+     "lon": -80.2721929,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands"
+     }
+    }
+   ],
+   "rack_count": 4,
+   "capacity": 4,
+   "capacity_untagged": 3,
+   "verdict": "has parking",
+   "nearest_rack_m": 0,
+   "nearest_rack": {
+    "id": 11450121869,
+    "type": "node",
+    "lat": 43.5604024,
+    "lon": -80.2713988
+   },
+   "bbox": [
+    43.55937379503408,
+    -80.27401660525305,
+    43.561617202460916,
+    -80.26980367938765
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.2728785,
+       43.5616368
+      ],
+      [
+       -80.2724144,
+       43.5612919
+      ],
+      [
+       -80.2698308,
+       43.559371599999984
+      ],
+      [
+       -80.2699971,
+       43.55934819999999
+      ],
+      [
+       -80.2739002,
+       43.55999549999999
+      ],
+      [
+       -80.2733824,
+       43.56036819999999
+      ],
+      [
+       -80.2739992,
+       43.560823299999996
+      ],
+      [
+       -80.2728785,
+       43.5616368
+      ]
+     ]
+    ]
+   },
+   "image": "img/w772928904.png",
+   "zoom": 17
+  },
+  {
+   "id": 364715613,
+   "type": "way",
+   "tags": {
+    "landuse": "retail",
+    "source": "Bing"
+   },
+   "tenant_names": [
+    "Global Pet Foods",
+    "Imperial Pharmacy",
+    "MM Physio",
+    "National Pasta",
+    "On the Run",
+    "Party Nails",
+    "Sam's Grill",
+    "Tim Hortons",
+    "True North Cannabis Co.",
+    "Twice The Deal Pizza & Wings"
+   ],
+   "area_ha": 1.0460836296201408,
+   "lat": 43.521468837488534,
+   "lon": -80.26872002172722,
+   "name": "Unnamed plaza, 715 Wellington Street West (Global Pet Foods, Imperial Pharmacy, MM Physio)",
+   "unnamed": true,
+   "racks": [
+    {
+     "id": 13233449397,
+     "type": "node",
+     "lat": 43.5218033,
+     "lon": -80.2686556,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "colour": "silver",
+      "indoor": "no",
+      "mapillary": "1090117562027309"
+     }
+    }
+   ],
+   "rack_count": 1,
+   "capacity": 0,
+   "capacity_untagged": 1,
+   "verdict": "has parking",
+   "nearest_rack_m": 0,
+   "nearest_rack": {
+    "id": 13233449397,
+    "type": "node",
+    "lat": 43.5218033,
+    "lon": -80.2686556
+   },
+   "bbox": [
+    43.520773661343796,
+    -80.26939896198134,
+    43.52218338996281,
+    -80.26802599894341
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.2693974,
+       43.5209031
+      ],
+      [
+       -80.2689028,
+       43.522189
+      ],
+      [
+       -80.2680284,
+       43.52198479999999
+      ],
+      [
+       -80.2684629,
+       43.5209501
+      ],
+      [
+       -80.2685675,
+       43.5208392
+      ],
+      [
+       -80.2685917,
+       43.520768499999996
+      ],
+      [
+       -80.2693974,
+       43.5209031
+      ]
+     ]
+    ]
+   },
+   "image": "img/w364715613.png",
+   "zoom": 18
+  },
+  {
+   "id": 772928906,
+   "type": "way",
+   "tags": {
+    "landuse": "retail"
+   },
+   "tenant_names": [
+    "Big Smart Convenience",
+    "DUCA",
+    "Dairy Queen",
+    "Family & Implant Dentistry",
+    "Farnworth Memorials",
+    "Golden Fish & Chips",
+    "Guelph North Health Clinic",
+    "Love Shop",
+    "Lucky Belly",
+    "Luisa's Draperies & Interiors LTD.",
+    "Subway",
+    "The Grove Youth Wellness Hub - Woolwich St",
+    "Twice the Deal Pizza & Wings",
+    "Vicanie's Bra Fitting Specialists",
+    "Voodoo Vapes"
+   ],
+   "area_ha": 2.7249514376056183,
+   "lat": 43.56380956427451,
+   "lon": -80.27486459576201,
+   "name": "Unnamed plaza, 727-777 Woolwich Street (Big Smart Convenience, DUCA, Dairy Queen)",
+   "unnamed": true,
+   "racks": [],
+   "rack_count": 0,
+   "capacity": 0,
+   "capacity_untagged": 0,
+   "verdict": "nearby only",
+   "nearest_rack_m": 35,
+   "nearest_rack": {
+    "id": 14088696229,
+    "type": "node",
+    "lat": 43.5621906,
+    "lon": -80.2730905
+   },
+   "bbox": [
+    43.5623604959325,
+    -80.27712012543344,
+    43.56545409152548,
+    -80.27273685479781
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.2770866,
+       43.56500769999999
+      ],
+      [
+       -80.2770877,
+       43.565072099999995
+      ],
+      [
+       -80.2765524,
+       43.56547829999999
+      ],
+      [
+       -80.2756566,
+       43.564794199999994
+      ],
+      [
+       -80.275839,
+       43.5646659
+      ],
+      [
+       -80.27446570000001,
+       43.5636514
+      ],
+      [
+       -80.2741116,
+       43.5638924
+      ],
+      [
+       -80.2727678,
+       43.56288179999999
+      ],
+      [
+       -80.27350810000002,
+       43.5623376
+      ],
+      [
+       -80.2747119,
+       43.5632595
+      ],
+      [
+       -80.2770866,
+       43.56500769999999
+      ]
+     ]
+    ]
+   },
+   "image": "img/w772928906.png",
+   "zoom": 17
+  },
+  {
+   "id": 773014769,
+   "type": "way",
+   "tags": {
+    "landuse": "retail"
+   },
+   "tenant_names": [
+    "H&R Block",
+    "Healing Centre",
+    "Little Short Stop",
+    "Mickey Nails",
+    "Pizza Pizza",
+    "Super Coin Laundry",
+    "Warka Tree",
+    "Willow Medical Clinic",
+    "Willow Pharmacy",
+    "Willow Road Barber Shop"
+   ],
+   "area_ha": 1.0658714195758696,
+   "lat": 43.54458211170081,
+   "lon": -80.27371949050885,
+   "name": "Unnamed plaza, 75 Willow Road (H&R Block, Healing Centre, Little Short Stop)",
+   "unnamed": true,
+   "racks": [],
+   "rack_count": 0,
+   "capacity": 0,
+   "capacity_untagged": 0,
+   "verdict": "none mapped",
+   "nearest_rack_m": 128,
+   "nearest_rack": {
+    "id": 9789312730,
+    "type": "node",
+    "lat": 43.5433064,
+    "lon": -80.2750096
+   },
+   "bbox": [
+    43.54394128359199,
+    -80.2748016425924,
+    43.54520200634543,
+    -80.27278913792944
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.272797,
+       43.54454799999999
+      ],
+      [
+       -80.2727994,
+       43.5445335
+      ],
+      [
+       -80.2736228,
+       43.543933800000005
+      ],
+      [
+       -80.2747916,
+       43.544779
+      ],
+      [
+       -80.2746789,
+       43.5448602
+      ],
+      [
+       -80.2745669,
+       43.5447812
+      ],
+      [
+       -80.2744094,
+       43.54489709999999
+      ],
+      [
+       -80.2742719,
+       43.54480039999999
+      ],
+      [
+       -80.2737163,
+       43.5452079
+      ],
+      [
+       -80.272797,
+       43.54454799999999
+      ]
+     ]
+    ]
+   },
+   "image": "img/w773014769.png",
+   "zoom": 18
+  },
+  {
+   "id": 772999957,
+   "type": "way",
+   "tags": {
+    "landuse": "retail"
+   },
+   "tenant_names": [
+    "Bare Essentials",
+    "Domino's",
+    "Edward Jones",
+    "Ewyn Weight Loss Studios",
+    "F45 Training",
+    "Franco and Sons Barber Shop",
+    "Fusion Authentic Indian Cuisine",
+    "Guelph Animal Hospital",
+    "Guelph Cellphones & Electronics",
+    "Hanami Izakaya",
+    "L.A. Nails",
+    "Manouche",
+    "MortgageGuys",
+    "Mr. Sub",
+    "Pet Boutique",
+    "Royal City Pharmacy",
+    "Short Stop",
+    "Stag Shop",
+    "Stella's Diner",
+    "Subway",
+    "The Beat Goes On",
+    "The Cone Shoppe",
+    "Wellington Hand Clinic",
+    "Wellington Physiotherapy",
+    "e-cigz",
+    "office=financial"
+   ],
+   "area_ha": 1.749056339966847,
+   "lat": 43.54118272590849,
+   "lon": -80.24349680161437,
+   "name": "Unnamed plaza, 86-100 Gordon Street (Bare Essentials, Domino's, Edward Jones)",
+   "unnamed": true,
+   "racks": [
+    {
+     "id": 12170563930,
+     "type": "node",
+     "lat": 43.541005,
+     "lon": -80.2437745,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "bollard",
+      "capacity": "8",
+      "check_date": "2024-09-11",
+      "colour": "silver",
+      "covered": "yes",
+      "fee": "no",
+      "indoor": "no",
+      "level": "0",
+      "source": "streetlevel imagery"
+     }
+    }
+   ],
+   "rack_count": 1,
+   "capacity": 8,
+   "capacity_untagged": 0,
+   "verdict": "has parking",
+   "nearest_rack_m": 0,
+   "nearest_rack": {
+    "id": 12170563930,
+    "type": "node",
+    "lat": 43.541005,
+    "lon": -80.2437745
+   },
+   "bbox": [
+    43.53995357883022,
+    -80.24438331117163,
+    43.54266981113419,
+    -80.2425595748929
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.2430016,
+       43.5424975
+      ],
+      [
+       -80.2430554,
+       43.54239299999999
+      ],
+      [
+       -80.2432583,
+       43.542112
+      ],
+      [
+       -80.243354,
+       43.5418938
+      ],
+      [
+       -80.2433954,
+       43.541422600000004
+      ],
+      [
+       -80.2433535,
+       43.541207899999996
+      ],
+      [
+       -80.2432513,
+       43.541064
+      ],
+      [
+       -80.2430159,
+       43.54083399999999
+      ],
+      [
+       -80.2427375,
+       43.54065979999999
+      ],
+      [
+       -80.2426298,
+       43.540532999999996
+      ],
+      [
+       -80.2425884,
+       43.5403674
+      ],
+      [
+       -80.2430864,
+       43.539945
+      ],
+      [
+       -80.24339950000001,
+       43.5402984
+      ],
+      [
+       -80.2435803,
+       43.5404689
+      ],
+      [
+       -80.2437227,
+       43.54057279999999
+      ],
+      [
+       -80.2443003,
+       43.5407746
+      ],
+      [
+       -80.2443648,
+       43.540838599999994
+      ],
+      [
+       -80.2443713,
+       43.54091530000001
+      ],
+      [
+       -80.243449,
+       43.54265520000001
+      ],
+      [
+       -80.243402,
+       43.5426697
+      ],
+      [
+       -80.2433583,
+       43.54267509999998
+      ],
+      [
+       -80.2433116,
+       43.5426688
+      ],
+      [
+       -80.2432718,
+       43.5426587
+      ],
+      [
+       -80.2431016,
+       43.54258029999999
+      ],
+      [
+       -80.2430016,
+       43.5424975
+      ]
+     ]
+    ]
+   },
+   "image": "img/w772999957.png",
+   "zoom": 18
+  },
+  {
+   "id": 328207036,
+   "type": "way",
+   "tags": {
+    "landuse": "retail"
+   },
+   "tenant_names": [
+    "Bardo",
+    "Freshii",
+    "Goodness Me!",
+    "LCBO",
+    "Starbucks",
+    "The Running Works",
+    "Z-Teca"
+   ],
+   "area_ha": 1.4389599240506854,
+   "lat": 43.53969868523818,
+   "lon": -80.24440711500544,
+   "name": "Unnamed plaza, 89-105 Gordon Street (Bardo, Freshii, Goodness Me!)",
+   "unnamed": true,
+   "racks": [
+    {
+     "id": 12015891543,
+     "type": "node",
+     "lat": 43.5401789,
+     "lon": -80.2443337,
+     "tags": {
+      "access": "yes",
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "capacity": "4",
+      "covered": "no",
+      "fee": "no",
+      "indoor": "no",
+      "source": "survey"
+     }
+    },
+    {
+     "id": 13233343763,
+     "type": "node",
+     "lat": 43.5394925,
+     "lon": -80.2450659,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "colour": "silver",
+      "covered": "no",
+      "fee": "no"
+     }
+    }
+   ],
+   "rack_count": 2,
+   "capacity": 4,
+   "capacity_untagged": 1,
+   "verdict": "has parking",
+   "nearest_rack_m": 0,
+   "nearest_rack": {
+    "id": 12015891543,
+    "type": "node",
+    "lat": 43.5401789,
+    "lon": -80.2443337
+   },
+   "bbox": [
+    43.53888445361029,
+    -80.24523271795809,
+    43.540520222150285,
+    -80.2436042101439
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.2452296,
+       43.5391344
+      ],
+      [
+       -80.2446315,
+       43.540485699999984
+      ],
+      [
+       -80.2445537,
+       43.54052649999999
+      ],
+      [
+       -80.2444393,
+       43.540522599999996
+      ],
+      [
+       -80.243941,
+       43.5403506
+      ],
+      [
+       -80.2437786,
+       43.540246499999995
+      ],
+      [
+       -80.2436096,
+       43.540089099999996
+      ],
+      [
+       -80.2442104,
+       43.538877699999986
+      ],
+      [
+       -80.2452296,
+       43.5391344
+      ]
+     ]
+    ]
+   },
+   "image": "img/w328207036.png",
+   "zoom": 18
+  },
+  {
+   "id": 256252178,
+   "type": "way",
+   "tags": {
+    "landuse": "retail",
+    "source": "Bing"
+   },
+   "tenant_names": [
+    "Circle K",
+    "M&M Food Market",
+    "Tranquil Hair & Body",
+    "VP Tailors",
+    "West End Family Chiropractic"
+   ],
+   "area_ha": 0.47710404458200045,
+   "lat": 43.52576320397471,
+   "lon": -80.28504989028012,
+   "name": "Unnamed plaza, 926 Paisley Road (Circle K, M&M Food Market, Tranquil Hair & Body)",
+   "unnamed": true,
+   "racks": [],
+   "rack_count": 0,
+   "capacity": 0,
+   "capacity_untagged": 0,
+   "verdict": "nearby only",
+   "nearest_rack_m": 38,
+   "nearest_rack": {
+    "id": 9768470934,
+    "type": "node",
+    "lat": 43.5250725,
+    "lon": -80.2853362
+   },
+   "bbox": [
+    43.525418270484415,
+    -80.28552168332762,
+    43.52614656762714,
+    -80.28450600000876
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.2845134,
+       43.5255205
+      ],
+      [
+       -80.2853824,
+       43.5254174
+      ],
+      [
+       -80.2854977,
+       43.525477699999996
+      ],
+      [
+       -80.2855204,
+       43.525527
+      ],
+      [
+       -80.2854387,
+       43.525818
+      ],
+      [
+       -80.2853797,
+       43.52600859999999
+      ],
+      [
+       -80.28531060000002,
+       43.526151599999984
+      ],
+      [
+       -80.2847266,
+       43.526090799999984
+      ],
+      [
+       -80.284736,
+       43.52604169999999
+      ],
+      [
+       -80.2845134,
+       43.5255205
+      ]
+     ]
+    ]
+   },
+   "image": "img/w256252178.png",
+   "zoom": 18
+  },
+  {
+   "id": 399321888,
+   "type": "way",
+   "tags": {
+    "landuse": "retail"
+   },
+   "tenant_names": [
+    "Alpenglow Leaf",
+    "Bronze Ambition",
+    "Dulux Paints",
+    "Farm To Paw",
+    "Manhattans",
+    "Nighthawk Tattoo",
+    "Palmer Cleaning Centres",
+    "Red Swan Pizza",
+    "Salon Gii",
+    "Water Depot"
+   ],
+   "area_ha": 0.782501533949309,
+   "lat": 43.522095095264184,
+   "lon": -80.21375464661803,
+   "name": "Unnamed plaza, 951 Gordon Street (Alpenglow Leaf, Bronze Ambition, Dulux Paints)",
+   "unnamed": true,
+   "racks": [],
+   "rack_count": 0,
+   "capacity": 0,
+   "capacity_untagged": 0,
+   "verdict": "nearby only",
+   "nearest_rack_m": 64,
+   "nearest_rack": {
+    "id": 12823829004,
+    "type": "node",
+    "lat": 43.5211152,
+    "lon": -80.212976
+   },
+   "bbox": [
+    43.52157874012587,
+    -80.2146101224777,
+    43.522619042037896,
+    -80.21290949566165
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.2129315,
+       43.52205620000001
+      ],
+      [
+       -80.2129178,
+       43.521980299999996
+      ],
+      [
+       -80.2134551,
+       43.52157079999999
+      ],
+      [
+       -80.21460260000002,
+       43.52215859999999
+      ],
+      [
+       -80.2141245,
+       43.52262739999999
+      ],
+      [
+       -80.2129315,
+       43.52205620000001
+      ]
+     ]
+    ]
+   },
+   "image": "img/w399321888.png",
+   "zoom": 18
+  },
+  {
+   "id": 177697922,
+   "type": "way",
+   "name": "Wellington Plaza",
+   "tags": {
+    "building": "retail",
+    "name": "Wellington Plaza",
+    "source": "Bing"
+   },
+   "racks": [
+    {
+     "id": 12170563930,
+     "type": "node",
+     "lat": 43.541005,
+     "lon": -80.2437745,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "bollard",
+      "capacity": "8",
+      "check_date": "2024-09-11",
+      "colour": "silver",
+      "covered": "yes",
+      "fee": "no",
+      "indoor": "no",
+      "level": "0",
+      "source": "streetlevel imagery"
+     }
+    }
+   ],
+   "rack_count": 1,
+   "capacity": 8,
+   "capacity_untagged": 0,
+   "verdict": "has parking",
+   "nearest_rack_m": 0,
+   "nearest_rack": {
+    "id": 12170563930,
+    "type": "node",
+    "lat": 43.541005,
+    "lon": -80.2437745
+   },
+   "tenant_names": [
+    "Bare Essentials",
+    "F45 Training",
+    "Franco and Sons Barber Shop",
+    "Fusion Authentic Indian Cuisine",
+    "Hanami Izakaya",
+    "Manouche",
+    "Royal City Pharmacy",
+    "Short Stop",
+    "Subway",
+    "e-cigz"
+   ],
+   "lat": 43.541064037155195,
+   "lon": -80.24364854153562,
+   "area_ha": 0.22334996966601547,
+   "bbox": [
+    43.54067474744124,
+    -80.24408804829385,
+    43.54136279757596,
+    -80.2432405614377
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.2439362,
+       43.54136739999999
+      ],
+      [
+       -80.24346700000001,
+       43.54123849999999
+      ],
+      [
+       -80.2434432,
+       43.54121669999999
+      ],
+      [
+       -80.2434043,
+       43.5410334
+      ],
+      [
+       -80.2433056,
+       43.54082859999998
+      ],
+      [
+       -80.2432479,
+       43.5407761
+      ],
+      [
+       -80.2434308,
+       43.54067039999999
+      ],
+      [
+       -80.2435355,
+       43.54076549999999
+      ],
+      [
+       -80.2436241,
+       43.54096069999999
+      ],
+      [
+       -80.2440829,
+       43.541086799999995
+      ],
+      [
+       -80.2439362,
+       43.54136739999999
+      ]
+     ]
+    ]
+   },
+   "image": "img/w177697922.png",
+   "zoom": 18
+  },
+  {
+   "id": 256252221,
+   "type": "way",
+   "name": "West Hills Plaza",
+   "tags": {
+    "landuse": "retail",
+    "name": "West Hills Plaza",
+    "source": "Bing"
+   },
+   "racks": [
+    {
+     "id": 9768470930,
+     "type": "node",
+     "lat": 43.5226226,
+     "lon": -80.2885747,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "bollard",
+      "mapillary": "704047754448010",
+      "survey:date": "2022-12-10"
+     }
+    },
+    {
+     "id": 9768470931,
+     "type": "node",
+     "lat": 43.523895,
+     "lon": -80.288132,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "bollard",
+      "colour": "black",
+      "covered": "no",
+      "fee": "no",
+      "indoor": "no",
+      "mapillary": "1144121206307327",
+      "survey:date": "2022-12-17"
+     }
+    },
+    {
+     "id": 9768470932,
+     "type": "node",
+     "lat": 43.5248294,
+     "lon": -80.2862382,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "rack",
+      "mapillary": "568663547532624",
+      "survey:date": "2021-11-01"
+     }
+    },
+    {
+     "id": 9768470933,
+     "type": "node",
+     "lat": 43.5246873,
+     "lon": -80.2874527,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "mapillary": "293857876469737",
+      "survey:date": "2023-06-22"
+     }
+    }
+   ],
+   "rack_count": 4,
+   "capacity": 0,
+   "capacity_untagged": 4,
+   "verdict": "has parking",
+   "nearest_rack_m": 0,
+   "nearest_rack": {
+    "id": 9768470930,
+    "type": "node",
+    "lat": 43.5226226,
+    "lon": -80.2885747
+   },
+   "tenant_names": [
+    "Aqua Nails & Spa",
+    "Arnold Hearing Centres",
+    "COBS Bread",
+    "Dairy Queen",
+    "Eyes On Paisley",
+    "First Choice Haircutters",
+    "Guac Mexi Grill",
+    "JF Chen",
+    "LCBO",
+    "Liberty Tax",
+    "Pet Valu",
+    "Pizza Depot",
+    "RBC",
+    "Silveri Jewllers",
+    "Starbucks",
+    "Subway",
+    "TD",
+    "Wild Wing",
+    "Zehrs"
+   ],
+   "lat": 43.52350837736234,
+   "lon": -80.28844388614637,
+   "area_ha": 7.0874615321282155,
+   "bbox": [
+    43.52193614372332,
+    -80.29094532253929,
+    43.52508772115339,
+    -80.28599544149033
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.2886666,
+       43.5239867
+      ],
+      [
+       -80.2879091,
+       43.524507199999995
+      ],
+      [
+       -80.287726,
+       43.5249424
+      ],
+      [
+       -80.2874531,
+       43.524927299999995
+      ],
+      [
+       -80.2871297,
+       43.5249377
+      ],
+      [
+       -80.2867354,
+       43.524994099999994
+      ],
+      [
+       -80.2865545,
+       43.52504010000001
+      ],
+      [
+       -80.2861522,
+       43.52508869999999
+      ],
+      [
+       -80.2860676,
+       43.52506999999999
+      ],
+      [
+       -80.2860208,
+       43.5250362
+      ],
+      [
+       -80.2859966,
+       43.524989500000004
+      ],
+      [
+       -80.28616290000001,
+       43.5243711
+      ],
+      [
+       -80.2862299,
+       43.524213499999995
+      ],
+      [
+       -80.2863358,
+       43.524021999999995
+      ],
+      [
+       -80.286541,
+       43.5237468
+      ],
+      [
+       -80.2867287,
+       43.52355909999999
+      ],
+      [
+       -80.28693810000001,
+       43.52339279999999
+      ],
+      [
+       -80.2873592,
+       43.5230913
+      ],
+      [
+       -80.2888906,
+       43.521952599999985
+      ],
+      [
+       -80.288959,
+       43.521939
+      ],
+      [
+       -80.2890542,
+       43.5219244
+      ],
+      [
+       -80.2891856,
+       43.521937099999995
+      ],
+      [
+       -80.2909371,
+       43.5226382
+      ],
+      [
+       -80.2894753,
+       43.524544199999994
+      ],
+      [
+       -80.2886666,
+       43.5239867
+      ]
+     ]
+    ]
+   },
+   "image": "img/w256252221.png",
+   "zoom": 17
+  },
+  {
+   "id": 1192488955,
+   "type": "way",
+   "name": "Westwood Plaza",
+   "tags": {
+    "addr:city": "Guelph",
+    "addr:housenumber": "500",
+    "addr:street": "Willow Road",
+    "landuse": "retail",
+    "name": "Westwood Plaza"
+   },
+   "racks": [
+    {
+     "id": 9768470920,
+     "type": "node",
+     "lat": 43.5330029,
+     "lon": -80.2876396,
+     "tags": {
+      "amenity": "bicycle_parking"
+     }
+    }
+   ],
+   "rack_count": 1,
+   "capacity": 0,
+   "capacity_untagged": 1,
+   "verdict": "has parking",
+   "nearest_rack_m": 0,
+   "nearest_rack": {
+    "id": 9768470920,
+    "type": "node",
+    "lat": 43.5330029,
+    "lon": -80.2876396
+   },
+   "tenant_names": [
+    "Angel Nails",
+    "Big Bear Food Mart",
+    "JL Hair & Beauty Supply",
+    "Mir Zinger Chick",
+    "New Orleans Pizza",
+    "Pharmasave",
+    "Quality Indian Food & Spices",
+    "Westwood Dental Group",
+    "Westwood Medical Clinic",
+    "Westwood Physiotherapy & Wellness"
+   ],
+   "lat": 43.5329556174176,
+   "lon": -80.28766998887647,
+   "area_ha": 0.5937534303159722,
+   "bbox": [
+    43.532466658154576,
+    -80.28836337459234,
+    43.53342533927586,
+    -80.28695320012103
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.2876046,
+       43.5334294
+      ],
+      [
+       -80.2869575,
+       43.5330604
+      ],
+      [
+       -80.2877759,
+       43.53246299999999
+      ],
+      [
+       -80.2883585,
+       43.53288119999999
+      ],
+      [
+       -80.2876046,
+       43.5334294
+      ]
+     ]
+    ]
+   },
+   "image": "img/w1192488955.png",
+   "zoom": 18
+  },
+  {
+   "id": 208496000,
+   "type": "way",
+   "name": "Willow West",
+   "tags": {
+    "building": "retail",
+    "name": "Willow West",
+    "old_name": "Willow West Mall",
+    "shop": "mall",
+    "source": "Bing"
+   },
+   "racks": [
+    {
+     "id": 9789312729,
+     "type": "node",
+     "lat": 43.5416654,
+     "lon": -80.2809467,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "colour": "black",
+      "indoor": "no"
+     }
+    }
+   ],
+   "rack_count": 1,
+   "capacity": 0,
+   "capacity_untagged": 1,
+   "verdict": "has parking",
+   "nearest_rack_m": 1,
+   "nearest_rack": {
+    "id": 9789312729,
+    "type": "node",
+    "lat": 43.5416654,
+    "lon": -80.2809467
+   },
+   "tenant_names": [
+    "BarBurrito",
+    "Dollar Tree",
+    "First Choice Haircutters",
+    "Freedom Mobile",
+    "Giant Tiger",
+    "Gino's Pizza",
+    "Leon's",
+    "Moores",
+    "No Frills",
+    "PetSmart",
+    "The Beer Store",
+    "Willow West",
+    "easyfinancial"
+   ],
+   "lat": 43.54147047926115,
+   "lon": -80.28011500295344,
+   "area_ha": 1.7789143137555383,
+   "bbox": [
+    43.540513093683295,
+    -80.28171697122566,
+    43.542493908895274,
+    -80.278554196208
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.2810176,
+       43.54173
+      ],
+      [
+       -80.2811404,
+       43.54163809999999
+      ],
+      [
+       -80.2816989,
+       43.5420352
+      ],
+      [
+       -80.2810451,
+       43.5425096
+      ],
+      [
+       -80.2809573,
+       43.5424459
+      ],
+      [
+       -80.2810505,
+       43.5423755
+      ],
+      [
+       -80.2807809,
+       43.5421772
+      ],
+      [
+       -80.2807662,
+       43.5421908
+      ],
+      [
+       -80.2805831,
+       43.542063399999996
+      ],
+      [
+       -80.2805322,
+       43.54210079999999
+      ],
+      [
+       -80.2799568,
+       43.54168670000001
+      ],
+      [
+       -80.2798073,
+       43.54179559999999
+      ],
+      [
+       -80.2792239,
+       43.54137509999998
+      ],
+      [
+       -80.2791636,
+       43.54142279999999
+      ],
+      [
+       -80.2790898,
+       43.54136880000001
+      ],
+      [
+       -80.2791495,
+       43.541327499999994
+      ],
+      [
+       -80.2788216,
+       43.541084
+      ],
+      [
+       -80.2788451,
+       43.541068399999986
+      ],
+      [
+       -80.2787337,
+       43.540986800000006
+      ],
+      [
+       -80.27868080000002,
+       43.5410111
+      ],
+      [
+       -80.2785728,
+       43.5409338
+      ],
+      [
+       -80.2786003,
+       43.54091439999999
+      ],
+      [
+       -80.278574,
+       43.540894299999984
+      ],
+      [
+       -80.27861690000002,
+       43.5408624
+      ],
+      [
+       -80.2786412,
+       43.5408813
+      ],
+      [
+       -80.2786974,
+       43.5408403
+      ],
+      [
+       -80.2787552,
+       43.54079839999999
+      ],
+      [
+       -80.2788182,
+       43.5408468
+      ],
+      [
+       -80.2788424,
+       43.5408307
+      ],
+      [
+       -80.2788713,
+       43.54083159999999
+      ],
+      [
+       -80.2788994,
+       43.540832699999996
+      ],
+      [
+       -80.2789659,
+       43.540786000000004
+      ],
+      [
+       -80.2790362,
+       43.540733900000006
+      ],
+      [
+       -80.2790871,
+       43.54069779999999
+      ],
+      [
+       -80.2791386,
+       43.540661500000006
+      ],
+      [
+       -80.279185,
+       43.5406289
+      ],
+      [
+       -80.2792397,
+       43.54058649999999
+      ],
+      [
+       -80.279317,
+       43.540532799999994
+      ],
+      [
+       -80.2793661,
+       43.5404983
+      ],
+      [
+       -80.2798918,
+       43.54088960000001
+      ],
+      [
+       -80.2803727,
+       43.541253399999995
+      ],
+      [
+       -80.2804131,
+       43.541285299999984
+      ],
+      [
+       -80.2804587,
+       43.5413194
+      ],
+      [
+       -80.28050120000002,
+       43.5413497
+      ],
+      [
+       -80.2805882,
+       43.5414196
+      ],
+      [
+       -80.2806327,
+       43.54144529999999
+      ],
+      [
+       -80.280672,
+       43.5414779
+      ],
+      [
+       -80.2807187,
+       43.54151280000001
+      ],
+      [
+       -80.2807707,
+       43.54154539999999
+      ],
+      [
+       -80.2808163,
+       43.5415795
+      ],
+      [
+       -80.280863,
+       43.54161439999998
+      ],
+      [
+       -80.2809075,
+       43.54164629999999
+      ],
+      [
+       -80.2810176,
+       43.54173
+      ]
+     ]
+    ]
+   },
+   "image": "img/w208496000.png",
+   "zoom": 18
+  },
+  {
+   "id": 773015474,
+   "type": "way",
+   "name": "Woodlawn Square",
+   "tags": {
+    "addr:city": "Guelph",
+    "addr:housenumber": "243-263",
+    "addr:interpolation": "odd",
+    "addr:province": "ON",
+    "addr:street": "Woodlawn Road West",
+    "landuse": "retail",
+    "name": "Woodlawn Square"
+   },
+   "racks": [],
+   "rack_count": 0,
+   "capacity": 0,
+   "capacity_untagged": 0,
+   "verdict": "none mapped",
+   "nearest_rack_m": 230,
+   "nearest_rack": {
+    "id": 13233491582,
+    "type": "node",
+    "lat": 43.5555713,
+    "lon": -80.2916832
+   },
+   "tenant_names": [
+    "Big Bargain Wholesale",
+    "Canadian Food Inspection Agency",
+    "Chuck's Roadhouse",
+    "DriveTest",
+    "McDonald's",
+    "Original Home Furniture",
+    "RJ\u2019s Sports Bar & Grill",
+    "Service Canada"
+   ],
+   "lat": 43.55306935806736,
+   "lon": -80.29531063793023,
+   "area_ha": 4.461188918239693,
+   "bbox": [
+    43.55160104814099,
+    -80.29740531468191,
+    43.554576146874204,
+    -80.29326271884983
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.294356,
+       43.55458289999999
+      ],
+      [
+       -80.2932763,
+       43.5538079
+      ],
+      [
+       -80.2932725,
+       43.553739199999995
+      ],
+      [
+       -80.2961955,
+       43.55159960000001
+      ],
+      [
+       -80.2963081,
+       43.5515943
+      ],
+      [
+       -80.2973964,
+       43.552368399999985
+      ],
+      [
+       -80.294356,
+       43.55458289999999
+      ]
+     ]
+    ]
+   },
+   "image": "img/w773015474.png",
+   "zoom": 17
+  }
+ ],
+ "enclosed": [
+  {
+   "id": 121261616,
+   "type": "way",
+   "name": "Stone Road Mall",
+   "tags": {
+    "addr:city": "Guelph",
+    "addr:housenumber": "435",
+    "addr:postcode": "N1G 2X6",
+    "addr:province": "Ontario",
+    "addr:street": "Stone Road West",
+    "building": "retail",
+    "building:levels": "2",
+    "name": "Stone Road Mall",
+    "shop": "mall",
+    "toilets:wheelchair": "yes",
+    "wheelchair": "yes",
+    "wikidata": "Q7619018",
+    "wikipedia": "en:Stone Road Mall"
+   },
+   "racks": [
+    {
+     "id": 11480123369,
+     "type": "node",
+     "lat": 43.5191376,
+     "lon": -80.2362821,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "capacity": "6",
+      "check_date": "2024-10-08",
+      "colour": "silver",
+      "covered": "no",
+      "fee": "no",
+      "mapillary": "319589056547001",
+      "source:position": "Mapillary 2023-04-11",
+      "surveillance": "yes",
+      "survey:date": "2021-05-07"
+     }
+    },
+    {
+     "id": 12095999648,
+     "type": "node",
+     "lat": 43.520102,
+     "lon": -80.2362787,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "capacity": "4",
+      "colour": "silver",
+      "covered": "no",
+      "fee": "no"
+     }
+    }
+   ],
+   "rack_count": 2,
+   "capacity": 10,
+   "capacity_untagged": 0,
+   "verdict": "has parking",
+   "nearest_rack_m": 2,
+   "nearest_rack": {
+    "id": 12095999648,
+    "type": "node",
+    "lat": 43.520102,
+    "lon": -80.2362787
+   },
+   "tenant_names": [
+    "A&W",
+    "Aldo",
+    "American Eagle Outfitters",
+    "Ardene",
+    "Ashby Grove Barber Shop",
+    "Atmosphere",
+    "BMO",
+    "Bath & Body Works",
+    "Bell",
+    "Bentley",
+    "Best Buy Express",
+    "Blackwell Supply Co.",
+    "Bluenotes",
+    "Boathouse",
+    "Booster Juice",
+    "Call It Spring",
+    "Carter's OshKosh",
+    "Caryl Baker Visage",
+    "Charm Diamond Centres",
+    "Chatr",
+    "Chatters",
+    "Cinema 1",
+    "Cleo",
+    "Cultures",
+    "Dollarama",
+    "Dynamite",
+    "EB Games",
+    "Eclipse",
+    "Eye Care Place",
+    "Fairweather",
+    "Fido",
+    "Foot Locker",
+    "Freedom Mobile",
+    "Future Tech",
+    "GNC",
+    "Garage",
+    "Guelph Smoke & Gift",
+    "H&M",
+    "Harmony",
+    "HomeSense",
+    "Indigo",
+    "International I.N.C Clothiers",
+    "Jersey Mikes",
+    "Jump+",
+    "KFC",
+    "Kahn Custom Jewellery",
+    "Kernels Popcorn",
+    "Key Centre",
+    "Key Centre Engravables",
+    "Koodo",
+    "La Senza",
+    "La Vie en Rose",
+    "Laura",
+    "LensCrafters",
+    "Lids",
+    "Lush",
+    "MAC Cosmetics",
+    "Mark's",
+    "Marshalls",
+    "Michael Hill",
+    "Miniso",
+    "Mobilinq",
+    "Mountain Warehouse",
+    "Mr Souvlaki",
+    "Mr. Pretzels",
+    "Nails for You",
+    "Natural Solutions",
+    "New York Fries",
+    "Northern Reflections",
+    "Old Navy",
+    "Pandora",
+    "Peoples",
+    "Pierced Culture",
+    "Pseudio",
+    "Purdys Chocolatier",
+    "Quarks",
+    "RW&CO.",
+    "Real Fruit Bubble Tea",
+    "Resveralife",
+    "Ricki's",
+    "Rogers",
+    "Roots",
+    "Sephora",
+    "Shanghai 360",
+    "Shoppers Drug Mart",
+    "Showcase",
+    "Soft Moc",
+    "Specsavers",
+    "Spencer's",
+    "Sport Chek",
+    "Star Mens Wear",
+    "Starbucks",
+    "Steel N Ink",
+    "Stitch It",
+    "Stokes",
+    "Stone Road Eye Care",
+    "Stone Road Family Dental",
+    "Stone Road Mall",
+    "Structube",
+    "Sushi-Q",
+    "Taco Bell",
+    "Tbooth Wireless",
+    "Telus",
+    "Tha\u00ef Express",
+    "The Body Shop",
+    "The Shoe Company",
+    "Tip Top Tailors",
+    "Toys R Us",
+    "Trade Secrets",
+    "Urban Planet",
+    "Villa Madina",
+    "Virgin Plus",
+    "Vogue Optical",
+    "WOW! Mobile Boutique",
+    "Williams Fresh Cafe",
+    "WirelessWave",
+    "Zacks",
+    "Zumiez",
+    "amenity=cafe",
+    "claire's",
+    "imPerfect Fresh Eats",
+    "z-teca Mexican Eatery"
+   ],
+   "lat": 43.518440407629285,
+   "lon": -80.23822164336562,
+   "area_ha": 5.096383386270349,
+   "bbox": [
+    43.516594725925245,
+    -80.2403377458383,
+    43.52023431147182,
+    -80.23563936453147
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.23633370000002,
+       43.5191279
+      ],
+      [
+       -80.2363402,
+       43.519123099999995
+      ],
+      [
+       -80.236361,
+       43.5191077
+      ],
+      [
+       -80.2365272,
+       43.5189845
+      ],
+      [
+       -80.23739,
+       43.5183214
+      ],
+      [
+       -80.2375452,
+       43.51843869999999
+      ],
+      [
+       -80.2376619,
+       43.5183539
+      ],
+      [
+       -80.2375155,
+       43.5182412
+      ],
+      [
+       -80.23797690000002,
+       43.517880899999994
+      ],
+      [
+       -80.2380735,
+       43.51783999999999
+      ],
+      [
+       -80.2381237,
+       43.5178302
+      ],
+      [
+       -80.2381834,
+       43.517818599999984
+      ],
+      [
+       -80.2383202,
+       43.5177311
+      ],
+      [
+       -80.2382934,
+       43.51769609999999
+      ],
+      [
+       -80.2390887,
+       43.51710579999999
+      ],
+      [
+       -80.2390565,
+       43.517084399999995
+      ],
+      [
+       -80.23910410000002,
+       43.517035199999995
+      ],
+      [
+       -80.2397138,
+       43.51659200000001
+      ],
+      [
+       -80.2397671,
+       43.51659169999999
+      ],
+      [
+       -80.2398223,
+       43.516591299999995
+      ],
+      [
+       -80.2402593,
+       43.516914299999996
+      ],
+      [
+       -80.2401946,
+       43.516963399999995
+      ],
+      [
+       -80.2401441,
+       43.5170017
+      ],
+      [
+       -80.2403212,
+       43.5171398
+      ],
+      [
+       -80.2403292,
+       43.517275899999994
+      ],
+      [
+       -80.2400744,
+       43.5174607
+      ],
+      [
+       -80.2401764,
+       43.5175349
+      ],
+      [
+       -80.2397392,
+       43.5178743
+      ],
+      [
+       -80.2398051,
+       43.5179235
+      ],
+      [
+       -80.2400206,
+       43.51808429999999
+      ],
+      [
+       -80.2400529,
+       43.51810840000001
+      ],
+      [
+       -80.2391485,
+       43.5187722
+      ],
+      [
+       -80.2390605,
+       43.518836799999995
+      ],
+      [
+       -80.238921,
+       43.5188388
+      ],
+      [
+       -80.2389358,
+       43.5189244
+      ],
+      [
+       -80.2388406,
+       43.51892629999999
+      ],
+      [
+       -80.2388218,
+       43.5189506
+      ],
+      [
+       -80.2387534,
+       43.51900020000001
+      ],
+      [
+       -80.2386904,
+       43.5189963
+      ],
+      [
+       -80.23865880000001,
+       43.5190166
+      ],
+      [
+       -80.23862870000002,
+       43.51901869999999
+      ],
+      [
+       -80.2385066,
+       43.518941899999994
+      ],
+      [
+       -80.2385388,
+       43.51891750000001
+      ],
+      [
+       -80.2384678,
+       43.51886699999999
+      ],
+      [
+       -80.2382076,
+       43.5190683
+      ],
+      [
+       -80.2381646,
+       43.519067899999996
+      ],
+      [
+       -80.2381364,
+       43.519067699999994
+      ],
+      [
+       -80.2380802,
+       43.519067299999996
+      ],
+      [
+       -80.23717920000001,
+       43.5197385
+      ],
+      [
+       -80.2371627,
+       43.51975079999999
+      ],
+      [
+       -80.2370931,
+       43.51988610000001
+      ],
+      [
+       -80.2369657,
+       43.52001739999999
+      ],
+      [
+       -80.2368855,
+       43.51995719999999
+      ],
+      [
+       -80.2365057,
+       43.52024009999999
+      ],
+      [
+       -80.2361369,
+       43.519979500000005
+      ],
+      [
+       -80.2359302,
+       43.519833399999996
+      ],
+      [
+       -80.235647,
+       43.5196295
+      ],
+      [
+       -80.2363151,
+       43.519141499999996
+      ],
+      [
+       -80.23633370000002,
+       43.5191279
+      ]
+     ]
+    ]
+   },
+   "image": "img/w121261616.png",
+   "zoom": 17
+  },
+  {
+   "id": 123274454,
+   "type": "way",
+   "name": "Old Quebec Street",
+   "tags": {
+    "addr:city": "Guelph",
+    "addr:housenumber": "55",
+    "addr:postcode": "N1H 7T8",
+    "addr:province": "ON",
+    "addr:street": "Wyndham Street North",
+    "alt_name": "Old Quebec Street Shoppes",
+    "building": "yes",
+    "building:levels": "2",
+    "contact:facebook": "https://www.facebook.com/Oldquebecstreet",
+    "contact:foursquare": "https://www.foursquare.com/v/4d28db31342d6dcbaef8fcca",
+    "contact:instagram": "https://www.instagram.com/oldquebecstreet/",
+    "contact:twitter": "https://twitter.com/OldQuebecStreet",
+    "image": "File:Quebecmall.jpg",
+    "name": "Old Quebec Street",
+    "phone": "+1-519-837-0259",
+    "shop": "mall",
+    "website": "https://oldquebecstreet.com/",
+    "wikidata": "Q7084804",
+    "wikimedia_commons": "Category:Old Quebec Street Mall",
+    "wikipedia": "en:Old Quebec Street Mall"
+   },
+   "racks": [
+    {
+     "id": 11194039137,
+     "type": "node",
+     "lat": 43.5460631,
+     "lon": -80.2489308,
+     "tags": {
+      "access": "yes",
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "rack",
+      "capacity": "4",
+      "check_date": "2025-02-10",
+      "colour": "silver",
+      "covered": "no",
+      "fee": "no",
+      "indoor": "no",
+      "mapillary": "451793436652512",
+      "source:position": "Mapillary 2022-05-26",
+      "survey:date": "2021-12-08"
+     }
+    }
+   ],
+   "rack_count": 1,
+   "capacity": 4,
+   "capacity_untagged": 0,
+   "verdict": "has parking",
+   "nearest_rack_m": 10,
+   "nearest_rack": {
+    "id": 11194039137,
+    "type": "node",
+    "lat": 43.5460631,
+    "lon": -80.2489308
+   },
+   "tenant_names": [
+    "CIBC",
+    "Coco Latte",
+    "Freehub Community Bike Centre",
+    "Guelph Community Foundation",
+    "Guelph Tool Library",
+    "Noki Farms",
+    "Old Quebec Street",
+    "Red Papaya Thai And Grill",
+    "Rexall",
+    "The Dragon"
+   ],
+   "lat": 43.54622212189734,
+   "lon": -80.24765631432432,
+   "area_ha": 0.946140946725343,
+   "bbox": [
+    43.54568816914077,
+    -80.24885681906686,
+    43.5466732324921,
+    -80.24641371570158
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.2488504,
+       43.546205099999995
+      ],
+      [
+       -80.2486697,
+       43.5462352
+      ],
+      [
+       -80.2483803,
+       43.546283599999995
+      ],
+      [
+       -80.2482288,
+       43.54642859999999
+      ],
+      [
+       -80.2480923,
+       43.5464541
+      ],
+      [
+       -80.2478087,
+       43.54653420000001
+      ],
+      [
+       -80.24764070000002,
+       43.546518599999985
+      ],
+      [
+       -80.24731960000001,
+       43.54667919999999
+      ],
+      [
+       -80.2470751,
+       43.5465007
+      ],
+      [
+       -80.2464796,
+       43.546413
+      ],
+      [
+       -80.2464809,
+       43.5463869
+      ],
+      [
+       -80.2464174,
+       43.546377500000006
+      ],
+      [
+       -80.2464341,
+       43.54630379999999
+      ],
+      [
+       -80.2464964,
+       43.54626849999999
+      ],
+      [
+       -80.2465303,
+       43.546275200000004
+      ],
+      [
+       -80.2465484,
+       43.5461935
+      ],
+      [
+       -80.2466937,
+       43.54612120000001
+      ],
+      [
+       -80.2469633,
+       43.546147999999995
+      ],
+      [
+       -80.2471113,
+       43.54607850000001
+      ],
+      [
+       -80.2471595,
+       43.5460562
+      ],
+      [
+       -80.247246,
+       43.5461476
+      ],
+      [
+       -80.2481769,
+       43.54568369999999
+      ],
+      [
+       -80.2482693,
+       43.54577390000001
+      ],
+      [
+       -80.24833270000002,
+       43.5459655
+      ],
+      [
+       -80.2483845,
+       43.54595789999999
+      ],
+      [
+       -80.2484966,
+       43.5459377
+      ],
+      [
+       -80.248512,
+       43.545986799999994
+      ],
+      [
+       -80.2485211,
+       43.5460233
+      ],
+      [
+       -80.2485341,
+       43.54606889999998
+      ],
+      [
+       -80.2485448,
+       43.54611419999999
+      ],
+      [
+       -80.2487882,
+       43.54606799999999
+      ],
+      [
+       -80.2488095,
+       43.546064
+      ],
+      [
+       -80.2488229,
+       43.54611369999999
+      ],
+      [
+       -80.2488401,
+       43.5461717
+      ],
+      [
+       -80.2488504,
+       43.546205099999995
+      ]
+     ]
+    ]
+   },
+   "image": "img/w123274454.png",
+   "zoom": 18
+  }
+ ],
+ "excluded": [
+  {
+   "id": 121429569,
+   "name": "Walmart Supercentre",
+   "reason": "single-tenant big box (Walmart Supercentre), counted inside its plaza polygon"
+  },
+  {
+   "id": 123418023,
+   "name": "Guelph Chiropractic Health Centre",
+   "reason": "single-use building (chiropractic clinic)"
+  },
+  {
+   "id": 259225310,
+   "name": "Guelph Farmers' Market",
+   "reason": "Farmers' Market building"
+  },
+  {
+   "id": 287908558,
+   "name": "Galaxy Cinemas Pergola Commons",
+   "reason": "cinema building inside Pergola Commons"
+  },
+  {
+   "id": 559510908,
+   "name": "Chancellors Way Medical Arts Centre",
+   "reason": "single-use medical office building"
+  },
+  {
+   "id": 761343597,
+   "name": "Guelph Lake Commons",
+   "reason": "social facility, not retail"
+  },
+  {
+   "id": 772999962,
+   "name": "Downtown Guelph",
+   "reason": "downtown retail landuse, not a plaza"
+  },
+  {
+   "id": 1042080141,
+   "name": "Alumni Plaza",
+   "reason": "university pedestrian plaza"
+  },
+  {
+   "id": 1089966291,
+   "name": "Branion Plaza",
+   "reason": "university pedestrian plaza"
+  },
+  {
+   "id": 1492356058,
+   "name": "Branion Plaza Outdoor Seating Area",
+   "reason": "university seating area"
+  },
+  {
+   "id": 20304751,
+   "name": null,
+   "reason": "university pedestrian plaza"
+  }
+ ],
+ "unnamed_rest": [
+  {
+   "id": 548776291,
+   "area_ha": 5.89,
+   "tenants": 3,
+   "tenant_names": [
+    "Costco",
+    "Costco Food Court",
+    "Costco Pharmacy"
+   ],
+   "lat": 43.52248179768331,
+   "lon": -80.29408467825859
+  },
+  {
+   "id": 773036284,
+   "area_ha": 4.57,
+   "tenants": 0,
+   "tenant_names": [],
+   "lat": 43.53730999100347,
+   "lon": -80.31731789110579
+  },
+  {
+   "id": 328198358,
+   "area_ha": 3.31,
+   "tenants": 0,
+   "tenant_names": [],
+   "lat": 43.54199712932668,
+   "lon": -80.31103143621017
+  },
+  {
+   "id": 239063741,
+   "area_ha": 3.15,
+   "tenants": 1,
+   "tenant_names": [
+    "The Home Depot"
+   ],
+   "lat": 43.562264171964515,
+   "lon": -80.28353311136397
+  },
+  {
+   "id": 399149170,
+   "area_ha": 2.21,
+   "tenants": 0,
+   "tenant_names": [],
+   "lat": 43.538490169903035,
+   "lon": -80.31562560762274
+  },
+  {
+   "id": 773016984,
+   "area_ha": 2.18,
+   "tenants": 0,
+   "tenant_names": [],
+   "lat": 43.54059048002463,
+   "lon": -80.31280450846816
+  },
+  {
+   "id": 388354347,
+   "area_ha": 2.07,
+   "tenants": 0,
+   "tenant_names": [],
+   "lat": 43.539369779218056,
+   "lon": -80.31388670233216
+  },
+  {
+   "id": 399149097,
+   "area_ha": 1.87,
+   "tenants": 0,
+   "tenant_names": [],
+   "lat": 43.54792390273072,
+   "lon": -80.3029894414004
+  },
+  {
+   "id": 772928898,
+   "area_ha": 1.64,
+   "tenants": 3,
+   "tenant_names": [
+    "Kelsey's",
+    "Swiss Chalet",
+    "Tim Hortons"
+   ],
+   "lat": 43.55810906241599,
+   "lon": -80.2856387222627
+  },
+  {
+   "id": 773036286,
+   "area_ha": 1.61,
+   "tenants": 0,
+   "tenant_names": [],
+   "lat": 43.53542959250288,
+   "lon": -80.31998268676561
+  },
+  {
+   "id": 399149398,
+   "area_ha": 1.47,
+   "tenants": 0,
+   "tenant_names": [],
+   "lat": 43.53276808776496,
+   "lon": -80.32303514106852
+  },
+  {
+   "id": 399149441,
+   "area_ha": 1.38,
+   "tenants": 0,
+   "tenant_names": [],
+   "lat": 43.53385156772101,
+   "lon": -80.32145089469006
+  },
+  {
+   "id": 398946241,
+   "area_ha": 1.37,
+   "tenants": 1,
+   "tenant_names": [
+    "Home Hardware"
+   ],
+   "lat": 43.5252684172646,
+   "lon": -80.26714816552207
+  },
+  {
+   "id": 1005072625,
+   "area_ha": 1.27,
+   "tenants": 0,
+   "tenant_names": [],
+   "lat": 43.54124426703391,
+   "lon": -80.31211109455114
+  },
+  {
+   "id": 773016982,
+   "area_ha": 1.22,
+   "tenants": 0,
+   "tenant_names": [],
+   "lat": 43.542318963573415,
+   "lon": -80.31841167987031
+  },
+  {
+   "id": 773015488,
+   "area_ha": 0.96,
+   "tenants": 1,
+   "tenant_names": [
+    "Stampede Ranch"
+   ],
+   "lat": 43.552801034403416,
+   "lon": -80.29286138393292
+  },
+  {
+   "id": 772911629,
+   "area_ha": 0.88,
+   "tenants": 0,
+   "tenant_names": [],
+   "lat": 43.55999331228052,
+   "lon": -80.24756113063047
+  },
+  {
+   "id": 773013516,
+   "area_ha": 0.85,
+   "tenants": 1,
+   "tenant_names": [
+    "Kirtida Kitchen"
+   ],
+   "lat": 43.529288758313676,
+   "lon": -80.24804655137018
+  },
+  {
+   "id": 773013517,
+   "area_ha": 0.77,
+   "tenants": 3,
+   "tenant_names": [
+    "Biryani Delight",
+    "Pizza Trokadero",
+    "W Sushi"
+   ],
+   "lat": 43.52979333429263,
+   "lon": -80.2490187782091
+  },
+  {
+   "id": 177925092,
+   "area_ha": 0.72,
+   "tenants": 1,
+   "tenant_names": [
+    "Neighbours Coffee"
+   ],
+   "lat": 43.525643962786674,
+   "lon": -80.28636609346252
+  },
+  {
+   "id": 775587740,
+   "area_ha": 0.7,
+   "tenants": 0,
+   "tenant_names": [],
+   "lat": 43.54036890054372,
+   "lon": -80.31781254698913
+  },
+  {
+   "id": 317550115,
+   "area_ha": 0.7,
+   "tenants": 2,
+   "tenant_names": [
+    "Circle K",
+    "Tim Hortons"
+   ],
+   "lat": 43.543930558191065,
+   "lon": -80.30737128340456
+  },
+  {
+   "id": 397932331,
+   "area_ha": 0.65,
+   "tenants": 0,
+   "tenant_names": [],
+   "lat": 43.51170513283505,
+   "lon": -80.25388838095394
+  },
+  {
+   "id": 399342892,
+   "area_ha": 0.61,
+   "tenants": 3,
+   "tenant_names": [
+    "Campus Estates Animal Hospital",
+    "Wall Parr Sausage",
+    "Wally Parr Sausage"
+   ],
+   "lat": 43.51064522598685,
+   "lon": -80.19569333548263
+  },
+  {
+   "id": 772911631,
+   "area_ha": 0.59,
+   "tenants": 1,
+   "tenant_names": [
+    "Shoppers Drug Mart"
+   ],
+   "lat": 43.560721170142415,
+   "lon": -80.24829771682343
+  },
+  {
+   "id": 773015478,
+   "area_ha": 0.58,
+   "tenants": 3,
+   "tenant_names": [
+    "Guelph Oral Surgery",
+    "Smile Town",
+    "Tim Hortons"
+   ],
+   "lat": 43.544034240350534,
+   "lon": -80.28721073254323
+  },
+  {
+   "id": 772823185,
+   "area_ha": 0.57,
+   "tenants": 0,
+   "tenant_names": [],
+   "lat": 43.523380380962585,
+   "lon": -80.18550129210419
+  },
+  {
+   "id": 773036285,
+   "area_ha": 0.53,
+   "tenants": 0,
+   "tenant_names": [],
+   "lat": 43.53452811122375,
+   "lon": -80.32056525848331
+  },
+  {
+   "id": 772911627,
+   "area_ha": 0.51,
+   "tenants": 3,
+   "tenant_names": [
+    "M.E. Cafe",
+    "Pizza Hut",
+    "Subway"
+   ],
+   "lat": 43.55618379381074,
+   "lon": -80.24910385926597
+  },
+  {
+   "id": 295924644,
+   "area_ha": 0.47,
+   "tenants": 0,
+   "tenant_names": [],
+   "lat": 43.53939995090511,
+   "lon": -80.27867233275325
+  },
+  {
+   "id": 773014499,
+   "area_ha": 0.45,
+   "tenants": 1,
+   "tenant_names": [
+    "Royal LePage Royal City Realty"
+   ],
+   "lat": 43.537960215065475,
+   "lon": -80.25945106857563
+  },
+  {
+   "id": 772820155,
+   "area_ha": 0.44,
+   "tenants": 1,
+   "tenant_names": [
+    "shop=convenience"
+   ],
+   "lat": 43.56720452160259,
+   "lon": -80.22213741245649
+  },
+  {
+   "id": 295919407,
+   "area_ha": 0.44,
+   "tenants": 2,
+   "tenant_names": [
+    "Circle K",
+    "Tim Hortons"
+   ],
+   "lat": 43.53882106820419,
+   "lon": -80.27960067168463
+  },
+  {
+   "id": 772999956,
+   "area_ha": 0.44,
+   "tenants": 1,
+   "tenant_names": [
+    "McDonald's"
+   ],
+   "lat": 43.54052577178315,
+   "lon": -80.24539399880588
+  },
+  {
+   "id": 772928902,
+   "area_ha": 0.43,
+   "tenants": 1,
+   "tenant_names": [
+    "Autosonics"
+   ],
+   "lat": 43.55923191884356,
+   "lon": -80.26804548884047
+  },
+  {
+   "id": 413944189,
+   "area_ha": 0.43,
+   "tenants": 2,
+   "tenant_names": [
+    "Dental Corner",
+    "Tim Hortons"
+   ],
+   "lat": 43.5247421718363,
+   "lon": -80.28543125868366
+  },
+  {
+   "id": 1444323891,
+   "area_ha": 0.42,
+   "tenants": 0,
+   "tenant_names": [],
+   "lat": 43.52097561606438,
+   "lon": -80.21182537739458
+  },
+  {
+   "id": 773015482,
+   "area_ha": 0.39,
+   "tenants": 0,
+   "tenant_names": [],
+   "lat": 43.54992448400838,
+   "lon": -80.27918769809303
+  },
+  {
+   "id": 773015483,
+   "area_ha": 0.35,
+   "tenants": 2,
+   "tenant_names": [
+    "Pyramid Pizza and Wings",
+    "Souvlaki Flame Restaurant"
+   ],
+   "lat": 43.54933789237605,
+   "lon": -80.27996931569537
+  },
+  {
+   "id": 772911640,
+   "area_ha": 0.34,
+   "tenants": 3,
+   "tenant_names": [
+    "Angelino's Fresh Choice Market",
+    "Caribbean Experience Esthetics & Spa",
+    "Guelph Prenatal Massage"
+   ],
+   "lat": 43.553659172693706,
+   "lon": -80.2348234518006
+  },
+  {
+   "id": 468349502,
+   "area_ha": 0.32,
+   "tenants": 1,
+   "tenant_names": [
+    "Cremasco"
+   ],
+   "lat": 43.51645739814276,
+   "lon": -80.24119680291305
+  },
+  {
+   "id": 773013525,
+   "area_ha": 0.31,
+   "tenants": 2,
+   "tenant_names": [
+    "Cannabis Store",
+    "Circle K"
+   ],
+   "lat": 43.52491734898326,
+   "lon": -80.24169941534062
+  },
+  {
+   "id": 332331199,
+   "area_ha": 0.31,
+   "tenants": 3,
+   "tenant_names": [
+    "Little Short Stop",
+    "Pizza Pizza",
+    "Subway"
+   ],
+   "lat": 43.55245306125666,
+   "lon": -80.22385779692469
+  },
+  {
+   "id": 772811891,
+   "area_ha": 0.3,
+   "tenants": 3,
+   "tenant_names": [
+    "Broken English Bistro",
+    "Guelph Mart Convenience",
+    "Italy Pizza"
+   ],
+   "lat": 43.573888994960306,
+   "lon": -80.24741459343971
+  },
+  {
+   "id": 772950217,
+   "area_ha": 0.28,
+   "tenants": 0,
+   "tenant_names": [],
+   "lat": 43.55205182223436,
+   "lon": -80.2776827097577
+  },
+  {
+   "id": 435067236,
+   "area_ha": 0.28,
+   "tenants": 1,
+   "tenant_names": [
+    "7-Eleven"
+   ],
+   "lat": 43.56821434570589,
+   "lon": -80.24731245814161
+  },
+  {
+   "id": 539479524,
+   "area_ha": 0.25,
+   "tenants": 1,
+   "tenant_names": [
+    "Cafe Greek Garden"
+   ],
+   "lat": 43.551477788751775,
+   "lon": -80.22403455944335
+  },
+  {
+   "id": 1117419299,
+   "area_ha": 0.24,
+   "tenants": 0,
+   "tenant_names": [],
+   "lat": 43.5625916416933,
+   "lon": -80.23268763157373
+  },
+  {
+   "id": 772914428,
+   "area_ha": 0.21,
+   "tenants": 0,
+   "tenant_names": [],
+   "lat": 43.556832916126616,
+   "lon": -80.24980242068132
+  },
+  {
+   "id": 773000855,
+   "area_ha": 0.19,
+   "tenants": 1,
+   "tenant_names": [
+    "Planet Bean Coffee"
+   ],
+   "lat": 43.53217865915053,
+   "lon": -80.2331085173262
+  },
+  {
+   "id": 773001798,
+   "area_ha": 0.16,
+   "tenants": 1,
+   "tenant_names": [
+    "Women\u2019s Health Associates"
+   ],
+   "lat": 43.510764778114535,
+   "lon": -80.19686028722005
+  },
+  {
+   "id": 772999966,
+   "area_ha": 0.15,
+   "tenants": 0,
+   "tenant_names": [],
+   "lat": 43.54837173505042,
+   "lon": -80.25461073414708
+  },
+  {
+   "id": 772911620,
+   "area_ha": 0.13,
+   "tenants": 1,
+   "tenant_names": [
+    "Speedvale Variety"
+   ],
+   "lat": 43.56118471766445,
+   "lon": -80.2639930832338
+  },
+  {
+   "id": 772914429,
+   "area_ha": 0.1,
+   "tenants": 0,
+   "tenant_names": [],
+   "lat": 43.55743935181931,
+   "lon": -80.24967492838621
+  },
+  {
+   "id": 772999968,
+   "area_ha": 0.08,
+   "tenants": 1,
+   "tenant_names": [
+    "Hakim Optical"
+   ],
+   "lat": 43.54899827766374,
+   "lon": -80.2552339302319
+  }
+ ],
+ "clusters": [
+  {
+   "lat": 43.549926175284384,
+   "lon": -80.22700447578852,
+   "names": [
+    "Base & Co Hair Studio",
+    "Lost Aviator Coffee Co.",
+    "Sam's Auto Service",
+    "York Auto Sales"
+   ]
+  },
+  {
+   "lat": 43.5420930502785,
+   "lon": -80.2897622333297,
+   "names": [
+    "Champion's Choice",
+    "Diwa Classic Indian Cuisine",
+    "Holistic Health Spa",
+    "India Spice House",
+    "Moose Lake Dental",
+    "Passages"
+   ]
+  },
+  {
+   "lat": 43.530644000186605,
+   "lon": -80.22628177506299,
+   "names": [
+    "Booster Juice",
+    "Campus Dentist",
+    "Campus Optical",
+    "Chat Time",
+    "ClickSIGNS",
+    "KFC",
+    "Starbucks",
+    "Subway",
+    "The Grind",
+    "Tim Hortons",
+    "UC Pharmacy",
+    "amenity=atm"
+   ]
+  },
+  {
+   "lat": 43.552276275319976,
+   "lon": -80.22540672502974,
+   "names": [
+    "3 Well by Syd",
+    "KJ Urban Winery & Craft Brewing Supplies",
+    "Royal City Brewing - Beer Hall & Ward Room",
+    "The Sacremyst Academy"
+   ]
+  },
+  {
+   "lat": 43.542403275123505,
+   "lon": -80.30734227466019,
+   "names": [
+    "Automated Door Systems",
+    "Pho Kinh Do",
+    "Subway",
+    "Zest Cafe"
+   ]
+  },
+  {
+   "lat": 43.55004440002281,
+   "lon": -80.2767460499448,
+   "names": [
+    "Dawson Road Family Medical Clinic",
+    "DiabetesCare Guelph",
+    "Guelph Medical Place Pharmacy",
+    "Sense of Hearing"
+   ]
+  },
+  {
+   "lat": 43.53237826010983,
+   "lon": -80.30468380024647,
+   "names": [
+    "All About Grooming",
+    "Kal Tire",
+    "Krella Gas Fireplaces",
+    "Line-X Protective Coatings",
+    "Make It Sew Embroidery"
+   ]
+  },
+  {
+   "lat": 43.516638200016985,
+   "lon": -80.20389882495462,
+   "names": [
+    "CoCo Fresh Tea & Juice",
+    "Gordon Sushi House",
+    "Savage Cloud Vape Shop",
+    "Simply Convenient"
+   ]
+  },
+  {
+   "lat": 43.55851832002601,
+   "lon": -80.26759582009346,
+   "names": [
+    "Dulux Paints",
+    "Dynamite Pizza",
+    "Guelph Pain Clinic",
+    "I.D.A.",
+    "Lynn's Nails"
+   ]
+  },
+  {
+   "lat": 43.547848000140135,
+   "lon": -80.2822001503945,
+   "names": [
+    "Guelph Studio Massage Spa",
+    "Hair Styling Den",
+    "Jiffy Lube",
+    "Oapex Ltd."
+   ]
+  },
+  {
+   "lat": 43.5582850003249,
+   "lon": -80.28580507596605,
+   "names": [
+    "Kelsey's",
+    "Swiss Chalet",
+    "Tim Hortons",
+    "Valet Car Wash"
+   ]
+  }
+ ],
+ "bike_parking_total": 293
+}

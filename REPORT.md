@@ -12,11 +12,11 @@ Guelph has **66 open-air plazas** in OpenStreetMap (plus 2 enclosed malls, liste
 | 🟡 Nearby only (a rack within 100 m, but not on the property) | 13 |
 | ❌ None mapped | 27 |
 
-Across all plazas, 58 bike parking locations are mapped. Most have no capacity recorded, so the number of bikes they hold is unknown.
+Across all plazas, 53 bike parking locations are mapped. Most have no capacity recorded, so the number of bikes they hold is unknown.
 
 **How to read "none mapped".** OpenStreetMap is a volunteer map. A plaza with no bike rack in the map may still have one on the ground that nobody has recorded yet. Treat ❌ as "go and look", not as "there is no rack". A plaza marked ✅ has been confirmed by at least one mapper, but the rack may be a poor one (a wheel-bender or a single wall loop). Where the rack type is known it is listed under the plaza.
 
-**What counts as a plaza here.** Open-air, multi-tenant retail with shared surface parking, with at least four named businesses mapped. That includes the big-box power centres (SmartCentres, Woodlawn Square, Clairfield Commons, Pergola Commons). It excludes enclosed malls (listed separately), single-tenant buildings, downtown main-street storefronts and the university's pedestrian plazas. Plazas with no name in the map are listed by street and house-number range with their first three tenants.
+**What counts as a plaza here.** Open-air, multi-tenant retail with shared surface parking. Named plazas and shopping centres are included on their name; retail areas with no name in the map are included when at least four named businesses are mapped inside them. That includes the big-box power centres (SmartCentres, Woodlawn Square, Clairfield Commons, Pergola Commons). It excludes enclosed malls (listed separately), single-tenant buildings, downtown main-street storefronts and the university's pedestrian plazas. Plazas with no name in the map are listed by street and house-number range with their first three tenants.
 
 **How to fix the map.** Every plaza links to its OpenStreetMap entry. Anyone can add a missing rack: open the link, click Edit, and add a point tagged `amenity=bicycle_parking` with the rack type and capacity. That keeps this report accurate for the next person who runs it.
 
@@ -30,7 +30,7 @@ Companion files: `plazas.csv` (one row per plaza, for your own map), `img/` (scr
 | [Clair Marketplace](#clair-marketplace) | 🟡 nearby only |  |  | 19 | [OSM](https://www.openstreetmap.org/way/556632268) |
 | [Clairfield Commons](#clairfield-commons) | 🟡 nearby only |  |  | 12 | [OSM](https://www.openstreetmap.org/way/217504192) |
 | [Edinburgh Market Place](#edinburgh-market-place) | ✅ has parking | 3 | 18 + 1 rack untagged | 16 | [OSM](https://www.openstreetmap.org/way/833377075) |
-| [Grange & Victoria Plaza](#grange-victoria-plaza) | ✅ has parking | 1 | 8 | 6 | [OSM](https://www.openstreetmap.org/way/332330004) |
+| [Grange & Victoria Plaza](#grange--victoria-plaza) | ✅ has parking | 1 | 8 | 6 | [OSM](https://www.openstreetmap.org/way/332330004) |
 | [Hartsland Market Square](#hartsland-market-square) | ❌ none mapped |  |  | 13 | [OSM](https://www.openstreetmap.org/way/197749304) |
 | [Kortright Plaza](#kortright-plaza) | ❌ none mapped |  |  | 4 | [OSM](https://www.openstreetmap.org/way/197805877) |
 | [Melran Mall](#melran-mall) | ❌ none mapped |  |  | 25 | [OSM](https://www.openstreetmap.org/way/344325628) |
@@ -129,7 +129,7 @@ These are the priority list. Distance is from the edge of the plaza to the neare
 
 ## Plaza by plaza
 
-Blue outline: the plaza as drawn in OpenStreetMap. Green circles: bike parking counted for this plaza (on the property or within 30 m of its edge). Grey circle: the nearest rack when there is none on site. Map tiles are the OpenStreetMap Standard layer.
+Blue outline: the plaza as drawn in OpenStreetMap. Green circles: bike parking counted for this plaza (on the property or within 30 m of its edge). Grey circle: the nearest rack when there is none on site, where it falls inside the frame. Map tiles are the OpenStreetMap Standard layer.
 
 ### Campus Estates Plaza
 

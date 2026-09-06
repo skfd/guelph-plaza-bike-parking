@@ -48,11 +48,12 @@ def short_name(p):
 
 def anchor(p):
     import re
-    return re.sub(r"[^a-z0-9]+", "-", short_name(p).lower()).strip("-")
+    # GitHub's heading-slug rule: lowercase, drop punctuation, spaces to hyphens
+    return re.sub(r"[^a-z0-9 -]", "", short_name(p).lower()).replace(" ", "-")
 
 
 counts = {v: sum(1 for p in plazas if p["verdict"] == v) for v in ("has parking", "nearby only", "none mapped")}
-total_racks = sum(p["rack_count"] for p in plazas)
+total_racks = len({(r["type"], r["id"]) for p in plazas for r in p["racks"]})  # distinct; a rack can sit in two buffers
 
 L = []
 L.append(f"# Bike parking at Guelph's strip-mall plazas\n")
@@ -68,7 +69,7 @@ L.append(f"Across all plazas, {total_racks} bike parking locations are mapped. M
 L.append("**How to read \"none mapped\".** OpenStreetMap is a volunteer map. A plaza with no bike rack in the map may still have one on the ground that nobody has recorded yet. "
          "Treat ❌ as \"go and look\", not as \"there is no rack\". A plaza marked ✅ has been confirmed by at least one mapper, but the rack may be a poor one (a wheel-bender or a single wall loop). "
          "Where the rack type is known it is listed under the plaza.\n")
-L.append("**What counts as a plaza here.** Open-air, multi-tenant retail with shared surface parking, with at least four named businesses mapped. "
+L.append("**What counts as a plaza here.** Open-air, multi-tenant retail with shared surface parking. Named plazas and shopping centres are included on their name; retail areas with no name in the map are included when at least four named businesses are mapped inside them. "
          "That includes the big-box power centres (SmartCentres, Woodlawn Square, Clairfield Commons, Pergola Commons). "
          "It excludes enclosed malls (listed separately), single-tenant buildings, downtown main-street storefronts and the university's pedestrian plazas. "
          "Plazas with no name in the map are listed by street and house-number range with their first three tenants.\n")
@@ -91,7 +92,7 @@ L.append("")
 
 L.append("## Plaza by plaza\n")
 L.append("Blue outline: the plaza as drawn in OpenStreetMap. Green circles: bike parking counted for this plaza (on the property or within 30 m of its edge). "
-         "Grey circle: the nearest rack when there is none on site. Map tiles are the OpenStreetMap Standard layer.\n")
+         "Grey circle: the nearest rack when there is none on site, where it falls inside the frame. Map tiles are the OpenStreetMap Standard layer.\n")
 for p in plazas:
     L.append(f"### {short_name(p)}\n")
     L.append(f"**{verdict_icon(p['verdict'])}**  ·  [OpenStreetMap]({osm(p)})  ·  [map view]({map_link(p['lat'], p['lon'])})  ·  {p['area_ha']:.1f} ha  ·  {len(p['tenant_names'])} tenants mapped\n")

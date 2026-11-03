@@ -1,21 +1,22 @@
 name,verdict,racks,capacity_tagged,racks_without_capacity,nearest_rack_m,tenants,area_ha,lat,lon,osm_url,screenshot
-Campus Estates Plaza,none mapped,0,0,0,167,17,2.79,43.524803,-80.222413,https://www.openstreetmap.org/way/208650724,img/w208650724.png
-Clair Marketplace,nearby only,0,0,0,78,19,3.3,43.498942,-80.189206,https://www.openstreetmap.org/way/556632268,img/w556632268.png
-Clairfield Commons,nearby only,0,0,0,51,12,3.03,43.500122,-80.190808,https://www.openstreetmap.org/way/217504192,img/w217504192.png
+Arkell Crossing,has parking,1,5,0,1,0,0.18,43.523567,-80.185526,https://www.openstreetmap.org/way/177867077,img/w177867077.png
+Campus Estates Plaza,has parking,1,6,0,0,18,2.79,43.524803,-80.222413,https://www.openstreetmap.org/way/208650724,img/w208650724.png
+Clair Marketplace,nearby only,0,0,0,32,19,3.3,43.498942,-80.189206,https://www.openstreetmap.org/way/556632268,img/w556632268.png
+Clairfield Commons,has parking,5,18,0,0,13,3.03,43.500122,-80.190808,https://www.openstreetmap.org/way/217504192,img/w217504192.png
 Edinburgh Market Place,has parking,3,18,1,0,16,3.98,43.521344,-80.234071,https://www.openstreetmap.org/way/833377075,img/w833377075.png
 Grange & Victoria Plaza,has parking,1,8,0,0,6,3.41,43.557588,-80.230146,https://www.openstreetmap.org/way/332330004,img/w332330004.png
-Hartsland Market Square,none mapped,0,0,0,449,13,4.56,43.513413,-80.219189,https://www.openstreetmap.org/way/197749304,img/w197749304.png
+Hartsland Market Square,has parking,16,49,0,0,13,4.56,43.513413,-80.219189,https://www.openstreetmap.org/way/197749304,img/w197749304.png
 Kortright Plaza,none mapped,0,0,0,406,4,0.76,43.508443,-80.230876,https://www.openstreetmap.org/way/197805877,img/w197805877.png
 Melran Mall,none mapped,0,0,0,873,25,0.96,43.534025,-80.305262,https://www.openstreetmap.org/way/344325628,img/w344325628.png
-Pergola Commons,has parking,4,1,3,0,23,5.43,43.500981,-80.186508,https://www.openstreetmap.org/way/287908722,img/w287908722.png
-Scottsdale Centre,none mapped,0,0,0,159,7,0.15,43.514793,-80.237608,https://www.openstreetmap.org/way/354160042,img/w354160042.png
+Pergola Commons,has parking,6,10,3,0,23,5.43,43.500981,-80.186508,https://www.openstreetmap.org/way/287908722,img/w287908722.png
+Scottsdale Centre,nearby only,0,0,0,80,7,0.15,43.514793,-80.237608,https://www.openstreetmap.org/way/354160042,img/w354160042.png
 Silvercreek Business Centre,nearby only,0,0,0,43,12,2.06,43.544687,-80.285487,https://www.openstreetmap.org/way/773015480,img/w773015480.png
 Silvercreek Plaza,has parking,6,0,6,0,21,2.17,43.539645,-80.281218,https://www.openstreetmap.org/way/256118290,img/w256118290.png
 Silverwood Plaza,none mapped,0,0,0,508,10,1.1,43.551153,-80.295024,https://www.openstreetmap.org/way/773015486,img/w773015486.png
 SmartCentres Guelph,has parking,2,2,1,0,24,12.26,43.564796,-80.281057,https://www.openstreetmap.org/way/772928911,img/w772928911.png
-South City Centre,none mapped,0,0,0,192,0,0.04,43.518682,-80.233214,https://www.openstreetmap.org/way/215069449,img/w215069449.png
+South City Centre,none mapped,0,0,0,143,0,0.04,43.518682,-80.233214,https://www.openstreetmap.org/way/215069449,img/w215069449.png
 Speedvale Centre,none mapped,0,0,0,852,28,3.78,43.567416,-80.258051,https://www.openstreetmap.org/way/237319873,img/w237319873.png
-Stone Square Plaza,has parking,4,21,0,0,20,3.43,43.516812,-80.236491,https://www.openstreetmap.org/way/208406209,img/w208406209.png
+Stone Square Plaza,has parking,4,23,0,0,20,3.43,43.516812,-80.236491,https://www.openstreetmap.org/way/208406209,img/w208406209.png
 Stonegate Plaza,none mapped,0,0,0,128,12,0.23,43.51904,-80.233876,https://www.openstreetmap.org/way/212559744,img/w212559744.png
 Sugarbush Plaza,none mapped,0,0,0,356,4,0.51,43.540766,-80.291452,https://www.openstreetmap.org/way/993366503,img/w993366503.png
 University Square Plaza,has parking,2,4,0,0,13,1.09,43.521236,-80.212608,https://www.openstreetmap.org/way/399321881,img/w399321881.png
@@ -23,7 +24,7 @@ University Square Plaza,has parking,2,4,0,0,13,1.09,43.521236,-80.212608,https:/
 1027 Gordon Street (unnamed),nearby only,0,0,0,73,9,0.82,43.520643,-80.211201,https://www.openstreetmap.org/way/773000852,img/w773000852.png
 104 Silvercreek Parkway North (unnamed),has parking,1,3,0,0,7,1.31,43.538236,-80.279355,https://www.openstreetmap.org/way/295926707,img/w295926707.png
 105 Silvercreek Parkway North (unnamed),nearby only,0,0,0,54,5,0.88,43.538953,-80.277909,https://www.openstreetmap.org/way/295926658,img/w295926658.png
-127-201 Stone Road West (unnamed),has parking,3,24,0,0,6,7.9,43.523076,-80.231964,https://www.openstreetmap.org/way/215068137,img/w215068137.png
+127-201 Stone Road West (unnamed),has parking,4,40,0,0,6,7.9,43.523076,-80.231964,https://www.openstreetmap.org/way/215068137,img/w215068137.png
 1388-1398 Gordon Street (unnamed),none mapped,0,0,0,179,8,0.48,43.512807,-80.197533,https://www.openstreetmap.org/way/192887202,img/w192887202.png
 1499-1515 Gordon Street (unnamed),has parking,1,2,0,0,14,1.3,43.509363,-80.196415,https://www.openstreetmap.org/way/399342895,img/w399342895.png
 159 Fife Road (unnamed),none mapped,0,0,0,1010,4,0.29,43.514004,-80.275973,https://www.openstreetmap.org/way/773030532,img/w773030532.png
@@ -39,25 +40,26 @@ University Square Plaza,has parking,2,4,0,0,13,1.09,43.521236,-80.212608,https:/
 252 Silvercreek Parkway North (unnamed),nearby only,0,0,0,55,9,2.05,43.544962,-80.288543,https://www.openstreetmap.org/way/773015485,img/w773015485.png
 265-297 Eramosa Road (unnamed),has parking,1,0,1,0,6,5.05,43.558383,-80.247988,https://www.openstreetmap.org/way/772911628,img/w772911628.png
 292-314 Stone Road West (unnamed),nearby only,0,0,0,38,26,3.18,43.518471,-80.23435,https://www.openstreetmap.org/way/369321286,img/w369321286.png
+3-15 Municipal Street (unnamed),none mapped,0,0,0,331,5,0.77,43.529793,-80.249019,https://www.openstreetmap.org/way/773013517,img/w773013517.png
 320 Eastview Road (unnamed),none mapped,0,0,0,1589,8,1.42,43.578951,-80.224267,https://www.openstreetmap.org/way/358488660,img/w358488660.png
 340 Woodlawn Road West (unnamed),none mapped,0,0,0,864,13,3.5,43.548078,-80.298459,https://www.openstreetmap.org/way/399149070,img/w399149070.png
 380 Eramosa Road (unnamed),none mapped,0,0,0,128,9,2.96,43.561627,-80.249544,https://www.openstreetmap.org/way/772911624,img/w772911624.png
-4-124 Clair Road East (unnamed),has parking,7,0,7,0,24,5.51,43.502054,-80.189466,https://www.openstreetmap.org/way/399319859,img/w399319859.png
+4-124 Clair Road East (unnamed),has parking,9,44,0,0,24,5.51,43.502054,-80.189466,https://www.openstreetmap.org/way/399319859,img/w399319859.png
 415-429 Woodlawn Road West (unnamed),none mapped,0,0,0,1119,4,2.0,43.545127,-80.30656,https://www.openstreetmap.org/way/399149099,img/w399149099.png
 450 Woodlawn Road West (unnamed),none mapped,0,0,0,1039,4,0.99,43.543146,-80.306614,https://www.openstreetmap.org/way/773016985,img/w773016985.png
 465-565 Woodlawn Road West (unnamed),none mapped,0,0,0,1166,6,5.23,43.543527,-80.309044,https://www.openstreetmap.org/way/962456073,img/w962456073.png
 486 Woodlawn Road East (unnamed),none mapped,0,0,0,1623,5,0.97,43.577653,-80.261002,https://www.openstreetmap.org/way/772926644,img/w772926644.png
-50 Wellington Street East (unnamed),nearby only,0,0,0,49,4,1.22,43.541778,-80.244752,https://www.openstreetmap.org/way/772999958,img/w772999958.png
+50 Wellington Street East (unnamed),nearby only,0,0,0,31,4,1.22,43.541778,-80.244752,https://www.openstreetmap.org/way/772999958,img/w772999958.png
 51-55 Woodlawn Road West (unnamed),has parking,1,2,0,10,4,1.21,43.562681,-80.281758,https://www.openstreetmap.org/way/772928908,img/w772928908.png
-617-649 Scottsdale Drive (unnamed),none mapped,0,0,0,193,4,2.45,43.514272,-80.238961,https://www.openstreetmap.org/way/468349503,img/w468349503.png
-630-650 Scottsdale Drive (unnamed),none mapped,0,0,0,115,8,1.08,43.515017,-80.238051,https://www.openstreetmap.org/way/468349505,img/w468349505.png
+617-649 Scottsdale Drive (unnamed),has parking,3,24,0,0,5,2.45,43.514272,-80.238961,https://www.openstreetmap.org/way/468349503,img/w468349503.png
+630-650 Scottsdale Drive (unnamed),nearby only,0,0,0,50,8,1.08,43.515017,-80.238051,https://www.openstreetmap.org/way/468349505,img/w468349505.png
 666 Woolwich Street (unnamed),none mapped,0,0,0,175,11,1.33,43.558548,-80.269589,https://www.openstreetmap.org/way/772928901,img/w772928901.png
-670-698 Woolwich Street (unnamed),has parking,4,4,3,0,10,3.61,43.560373,-80.272263,https://www.openstreetmap.org/way/772928904,img/w772928904.png
+670-698 Woolwich Street (unnamed),has parking,4,4,3,0,10,3.22,43.56032,-80.272125,https://www.openstreetmap.org/way/772928904,img/w772928904.png
 715 Wellington Street West (unnamed),has parking,1,0,1,0,10,1.05,43.521469,-80.26872,https://www.openstreetmap.org/way/364715613,img/w364715613.png
 727-777 Woolwich Street (unnamed),nearby only,0,0,0,35,15,2.72,43.56381,-80.274865,https://www.openstreetmap.org/way/772928906,img/w772928906.png
 75 Willow Road (unnamed),none mapped,0,0,0,128,10,1.07,43.544582,-80.273719,https://www.openstreetmap.org/way/773014769,img/w773014769.png
 86-100 Gordon Street (unnamed),has parking,1,8,0,0,26,1.75,43.541183,-80.243497,https://www.openstreetmap.org/way/772999957,img/w772999957.png
-89-105 Gordon Street (unnamed),has parking,2,4,1,0,7,1.44,43.539699,-80.244407,https://www.openstreetmap.org/way/328207036,img/w328207036.png
+89-105 Gordon Street (unnamed),has parking,5,20,1,0,7,1.44,43.539699,-80.244407,https://www.openstreetmap.org/way/328207036,img/w328207036.png
 926 Paisley Road (unnamed),nearby only,0,0,0,38,5,0.48,43.525763,-80.28505,https://www.openstreetmap.org/way/256252178,img/w256252178.png
 951 Gordon Street (unnamed),nearby only,0,0,0,64,10,0.78,43.522095,-80.213755,https://www.openstreetmap.org/way/399321888,img/w399321888.png
 Wellington Plaza,has parking,1,8,0,0,10,0.22,43.541064,-80.243649,https://www.openstreetmap.org/way/177697922,img/w177697922.png

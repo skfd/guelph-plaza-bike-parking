@@ -1,7 +1,106 @@
 {
- "generated": "2026-09-05",
+ "generated": "2026-11-03",
  "rule": "open-air, multi-tenant retail with shared surface parking; enclosed malls listed separately",
  "plazas": [
+  {
+   "id": 177867077,
+   "type": "way",
+   "name": "Arkell Crossing",
+   "tags": {
+    "building": "retail",
+    "building:levels": "1",
+    "height": "6",
+    "name": "Arkell Crossing",
+    "source": "Bing"
+   },
+   "racks": [
+    {
+     "id": 14202513023,
+     "type": "node",
+     "lat": 43.5235559,
+     "lon": -80.1851468,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "capacity": "5"
+     }
+    }
+   ],
+   "rack_count": 1,
+   "capacity": 5,
+   "capacity_untagged": 0,
+   "verdict": "has parking",
+   "nearest_rack_m": 1,
+   "nearest_rack": {
+    "id": 14202513023,
+    "type": "node",
+    "lat": 43.5235559,
+    "lon": -80.1851468
+   },
+   "tenant_names": [],
+   "lat": 43.52356748106282,
+   "lon": -80.18552558463512,
+   "area_ha": 0.17874946223294141,
+   "bbox": [
+    43.52334183178853,
+    -80.18596847732034,
+    43.52378654423617,
+    -80.18507967229753
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.1856229,
+       43.523786699999995
+      ],
+      [
+       -80.1855085,
+       43.5237896
+      ],
+      [
+       -80.1850835,
+       43.5235022
+      ],
+      [
+       -80.1852761,
+       43.5233369
+      ],
+      [
+       -80.1854042,
+       43.5234268
+      ],
+      [
+       -80.1853844,
+       43.5234414
+      ],
+      [
+       -80.1854906,
+       43.523513099999995
+      ],
+      [
+       -80.18558420000001,
+       43.5235134
+      ],
+      [
+       -80.1857509,
+       43.523376999999996
+      ],
+      [
+       -80.1859659,
+       43.52353349999999
+      ],
+      [
+       -80.1856229,
+       43.523786699999995
+      ]
+     ]
+    ]
+   },
+   "image": "img/w177867077.png",
+   "zoom": 18
+  },
   {
    "id": 208650724,
    "type": "way",
@@ -11,17 +110,29 @@
     "name": "Campus Estates Plaza",
     "source": "Bing"
    },
-   "racks": [],
-   "rack_count": 0,
-   "capacity": 0,
+   "racks": [
+    {
+     "id": 14161650993,
+     "type": "node",
+     "lat": 43.5247285,
+     "lon": -80.2220086,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "wall_loops",
+      "capacity": "6"
+     }
+    }
+   ],
+   "rack_count": 1,
+   "capacity": 6,
    "capacity_untagged": 0,
-   "verdict": "none mapped",
-   "nearest_rack_m": 167,
+   "verdict": "has parking",
+   "nearest_rack_m": 0,
    "nearest_rack": {
-    "id": 13062612120,
+    "id": 14161650993,
     "type": "node",
-    "lat": 43.5249647,
-    "lon": -80.2259842
+    "lat": 43.5247285,
+    "lon": -80.2220086
    },
    "tenant_names": [
     "BarBurrito",
@@ -31,6 +142,7 @@
     "Chatime",
     "City Pizza",
     "Cora",
+    "D Spot Desserts Guelph",
     "Fabutan",
     "Harvard Dental",
     "Harvard Variety",
@@ -118,12 +230,12 @@
    "capacity": 0,
    "capacity_untagged": 0,
    "verdict": "nearby only",
-   "nearest_rack_m": 78,
+   "nearest_rack_m": 32,
    "nearest_rack": {
-    "id": 12823796244,
+    "id": 14298186314,
     "type": "node",
-    "lat": 43.5007524,
-    "lon": -80.1887785
+    "lat": 43.4995874,
+    "lon": -80.1902877
    },
    "tenant_names": [
     "COBS Bread",
@@ -214,17 +326,78 @@
     "name": "Clairfield Commons",
     "operator": "First Capital"
    },
-   "racks": [],
-   "rack_count": 0,
-   "capacity": 0,
+   "racks": [
+    {
+     "id": 14272107820,
+     "type": "node",
+     "lat": 43.5004309,
+     "lon": -80.1907778,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "capacity": "4",
+      "covered": "no"
+     }
+    },
+    {
+     "id": 14272107834,
+     "type": "node",
+     "lat": 43.5001627,
+     "lon": -80.189574,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "capacity": "2",
+      "covered": "no"
+     }
+    },
+    {
+     "id": 14272107846,
+     "type": "node",
+     "lat": 43.5000518,
+     "lon": -80.1912974,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "capacity": "2",
+      "covered": "no"
+     }
+    },
+    {
+     "id": 14272107847,
+     "type": "node",
+     "lat": 43.5002499,
+     "lon": -80.1911109,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "capacity": "2",
+      "covered": "no"
+     }
+    },
+    {
+     "id": 14298186314,
+     "type": "node",
+     "lat": 43.4995874,
+     "lon": -80.1902877,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "capacity": "8",
+      "covered": "no"
+     }
+    }
+   ],
+   "rack_count": 5,
+   "capacity": 18,
    "capacity_untagged": 0,
-   "verdict": "nearby only",
-   "nearest_rack_m": 51,
+   "verdict": "has parking",
+   "nearest_rack_m": 0,
    "nearest_rack": {
-    "id": 12823720971,
+    "id": 14272107820,
     "type": "node",
-    "lat": 43.5013764,
-    "lon": -80.1898493
+    "lat": 43.5004309,
+    "lon": -80.1907778
    },
    "tenant_names": [
     "Clair Dental Centre",
@@ -232,13 +405,14 @@
     "Iris",
     "Kenzo",
     "PetSmart",
-    "Pierogi House",
     "Pizza Nova",
     "Scotiabank",
     "Shoeless Joe's",
     "Starbucks",
     "Subway",
-    "TD"
+    "TD",
+    "Tahini's",
+    "The Indian Spice"
    ],
    "lat": 43.50012217637909,
    "lon": -80.19080782030177,
@@ -581,17 +755,209 @@
    "merged": [
     217385469
    ],
-   "racks": [],
-   "rack_count": 0,
-   "capacity": 0,
+   "racks": [
+    {
+     "id": 14158765587,
+     "type": "node",
+     "lat": 43.5133249,
+     "lon": -80.2207245,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "capacity": "2",
+      "covered": "yes"
+     }
+    },
+    {
+     "id": 14158765589,
+     "type": "node",
+     "lat": 43.5131592,
+     "lon": -80.2209915,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "capacity": "4"
+     }
+    },
+    {
+     "id": 14158815860,
+     "type": "node",
+     "lat": 43.5128841,
+     "lon": -80.2205734,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "capacity": "2",
+      "covered": "no"
+     }
+    },
+    {
+     "id": 14158815862,
+     "type": "node",
+     "lat": 43.5129812,
+     "lon": -80.2200669,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "capacity": "2",
+      "covered": "yes"
+     }
+    },
+    {
+     "id": 14158838905,
+     "type": "node",
+     "lat": 43.5134247,
+     "lon": -80.2182331,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "capacity": "4",
+      "covered": "no"
+     }
+    },
+    {
+     "id": 14158838906,
+     "type": "node",
+     "lat": 43.5130941,
+     "lon": -80.2186725,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "capacity": "2",
+      "covered": "no"
+     }
+    },
+    {
+     "id": 14158838907,
+     "type": "node",
+     "lat": 43.5142965,
+     "lon": -80.2190549,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "safe_loops",
+      "capacity": "5",
+      "covered": "no"
+     }
+    },
+    {
+     "id": 14158838908,
+     "type": "node",
+     "lat": 43.5140358,
+     "lon": -80.2186488,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "capacity": "2",
+      "covered": "yes"
+     }
+    },
+    {
+     "id": 14158838909,
+     "type": "node",
+     "lat": 43.5139641,
+     "lon": -80.2198272,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "capacity": "2",
+      "covered": "no"
+     }
+    },
+    {
+     "id": 14158838910,
+     "type": "node",
+     "lat": 43.5143903,
+     "lon": -80.2192075,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "safe_loops",
+      "capacity": "5",
+      "covered": "no"
+     }
+    },
+    {
+     "id": 14158838911,
+     "type": "node",
+     "lat": 43.5133184,
+     "lon": -80.218338,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "capacity": "2",
+      "covered": "yes"
+     }
+    },
+    {
+     "id": 14158838912,
+     "type": "node",
+     "lat": 43.5137367,
+     "lon": -80.2182678,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "capacity": "2",
+      "covered": "no"
+     }
+    },
+    {
+     "id": 14158838913,
+     "type": "node",
+     "lat": 43.5142697,
+     "lon": -80.2190216,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "capacity": "2",
+      "covered": "no"
+     }
+    },
+    {
+     "id": 14158838914,
+     "type": "node",
+     "lat": 43.5133134,
+     "lon": -80.2183084,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "wall_loops",
+      "capacity": "9",
+      "covered": "yes"
+     }
+    },
+    {
+     "id": 14158838915,
+     "type": "node",
+     "lat": 43.5129034,
+     "lon": -80.2198482,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "capacity": "2",
+      "covered": "no"
+     }
+    },
+    {
+     "id": 14158838916,
+     "type": "node",
+     "lat": 43.5135868,
+     "lon": -80.2180876,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "capacity": "2",
+      "covered": "no"
+     }
+    }
+   ],
+   "rack_count": 16,
+   "capacity": 49,
    "capacity_untagged": 0,
-   "verdict": "none mapped",
-   "nearest_rack_m": 449,
+   "verdict": "has parking",
+   "nearest_rack_m": 0,
    "nearest_rack": {
-    "id": 14139961003,
+    "id": 14158765587,
     "type": "node",
-    "lat": 43.5112366,
-    "lon": -80.2264761
+    "lat": 43.5133249,
+    "lon": -80.2207245
    },
    "tenant_names": [
     "Anytime Fitness",
@@ -756,12 +1122,10 @@
    "name": "Melran Mall",
    "tags": {
     "addr:city": "Guelph",
+    "addr:flats": "100-140",
     "addr:housenumber": "355",
-    "addr:interpolation": "all",
     "addr:postcode": "N1K 1S5",
-    "addr:province": "Ontario",
     "addr:street": "Elmira Road North",
-    "addr:unit": "100-140",
     "building": "commercial",
     "building:levels": "1",
     "name": "Melran Mall",
@@ -969,10 +1333,33 @@
       "indoor": "no",
       "mapillary": "652266136036141"
      }
+    },
+    {
+     "id": 14272103029,
+     "type": "node",
+     "lat": 43.5018621,
+     "lon": -80.186561,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "capacity": "2"
+     }
+    },
+    {
+     "id": 14298053818,
+     "type": "node",
+     "lat": 43.5023863,
+     "lon": -80.185522,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "rack",
+      "capacity": "7",
+      "covered": "no"
+     }
     }
    ],
-   "rack_count": 4,
-   "capacity": 1,
+   "rack_count": 6,
+   "capacity": 10,
    "capacity_untagged": 3,
    "verdict": "has parking",
    "nearest_rack_m": 0,
@@ -1077,7 +1464,6 @@
    "tags": {
     "addr:city": "Guelph",
     "addr:housenumber": "650",
-    "addr:province": "ON",
     "addr:street": "Scottsdale Drive",
     "building": "retail",
     "building:levels": "1",
@@ -1088,13 +1474,13 @@
    "rack_count": 0,
    "capacity": 0,
    "capacity_untagged": 0,
-   "verdict": "none mapped",
-   "nearest_rack_m": 159,
+   "verdict": "nearby only",
+   "nearest_rack_m": 80,
    "nearest_rack": {
-    "id": 11225402345,
+    "id": 14269222867,
     "type": "node",
-    "lat": 43.5163571,
-    "lon": -80.2369455
+    "lat": 43.5147148,
+    "lon": -80.2389628
    },
    "tenant_names": [
     "Fluffy Glaze",
@@ -1292,7 +1678,6 @@
    "tags": {
     "addr:city": "Guelph",
     "addr:housenumber": "120",
-    "addr:province": "ON",
     "addr:street": "Silvercreek Parkway North",
     "landuse": "retail",
     "name": "Silvercreek Plaza",
@@ -1450,7 +1835,6 @@
    "tags": {
     "addr:city": "Guelph",
     "addr:housenumber": "485",
-    "addr:province": "ON",
     "addr:street": "Silvercreek Parkway North",
     "landuse": "retail",
     "name": "Silverwood Plaza"
@@ -1805,11 +2189,10 @@
    "name": "South City Centre",
    "tags": {
     "addr:city": "Guelph",
+    "addr:flats": "101;101A;102;201;202",
     "addr:housenumber": "511",
     "addr:postcode": "N1G 4S5",
-    "addr:province": "Ontario",
     "addr:street": "Edinburgh Road South",
-    "addr:unit": "101;101A;102;201;202",
     "building": "commercial",
     "name": "South City Centre"
    },
@@ -1818,12 +2201,12 @@
    "capacity": 0,
    "capacity_untagged": 0,
    "verdict": "none mapped",
-   "nearest_rack_m": 192,
+   "nearest_rack_m": 143,
    "nearest_rack": {
-    "id": 13963396495,
+    "id": 14307258547,
     "type": "node",
-    "lat": 43.5204972,
-    "lon": -80.2336822
+    "lat": 43.5197586,
+    "lon": -80.2319942
    },
    "tenant_names": [],
    "lat": 43.51868160004469,
@@ -1993,6 +2376,7 @@
       "amenity": "bicycle_parking",
       "bicycle_parking": "stands",
       "capacity": "6",
+      "check_date": "2026-10-09",
       "fee": "no",
       "mapillary": "513009574264029",
       "source:position": "Mapillary 2023-01-03",
@@ -2018,23 +2402,25 @@
      "tags": {
       "amenity": "bicycle_parking",
       "bicycle_parking": "stands",
-      "capacity": "5"
+      "capacity": "6",
+      "check_date": "2026-10-09"
      }
     },
     {
      "id": 12206930210,
      "type": "node",
-     "lat": 43.5173519,
-     "lon": -80.2356687,
+     "lat": 43.5173633,
+     "lon": -80.235686,
      "tags": {
       "amenity": "bicycle_parking",
       "bicycle_parking": "stands",
-      "capacity": "5"
+      "capacity": "6",
+      "check_date": "2026-10-09"
      }
     }
    ],
    "rack_count": 4,
-   "capacity": 21,
+   "capacity": 23,
    "capacity_untagged": 0,
    "verdict": "has parking",
    "nearest_rack_m": 0,
@@ -2261,7 +2647,6 @@
    "tags": {
     "addr:city": "Guelph",
     "addr:housenumber": "400",
-    "addr:province": "ON",
     "addr:street": "Speedvale Avenue West",
     "landuse": "commercial",
     "name": "Sugarbush Plaza"
@@ -2359,7 +2744,6 @@
     "addr:city": "Guelph",
     "addr:housenumber": "987",
     "addr:postcode": "N1G 4W3",
-    "addr:province": "Ontario",
     "addr:street": "Gordon Street",
     "landuse": "retail",
     "name": "University Square Plaza"
@@ -2417,7 +2801,7 @@
     "Family Chiropractic Centre",
     "Lux Nail Spa",
     "Papa John's",
-    "RBC",
+    "RBC Royal Bank",
     "Sequoia Dental",
     "Sketchley Cleaners",
     "Subway",
@@ -2628,7 +3012,6 @@
     "addr:city": "Guelph",
     "addr:housenumber": "1027",
     "addr:postcode": "N1G 4X1",
-    "addr:province": "Ontario",
     "addr:street": "Gordon Street",
     "landuse": "retail"
    },
@@ -2939,10 +3322,21 @@
       "covered": "yes",
       "fee": "no"
      }
+    },
+    {
+     "id": 14262171677,
+     "type": "node",
+     "lat": 43.5234768,
+     "lon": -80.2308905,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "capacity": "16"
+     }
     }
    ],
-   "rack_count": 3,
-   "capacity": 24,
+   "rack_count": 4,
+   "capacity": 40,
    "capacity_untagged": 0,
    "verdict": "has parking",
    "nearest_rack_m": 0,
@@ -4380,8 +4774,8 @@
    "nearest_rack": {
     "id": 12206930210,
     "type": "node",
-    "lat": 43.5173519,
-    "lon": -80.2356687
+    "lat": 43.5173633,
+    "lon": -80.235686
    },
    "bbox": [
     43.517250649066064,
@@ -4417,6 +4811,88 @@
     ]
    },
    "image": "img/w369321286.png",
+   "zoom": 18
+  },
+  {
+   "id": 773013517,
+   "type": "way",
+   "tags": {
+    "landuse": "retail"
+   },
+   "tenant_names": [
+    "CosmoProf",
+    "Pizza Trokadero",
+    "The Beer Store",
+    "The Saffron Indian Restaurant",
+    "W Sushi"
+   ],
+   "area_ha": 0.7662046187161953,
+   "lat": 43.52979333429263,
+   "lon": -80.2490187782091,
+   "name": "Unnamed plaza, 3-15 Municipal Street (CosmoProf, Pizza Trokadero, The Beer Store)",
+   "unnamed": true,
+   "racks": [],
+   "rack_count": 0,
+   "capacity": 0,
+   "capacity_untagged": 0,
+   "verdict": "none mapped",
+   "nearest_rack_m": 331,
+   "nearest_rack": {
+    "id": 12402038484,
+    "type": "node",
+    "lat": 43.5301346,
+    "lon": -80.2538567
+   },
+   "bbox": [
+    43.52919472745938,
+    -80.24983705160753,
+    43.53039608875348,
+    -80.24819661720433
+   ],
+   "geom_ll": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.248746,
+       43.5303997
+      ],
+      [
+       -80.24868710000001,
+       43.53035679999999
+      ],
+      [
+       -80.2482015,
+       43.530002999999994
+      ],
+      [
+       -80.2484489,
+       43.52983819999999
+      ],
+      [
+       -80.2492844,
+       43.52919109999999
+      ],
+      [
+       -80.24939480000002,
+       43.52926639999999
+      ],
+      [
+       -80.2498323,
+       43.529578099999995
+      ],
+      [
+       -80.2492448,
+       43.5300097
+      ],
+      [
+       -80.248746,
+       43.5303997
+      ]
+     ]
+    ]
+   },
+   "image": "img/w773013517.png",
    "zoom": 18
   },
   {
@@ -4758,7 +5234,10 @@
      "lon": -80.1897783,
      "tags": {
       "amenity": "bicycle_parking",
-      "colour": "black"
+      "bicycle_parking": "rack",
+      "capacity": "5",
+      "colour": "black",
+      "covered": "no"
      }
     },
     {
@@ -4768,7 +5247,10 @@
      "lon": -80.1899479,
      "tags": {
       "amenity": "bicycle_parking",
-      "colour": "black"
+      "bicycle_parking": "rack",
+      "capacity": "5",
+      "colour": "black",
+      "covered": "no"
      }
     },
     {
@@ -4778,7 +5260,8 @@
      "lon": -80.1898493,
      "tags": {
       "amenity": "bicycle_parking",
-      "bicycle_parking": "stands",
+      "bicycle_parking": "loops",
+      "capacity": "6",
       "check_date": "2025-05-09",
       "colour": "silver",
       "covered": "no",
@@ -4793,6 +5276,8 @@
      "lon": -80.1887145,
      "tags": {
       "amenity": "bicycle_parking",
+      "bicycle_parking": "loops",
+      "capacity": "6",
       "colour": "silver",
       "covered": "no",
       "fee": "no",
@@ -4806,6 +5291,7 @@
      "lon": -80.1887785,
      "tags": {
       "amenity": "bicycle_parking",
+      "capacity": "2",
       "colour": "black"
      }
     },
@@ -4816,6 +5302,8 @@
      "lon": -80.1891537,
      "tags": {
       "amenity": "bicycle_parking",
+      "bicycle_parking": "loops",
+      "capacity": "6",
       "check_date": "2025-05-09",
       "colour": "silver",
       "covered": "no",
@@ -4830,6 +5318,35 @@
      "lon": -80.1892194,
      "tags": {
       "amenity": "bicycle_parking",
+      "bicycle_parking": "loops",
+      "capacity": "6",
+      "check_date": "2025-05-09",
+      "colour": "silver",
+      "covered": "no",
+      "fee": "no",
+      "indoor": "no"
+     }
+    },
+    {
+     "id": 14272103514,
+     "type": "node",
+     "lat": 43.5008297,
+     "lon": -80.1888767,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "capacity": "2",
+      "colour": "black"
+     }
+    },
+    {
+     "id": 14284839880,
+     "type": "node",
+     "lat": 43.5012897,
+     "lon": -80.1899677,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "loops",
+      "capacity": "6",
       "check_date": "2025-05-09",
       "colour": "silver",
       "covered": "no",
@@ -4838,9 +5355,9 @@
      }
     }
    ],
-   "rack_count": 7,
-   "capacity": 0,
-   "capacity_untagged": 7,
+   "rack_count": 9,
+   "capacity": 44,
+   "capacity_untagged": 0,
    "verdict": "has parking",
    "nearest_rack_m": 0,
    "nearest_rack": {
@@ -5211,12 +5728,12 @@
    "capacity": 0,
    "capacity_untagged": 0,
    "verdict": "nearby only",
-   "nearest_rack_m": 49,
+   "nearest_rack_m": 31,
    "nearest_rack": {
-    "id": 13286323760,
+    "id": 14197996496,
     "type": "node",
-    "lat": 43.5408863,
-    "lon": -80.2459681
+    "lat": 43.540805,
+    "lon": -80.2453657
    },
    "bbox": [
     43.540919906178516,
@@ -5392,6 +5909,7 @@
     "landuse": "retail"
    },
    "tenant_names": [
+    "Frontier Diagnostics: Medical Imaging",
     "LCBO",
     "Pizza Hut",
     "Reserved Cannabis",
@@ -5400,19 +5918,53 @@
    "area_ha": 2.4486330567379935,
    "lat": 43.51427206939687,
    "lon": -80.23896090269201,
-   "name": "Unnamed plaza, 617-649 Scottsdale Drive (LCBO, Pizza Hut, Reserved Cannabis)",
+   "name": "Unnamed plaza, 617-649 Scottsdale Drive (Frontier Diagnostics: Medical Imaging, LCBO, Pizza Hut)",
    "unnamed": true,
-   "racks": [],
-   "rack_count": 0,
-   "capacity": 0,
+   "racks": [
+    {
+     "id": 14269099699,
+     "type": "node",
+     "lat": 43.514423,
+     "lon": -80.2393495,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "capacity": "8"
+     }
+    },
+    {
+     "id": 14269099700,
+     "type": "node",
+     "lat": 43.5143524,
+     "lon": -80.2394487,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "capacity": "8"
+     }
+    },
+    {
+     "id": 14269222867,
+     "type": "node",
+     "lat": 43.5147148,
+     "lon": -80.2389628,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "capacity": "8"
+     }
+    }
+   ],
+   "rack_count": 3,
+   "capacity": 24,
    "capacity_untagged": 0,
-   "verdict": "none mapped",
-   "nearest_rack_m": 193,
+   "verdict": "has parking",
+   "nearest_rack_m": 0,
    "nearest_rack": {
-    "id": 12206912381,
+    "id": 14269099699,
     "type": "node",
-    "lat": 43.5165081,
-    "lon": -80.2376239
+    "lat": 43.514423,
+    "lon": -80.2393495
    },
    "bbox": [
     43.513273304200396,
@@ -5511,13 +6063,13 @@
    "rack_count": 0,
    "capacity": 0,
    "capacity_untagged": 0,
-   "verdict": "none mapped",
-   "nearest_rack_m": 115,
+   "verdict": "nearby only",
+   "nearest_rack_m": 50,
    "nearest_rack": {
-    "id": 12206912381,
+    "id": 14269222867,
     "type": "node",
-    "lat": 43.5165081,
-    "lon": -80.2376239
+    "lat": 43.5147148,
+    "lon": -80.2389628
    },
    "bbox": [
     43.514213389184086,
@@ -5657,9 +6209,9 @@
     "Uptown Grill",
     "shop=beauty"
    ],
-   "area_ha": 3.614302654252013,
-   "lat": 43.56037283019021,
-   "lon": -80.27226330203682,
+   "area_ha": 3.2213647521732067,
+   "lat": 43.560320053775584,
+   "lon": -80.27212464441303,
    "name": "Unnamed plaza, 670-698 Woolwich Street (Church's Chicken, Dominion Lending Centres, Edward Jones)",
    "unnamed": true,
    "racks": [
@@ -5728,8 +6280,8 @@
     "lon": -80.2713988
    },
    "bbox": [
-    43.55937379503408,
-    -80.27401660525305,
+    43.5593734000833,
+    -80.27395441218597,
     43.561617202460916,
     -80.26980367938765
    ],
@@ -5754,16 +6306,24 @@
        43.55934819999999
       ],
       [
-       -80.2739002,
-       43.55999549999999
+       -80.2739468,
+       43.560007299999995
       ],
       [
-       -80.2733824,
-       43.56036819999999
+       -80.2728379,
+       43.5608106
       ],
       [
-       -80.2739992,
-       43.560823299999996
+       -80.27317940000002,
+       43.561040999999996
+      ],
+      [
+       -80.2732444,
+       43.561004600000004
+      ],
+      [
+       -80.2735253,
+       43.5611812
       ],
       [
        -80.2728785,
@@ -6109,7 +6669,7 @@
       "amenity": "bicycle_parking",
       "bicycle_parking": "bollard",
       "capacity": "8",
-      "check_date": "2024-09-11",
+      "check_date": "2026-10-30",
       "colour": "silver",
       "covered": "yes",
       "fee": "no",
@@ -6270,13 +6830,14 @@
     {
      "id": 12015891543,
      "type": "node",
-     "lat": 43.5401789,
-     "lon": -80.2443337,
+     "lat": 43.5401701,
+     "lon": -80.2443343,
      "tags": {
       "access": "yes",
       "amenity": "bicycle_parking",
       "bicycle_parking": "stands",
       "capacity": "4",
+      "check_date": "2026-10-23",
       "covered": "no",
       "fee": "no",
       "indoor": "no",
@@ -6295,18 +6856,63 @@
       "covered": "no",
       "fee": "no"
      }
+    },
+    {
+     "id": 14307672437,
+     "type": "node",
+     "lat": 43.5398612,
+     "lon": -80.2438882,
+     "tags": {
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "capacity": "6"
+     }
+    },
+    {
+     "id": 14314321141,
+     "type": "node",
+     "lat": 43.5397498,
+     "lon": -80.2448116,
+     "tags": {
+      "access": "yes",
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "capacity": "4",
+      "check_date": "2026-10-23",
+      "covered": "no",
+      "fee": "no",
+      "indoor": "no",
+      "source": "survey"
+     }
+    },
+    {
+     "id": 14314354018,
+     "type": "node",
+     "lat": 43.5394248,
+     "lon": -80.2444664,
+     "tags": {
+      "access": "yes",
+      "amenity": "bicycle_parking",
+      "bicycle_parking": "stands",
+      "capacity": "6",
+      "check_date": "2026-10-23",
+      "covered": "no",
+      "fee": "no",
+      "indoor": "no",
+      "source": "survey"
+     }
     }
    ],
-   "rack_count": 2,
-   "capacity": 4,
+   "rack_count": 5,
+   "capacity": 20,
    "capacity_untagged": 1,
    "verdict": "has parking",
    "nearest_rack_m": 0,
    "nearest_rack": {
     "id": 12015891543,
     "type": "node",
-    "lat": 43.5401789,
-    "lon": -80.2443337
+    "lat": 43.5401701,
+    "lon": -80.2443343
    },
    "bbox": [
     43.53888445361029,
@@ -6541,7 +7147,7 @@
       "amenity": "bicycle_parking",
       "bicycle_parking": "bollard",
       "capacity": "8",
-      "check_date": "2024-09-11",
+      "check_date": "2026-10-30",
       "colour": "silver",
       "covered": "yes",
       "fee": "no",
@@ -6858,6 +7464,7 @@
    "tags": {
     "addr:city": "Guelph",
     "addr:housenumber": "500",
+    "addr:postcode": "N1H 7G4",
     "addr:street": "Willow Road",
     "landuse": "retail",
     "name": "Westwood Plaza"
@@ -7223,8 +7830,6 @@
    "tags": {
     "addr:city": "Guelph",
     "addr:housenumber": "243-263",
-    "addr:interpolation": "odd",
-    "addr:province": "ON",
     "addr:street": "Woodlawn Road West",
     "landuse": "retail",
     "name": "Woodlawn Square"
@@ -7308,7 +7913,6 @@
     "addr:city": "Guelph",
     "addr:housenumber": "435",
     "addr:postcode": "N1G 2X6",
-    "addr:province": "Ontario",
     "addr:street": "Stone Road West",
     "building": "retail",
     "building:levels": "2",
@@ -7752,7 +8356,6 @@
     "addr:city": "Guelph",
     "addr:housenumber": "55",
     "addr:postcode": "N1H 7T8",
-    "addr:province": "ON",
     "addr:street": "Wyndham Street North",
     "alt_name": "Old Quebec Street Shoppes",
     "building": "yes",
@@ -8194,18 +8797,6 @@
    "lon": -80.24804655137018
   },
   {
-   "id": 773013517,
-   "area_ha": 0.77,
-   "tenants": 3,
-   "tenant_names": [
-    "Biryani Delight",
-    "Pizza Trokadero",
-    "W Sushi"
-   ],
-   "lat": 43.52979333429263,
-   "lon": -80.2490187782091
-  },
-  {
    "id": 177925092,
    "area_ha": 0.72,
    "tenants": 1,
@@ -8275,14 +8866,6 @@
    ],
    "lat": 43.544034240350534,
    "lon": -80.28721073254323
-  },
-  {
-   "id": 772823185,
-   "area_ha": 0.57,
-   "tenants": 0,
-   "tenant_names": [],
-   "lat": 43.523380380962585,
-   "lon": -80.18550129210419
   },
   {
    "id": 773036285,
@@ -8642,16 +9225,6 @@
    ]
   },
   {
-   "lat": 43.516638200016985,
-   "lon": -80.20389882495462,
-   "names": [
-    "CoCo Fresh Tea & Juice",
-    "Gordon Sushi House",
-    "Savage Cloud Vape Shop",
-    "Simply Convenient"
-   ]
-  },
-  {
    "lat": 43.55851832002601,
    "lon": -80.26759582009346,
    "names": [
@@ -8683,5 +9256,5 @@
    ]
   }
  ],
- "bike_parking_total": 293
+ "bike_parking_total": 372
 }

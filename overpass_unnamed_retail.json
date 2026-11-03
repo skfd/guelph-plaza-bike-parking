@@ -2,8 +2,8 @@
  "version": 0.6,
  "generator": "Overpass API 0.7.62.11 87bfad18",
  "osm3s": {
-  "timestamp_osm_base": "2026-09-06T03:46:38Z",
-  "timestamp_areas_base": "2026-09-05T17:53:42Z",
+  "timestamp_osm_base": "2026-11-03T22:24:37Z",
+  "timestamp_areas_base": "2026-11-03T16:54:38Z",
   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
  },
  "elements": [
@@ -2903,7 +2903,7 @@
    "id": 772928904,
    "bounds": {
     "minlat": 43.5593482,
-    "minlon": -80.2739992,
+    "minlon": -80.2739468,
     "maxlat": 43.5616368,
     "maxlon": -80.2698308
    },
@@ -2925,16 +2925,24 @@
      "lon": -80.2699971
     },
     {
-     "lat": 43.5599955,
-     "lon": -80.2739002
+     "lat": 43.5600073,
+     "lon": -80.2739468
     },
     {
-     "lat": 43.5603682,
-     "lon": -80.2733824
+     "lat": 43.5608106,
+     "lon": -80.2728379
     },
     {
-     "lat": 43.5608233,
-     "lon": -80.2739992
+     "lat": 43.561041,
+     "lon": -80.2731794
+    },
+    {
+     "lat": 43.5610046,
+     "lon": -80.2732444
+    },
+    {
+     "lat": 43.5611812,
+     "lon": -80.2735253
     },
     {
      "lat": 43.5616368,
@@ -3700,7 +3708,6 @@
     "addr:city": "Guelph",
     "addr:housenumber": "1027",
     "addr:postcode": "N1G 4X1",
-    "addr:province": "Ontario",
     "addr:street": "Gordon Street",
     "landuse": "retail"
    }
@@ -4674,7 +4681,6 @@
     "addr:city": "Guelph",
     "addr:housenumber": "695",
     "addr:postcode": "N1K 1E9",
-    "addr:province": "Ontario",
     "addr:street": "Woodlawn Road West",
     "landuse": "retail"
    }
@@ -4768,7 +4774,6 @@
    "tags": {
     "addr:city": "Guelph",
     "addr:housenumber": "1007",
-    "addr:province": "Ontario",
     "addr:street": "Gordon Street",
     "landuse": "retail"
    }

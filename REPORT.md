@@ -1,18 +1,18 @@
 # Bike parking at Guelph's strip-mall plazas
 
-*Survey of OpenStreetMap data, 2026-09-05. Prepared for bike advocacy use.*
+*Survey of OpenStreetMap data, 2026-11-03. Prepared for bike advocacy use.*
 
 ## Summary
 
-Guelph has **66 open-air plazas** in OpenStreetMap (plus 2 enclosed malls, listed at the end). Of those 66:
+Guelph has **68 open-air plazas** in OpenStreetMap (plus 2 enclosed malls, listed at the end). Of those 68:
 
 | Verdict | Plazas |
 |---|---|
-| ✅ Has bike parking on site | 26 |
-| 🟡 Nearby only (a rack within 100 m, but not on the property) | 13 |
-| ❌ None mapped | 27 |
+| ✅ Has bike parking on site | 31 |
+| 🟡 Nearby only (a rack within 100 m, but not on the property) | 14 |
+| ❌ None mapped | 23 |
 
-Across all plazas, 53 bike parking locations are mapped. Most have no capacity recorded, so the number of bikes they hold is unknown.
+Across all plazas, 87 bike parking locations are mapped. Most have no capacity recorded, so the number of bikes they hold is unknown.
 
 **How to read "none mapped".** OpenStreetMap is a volunteer map. A plaza with no bike rack in the map may still have one on the ground that nobody has recorded yet. Treat ❌ as "go and look", not as "there is no rack". A plaza marked ✅ has been confirmed by at least one mapper, but the rack may be a poor one (a wheel-bender or a single wall loop). Where the rack type is known it is listed under the plaza.
 
@@ -26,23 +26,24 @@ Companion files: `plazas.csv` (one row per plaza, for your own map), `img/` (scr
 
 | Plaza | Verdict | Racks | Capacity | Tenants | Map |
 |---|---|---|---|---|---|
-| [Campus Estates Plaza](#campus-estates-plaza) | ❌ none mapped |  |  | 17 | [OSM](https://www.openstreetmap.org/way/208650724) |
+| [Arkell Crossing](#arkell-crossing) | ✅ has parking | 1 | 5 | 0 | [OSM](https://www.openstreetmap.org/way/177867077) |
+| [Campus Estates Plaza](#campus-estates-plaza) | ✅ has parking | 1 | 6 | 18 | [OSM](https://www.openstreetmap.org/way/208650724) |
 | [Clair Marketplace](#clair-marketplace) | 🟡 nearby only |  |  | 19 | [OSM](https://www.openstreetmap.org/way/556632268) |
-| [Clairfield Commons](#clairfield-commons) | 🟡 nearby only |  |  | 12 | [OSM](https://www.openstreetmap.org/way/217504192) |
+| [Clairfield Commons](#clairfield-commons) | ✅ has parking | 5 | 18 | 13 | [OSM](https://www.openstreetmap.org/way/217504192) |
 | [Edinburgh Market Place](#edinburgh-market-place) | ✅ has parking | 3 | 18 + 1 rack untagged | 16 | [OSM](https://www.openstreetmap.org/way/833377075) |
 | [Grange & Victoria Plaza](#grange--victoria-plaza) | ✅ has parking | 1 | 8 | 6 | [OSM](https://www.openstreetmap.org/way/332330004) |
-| [Hartsland Market Square](#hartsland-market-square) | ❌ none mapped |  |  | 13 | [OSM](https://www.openstreetmap.org/way/197749304) |
+| [Hartsland Market Square](#hartsland-market-square) | ✅ has parking | 16 | 49 | 13 | [OSM](https://www.openstreetmap.org/way/197749304) |
 | [Kortright Plaza](#kortright-plaza) | ❌ none mapped |  |  | 4 | [OSM](https://www.openstreetmap.org/way/197805877) |
 | [Melran Mall](#melran-mall) | ❌ none mapped |  |  | 25 | [OSM](https://www.openstreetmap.org/way/344325628) |
-| [Pergola Commons](#pergola-commons) | ✅ has parking | 4 | 1 + 3 racks untagged | 23 | [OSM](https://www.openstreetmap.org/way/287908722) |
-| [Scottsdale Centre](#scottsdale-centre) | ❌ none mapped |  |  | 7 | [OSM](https://www.openstreetmap.org/way/354160042) |
+| [Pergola Commons](#pergola-commons) | ✅ has parking | 6 | 10 + 3 racks untagged | 23 | [OSM](https://www.openstreetmap.org/way/287908722) |
+| [Scottsdale Centre](#scottsdale-centre) | 🟡 nearby only |  |  | 7 | [OSM](https://www.openstreetmap.org/way/354160042) |
 | [Silvercreek Business Centre](#silvercreek-business-centre) | 🟡 nearby only |  |  | 12 | [OSM](https://www.openstreetmap.org/way/773015480) |
 | [Silvercreek Plaza](#silvercreek-plaza) | ✅ has parking | 6 | 6 racks untagged | 21 | [OSM](https://www.openstreetmap.org/way/256118290) |
 | [Silverwood Plaza](#silverwood-plaza) | ❌ none mapped |  |  | 10 | [OSM](https://www.openstreetmap.org/way/773015486) |
 | [SmartCentres Guelph](#smartcentres-guelph) | ✅ has parking | 2 | 2 + 1 rack untagged | 24 | [OSM](https://www.openstreetmap.org/way/772928911) |
 | [South City Centre](#south-city-centre) | ❌ none mapped |  |  | 0 | [OSM](https://www.openstreetmap.org/way/215069449) |
 | [Speedvale Centre](#speedvale-centre) | ❌ none mapped |  |  | 28 | [OSM](https://www.openstreetmap.org/way/237319873) |
-| [Stone Square Plaza](#stone-square-plaza) | ✅ has parking | 4 | 21 | 20 | [OSM](https://www.openstreetmap.org/way/208406209) |
+| [Stone Square Plaza](#stone-square-plaza) | ✅ has parking | 4 | 23 | 20 | [OSM](https://www.openstreetmap.org/way/208406209) |
 | [Stonegate Plaza](#stonegate-plaza) | ❌ none mapped |  |  | 12 | [OSM](https://www.openstreetmap.org/way/212559744) |
 | [Sugarbush Plaza](#sugarbush-plaza) | ❌ none mapped |  |  | 4 | [OSM](https://www.openstreetmap.org/way/993366503) |
 | [University Square Plaza](#university-square-plaza) | ✅ has parking | 2 | 4 | 13 | [OSM](https://www.openstreetmap.org/way/399321881) |
@@ -50,7 +51,7 @@ Companion files: `plazas.csv` (one row per plaza, for your own map), `img/` (scr
 | [1027 Gordon Street (unnamed)](#1027-gordon-street-unnamed) | 🟡 nearby only |  |  | 9 | [OSM](https://www.openstreetmap.org/way/773000852) |
 | [104 Silvercreek Parkway North (unnamed)](#104-silvercreek-parkway-north-unnamed) | ✅ has parking | 1 | 3 | 7 | [OSM](https://www.openstreetmap.org/way/295926707) |
 | [105 Silvercreek Parkway North (unnamed)](#105-silvercreek-parkway-north-unnamed) | 🟡 nearby only |  |  | 5 | [OSM](https://www.openstreetmap.org/way/295926658) |
-| [127-201 Stone Road West (unnamed)](#127-201-stone-road-west-unnamed) | ✅ has parking | 3 | 24 | 6 | [OSM](https://www.openstreetmap.org/way/215068137) |
+| [127-201 Stone Road West (unnamed)](#127-201-stone-road-west-unnamed) | ✅ has parking | 4 | 40 | 6 | [OSM](https://www.openstreetmap.org/way/215068137) |
 | [1388-1398 Gordon Street (unnamed)](#1388-1398-gordon-street-unnamed) | ❌ none mapped |  |  | 8 | [OSM](https://www.openstreetmap.org/way/192887202) |
 | [1499-1515 Gordon Street (unnamed)](#1499-1515-gordon-street-unnamed) | ✅ has parking | 1 | 2 | 14 | [OSM](https://www.openstreetmap.org/way/399342895) |
 | [159 Fife Road (unnamed)](#159-fife-road-unnamed) | ❌ none mapped |  |  | 4 | [OSM](https://www.openstreetmap.org/way/773030532) |
@@ -66,25 +67,26 @@ Companion files: `plazas.csv` (one row per plaza, for your own map), `img/` (scr
 | [252 Silvercreek Parkway North (unnamed)](#252-silvercreek-parkway-north-unnamed) | 🟡 nearby only |  |  | 9 | [OSM](https://www.openstreetmap.org/way/773015485) |
 | [265-297 Eramosa Road (unnamed)](#265-297-eramosa-road-unnamed) | ✅ has parking | 1 | 1 rack untagged | 6 | [OSM](https://www.openstreetmap.org/way/772911628) |
 | [292-314 Stone Road West (unnamed)](#292-314-stone-road-west-unnamed) | 🟡 nearby only |  |  | 26 | [OSM](https://www.openstreetmap.org/way/369321286) |
+| [3-15 Municipal Street (unnamed)](#3-15-municipal-street-unnamed) | ❌ none mapped |  |  | 5 | [OSM](https://www.openstreetmap.org/way/773013517) |
 | [320 Eastview Road (unnamed)](#320-eastview-road-unnamed) | ❌ none mapped |  |  | 8 | [OSM](https://www.openstreetmap.org/way/358488660) |
 | [340 Woodlawn Road West (unnamed)](#340-woodlawn-road-west-unnamed) | ❌ none mapped |  |  | 13 | [OSM](https://www.openstreetmap.org/way/399149070) |
 | [380 Eramosa Road (unnamed)](#380-eramosa-road-unnamed) | ❌ none mapped |  |  | 9 | [OSM](https://www.openstreetmap.org/way/772911624) |
-| [4-124 Clair Road East (unnamed)](#4-124-clair-road-east-unnamed) | ✅ has parking | 7 | 7 racks untagged | 24 | [OSM](https://www.openstreetmap.org/way/399319859) |
+| [4-124 Clair Road East (unnamed)](#4-124-clair-road-east-unnamed) | ✅ has parking | 9 | 44 | 24 | [OSM](https://www.openstreetmap.org/way/399319859) |
 | [415-429 Woodlawn Road West (unnamed)](#415-429-woodlawn-road-west-unnamed) | ❌ none mapped |  |  | 4 | [OSM](https://www.openstreetmap.org/way/399149099) |
 | [450 Woodlawn Road West (unnamed)](#450-woodlawn-road-west-unnamed) | ❌ none mapped |  |  | 4 | [OSM](https://www.openstreetmap.org/way/773016985) |
 | [465-565 Woodlawn Road West (unnamed)](#465-565-woodlawn-road-west-unnamed) | ❌ none mapped |  |  | 6 | [OSM](https://www.openstreetmap.org/way/962456073) |
 | [486 Woodlawn Road East (unnamed)](#486-woodlawn-road-east-unnamed) | ❌ none mapped |  |  | 5 | [OSM](https://www.openstreetmap.org/way/772926644) |
 | [50 Wellington Street East (unnamed)](#50-wellington-street-east-unnamed) | 🟡 nearby only |  |  | 4 | [OSM](https://www.openstreetmap.org/way/772999958) |
 | [51-55 Woodlawn Road West (unnamed)](#51-55-woodlawn-road-west-unnamed) | ✅ has parking | 1 | 2 | 4 | [OSM](https://www.openstreetmap.org/way/772928908) |
-| [617-649 Scottsdale Drive (unnamed)](#617-649-scottsdale-drive-unnamed) | ❌ none mapped |  |  | 4 | [OSM](https://www.openstreetmap.org/way/468349503) |
-| [630-650 Scottsdale Drive (unnamed)](#630-650-scottsdale-drive-unnamed) | ❌ none mapped |  |  | 8 | [OSM](https://www.openstreetmap.org/way/468349505) |
+| [617-649 Scottsdale Drive (unnamed)](#617-649-scottsdale-drive-unnamed) | ✅ has parking | 3 | 24 | 5 | [OSM](https://www.openstreetmap.org/way/468349503) |
+| [630-650 Scottsdale Drive (unnamed)](#630-650-scottsdale-drive-unnamed) | 🟡 nearby only |  |  | 8 | [OSM](https://www.openstreetmap.org/way/468349505) |
 | [666 Woolwich Street (unnamed)](#666-woolwich-street-unnamed) | ❌ none mapped |  |  | 11 | [OSM](https://www.openstreetmap.org/way/772928901) |
 | [670-698 Woolwich Street (unnamed)](#670-698-woolwich-street-unnamed) | ✅ has parking | 4 | 4 + 3 racks untagged | 10 | [OSM](https://www.openstreetmap.org/way/772928904) |
 | [715 Wellington Street West (unnamed)](#715-wellington-street-west-unnamed) | ✅ has parking | 1 | 1 rack untagged | 10 | [OSM](https://www.openstreetmap.org/way/364715613) |
 | [727-777 Woolwich Street (unnamed)](#727-777-woolwich-street-unnamed) | 🟡 nearby only |  |  | 15 | [OSM](https://www.openstreetmap.org/way/772928906) |
 | [75 Willow Road (unnamed)](#75-willow-road-unnamed) | ❌ none mapped |  |  | 10 | [OSM](https://www.openstreetmap.org/way/773014769) |
 | [86-100 Gordon Street (unnamed)](#86-100-gordon-street-unnamed) | ✅ has parking | 1 | 8 | 26 | [OSM](https://www.openstreetmap.org/way/772999957) |
-| [89-105 Gordon Street (unnamed)](#89-105-gordon-street-unnamed) | ✅ has parking | 2 | 4 + 1 rack untagged | 7 | [OSM](https://www.openstreetmap.org/way/328207036) |
+| [89-105 Gordon Street (unnamed)](#89-105-gordon-street-unnamed) | ✅ has parking | 5 | 20 + 1 rack untagged | 7 | [OSM](https://www.openstreetmap.org/way/328207036) |
 | [926 Paisley Road (unnamed)](#926-paisley-road-unnamed) | 🟡 nearby only |  |  | 5 | [OSM](https://www.openstreetmap.org/way/256252178) |
 | [951 Gordon Street (unnamed)](#951-gordon-street-unnamed) | 🟡 nearby only |  |  | 10 | [OSM](https://www.openstreetmap.org/way/399321888) |
 | [Wellington Plaza](#wellington-plaza) | ✅ has parking | 1 | 8 | 10 | [OSM](https://www.openstreetmap.org/way/177697922) |
@@ -101,8 +103,6 @@ These are the priority list. Distance is from the edge of the plaza to the neare
 |---|---|---|
 | [Speedvale Centre](#speedvale-centre) | 852 m | 28 |
 | [Melran Mall](#melran-mall) | 873 m | 25 |
-| [Campus Estates Plaza](#campus-estates-plaza) | 167 m | 17 |
-| [Hartsland Market Square](#hartsland-market-square) | 449 m | 13 |
 | [340 Woodlawn Road West (unnamed)](#340-woodlawn-road-west-unnamed) | 864 m | 13 |
 | [Stonegate Plaza](#stonegate-plaza) | 128 m | 12 |
 | [666 Woolwich Street (unnamed)](#666-woolwich-street-unnamed) | 175 m | 11 |
@@ -111,10 +111,9 @@ These are the priority list. Distance is from the edge of the plaza to the neare
 | [380 Eramosa Road (unnamed)](#380-eramosa-road-unnamed) | 128 m | 9 |
 | [1388-1398 Gordon Street (unnamed)](#1388-1398-gordon-street-unnamed) | 179 m | 8 |
 | [320 Eastview Road (unnamed)](#320-eastview-road-unnamed) | 1589 m | 8 |
-| [630-650 Scottsdale Drive (unnamed)](#630-650-scottsdale-drive-unnamed) | 115 m | 8 |
 | [Woodlawn Square](#woodlawn-square) | 230 m | 8 |
-| [Scottsdale Centre](#scottsdale-centre) | 159 m | 7 |
 | [465-565 Woodlawn Road West (unnamed)](#465-565-woodlawn-road-west-unnamed) | 1166 m | 6 |
+| [3-15 Municipal Street (unnamed)](#3-15-municipal-street-unnamed) | 331 m | 5 |
 | [486 Woodlawn Road East (unnamed)](#486-woodlawn-road-east-unnamed) | 1623 m | 5 |
 | [Kortright Plaza](#kortright-plaza) | 406 m | 4 |
 | [Sugarbush Plaza](#sugarbush-plaza) | 356 m | 4 |
@@ -124,20 +123,31 @@ These are the priority list. Distance is from the edge of the plaza to the neare
 | [241-249 Edinburgh Road North (unnamed)](#241-249-edinburgh-road-north-unnamed) | 255 m | 4 |
 | [415-429 Woodlawn Road West (unnamed)](#415-429-woodlawn-road-west-unnamed) | 1119 m | 4 |
 | [450 Woodlawn Road West (unnamed)](#450-woodlawn-road-west-unnamed) | 1039 m | 4 |
-| [617-649 Scottsdale Drive (unnamed)](#617-649-scottsdale-drive-unnamed) | 193 m | 4 |
-| [South City Centre](#south-city-centre) | 192 m | 0 |
+| [South City Centre](#south-city-centre) | 143 m | 0 |
 
 ## Plaza by plaza
 
 Blue outline: the plaza as drawn in OpenStreetMap. Green circles: bike parking counted for this plaza (on the property or within 30 m of its edge). Grey circle: the nearest rack when there is none on site, where it falls inside the frame. Map tiles are the OpenStreetMap Standard layer.
 
+### Arkell Crossing
+
+**✅ has parking**  ·  [OpenStreetMap](https://www.openstreetmap.org/way/177867077)  ·  [map view](https://www.openstreetmap.org/#map=18/43.52357/-80.18553)  ·  0.2 ha  ·  0 tenants mapped
+
+![Arkell Crossing](img/w177867077.png)
+
+Bike parking found:
+
+- [node 14202513023](https://www.openstreetmap.org/node/14202513023): stands, capacity 5
+
 ### Campus Estates Plaza
 
-**❌ none mapped**  ·  [OpenStreetMap](https://www.openstreetmap.org/way/208650724)  ·  [map view](https://www.openstreetmap.org/#map=18/43.52480/-80.22241)  ·  2.8 ha  ·  17 tenants mapped
+**✅ has parking**  ·  [OpenStreetMap](https://www.openstreetmap.org/way/208650724)  ·  [map view](https://www.openstreetmap.org/#map=18/43.52480/-80.22241)  ·  2.8 ha  ·  18 tenants mapped
 
 ![Campus Estates Plaza](img/w208650724.png)
 
-No bike parking mapped on the property. Nearest mapped rack is 167 m away ([node 13062612120](https://www.openstreetmap.org/node/13062612120)).
+Bike parking found:
+
+- [node 14161650993](https://www.openstreetmap.org/node/14161650993): wall_loops, capacity 6
 
 ### Clair Marketplace
 
@@ -145,15 +155,21 @@ No bike parking mapped on the property. Nearest mapped rack is 167 m away ([node
 
 ![Clair Marketplace](img/w556632268.png)
 
-No bike parking mapped on the property. Nearest mapped rack is 78 m away ([node 12823796244](https://www.openstreetmap.org/node/12823796244)).
+No bike parking mapped on the property. Nearest mapped rack is 32 m away ([node 14298186314](https://www.openstreetmap.org/node/14298186314)).
 
 ### Clairfield Commons
 
-**🟡 nearby only**  ·  [OpenStreetMap](https://www.openstreetmap.org/way/217504192)  ·  [map view](https://www.openstreetmap.org/#map=18/43.50012/-80.19081)  ·  3.0 ha  ·  12 tenants mapped
+**✅ has parking**  ·  [OpenStreetMap](https://www.openstreetmap.org/way/217504192)  ·  [map view](https://www.openstreetmap.org/#map=18/43.50012/-80.19081)  ·  3.0 ha  ·  13 tenants mapped
 
 ![Clairfield Commons](img/w217504192.png)
 
-No bike parking mapped on the property. Nearest mapped rack is 51 m away ([node 12823720971](https://www.openstreetmap.org/node/12823720971)).
+Bike parking found:
+
+- [node 14272107820](https://www.openstreetmap.org/node/14272107820): stands, capacity 4
+- [node 14272107834](https://www.openstreetmap.org/node/14272107834): stands, capacity 2
+- [node 14272107846](https://www.openstreetmap.org/node/14272107846): stands, capacity 2
+- [node 14272107847](https://www.openstreetmap.org/node/14272107847): stands, capacity 2
+- [node 14298186314](https://www.openstreetmap.org/node/14298186314): stands, capacity 8
 
 ### Edinburgh Market Place
 
@@ -179,11 +195,28 @@ Bike parking found:
 
 ### Hartsland Market Square
 
-**❌ none mapped**  ·  [OpenStreetMap](https://www.openstreetmap.org/way/197749304)  ·  [map view](https://www.openstreetmap.org/#map=18/43.51341/-80.21919)  ·  4.6 ha  ·  13 tenants mapped
+**✅ has parking**  ·  [OpenStreetMap](https://www.openstreetmap.org/way/197749304)  ·  [map view](https://www.openstreetmap.org/#map=18/43.51341/-80.21919)  ·  4.6 ha  ·  13 tenants mapped
 
 ![Hartsland Market Square](img/w197749304.png)
 
-No bike parking mapped on the property. Nearest mapped rack is 449 m away ([node 14139961003](https://www.openstreetmap.org/node/14139961003)).
+Bike parking found:
+
+- [node 14158765587](https://www.openstreetmap.org/node/14158765587): stands, covered, capacity 2
+- [node 14158765589](https://www.openstreetmap.org/node/14158765589): stands, capacity 4
+- [node 14158815860](https://www.openstreetmap.org/node/14158815860): stands, capacity 2
+- [node 14158815862](https://www.openstreetmap.org/node/14158815862): stands, covered, capacity 2
+- [node 14158838905](https://www.openstreetmap.org/node/14158838905): stands, capacity 4
+- [node 14158838906](https://www.openstreetmap.org/node/14158838906): stands, capacity 2
+- [node 14158838907](https://www.openstreetmap.org/node/14158838907): safe_loops, capacity 5
+- [node 14158838908](https://www.openstreetmap.org/node/14158838908): stands, covered, capacity 2
+- [node 14158838909](https://www.openstreetmap.org/node/14158838909): stands, capacity 2
+- [node 14158838910](https://www.openstreetmap.org/node/14158838910): safe_loops, capacity 5
+- [node 14158838911](https://www.openstreetmap.org/node/14158838911): stands, covered, capacity 2
+- [node 14158838912](https://www.openstreetmap.org/node/14158838912): stands, capacity 2
+- [node 14158838913](https://www.openstreetmap.org/node/14158838913): stands, capacity 2
+- [node 14158838914](https://www.openstreetmap.org/node/14158838914): wall_loops, covered, capacity 9
+- [node 14158838915](https://www.openstreetmap.org/node/14158838915): stands, capacity 2
+- [node 14158838916](https://www.openstreetmap.org/node/14158838916): stands, capacity 2
 
 ### Kortright Plaza
 
@@ -213,14 +246,16 @@ Bike parking found:
 - [node 11479641171](https://www.openstreetmap.org/node/11479641171): stands
 - [node 11479926870](https://www.openstreetmap.org/node/11479926870): type not tagged
 - [node 13233440059](https://www.openstreetmap.org/node/13233440059): stands, capacity 1
+- [node 14272103029](https://www.openstreetmap.org/node/14272103029): stands, capacity 2
+- [node 14298053818](https://www.openstreetmap.org/node/14298053818): rack, capacity 7
 
 ### Scottsdale Centre
 
-**❌ none mapped**  ·  [OpenStreetMap](https://www.openstreetmap.org/way/354160042)  ·  [map view](https://www.openstreetmap.org/#map=18/43.51479/-80.23761)  ·  0.2 ha  ·  7 tenants mapped
+**🟡 nearby only**  ·  [OpenStreetMap](https://www.openstreetmap.org/way/354160042)  ·  [map view](https://www.openstreetmap.org/#map=18/43.51479/-80.23761)  ·  0.2 ha  ·  7 tenants mapped
 
 ![Scottsdale Centre](img/w354160042.png)
 
-No bike parking mapped on the property. Nearest mapped rack is 159 m away ([node 11225402345](https://www.openstreetmap.org/node/11225402345)).
+No bike parking mapped on the property. Nearest mapped rack is 80 m away ([node 14269222867](https://www.openstreetmap.org/node/14269222867)).
 
 ### Silvercreek Business Centre
 
@@ -270,7 +305,7 @@ Bike parking found:
 
 ![South City Centre](img/w215069449.png)
 
-No bike parking mapped on the property. Nearest mapped rack is 192 m away ([node 13963396495](https://www.openstreetmap.org/node/13963396495)).
+No bike parking mapped on the property. Nearest mapped rack is 143 m away ([node 14307258547](https://www.openstreetmap.org/node/14307258547)).
 
 ### Speedvale Centre
 
@@ -290,8 +325,8 @@ Bike parking found:
 
 - [node 11225402345](https://www.openstreetmap.org/node/11225402345): stands, capacity 6
 - [node 12206912381](https://www.openstreetmap.org/node/12206912381): stands, capacity 5
-- [node 12206929334](https://www.openstreetmap.org/node/12206929334): stands, capacity 5
-- [node 12206930210](https://www.openstreetmap.org/node/12206930210): stands, capacity 5
+- [node 12206929334](https://www.openstreetmap.org/node/12206929334): stands, capacity 6
+- [node 12206930210](https://www.openstreetmap.org/node/12206930210): stands, capacity 6
 
 ### Stonegate Plaza
 
@@ -377,6 +412,7 @@ Bike parking found:
 - [node 12030078101](https://www.openstreetmap.org/node/12030078101): stands, capacity 10
 - [node 12335563263](https://www.openstreetmap.org/node/12335563263): stands, capacity 6
 - [node 13963346866](https://www.openstreetmap.org/node/13963346866): stands, covered, capacity 8
+- [node 14262171677](https://www.openstreetmap.org/node/14262171677): stands, capacity 16
 
 ### 1388-1398 Gordon Street (unnamed)
 
@@ -542,6 +578,16 @@ No name in OpenStreetMap. Tenants: Apps Optical, Body Systems Nutrition, Brodie'
 
 No bike parking mapped on the property. Nearest mapped rack is 38 m away ([node 12206930210](https://www.openstreetmap.org/node/12206930210)).
 
+### 3-15 Municipal Street (unnamed)
+
+**❌ none mapped**  ·  [OpenStreetMap](https://www.openstreetmap.org/way/773013517)  ·  [map view](https://www.openstreetmap.org/#map=18/43.52979/-80.24902)  ·  0.8 ha  ·  5 tenants mapped
+
+No name in OpenStreetMap. Tenants: CosmoProf, Pizza Trokadero, The Beer Store, The Saffron Indian Restaurant, W Sushi.
+
+![3-15 Municipal Street (unnamed)](img/w773013517.png)
+
+No bike parking mapped on the property. Nearest mapped rack is 331 m away ([node 12402038484](https://www.openstreetmap.org/node/12402038484)).
+
 ### 320 Eastview Road (unnamed)
 
 **❌ none mapped**  ·  [OpenStreetMap](https://www.openstreetmap.org/way/358488660)  ·  [map view](https://www.openstreetmap.org/#map=18/43.57895/-80.22427)  ·  1.4 ha  ·  8 tenants mapped
@@ -582,13 +628,15 @@ No name in OpenStreetMap. Tenants: BarBurrito, BodySystems Nutrition, CIBC, Chuc
 
 Bike parking found:
 
-- [node 12823720968](https://www.openstreetmap.org/node/12823720968): type not tagged
-- [node 12823720970](https://www.openstreetmap.org/node/12823720970): type not tagged
-- [node 12823720971](https://www.openstreetmap.org/node/12823720971): stands
-- [node 12823787991](https://www.openstreetmap.org/node/12823787991): type not tagged
-- [node 12823796244](https://www.openstreetmap.org/node/12823796244): type not tagged
-- [node 12823816372](https://www.openstreetmap.org/node/12823816372): type not tagged
-- [node 12823816373](https://www.openstreetmap.org/node/12823816373): type not tagged
+- [node 12823720968](https://www.openstreetmap.org/node/12823720968): rack, capacity 5
+- [node 12823720970](https://www.openstreetmap.org/node/12823720970): rack, capacity 5
+- [node 12823720971](https://www.openstreetmap.org/node/12823720971): loops, capacity 6
+- [node 12823787991](https://www.openstreetmap.org/node/12823787991): loops, capacity 6
+- [node 12823796244](https://www.openstreetmap.org/node/12823796244): type not tagged, capacity 2
+- [node 12823816372](https://www.openstreetmap.org/node/12823816372): loops, capacity 6
+- [node 12823816373](https://www.openstreetmap.org/node/12823816373): loops, capacity 6
+- [node 14272103514](https://www.openstreetmap.org/node/14272103514): type not tagged, capacity 2
+- [node 14284839880](https://www.openstreetmap.org/node/14284839880): loops, capacity 6
 
 ### 415-429 Woodlawn Road West (unnamed)
 
@@ -638,7 +686,7 @@ No name in OpenStreetMap. Tenants: A&W, KFC, Tim Hortons, Wendy's.
 
 ![50 Wellington Street East (unnamed)](img/w772999958.png)
 
-No bike parking mapped on the property. Nearest mapped rack is 49 m away ([node 13286323760](https://www.openstreetmap.org/node/13286323760)).
+No bike parking mapped on the property. Nearest mapped rack is 31 m away ([node 14197996496](https://www.openstreetmap.org/node/14197996496)).
 
 ### 51-55 Woodlawn Road West (unnamed)
 
@@ -654,23 +702,27 @@ Bike parking found:
 
 ### 617-649 Scottsdale Drive (unnamed)
 
-**❌ none mapped**  ·  [OpenStreetMap](https://www.openstreetmap.org/way/468349503)  ·  [map view](https://www.openstreetmap.org/#map=18/43.51427/-80.23896)  ·  2.4 ha  ·  4 tenants mapped
+**✅ has parking**  ·  [OpenStreetMap](https://www.openstreetmap.org/way/468349503)  ·  [map view](https://www.openstreetmap.org/#map=18/43.51427/-80.23896)  ·  2.4 ha  ·  5 tenants mapped
 
-No name in OpenStreetMap. Tenants: LCBO, Pizza Hut, Reserved Cannabis, Shoppers Drug Mart.
+No name in OpenStreetMap. Tenants: Frontier Diagnostics: Medical Imaging, LCBO, Pizza Hut, Reserved Cannabis, Shoppers Drug Mart.
 
 ![617-649 Scottsdale Drive (unnamed)](img/w468349503.png)
 
-No bike parking mapped on the property. Nearest mapped rack is 193 m away ([node 12206912381](https://www.openstreetmap.org/node/12206912381)).
+Bike parking found:
+
+- [node 14269099699](https://www.openstreetmap.org/node/14269099699): stands, capacity 8
+- [node 14269099700](https://www.openstreetmap.org/node/14269099700): stands, capacity 8
+- [node 14269222867](https://www.openstreetmap.org/node/14269222867): stands, capacity 8
 
 ### 630-650 Scottsdale Drive (unnamed)
 
-**❌ none mapped**  ·  [OpenStreetMap](https://www.openstreetmap.org/way/468349505)  ·  [map view](https://www.openstreetmap.org/#map=18/43.51502/-80.23805)  ·  1.1 ha  ·  8 tenants mapped
+**🟡 nearby only**  ·  [OpenStreetMap](https://www.openstreetmap.org/way/468349505)  ·  [map view](https://www.openstreetmap.org/#map=18/43.51502/-80.23805)  ·  1.1 ha  ·  8 tenants mapped
 
 No name in OpenStreetMap. Tenants: Fluffy Glaze, Gotcha Bubble Tea, Guelph BBQ, Guelph Public Library - Scottsdale Branch, Guelph Vapour Company, Hanna's Nail Bar, Paghman Kabob, Scottsdale Dental Centre.
 
 ![630-650 Scottsdale Drive (unnamed)](img/w468349505.png)
 
-No bike parking mapped on the property. Nearest mapped rack is 115 m away ([node 12206912381](https://www.openstreetmap.org/node/12206912381)).
+No bike parking mapped on the property. Nearest mapped rack is 50 m away ([node 14269222867](https://www.openstreetmap.org/node/14269222867)).
 
 ### 666 Woolwich Street (unnamed)
 
@@ -684,7 +736,7 @@ No bike parking mapped on the property. Nearest mapped rack is 175 m away ([node
 
 ### 670-698 Woolwich Street (unnamed)
 
-**✅ has parking**  ·  [OpenStreetMap](https://www.openstreetmap.org/way/772928904)  ·  [map view](https://www.openstreetmap.org/#map=18/43.56037/-80.27226)  ·  3.6 ha  ·  10 tenants mapped
+**✅ has parking**  ·  [OpenStreetMap](https://www.openstreetmap.org/way/772928904)  ·  [map view](https://www.openstreetmap.org/#map=18/43.56032/-80.27212)  ·  3.2 ha  ·  10 tenants mapped
 
 No name in OpenStreetMap. Tenants: Church's Chicken, Dominion Lending Centres, Edward Jones, Family Midwifery Care of Guelph, HearingLife, Pizza Express Guelph, Royal City Foot Clinic, Tim Hortons….
 
@@ -753,6 +805,9 @@ Bike parking found:
 
 - [node 12015891543](https://www.openstreetmap.org/node/12015891543): stands, capacity 4
 - [node 13233343763](https://www.openstreetmap.org/node/13233343763): stands
+- [node 14307672437](https://www.openstreetmap.org/node/14307672437): stands, capacity 6
+- [node 14314321141](https://www.openstreetmap.org/node/14314321141): stands, capacity 4
+- [node 14314354018](https://www.openstreetmap.org/node/14314354018): stands, capacity 6
 
 ### 926 Paisley Road (unnamed)
 
@@ -857,7 +912,6 @@ Clusters of four or more businesses within 60 m of each other that fall outside 
 | [43.54240, -80.30734](https://www.openstreetmap.org/#map=18/43.54240/-80.30734) | Automated Door Systems, Pho Kinh Do, Subway, Zest Cafe |
 | [43.55004, -80.27675](https://www.openstreetmap.org/#map=18/43.55004/-80.27675) | Dawson Road Family Medical Clinic, DiabetesCare Guelph, Guelph Medical Place Pharmacy, Sense of Hearing |
 | [43.53238, -80.30468](https://www.openstreetmap.org/#map=18/43.53238/-80.30468) | All About Grooming, Kal Tire, Krella Gas Fireplaces, Line-X Protective Coatings, Make It Sew Embroidery |
-| [43.51664, -80.20390](https://www.openstreetmap.org/#map=18/43.51664/-80.20390) | CoCo Fresh Tea & Juice, Gordon Sushi House, Savage Cloud Vape Shop, Simply Convenient |
 | [43.55852, -80.26760](https://www.openstreetmap.org/#map=18/43.55852/-80.26760) | Dulux Paints, Dynamite Pizza, Guelph Pain Clinic, I.D.A., Lynn's Nails |
 | [43.54785, -80.28220](https://www.openstreetmap.org/#map=18/43.54785/-80.28220) | Guelph Studio Massage Spa, Hair Styling Den, Jiffy Lube, Oapex Ltd. |
 | [43.55829, -80.28581](https://www.openstreetmap.org/#map=18/43.55829/-80.28581) | Kelsey's, Swiss Chalet, Tim Hortons, Valet Car Wash |
@@ -886,7 +940,6 @@ Unnamed `landuse=retail` areas with fewer than four named businesses mapped: gas
 | [773015488](https://www.openstreetmap.org/way/773015488) | 0.96 ha | Stampede Ranch |
 | [772911629](https://www.openstreetmap.org/way/772911629) | 0.88 ha | — |
 | [773013516](https://www.openstreetmap.org/way/773013516) | 0.85 ha | Kirtida Kitchen |
-| [773013517](https://www.openstreetmap.org/way/773013517) | 0.77 ha | Biryani Delight, Pizza Trokadero, W Sushi |
 | [177925092](https://www.openstreetmap.org/way/177925092) | 0.72 ha | Neighbours Coffee |
 | [775587740](https://www.openstreetmap.org/way/775587740) | 0.7 ha | — |
 | [317550115](https://www.openstreetmap.org/way/317550115) | 0.7 ha | Circle K, Tim Hortons |
@@ -894,7 +947,6 @@ Unnamed `landuse=retail` areas with fewer than four named businesses mapped: gas
 | [399342892](https://www.openstreetmap.org/way/399342892) | 0.61 ha | Campus Estates Animal Hospital, Wall Parr Sausage, Wally Parr Sausage |
 | [772911631](https://www.openstreetmap.org/way/772911631) | 0.59 ha | Shoppers Drug Mart |
 | [773015478](https://www.openstreetmap.org/way/773015478) | 0.58 ha | Guelph Oral Surgery, Smile Town, Tim Hortons |
-| [772823185](https://www.openstreetmap.org/way/772823185) | 0.57 ha | — |
 | [773036285](https://www.openstreetmap.org/way/773036285) | 0.53 ha | — |
 | [772911627](https://www.openstreetmap.org/way/772911627) | 0.51 ha | M.E. Cafe, Pizza Hut, Subway |
 | [295924644](https://www.openstreetmap.org/way/295924644) | 0.47 ha | — |
@@ -942,6 +994,6 @@ Unnamed `landuse=retail` areas with fewer than four named businesses mapped: gas
 
 ## Method
 
-Data: OpenStreetMap via the Overpass API, pulled 2026-09-05, City of Guelph boundary. Plaza polygons are `shop=mall`, named `landuse=retail`, named retail/commercial buildings whose name says Plaza, Mall, Centre, Square, Commons or Marketplace, and unnamed `landuse=retail` areas with four or more named businesses inside. Bike parking is every `amenity=bicycle_parking` inside the polygon or within 30 m of its edge (racks usually sit at the sidewalk or lot margin). "Nearby only" means the closest rack is within 100 m of the edge but not on the property. Screenshots are stitched from the OpenStreetMap Standard tile layer at zoom 17 or 18, which is where the bicycle-parking icon starts to render.
+Data: OpenStreetMap via the Overpass API, pulled 2026-11-03, City of Guelph boundary. Plaza polygons are `shop=mall`, named `landuse=retail`, named retail/commercial buildings whose name says Plaza, Mall, Centre, Square, Commons or Marketplace, and unnamed `landuse=retail` areas with four or more named businesses inside. Bike parking is every `amenity=bicycle_parking` inside the polygon or within 30 m of its edge (racks usually sit at the sidewalk or lot margin). "Nearby only" means the closest rack is within 100 m of the edge but not on the property. Screenshots are stitched from the OpenStreetMap Standard tile layer at zoom 17 or 18, which is where the bicycle-parking icon starts to render.
 
 Map data © OpenStreetMap contributors, ODbL. Map tiles © OpenStreetMap contributors.

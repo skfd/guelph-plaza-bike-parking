@@ -35,7 +35,7 @@ def rack_type(r):
 def card(p):
     cls, label = VERDICTS[p["verdict"]]
     name = escape(short_name(p))
-    tenants = p["tenant_names"]
+    tenants = [n for n in p["tenant_names"] if "=" not in n]   # unnamed shops come through as shop=butcher
     if p["racks"]:
         items = "".join(f'<li><a href="{osm(r["type"], r["id"])}">{escape(rack_type(r))}</a></li>' for r in p["racks"])
         detail = f"<ul>{items}</ul>"
@@ -99,7 +99,7 @@ page = f"""<!doctype html>
   .grid {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }}
   .card {{ background: var(--card); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }}
   .card[hidden] {{ display: none; }}
-  .card img {{ display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: var(--line); }}
+  .card img {{ display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: contain; background: var(--line); }}
   .body {{ padding: 12px 14px 14px; font-size: 15px; }}
   .pill {{ font-size: 13px; font-weight: 600; color: var(--c); }}
   h3 {{ margin: 2px 0 6px; font-size: 18px; line-height: 1.25; }}

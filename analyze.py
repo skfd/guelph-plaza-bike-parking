@@ -10,7 +10,8 @@ from pyproj import Transformer
 to_m = Transformer.from_crs("EPSG:4326", "EPSG:32617", always_xy=True).transform   # UTM 17N
 to_ll = Transformer.from_crs("EPSG:32617", "EPSG:4326", always_xy=True).transform
 
-raw = json.load(open("overpass_raw.json"))["elements"]
+raw_pull = json.load(open("overpass_raw.json"))
+raw = raw_pull["elements"]
 unnamed = json.load(open("overpass_unnamed_retail.json"))["elements"]
 pois = json.load(open("overpass_pois.json"))["elements"]
 
@@ -242,7 +243,7 @@ def dump(p):
 
 
 out = dict(
-    generated="2026-09-05",
+    generated=raw_pull["osm3s"]["timestamp_osm_base"][:10],
     rule="open-air, multi-tenant retail with shared surface parking; enclosed malls listed separately",
     plazas=sorted([dump(p) for p in plazas], key=lambda p: p["name"]),
     enclosed=[dump(p) for p in enclosed],

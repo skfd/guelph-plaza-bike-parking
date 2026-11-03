@@ -13,6 +13,10 @@
     "name": "Arkell Crossing",
     "source": "Bing"
    },
+   "stars": 2,
+   "frame_spaces": 5,
+   "next_star": "Room for 5 more bikes earns the third star.",
+   "covered": false,
    "racks": [
     {
      "id": 14202513023,
@@ -29,7 +33,7 @@
    "rack_count": 1,
    "capacity": 5,
    "capacity_untagged": 0,
-   "verdict": "has parking",
+   "verdict": "rated",
    "nearest_rack_m": 1,
    "nearest_rack": {
     "id": 14202513023,
@@ -110,6 +114,10 @@
     "name": "Campus Estates Plaza",
     "source": "Bing"
    },
+   "stars": 1,
+   "frame_spaces": 0,
+   "next_star": "A stand you can lock a frame to earns the second star.",
+   "covered": false,
    "racks": [
     {
      "id": 14161650993,
@@ -126,7 +134,7 @@
    "rack_count": 1,
    "capacity": 6,
    "capacity_untagged": 0,
-   "verdict": "has parking",
+   "verdict": "rated",
    "nearest_rack_m": 0,
    "nearest_rack": {
     "id": 14161650993,
@@ -225,11 +233,15 @@
     "landuse": "retail",
     "name": "Clair Marketplace"
    },
+   "stars": null,
+   "frame_spaces": 0,
+   "next_star": "A first rack on the map earns the first star.",
+   "covered": false,
    "racks": [],
    "rack_count": 0,
    "capacity": 0,
    "capacity_untagged": 0,
-   "verdict": "nearby only",
+   "verdict": "rack next door",
    "nearest_rack_m": 32,
    "nearest_rack": {
     "id": 14298186314,
@@ -326,6 +338,10 @@
     "name": "Clairfield Commons",
     "operator": "First Capital"
    },
+   "stars": 3,
+   "frame_spaces": 18,
+   "next_star": null,
+   "covered": false,
    "racks": [
     {
      "id": 14272107820,
@@ -391,7 +407,7 @@
    "rack_count": 5,
    "capacity": 18,
    "capacity_untagged": 0,
-   "verdict": "has parking",
+   "verdict": "rated",
    "nearest_rack_m": 0,
    "nearest_rack": {
     "id": 14272107820,
@@ -473,6 +489,10 @@
     "landuse": "retail",
     "name": "Edinburgh Market Place"
    },
+   "stars": 2,
+   "frame_spaces": 8,
+   "next_star": "Some rack details are missing from the map. Adding them could already earn a third star.",
+   "covered": false,
    "racks": [
     {
      "id": 12335509795,
@@ -523,7 +543,7 @@
    "rack_count": 3,
    "capacity": 18,
    "capacity_untagged": 1,
-   "verdict": "has parking",
+   "verdict": "rated",
    "nearest_rack_m": 0,
    "nearest_rack": {
     "id": 12335509795,
@@ -604,6 +624,10 @@
     "landuse": "retail",
     "name": "Grange & Victoria Plaza"
    },
+   "stars": 2,
+   "frame_spaces": 8,
+   "next_star": "Room for 2 more bikes earns the third star.",
+   "covered": false,
    "racks": [
     {
      "id": 12530496793,
@@ -621,7 +645,7 @@
    "rack_count": 1,
    "capacity": 8,
    "capacity_untagged": 0,
-   "verdict": "has parking",
+   "verdict": "rated",
    "nearest_rack_m": 0,
    "nearest_rack": {
     "id": 12530496793,
@@ -755,6 +779,10 @@
    "merged": [
     217385469
    ],
+   "stars": 3,
+   "frame_spaces": 40,
+   "next_star": null,
+   "covered": true,
    "racks": [
     {
      "id": 14158765587,
@@ -951,7 +979,7 @@
    "rack_count": 16,
    "capacity": 49,
    "capacity_untagged": 0,
-   "verdict": "has parking",
+   "verdict": "rated",
    "nearest_rack_m": 0,
    "nearest_rack": {
     "id": 14158765587,
@@ -1047,11 +1075,15 @@
     "landuse": "retail",
     "name": "Kortright Plaza"
    },
+   "stars": null,
+   "frame_spaces": 0,
+   "next_star": "A first rack on the map earns the first star.",
+   "covered": false,
    "racks": [],
    "rack_count": 0,
    "capacity": 0,
    "capacity_untagged": 0,
-   "verdict": "none mapped",
+   "verdict": "go and look",
    "nearest_rack_m": 406,
    "nearest_rack": {
     "id": 14139961003,
@@ -1131,11 +1163,15 @@
     "name": "Melran Mall",
     "smoking": "no"
    },
+   "stars": null,
+   "frame_spaces": 0,
+   "next_star": "A first rack on the map earns the first star.",
+   "covered": false,
    "racks": [],
    "rack_count": 0,
    "capacity": 0,
    "capacity_untagged": 0,
-   "verdict": "none mapped",
+   "verdict": "go and look",
    "nearest_rack_m": 873,
    "nearest_rack": {
     "id": 12798111182,
@@ -1281,6 +1317,10 @@
     "landuse": "retail",
     "name": "Pergola Commons"
    },
+   "stars": 2,
+   "frame_spaces": 3,
+   "next_star": "Some rack details are missing from the map. Adding them could already earn a third star.",
+   "covered": false,
    "racks": [
     {
      "id": 9768470959,
@@ -1361,7 +1401,7 @@
    "rack_count": 6,
    "capacity": 10,
    "capacity_untagged": 3,
-   "verdict": "has parking",
+   "verdict": "rated",
    "nearest_rack_m": 0,
    "nearest_rack": {
     "id": 9768470959,
@@ -1470,11 +1510,15 @@
     "name": "Scottsdale Centre",
     "roof:levels": "0"
    },
+   "stars": null,
+   "frame_spaces": 0,
+   "next_star": "A first rack on the map earns the first star.",
+   "covered": false,
    "racks": [],
    "rack_count": 0,
    "capacity": 0,
    "capacity_untagged": 0,
-   "verdict": "nearby only",
+   "verdict": "rack next door",
    "nearest_rack_m": 80,
    "nearest_rack": {
     "id": 14269222867,
@@ -1606,11 +1650,15 @@
     "landuse": "retail",
     "name": "Silvercreek Business Centre"
    },
+   "stars": null,
+   "frame_spaces": 0,
+   "next_star": "A first rack on the map earns the first star.",
+   "covered": false,
    "racks": [],
    "rack_count": 0,
    "capacity": 0,
    "capacity_untagged": 0,
-   "verdict": "nearby only",
+   "verdict": "rack next door",
    "nearest_rack_m": 43,
    "nearest_rack": {
     "id": 12564637269,
@@ -1684,6 +1732,10 @@
     "note": "Sign for Silvercreek Plaza on Willow Rd lists address for the plaza itself as 120, although most of the buildings are numbered as 130. Mr Lube is the one building numbered as 120 in the plaza.",
     "operator": "HRI"
    },
+   "stars": 2,
+   "frame_spaces": 0,
+   "next_star": "Some rack details are missing from the map. Adding them could already earn a third star.",
+   "covered": false,
    "racks": [
     {
      "id": 9789312723,
@@ -1758,7 +1810,7 @@
    "rack_count": 6,
    "capacity": 0,
    "capacity_untagged": 6,
-   "verdict": "has parking",
+   "verdict": "rated",
    "nearest_rack_m": 0,
    "nearest_rack": {
     "id": 9789312723,
@@ -1839,11 +1891,15 @@
     "landuse": "retail",
     "name": "Silverwood Plaza"
    },
+   "stars": null,
+   "frame_spaces": 0,
+   "next_star": "A first rack on the map earns the first star.",
+   "covered": false,
    "racks": [],
    "rack_count": 0,
    "capacity": 0,
    "capacity_untagged": 0,
-   "verdict": "none mapped",
+   "verdict": "go and look",
    "nearest_rack_m": 508,
    "nearest_rack": {
     "id": 13233491582,
@@ -1914,6 +1970,10 @@
     "landuse": "retail",
     "name": "SmartCentres Guelph"
    },
+   "stars": 2,
+   "frame_spaces": 2,
+   "next_star": "Some rack details are missing from the map. Adding them could already earn a third star.",
+   "covered": false,
    "racks": [
     {
      "id": 12713893391,
@@ -1946,7 +2006,7 @@
    "rack_count": 2,
    "capacity": 2,
    "capacity_untagged": 1,
-   "verdict": "has parking",
+   "verdict": "rated",
    "nearest_rack_m": 0,
    "nearest_rack": {
     "id": 12713893391,
@@ -2196,11 +2256,15 @@
     "building": "commercial",
     "name": "South City Centre"
    },
+   "stars": null,
+   "frame_spaces": 0,
+   "next_star": "A first rack on the map earns the first star.",
+   "covered": false,
    "racks": [],
    "rack_count": 0,
    "capacity": 0,
    "capacity_untagged": 0,
-   "verdict": "none mapped",
+   "verdict": "go and look",
    "nearest_rack_m": 143,
    "nearest_rack": {
     "id": 14307258547,
@@ -2256,11 +2320,15 @@
     "landuse": "retail",
     "name": "Speedvale Centre"
    },
+   "stars": null,
+   "frame_spaces": 0,
+   "next_star": "A first rack on the map earns the first star.",
+   "covered": false,
    "racks": [],
    "rack_count": 0,
    "capacity": 0,
    "capacity_untagged": 0,
-   "verdict": "none mapped",
+   "verdict": "go and look",
    "nearest_rack_m": 852,
    "nearest_rack": {
     "id": 9768470960,
@@ -2366,6 +2434,10 @@
     "name": "Stone Square Plaza",
     "source": "Bing"
    },
+   "stars": 3,
+   "frame_spaces": 23,
+   "next_star": null,
+   "covered": false,
    "racks": [
     {
      "id": 11225402345,
@@ -2422,7 +2494,7 @@
    "rack_count": 4,
    "capacity": 23,
    "capacity_untagged": 0,
-   "verdict": "has parking",
+   "verdict": "rated",
    "nearest_rack_m": 0,
    "nearest_rack": {
     "id": 11225402345,
@@ -2511,11 +2583,15 @@
     "name": "Stonegate Plaza",
     "source": "Bing"
    },
+   "stars": null,
+   "frame_spaces": 0,
+   "next_star": "A first rack on the map earns the first star.",
+   "covered": false,
    "racks": [],
    "rack_count": 0,
    "capacity": 0,
    "capacity_untagged": 0,
-   "verdict": "none mapped",
+   "verdict": "go and look",
    "nearest_rack_m": 128,
    "nearest_rack": {
     "id": 13963396495,
@@ -2651,11 +2727,15 @@
     "landuse": "commercial",
     "name": "Sugarbush Plaza"
    },
+   "stars": null,
+   "frame_spaces": 0,
+   "next_star": "A first rack on the map earns the first star.",
+   "covered": false,
    "racks": [],
    "rack_count": 0,
    "capacity": 0,
    "capacity_untagged": 0,
-   "verdict": "none mapped",
+   "verdict": "go and look",
    "nearest_rack_m": 356,
    "nearest_rack": {
     "id": 12798111182,
@@ -2751,6 +2831,10 @@
    "merged": [
     399342520
    ],
+   "stars": 2,
+   "frame_spaces": 4,
+   "next_star": "Room for 6 more bikes earns the third star.",
+   "covered": true,
    "racks": [
     {
      "id": 12823764356,
@@ -2788,7 +2872,7 @@
    "rack_count": 2,
    "capacity": 4,
    "capacity_untagged": 0,
-   "verdict": "has parking",
+   "verdict": "rated",
    "nearest_rack_m": 0,
    "nearest_rack": {
     "id": 12823764356,
@@ -2896,6 +2980,10 @@
    "lon": -80.27672070669449,
    "name": "Unnamed plaza, 10-20 Woodlawn Road East (Buck or Two, Canadian Tire, City Pizza)",
    "unnamed": true,
+   "stars": 2,
+   "frame_spaces": 2,
+   "next_star": "Room for 8 more bikes earns the third star.",
+   "covered": false,
    "racks": [
     {
      "id": 12757840252,
@@ -2917,7 +3005,7 @@
    "rack_count": 1,
    "capacity": 2,
    "capacity_untagged": 0,
-   "verdict": "has parking",
+   "verdict": "rated",
    "nearest_rack_m": 0,
    "nearest_rack": {
     "id": 12757840252,
@@ -3031,11 +3119,15 @@
    "lon": -80.21120131255626,
    "name": "Unnamed plaza, 1027 Gordon Street (Beauty Queen Health Center, Centurion Coffee, Dr. A. Raco Dental Office)",
    "unnamed": true,
+   "stars": null,
+   "frame_spaces": 0,
+   "next_star": "A first rack on the map earns the first star.",
+   "covered": false,
    "racks": [],
    "rack_count": 0,
    "capacity": 0,
    "capacity_untagged": 0,
-   "verdict": "nearby only",
+   "verdict": "rack next door",
    "nearest_rack_m": 73,
    "nearest_rack": {
     "id": 12823764356,
@@ -3107,6 +3199,10 @@
    "lon": -80.27935485124783,
    "name": "Unnamed plaza, 104 Silvercreek Parkway North (Canada Post, Money Direct, Pizzaville)",
    "unnamed": true,
+   "stars": 2,
+   "frame_spaces": 3,
+   "next_star": "Room for 7 more bikes earns the third star.",
+   "covered": false,
    "racks": [
     {
      "id": 9789312722,
@@ -3131,7 +3227,7 @@
    "rack_count": 1,
    "capacity": 3,
    "capacity_untagged": 0,
-   "verdict": "has parking",
+   "verdict": "rated",
    "nearest_rack_m": 0,
    "nearest_rack": {
     "id": 9789312722,
@@ -3205,11 +3301,15 @@
    "lon": -80.2779087124211,
    "name": "Unnamed plaza, 105 Silvercreek Parkway North (Growmark, Paradise Barbershop, Rexall)",
    "unnamed": true,
+   "stars": null,
+   "frame_spaces": 0,
+   "next_star": "A first rack on the map earns the first star.",
+   "covered": false,
    "racks": [],
    "rack_count": 0,
    "capacity": 0,
    "capacity_untagged": 0,
-   "verdict": "nearby only",
+   "verdict": "rack next door",
    "nearest_rack_m": 54,
    "nearest_rack": {
     "id": 9789312722,
@@ -3280,6 +3380,10 @@
    "lon": -80.23196416392719,
    "name": "Unnamed plaza, 127-201 Stone Road West (Best Buy, Canadian Tire, Milestones)",
    "unnamed": true,
+   "stars": 3,
+   "frame_spaces": 40,
+   "next_star": null,
+   "covered": true,
    "racks": [
     {
      "id": 12030078101,
@@ -3338,7 +3442,7 @@
    "rack_count": 4,
    "capacity": 40,
    "capacity_untagged": 0,
-   "verdict": "has parking",
+   "verdict": "rated",
    "nearest_rack_m": 0,
    "nearest_rack": {
     "id": 12030078101,
@@ -3423,11 +3527,15 @@
    "lon": -80.19753333630788,
    "name": "Unnamed plaza, 1388-1398 Gordon Street (Borealis Grille & Bar, Crock A Doodle, Dr. Nafeesa Sheikh Dentistry)",
    "unnamed": true,
+   "stars": null,
+   "frame_spaces": 0,
+   "next_star": "A first rack on the map earns the first star.",
+   "covered": false,
    "racks": [],
    "rack_count": 0,
    "capacity": 0,
    "capacity_untagged": 0,
-   "verdict": "none mapped",
+   "verdict": "go and look",
    "nearest_rack_m": 179,
    "nearest_rack": {
     "id": 12327064780,
@@ -3498,6 +3606,10 @@
    "lon": -80.19641521459403,
    "name": "Unnamed plaza, 1499-1515 Gordon Street (Cavan Coffee, Domino's, Dr. Ye & Associates)",
    "unnamed": true,
+   "stars": 2,
+   "frame_spaces": 2,
+   "next_star": "Room for 8 more bikes earns the third star.",
+   "covered": false,
    "racks": [
     {
      "id": 14106382405,
@@ -3514,7 +3626,7 @@
    "rack_count": 1,
    "capacity": 2,
    "capacity_untagged": 0,
-   "verdict": "has parking",
+   "verdict": "rated",
    "nearest_rack_m": 0,
    "nearest_rack": {
     "id": 14106382405,
@@ -3631,11 +3743,15 @@
    "lon": -80.27597283541864,
    "name": "Unnamed plaza, 159 Fife Road (Hale Veterinary Clinic, Hasty Market, Jumbo 3 for 1 Pizza & Wings)",
    "unnamed": true,
+   "stars": null,
+   "frame_spaces": 0,
+   "next_star": "A first rack on the map earns the first star.",
+   "covered": false,
    "racks": [],
    "rack_count": 0,
    "capacity": 0,
    "capacity_untagged": 0,
-   "verdict": "none mapped",
+   "verdict": "go and look",
    "nearest_rack_m": 1010,
    "nearest_rack": {
     "id": 13233449397,
@@ -3704,6 +3820,10 @@
    "lon": -80.28243546761371,
    "name": "Unnamed plaza, 170 Silvercreek Parkway North (Fresh Salon & Spa, Greengate Medical Centre Walk-In Clinic, Guardian)",
    "unnamed": true,
+   "stars": 2,
+   "frame_spaces": 0,
+   "next_star": "Some rack details are missing from the map. Adding them could already earn a third star.",
+   "covered": false,
    "racks": [
     {
      "id": 9789312727,
@@ -3730,7 +3850,7 @@
    "rack_count": 2,
    "capacity": 0,
    "capacity_untagged": 2,
-   "verdict": "has parking",
+   "verdict": "rated",
    "nearest_rack_m": 22,
    "nearest_rack": {
     "id": 9789312728,
@@ -3791,11 +3911,15 @@
    "lon": -80.25511949955819,
    "name": "Unnamed plaza, 188-196 Waterloo Avenue (Buzz Hair Salon, Goldcap Realty, Retro Convenience)",
    "unnamed": true,
+   "stars": null,
+   "frame_spaces": 0,
+   "next_star": "A first rack on the map earns the first star.",
+   "covered": false,
    "racks": [],
    "rack_count": 0,
    "capacity": 0,
    "capacity_untagged": 0,
-   "verdict": "none mapped",
+   "verdict": "go and look",
    "nearest_rack_m": 310,
    "nearest_rack": {
     "id": 12058128705,
@@ -3864,11 +3988,15 @@
    "lon": -80.2833804493573,
    "name": "Unnamed plaza, 200-206 Silvercreek Parkway North (Burger King, Cashco Loans, Domino's)",
    "unnamed": true,
+   "stars": null,
+   "frame_spaces": 0,
+   "next_star": "A first rack on the map earns the first star.",
+   "covered": false,
    "racks": [],
    "rack_count": 0,
    "capacity": 0,
    "capacity_untagged": 0,
-   "verdict": "nearby only",
+   "verdict": "rack next door",
    "nearest_rack_m": 95,
    "nearest_rack": {
     "id": 12164866906,
@@ -3938,6 +4066,10 @@
    "lon": -80.2217239439328,
    "name": "Unnamed plaza, 200-234 Victoria Road South (Eggcetra, Ethnic Supermarket, FillStore Convenience)",
    "unnamed": true,
+   "stars": 1,
+   "frame_spaces": 0,
+   "next_star": "The rack type is not clear on the map. Adding it could already earn a second star.",
+   "covered": false,
    "racks": [
     {
      "id": 11461813869,
@@ -3967,7 +4099,7 @@
    "rack_count": 2,
    "capacity": 0,
    "capacity_untagged": 2,
-   "verdict": "has parking",
+   "verdict": "rated",
    "nearest_rack_m": 0,
    "nearest_rack": {
     "id": 11461813869,
@@ -4064,11 +4196,15 @@
    "lon": -80.26100520241856,
    "name": "Unnamed plaza, 204 Yorkshire Street North (Barber Glass, Quick Stop Variety, Two Plus Pizza)",
    "unnamed": true,
+   "stars": null,
+   "frame_spaces": 0,
+   "next_star": "A first rack on the map earns the first star.",
+   "covered": false,
    "racks": [],
    "rack_count": 0,
    "capacity": 0,
    "capacity_untagged": 0,
-   "verdict": "none mapped",
+   "verdict": "go and look",
    "nearest_rack_m": 142,
    "nearest_rack": {
     "id": 12810727443,
@@ -4156,6 +4292,10 @@
    "lon": -80.28594132483771,
    "name": "Unnamed plaza, 208-222 Silvercreek Parkway North (24 De Nails Ltd., Dollarama, Downtown Dentistry)",
    "unnamed": true,
+   "stars": 2,
+   "frame_spaces": 5,
+   "next_star": "Room for 5 more bikes earns the third star.",
+   "covered": false,
    "racks": [
     {
      "id": 12164899589,
@@ -4177,7 +4317,7 @@
    "rack_count": 1,
    "capacity": 5,
    "capacity_untagged": 0,
-   "verdict": "has parking",
+   "verdict": "rated",
    "nearest_rack_m": 0,
    "nearest_rack": {
     "id": 12164899589,
@@ -4239,6 +4379,10 @@
    "lon": -80.2801513538419,
    "name": "Unnamed plaza, 21-35 Woodlawn Road West (Boston Pizza, Julia's Nail Salon, Uptown Guelph Dental)",
    "unnamed": true,
+   "stars": 2,
+   "frame_spaces": 0,
+   "next_star": "Some rack details are missing from the map. Adding them could already earn a third star.",
+   "covered": false,
    "racks": [
     {
      "id": 12713893391,
@@ -4258,7 +4402,7 @@
    "rack_count": 1,
    "capacity": 0,
    "capacity_untagged": 1,
-   "verdict": "has parking",
+   "verdict": "rated",
    "nearest_rack_m": 28,
    "nearest_rack": {
     "id": 12713893391,
@@ -4391,11 +4535,15 @@
    "lon": -80.29278648005767,
    "name": "Unnamed plaza, 221-223 Woodlawn Road West (3 for 1 Glasses, 9Round, Body Klense)",
    "unnamed": true,
+   "stars": null,
+   "frame_spaces": 0,
+   "next_star": "A first rack on the map earns the first star.",
+   "covered": false,
    "racks": [],
    "rack_count": 0,
    "capacity": 0,
    "capacity_untagged": 0,
-   "verdict": "nearby only",
+   "verdict": "rack next door",
    "nearest_rack_m": 51,
    "nearest_rack": {
     "id": 13233491582,
@@ -4468,11 +4616,15 @@
    "lon": -80.26695431444561,
    "name": "Unnamed plaza, 241-249 Edinburgh Road North (G&A Locks & Security, Mobility in Motion, Rainbow Variety)",
    "unnamed": true,
+   "stars": null,
+   "frame_spaces": 0,
+   "next_star": "A first rack on the map earns the first star.",
+   "covered": false,
    "racks": [],
    "rack_count": 0,
    "capacity": 0,
    "capacity_untagged": 0,
-   "verdict": "none mapped",
+   "verdict": "go and look",
    "nearest_rack_m": 255,
    "nearest_rack": {
     "id": 12300313453,
@@ -4558,11 +4710,15 @@
    "lon": -80.28854297489512,
    "name": "Unnamed plaza, 252 Silvercreek Parkway North (Buns Master, Culligan, Hakim Optical)",
    "unnamed": true,
+   "stars": null,
+   "frame_spaces": 0,
+   "next_star": "A first rack on the map earns the first star.",
+   "covered": false,
    "racks": [],
    "rack_count": 0,
    "capacity": 0,
    "capacity_untagged": 0,
-   "verdict": "nearby only",
+   "verdict": "rack next door",
    "nearest_rack_m": 55,
    "nearest_rack": {
     "id": 12312591588,
@@ -4625,6 +4781,10 @@
    "lon": -80.24798837619154,
    "name": "Unnamed plaza, 265-297 Eramosa Road (First Choice Haircutters, GoodLife Fitness, Kirtida Kitchen)",
    "unnamed": true,
+   "stars": 2,
+   "frame_spaces": 0,
+   "next_star": "Some rack details are missing from the map. Adding them could already earn a third star.",
+   "covered": false,
    "racks": [
     {
      "id": 13062606915,
@@ -4642,7 +4802,7 @@
    "rack_count": 1,
    "capacity": 0,
    "capacity_untagged": 1,
-   "verdict": "has parking",
+   "verdict": "rated",
    "nearest_rack_m": 0,
    "nearest_rack": {
     "id": 13062606915,
@@ -4765,11 +4925,15 @@
    "lon": -80.23434965894492,
    "name": "Unnamed plaza, 292-314 Stone Road West (Apps Optical, Body Systems Nutrition, Brodie's Gaming & Collectables)",
    "unnamed": true,
+   "stars": null,
+   "frame_spaces": 0,
+   "next_star": "A first rack on the map earns the first star.",
+   "covered": false,
    "racks": [],
    "rack_count": 0,
    "capacity": 0,
    "capacity_untagged": 0,
-   "verdict": "nearby only",
+   "verdict": "rack next door",
    "nearest_rack_m": 38,
    "nearest_rack": {
     "id": 12206930210,
@@ -4831,11 +4995,15 @@
    "lon": -80.2490187782091,
    "name": "Unnamed plaza, 3-15 Municipal Street (CosmoProf, Pizza Trokadero, The Beer Store)",
    "unnamed": true,
+   "stars": null,
+   "frame_spaces": 0,
+   "next_star": "A first rack on the map earns the first star.",
+   "covered": false,
    "racks": [],
    "rack_count": 0,
    "capacity": 0,
    "capacity_untagged": 0,
-   "verdict": "none mapped",
+   "verdict": "go and look",
    "nearest_rack_m": 331,
    "nearest_rack": {
     "id": 12402038484,
@@ -4916,11 +5084,15 @@
    "lon": -80.22426748130084,
    "name": "Unnamed plaza, 320 Eastview Road (East Guelph Medical Clinic, Eastview Physiotherapy, Gino's Pizza)",
    "unnamed": true,
+   "stars": null,
+   "frame_spaces": 0,
+   "next_star": "A first rack on the map earns the first star.",
+   "covered": false,
    "racks": [],
    "rack_count": 0,
    "capacity": 0,
    "capacity_untagged": 0,
-   "verdict": "none mapped",
+   "verdict": "go and look",
    "nearest_rack_m": 1589,
    "nearest_rack": {
     "id": 12099376342,
@@ -4990,11 +5162,15 @@
    "lon": -80.29845864226421,
    "name": "Unnamed plaza, 340 Woodlawn Road West (All-Risks Insurance Brokers Limited, Asian Food Centre, Buckenham Fireplaces & Grills)",
    "unnamed": true,
+   "stars": null,
+   "frame_spaces": 0,
+   "next_star": "A first rack on the map earns the first star.",
+   "covered": false,
    "racks": [],
    "rack_count": 0,
    "capacity": 0,
    "capacity_untagged": 0,
-   "verdict": "none mapped",
+   "verdict": "go and look",
    "nearest_rack_m": 864,
    "nearest_rack": {
     "id": 12312591588,
@@ -5060,11 +5236,15 @@
    "lon": -80.24954355082284,
    "name": "Unnamed plaza, 380 Eramosa Road (Dairy Queen, Dollarama, Food Basics)",
    "unnamed": true,
+   "stars": null,
+   "frame_spaces": 0,
+   "next_star": "A first rack on the map earns the first star.",
+   "covered": false,
    "racks": [],
    "rack_count": 0,
    "capacity": 0,
    "capacity_untagged": 0,
-   "verdict": "none mapped",
+   "verdict": "go and look",
    "nearest_rack_m": 128,
    "nearest_rack": {
     "id": 13062606915,
@@ -5226,6 +5406,10 @@
    "lon": -80.18946553085061,
    "name": "Unnamed plaza, 4-124 Clair Road East (BarBurrito, BodySystems Nutrition, CIBC)",
    "unnamed": true,
+   "stars": 1,
+   "frame_spaces": 0,
+   "next_star": "The rack type is not clear on the map. Adding it could already earn a second star.",
+   "covered": false,
    "racks": [
     {
      "id": 12823720968,
@@ -5358,7 +5542,7 @@
    "rack_count": 9,
    "capacity": 44,
    "capacity_untagged": 0,
-   "verdict": "has parking",
+   "verdict": "rated",
    "nearest_rack_m": 0,
    "nearest_rack": {
     "id": 12823720968,
@@ -5439,11 +5623,15 @@
    "lon": -80.3065599656728,
    "name": "Unnamed plaza, 415-429 Woodlawn Road West (Tim Hortons, Wendy's, World of Hot Tubs)",
    "unnamed": true,
+   "stars": null,
+   "frame_spaces": 0,
+   "next_star": "A first rack on the map earns the first star.",
+   "covered": false,
    "racks": [],
    "rack_count": 0,
    "capacity": 0,
    "capacity_untagged": 0,
-   "verdict": "none mapped",
+   "verdict": "go and look",
    "nearest_rack_m": 1119,
    "nearest_rack": {
     "id": 12798111182,
@@ -5504,11 +5692,15 @@
    "lon": -80.30661393520666,
    "name": "Unnamed plaza, 450 Woodlawn Road West (Bigelow Flooring, Coconut Coast, Neutron Electronics)",
    "unnamed": true,
+   "stars": null,
+   "frame_spaces": 0,
+   "next_star": "A first rack on the map earns the first star.",
+   "covered": false,
    "racks": [],
    "rack_count": 0,
    "capacity": 0,
    "capacity_untagged": 0,
-   "verdict": "none mapped",
+   "verdict": "go and look",
    "nearest_rack_m": 1039,
    "nearest_rack": {
     "id": 12798111182,
@@ -5572,11 +5764,15 @@
    "lon": -80.30904388805818,
    "name": "Unnamed plaza, 465-565 Woodlawn Road West (A&W, Galaxy Cinemas Guelph, Mandarin)",
    "unnamed": true,
+   "stars": null,
+   "frame_spaces": 0,
+   "next_star": "A first rack on the map earns the first star.",
+   "covered": false,
    "racks": [],
    "rack_count": 0,
    "capacity": 0,
    "capacity_untagged": 0,
-   "verdict": "none mapped",
+   "verdict": "go and look",
    "nearest_rack_m": 1166,
    "nearest_rack": {
     "id": 12798111182,
@@ -5646,11 +5842,15 @@
    "lon": -80.26100213322987,
    "name": "Unnamed plaza, 486 Woodlawn Road East (Helmand Kebab House, Kings Sports Bar and Grill, Laundromat)",
    "unnamed": true,
+   "stars": null,
+   "frame_spaces": 0,
+   "next_star": "A first rack on the map earns the first star.",
+   "covered": false,
    "racks": [],
    "rack_count": 0,
    "capacity": 0,
    "capacity_untagged": 0,
-   "verdict": "none mapped",
+   "verdict": "go and look",
    "nearest_rack_m": 1623,
    "nearest_rack": {
     "id": 12757840252,
@@ -5723,11 +5923,15 @@
    "lon": -80.24475184439345,
    "name": "Unnamed plaza, 50 Wellington Street East (A&W, KFC, Tim Hortons)",
    "unnamed": true,
+   "stars": null,
+   "frame_spaces": 0,
+   "next_star": "A first rack on the map earns the first star.",
+   "covered": false,
    "racks": [],
    "rack_count": 0,
    "capacity": 0,
    "capacity_untagged": 0,
-   "verdict": "nearby only",
+   "verdict": "rack next door",
    "nearest_rack_m": 31,
    "nearest_rack": {
     "id": 14197996496,
@@ -5840,6 +6044,10 @@
    "lon": -80.2817581755122,
    "name": "Unnamed plaza, 51-55 Woodlawn Road West (Coffee Time, End Of The Roll, Mobility in Motion)",
    "unnamed": true,
+   "stars": 2,
+   "frame_spaces": 2,
+   "next_star": "Room for 8 more bikes earns the third star.",
+   "covered": false,
    "racks": [
     {
      "id": 13027046604,
@@ -5858,7 +6066,7 @@
    "rack_count": 1,
    "capacity": 2,
    "capacity_untagged": 0,
-   "verdict": "has parking",
+   "verdict": "rated",
    "nearest_rack_m": 10,
    "nearest_rack": {
     "id": 13027046604,
@@ -5920,6 +6128,10 @@
    "lon": -80.23896090269201,
    "name": "Unnamed plaza, 617-649 Scottsdale Drive (Frontier Diagnostics: Medical Imaging, LCBO, Pizza Hut)",
    "unnamed": true,
+   "stars": 3,
+   "frame_spaces": 24,
+   "next_star": null,
+   "covered": false,
    "racks": [
     {
      "id": 14269099699,
@@ -5958,7 +6170,7 @@
    "rack_count": 3,
    "capacity": 24,
    "capacity_untagged": 0,
-   "verdict": "has parking",
+   "verdict": "rated",
    "nearest_rack_m": 0,
    "nearest_rack": {
     "id": 14269099699,
@@ -6059,11 +6271,15 @@
    "lon": -80.23805131112584,
    "name": "Unnamed plaza, 630-650 Scottsdale Drive (Fluffy Glaze, Gotcha Bubble Tea, Guelph BBQ)",
    "unnamed": true,
+   "stars": null,
+   "frame_spaces": 0,
+   "next_star": "A first rack on the map earns the first star.",
+   "covered": false,
    "racks": [],
    "rack_count": 0,
    "capacity": 0,
    "capacity_untagged": 0,
-   "verdict": "nearby only",
+   "verdict": "rack next door",
    "nearest_rack_m": 50,
    "nearest_rack": {
     "id": 14269222867,
@@ -6139,11 +6355,15 @@
    "lon": -80.26958865929444,
    "name": "Unnamed plaza, 666 Woolwich Street (Canvision Optical Ltd, Double Double Pizza & Wings, Dutch Toko European Deli)",
    "unnamed": true,
+   "stars": null,
+   "frame_spaces": 0,
+   "next_star": "A first rack on the map earns the first star.",
+   "covered": false,
    "racks": [],
    "rack_count": 0,
    "capacity": 0,
    "capacity_untagged": 0,
-   "verdict": "none mapped",
+   "verdict": "go and look",
    "nearest_rack_m": 175,
    "nearest_rack": {
     "id": 11450121869,
@@ -6214,6 +6434,10 @@
    "lon": -80.27212464441303,
    "name": "Unnamed plaza, 670-698 Woolwich Street (Church's Chicken, Dominion Lending Centres, Edward Jones)",
    "unnamed": true,
+   "stars": 2,
+   "frame_spaces": 4,
+   "next_star": "Some rack details are missing from the map. Adding them could already earn a third star.",
+   "covered": false,
    "racks": [
     {
      "id": 11450121869,
@@ -6271,7 +6495,7 @@
    "rack_count": 4,
    "capacity": 4,
    "capacity_untagged": 3,
-   "verdict": "has parking",
+   "verdict": "rated",
    "nearest_rack_m": 0,
    "nearest_rack": {
     "id": 11450121869,
@@ -6359,6 +6583,10 @@
    "lon": -80.26872002172722,
    "name": "Unnamed plaza, 715 Wellington Street West (Global Pet Foods, Imperial Pharmacy, MM Physio)",
    "unnamed": true,
+   "stars": 2,
+   "frame_spaces": 0,
+   "next_star": "Some rack details are missing from the map. Adding them could already earn a third star.",
+   "covered": false,
    "racks": [
     {
      "id": 13233449397,
@@ -6377,7 +6605,7 @@
    "rack_count": 1,
    "capacity": 0,
    "capacity_untagged": 1,
-   "verdict": "has parking",
+   "verdict": "rated",
    "nearest_rack_m": 0,
    "nearest_rack": {
     "id": 13233449397,
@@ -6457,11 +6685,15 @@
    "lon": -80.27486459576201,
    "name": "Unnamed plaza, 727-777 Woolwich Street (Big Smart Convenience, DUCA, Dairy Queen)",
    "unnamed": true,
+   "stars": null,
+   "frame_spaces": 0,
+   "next_star": "A first rack on the map earns the first star.",
+   "covered": false,
    "racks": [],
    "rack_count": 0,
    "capacity": 0,
    "capacity_untagged": 0,
-   "verdict": "nearby only",
+   "verdict": "rack next door",
    "nearest_rack_m": 35,
    "nearest_rack": {
     "id": 14088696229,
@@ -6552,11 +6784,15 @@
    "lon": -80.27371949050885,
    "name": "Unnamed plaza, 75 Willow Road (H&R Block, Healing Centre, Little Short Stop)",
    "unnamed": true,
+   "stars": null,
+   "frame_spaces": 0,
+   "next_star": "A first rack on the map earns the first star.",
+   "covered": false,
    "racks": [],
    "rack_count": 0,
    "capacity": 0,
    "capacity_untagged": 0,
-   "verdict": "none mapped",
+   "verdict": "go and look",
    "nearest_rack_m": 128,
    "nearest_rack": {
     "id": 9789312730,
@@ -6659,6 +6895,10 @@
    "lon": -80.24349680161437,
    "name": "Unnamed plaza, 86-100 Gordon Street (Bare Essentials, Domino's, Edward Jones)",
    "unnamed": true,
+   "stars": 2,
+   "frame_spaces": 8,
+   "next_star": "Room for 2 more bikes earns the third star.",
+   "covered": true,
    "racks": [
     {
      "id": 12170563930,
@@ -6682,7 +6922,7 @@
    "rack_count": 1,
    "capacity": 8,
    "capacity_untagged": 0,
-   "verdict": "has parking",
+   "verdict": "rated",
    "nearest_rack_m": 0,
    "nearest_rack": {
     "id": 12170563930,
@@ -6826,6 +7066,10 @@
    "lon": -80.24440711500544,
    "name": "Unnamed plaza, 89-105 Gordon Street (Bardo, Freshii, Goodness Me!)",
    "unnamed": true,
+   "stars": 3,
+   "frame_spaces": 20,
+   "next_star": null,
+   "covered": false,
    "racks": [
     {
      "id": 12015891543,
@@ -6906,7 +7150,7 @@
    "rack_count": 5,
    "capacity": 20,
    "capacity_untagged": 1,
-   "verdict": "has parking",
+   "verdict": "rated",
    "nearest_rack_m": 0,
    "nearest_rack": {
     "id": 12015891543,
@@ -6985,11 +7229,15 @@
    "lon": -80.28504989028012,
    "name": "Unnamed plaza, 926 Paisley Road (Circle K, M&M Food Market, Tranquil Hair & Body)",
    "unnamed": true,
+   "stars": null,
+   "frame_spaces": 0,
+   "next_star": "A first rack on the map earns the first star.",
+   "covered": false,
    "racks": [],
    "rack_count": 0,
    "capacity": 0,
    "capacity_untagged": 0,
-   "verdict": "nearby only",
+   "verdict": "rack next door",
    "nearest_rack_m": 38,
    "nearest_rack": {
     "id": 9768470934,
@@ -7076,11 +7324,15 @@
    "lon": -80.21375464661803,
    "name": "Unnamed plaza, 951 Gordon Street (Alpenglow Leaf, Bronze Ambition, Dulux Paints)",
    "unnamed": true,
+   "stars": null,
+   "frame_spaces": 0,
+   "next_star": "A first rack on the map earns the first star.",
+   "covered": false,
    "racks": [],
    "rack_count": 0,
    "capacity": 0,
    "capacity_untagged": 0,
-   "verdict": "nearby only",
+   "verdict": "rack next door",
    "nearest_rack_m": 64,
    "nearest_rack": {
     "id": 12823829004,
@@ -7137,6 +7389,10 @@
     "name": "Wellington Plaza",
     "source": "Bing"
    },
+   "stars": 2,
+   "frame_spaces": 8,
+   "next_star": "Room for 2 more bikes earns the third star.",
+   "covered": true,
    "racks": [
     {
      "id": 12170563930,
@@ -7160,7 +7416,7 @@
    "rack_count": 1,
    "capacity": 8,
    "capacity_untagged": 0,
-   "verdict": "has parking",
+   "verdict": "rated",
    "nearest_rack_m": 0,
    "nearest_rack": {
     "id": 12170563930,
@@ -7252,6 +7508,10 @@
     "name": "West Hills Plaza",
     "source": "Bing"
    },
+   "stars": 2,
+   "frame_spaces": 0,
+   "next_star": "Some rack details are missing from the map. Adding them could already earn a third star.",
+   "covered": false,
    "racks": [
     {
      "id": 9768470930,
@@ -7309,7 +7569,7 @@
    "rack_count": 4,
    "capacity": 0,
    "capacity_untagged": 4,
-   "verdict": "has parking",
+   "verdict": "rated",
    "nearest_rack_m": 0,
    "nearest_rack": {
     "id": 9768470930,
@@ -7469,6 +7729,10 @@
     "landuse": "retail",
     "name": "Westwood Plaza"
    },
+   "stars": 1,
+   "frame_spaces": 0,
+   "next_star": "The rack type is not clear on the map. Adding it could already earn a second star.",
+   "covered": false,
    "racks": [
     {
      "id": 9768470920,
@@ -7483,7 +7747,7 @@
    "rack_count": 1,
    "capacity": 0,
    "capacity_untagged": 1,
-   "verdict": "has parking",
+   "verdict": "rated",
    "nearest_rack_m": 0,
    "nearest_rack": {
     "id": 9768470920,
@@ -7553,6 +7817,10 @@
     "shop": "mall",
     "source": "Bing"
    },
+   "stars": 1,
+   "frame_spaces": 0,
+   "next_star": "The rack type is not clear on the map. Adding it could already earn a second star.",
+   "covered": false,
    "racks": [
     {
      "id": 9789312729,
@@ -7569,7 +7837,7 @@
    "rack_count": 1,
    "capacity": 0,
    "capacity_untagged": 1,
-   "verdict": "has parking",
+   "verdict": "rated",
    "nearest_rack_m": 1,
    "nearest_rack": {
     "id": 9789312729,
@@ -7834,11 +8102,15 @@
     "landuse": "retail",
     "name": "Woodlawn Square"
    },
+   "stars": null,
+   "frame_spaces": 0,
+   "next_star": "A first rack on the map earns the first star.",
+   "covered": false,
    "racks": [],
    "rack_count": 0,
    "capacity": 0,
    "capacity_untagged": 0,
-   "verdict": "none mapped",
+   "verdict": "go and look",
    "nearest_rack_m": 230,
    "nearest_rack": {
     "id": 13233491582,
@@ -7923,6 +8195,10 @@
     "wikidata": "Q7619018",
     "wikipedia": "en:Stone Road Mall"
    },
+   "stars": 3,
+   "frame_spaces": 10,
+   "next_star": null,
+   "covered": false,
    "racks": [
     {
      "id": 11480123369,
@@ -7961,7 +8237,7 @@
    "rack_count": 2,
    "capacity": 10,
    "capacity_untagged": 0,
-   "verdict": "has parking",
+   "verdict": "rated",
    "nearest_rack_m": 2,
    "nearest_rack": {
     "id": 12095999648,
@@ -8373,6 +8649,10 @@
     "wikimedia_commons": "Category:Old Quebec Street Mall",
     "wikipedia": "en:Old Quebec Street Mall"
    },
+   "stars": 1,
+   "frame_spaces": 0,
+   "next_star": "The rack type is not clear on the map. Adding it could already earn a second star.",
+   "covered": false,
    "racks": [
     {
      "id": 11194039137,
@@ -8398,7 +8678,7 @@
    "rack_count": 1,
    "capacity": 4,
    "capacity_untagged": 0,
-   "verdict": "has parking",
+   "verdict": "rated",
    "nearest_rack_m": 10,
    "nearest_rack": {
     "id": 11194039137,

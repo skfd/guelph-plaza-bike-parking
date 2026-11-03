@@ -2,12 +2,22 @@
 
 **[→ the page](https://skfd.github.io/guelph-plaza-bike-parking/)**
 
-Which of Guelph's strip-mall plazas have bike parking, according to OpenStreetMap, and which
-still need someone to go and look. Each open-air plaza is checked against the mapped racks and
-gets one of three verdicts: on site, within 100 m, or none mapped.
+Stars for the Guelph plazas that make it easy to arrive by bike, and a friendly invitation to
+go and look at the rest. The point is to give credit where it is earned and stay positive about
+the plazas that are not there yet, or not on the map yet.
 
-"None mapped" is not "no rack". OSM is a volunteer map, so the verdict means go and look. Every
-plaza links to its OSM entry so a missing rack can be added, and the next run picks it up.
+| | |
+|---|---|
+| ★ | a rack on the property |
+| ★★ | a rack you can lock a frame to: stands, a post and ring, lockers or a bike shed |
+| ★★★ | room for at least 10 bikes at racks like that |
+| Rack next door | a rack within 100 m, not on the property yet |
+| Go and look | no rack on the map yet |
+
+A plaza without stars is unrated, never zero. OSM is a volunteer map, so no rack on the map only
+means someone should go and look. Ratings use what the map records, so a missing rack type or
+capacity can hold a plaza back. Every plaza says what earns its next star, and the rules live
+in one place, at the top of the stars section in `analyze.py`.
 
 ## What is here
 

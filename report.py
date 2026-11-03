@@ -19,8 +19,10 @@ def map_link(lat, lon, z=18):
     return f"https://www.openstreetmap.org/#map={z}/{lat:.5f}/{lon:.5f}"
 
 
-def verdict_icon(v):
-    return {"has parking": "✅ has parking", "nearby only": "🟡 nearby only", "none mapped": "❌ none mapped"}[v]
+def verdict_icon(p):
+    if p["verdict"] == "rated":
+        return "⭐" * p["stars"]
+    return {"rack next door": "📍 rack next door", "go and look": "👀 go and look"}[p["verdict"]]
 
 
 def cap_text(p):
@@ -52,7 +54,8 @@ def anchor(p):
     return re.sub(r"[^a-z0-9 -]", "", short_name(p).lower()).replace(" ", "-")
 
 
-counts = {v: sum(1 for p in plazas if p["verdict"] == v) for v in ("has parking", "nearby only", "none mapped")}
+counts = {v: sum(1 for p in plazas if p["verdict"] == v) for v in ("rated", "rack next door", "go and look")}
+stars = {n: sum(1 for p in plazas if p["stars"] == n) for n in (3, 2, 1)}
 total_racks = len({(r["type"], r["id"]) for p in plazas for r in p["racks"]})  # distinct; a rack can sit in two buffers
 
 L = []
@@ -61,14 +64,17 @@ L.append(f"*Survey of OpenStreetMap data, {DATE}. Prepared for bike advocacy use
 L.append("## Summary\n")
 L.append(f"Guelph has **{len(plazas)} open-air plazas** in OpenStreetMap (plus 2 enclosed malls, listed at the end). "
          f"Of those {len(plazas)}:\n")
-L.append(f"| Verdict | Plazas |\n|---|---|\n"
-         f"| ✅ Has bike parking on site | {counts['has parking']} |\n"
-         f"| 🟡 Nearby only (a rack within 100 m, but not on the property) | {counts['nearby only']} |\n"
-         f"| ❌ None mapped | {counts['none mapped']} |\n")
-L.append(f"Across all plazas, {total_racks} bike parking locations are mapped. Most have no capacity recorded, so the number of bikes they hold is unknown.\n")
-L.append("**How to read \"none mapped\".** OpenStreetMap is a volunteer map. A plaza with no bike rack in the map may still have one on the ground that nobody has recorded yet. "
-         "Treat ❌ as \"go and look\", not as \"there is no rack\". A plaza marked ✅ has been confirmed by at least one mapper, but the rack may be a poor one (a wheel-bender or a single wall loop). "
-         "Where the rack type is known it is listed under the plaza.\n")
+L.append(f"| Rating | Plazas |\n|---|---|\n"
+         f"| ⭐⭐⭐ Room for at least 10 bikes at racks you can lock a frame to | {stars[3]} |\n"
+         f"| ⭐⭐ A rack you can lock a frame to | {stars[2]} |\n"
+         f"| ⭐ A rack on the property | {stars[1]} |\n"
+         f"| 📍 Rack next door: within 100 m, not on the property yet | {counts['rack next door']} |\n"
+         f"| 👀 Go and look: no rack on the map yet | {counts['go and look']} |\n")
+L.append(f"Across all plazas, {total_racks} bike parking locations are mapped.\n")
+L.append("**How the stars work.** Stars are for plazas that make it easy to arrive by bike. Frame-lockable means stands, post-and-ring bollards, lockers or a bike shed. Wheel-only racks and informal spots earn the first star but not the second. "
+         "Ratings use only what OpenStreetMap records, so a missing rack type or capacity can hold a plaza back. Every plaza below says what earns its next star, and often that is just a detail for a mapper to add.\n")
+L.append("**How to read the plazas without stars.** They have not failed anything. OpenStreetMap is a volunteer map, so a plaza with no rack on it may have one nobody has recorded yet. "
+         "Treat 👀 as \"go and look\", not as \"there is no rack\". One that really has none is a chance for a first rack.\n")
 L.append("**What counts as a plaza here.** Open-air, multi-tenant retail with shared surface parking. Named plazas and shopping centres are included on their name; retail areas with no name in the map are included when at least four named businesses are mapped inside them. "
          "That includes the big-box power centres (SmartCentres, Woodlawn Square, Clairfield Commons, Pergola Commons). "
          "It excludes enclosed malls (listed separately), single-tenant buildings, downtown main-street storefronts and the university's pedestrian plazas. "
@@ -78,15 +84,15 @@ L.append("**How to fix the map.** Every plaza links to its OpenStreetMap entry. 
 L.append("Companion files: `plazas.csv` (one row per plaza, for your own map), `img/` (screenshots), `analyze.py` and `render.py` (how this was produced).\n")
 
 L.append("## All plazas at a glance\n")
-L.append("| Plaza | Verdict | Racks | Capacity | Tenants | Map |\n|---|---|---|---|---|---|")
+L.append("| Plaza | Rating | Racks | Capacity | Tenants | Map |\n|---|---|---|---|---|---|")
 for p in plazas:
-    L.append(f"| [{short_name(p)}](#{anchor(p)}) | {verdict_icon(p['verdict'])} | {p['rack_count'] or ''} | {cap_text(p)} | {len(p['tenant_names'])} | [OSM]({osm(p)}) |")
+    L.append(f"| [{short_name(p)}](#{anchor(p)}) | {verdict_icon(p)} | {p['rack_count'] or ''} | {cap_text(p)} | {len(p['tenant_names'])} | [OSM]({osm(p)}) |")
 L.append("")
 
-L.append("## Plazas with no bike parking mapped\n")
-L.append("These are the priority list. Distance is from the edge of the plaza to the nearest mapped rack anywhere in the city.\n")
+L.append("## Plazas to go and look at\n")
+L.append("No rack on the map yet, most tenants first. Each one is either a rack waiting to be recorded or a good place for a first rack. Distance is from the edge of the plaza to the nearest mapped rack anywhere in the city.\n")
 L.append("| Plaza | Nearest mapped rack | Tenants |\n|---|---|---|")
-for p in sorted([p for p in plazas if p["verdict"] == "none mapped"], key=lambda p: -len(p["tenant_names"])):
+for p in sorted([p for p in plazas if p["verdict"] == "go and look"], key=lambda p: -len(p["tenant_names"])):
     L.append(f"| [{short_name(p)}](#{anchor(p)}) | {p['nearest_rack_m']} m | {len(p['tenant_names'])} |")
 L.append("")
 
@@ -95,7 +101,7 @@ L.append("Blue outline: the plaza as drawn in OpenStreetMap. Green circles: bike
          "Grey circle: the nearest rack when there is none on site, where it falls inside the frame. Map tiles are the OpenStreetMap Standard layer.\n")
 for p in plazas:
     L.append(f"### {short_name(p)}\n")
-    L.append(f"**{verdict_icon(p['verdict'])}**  ·  [OpenStreetMap]({osm(p)})  ·  [map view]({map_link(p['lat'], p['lon'])})  ·  {p['area_ha']:.1f} ha  ·  {len(p['tenant_names'])} tenants mapped\n")
+    L.append(f"**{verdict_icon(p)}**  ·  [OpenStreetMap]({osm(p)})  ·  [map view]({map_link(p['lat'], p['lon'])})  ·  {p['area_ha']:.1f} ha  ·  {len(p['tenant_names'])} tenants mapped\n")
     if p.get("unnamed"):
         L.append(f"No name in OpenStreetMap. Tenants: {', '.join(p['tenant_names'][:8])}{'…' if len(p['tenant_names']) > 8 else ''}.\n")
     L.append(f"![{short_name(p)}]({p['image']})\n")
@@ -106,12 +112,14 @@ for p in plazas:
         L.append("")
     else:
         nr = p["nearest_rack"]
-        L.append(f"No bike parking mapped on the property. Nearest mapped rack is {p['nearest_rack_m']} m away ([{nr['type']} {nr['id']}]({osm_el(nr['type'], nr['id'])})).\n")
+        L.append(f"No rack on the map here yet. Nearest mapped rack is {p['nearest_rack_m']} m away ([{nr['type']} {nr['id']}]({osm_el(nr['type'], nr['id'])})).\n")
+    if p["next_star"]:
+        L.append(f"Next star: {p['next_star']}\n")
 
 L.append("## Enclosed malls (not strip plazas, listed for completeness)\n")
 for p in enclosed:
     L.append(f"### {p['name']}\n")
-    L.append(f"**{verdict_icon(p['verdict'])}**  ·  [OpenStreetMap]({osm(p)})  ·  {p['rack_count']} racks, capacity {cap_text(p) or 'n/a'}\n")
+    L.append(f"**{verdict_icon(p)}**  ·  [OpenStreetMap]({osm(p)})  ·  {p['rack_count']} racks, capacity {cap_text(p) or 'n/a'}\n")
     L.append(f"![{p['name']}]({p['image']})\n")
     for r in p["racks"]:
         L.append(f"- [{r['type']} {r['id']}]({osm_el(r['type'], r['id'])}): {rack_type(r)}")
@@ -151,8 +159,8 @@ open("REPORT.md", "w", encoding="utf-8").write("\n".join(L))
 
 with open("plazas.csv", "w", newline="", encoding="utf-8") as f:
     w = csv.writer(f)
-    w.writerow(["name", "verdict", "racks", "capacity_tagged", "racks_without_capacity", "nearest_rack_m", "tenants", "area_ha", "lat", "lon", "osm_url", "screenshot"])
+    w.writerow(["name", "verdict", "stars", "frame_spaces", "next_star", "racks", "capacity_tagged", "racks_without_capacity", "nearest_rack_m", "tenants", "area_ha", "lat", "lon", "osm_url", "screenshot"])
     for p in plazas + enclosed:
-        w.writerow([short_name(p) if p in plazas else p["name"] + " (enclosed mall)", p["verdict"], p["rack_count"], p["capacity"], p["capacity_untagged"],
+        w.writerow([short_name(p) if p in plazas else p["name"] + " (enclosed mall)", p["verdict"], p["stars"], p["frame_spaces"], p["next_star"], p["rack_count"], p["capacity"], p["capacity_untagged"],
                     p["nearest_rack_m"], len(p["tenant_names"]), round(p["area_ha"], 2), round(p["lat"], 6), round(p["lon"], 6), osm(p), p["image"]])
-print("REPORT.md and plazas.csv written:", len(plazas), "plazas,", counts)
+print("REPORT.md and plazas.csv written:", len(plazas), "plazas,", counts, stars)

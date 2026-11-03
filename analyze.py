@@ -202,6 +202,35 @@ for e in raw:
     bp.append(dict(id=e["id"], type=e["type"], lat=lat, lon=lon, pt=Point(to_m(lon, lat)), tags=t))
 
 
+# ---------- 5. stars ----------
+# Only a plaza with a rack on site is rated: an empty map is an unknown, never a low score.
+# Types follow js/types.js in guelph-bike-parking. `rack` and `loops` are used too loosely
+# to tell a frame rack from a wheel bender, so they count as not recorded yet.
+FRAME_LOCKABLE = {"stands", "wide_stands", "safe_loops", "anchors", "wave", "bollard", "two-tier", "shed", "lockers", "building"}
+NOT_FRAME = {"wall_loops", "ground_slots", "informal"}
+THREE_STAR_SPACES = 10
+
+
+def rate(racks):
+    """Stars, spaces at frame-lockable racks, and what would earn the next star."""
+    if not racks:
+        return None, 0, "A first rack on the map earns the first star."
+    kinds = [b["tags"].get("bicycle_parking") for b in racks]
+    lockable = [b for b, k in zip(racks, kinds) if k in FRAME_LOCKABLE]
+    unclear = [k for k in kinds if k not in FRAME_LOCKABLE and k not in NOT_FRAME]
+    spaces = sum(int(b["tags"]["capacity"]) for b in lockable if b["tags"].get("capacity", "").isdigit())
+    if not lockable:
+        if unclear:
+            return 1, 0, "The rack type is not clear on the map. Adding it could already earn a second star."
+        return 1, 0, "A stand you can lock a frame to earns the second star."
+    if spaces >= THREE_STAR_SPACES:
+        return 3, spaces, None
+    if unclear or any(not b["tags"].get("capacity", "").isdigit() for b in lockable):
+        return 2, spaces, "Some rack details are missing from the map. Adding them could already earn a third star."
+    more = THREE_STAR_SPACES - spaces
+    return 2, spaces, f"Room for {more} more bike{'s' if more > 1 else ''} earns the third star."
+
+
 def score(p):
     g = p["geom"]
     gb = g.buffer(30)
@@ -211,12 +240,15 @@ def score(p):
     nearest = min(bp, key=lambda b: g.distance(b["pt"])) if bp else None
     nd = g.distance(nearest["pt"]) if nearest else None
     if racks:
-        verdict = "has parking"
+        verdict = "rated"
     elif nd is not None and nd <= 100:
-        verdict = "nearby only"
+        verdict = "rack next door"
     else:
-        verdict = "none mapped"
-    p.update(racks=[dict(id=b["id"], type=b["type"], lat=b["lat"], lon=b["lon"], tags=b["tags"]) for b in racks],
+        verdict = "go and look"
+    stars, spaces, next_star = rate(racks)
+    p.update(stars=stars, frame_spaces=spaces, next_star=next_star,
+             covered=any(b["tags"].get("covered") == "yes" for b in racks),
+             racks=[dict(id=b["id"], type=b["type"], lat=b["lat"], lon=b["lon"], tags=b["tags"]) for b in racks],
              rack_count=len(racks), capacity=cap, capacity_untagged=untagged, verdict=verdict,
              nearest_rack_m=round(nd) if nd is not None else None,
              nearest_rack=dict(id=nearest["id"], type=nearest["type"], lat=nearest["lat"], lon=nearest["lon"]) if nearest else None)

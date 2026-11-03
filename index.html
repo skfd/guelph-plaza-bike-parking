@@ -4,18 +4,18 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bike parking at Guelph's plazas</title>
-<meta name="description" content="Which of Guelph's 68 strip-mall plazas have bike parking in OpenStreetMap, and which still need someone to go and look.">
+<meta name="description" content="Stars for the Guelph plazas that make it easy to arrive by bike, and an invitation to go and look at the rest.">
 <style>
   :root {
     --surface: #fcfcfb; --card: #ffffff; --line: #e6e5e1;
     --ink: #0b0b0b; --ink-2: #52514e; --ink-3: #8a8981;
-    --has: #4f7a28; --near: #b07d12; --none: #c2491d; --blue: #2a78d6;
+    --star: #a86f00; --near: #2a78d6; --look: #6f6e68; --blue: #2a78d6;
   }
   @media (prefers-color-scheme: dark) {
     :root {
       --surface: #131312; --card: #1d1d1b; --line: #33322e;
       --ink: #ffffff; --ink-2: #c3c2b7; --ink-3: #8a8981;
-      --has: #8fae4d; --near: #d9a93a; --none: #e8764a; --blue: #6aa5ec;
+      --star: #f0b429; --near: #6aa5ec; --look: #a5a49b; --blue: #6aa5ec;
     }
   }
   * { box-sizing: border-box; }
@@ -26,19 +26,24 @@
   h1 { font-size: clamp(30px, 6vw, 46px); line-height: 1.1; margin: 0 0 16px; letter-spacing: -.02em; }
   .lede { max-width: 42em; color: var(--ink-2); margin: 0 0 12px; }
   a { color: var(--blue); }
-  .tally { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 28px 0; }
+  .tally { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin: 28px 0; }
   .tile { font: inherit; color: var(--ink); text-align: left; cursor: pointer; padding: 14px 16px;
     background: var(--card); border: 1px solid var(--line); border-top: 4px solid var(--c); border-radius: 8px; }
   .tile b { display: block; font-size: 34px; line-height: 1.1; }
   .tile span { color: var(--ink-2); font-size: 15px; }
   .tile[aria-pressed="true"] { outline: 2px solid var(--c); }
-  .has { --c: var(--has); } .near { --c: var(--near); } .none { --c: var(--none); }
+  .s1, .s2, .s3 { --c: var(--star); } .near { --c: var(--near); } .look { --c: var(--look); }
+  .rules { border-collapse: collapse; margin: 0 0 32px; font-size: 16px; }
+  .rules td { padding: 4px 16px 4px 0; vertical-align: top; }
+  .rules td:first-child { color: var(--star); white-space: nowrap; }
   .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }
   .card { background: var(--card); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
   .card[hidden] { display: none; }
   .card img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: contain; background: var(--line); }
   .body { padding: 12px 14px 14px; font-size: 15px; }
   .pill { font-size: 13px; font-weight: 600; color: var(--c); }
+  .s1 .pill, .s2 .pill, .s3 .pill { font-size: 19px; letter-spacing: .08em; }
+  .next { margin-top: 6px !important; color: var(--ink-2); }
   h3 { margin: 2px 0 6px; font-size: 18px; line-height: 1.25; }
   h3 a { color: inherit; text-decoration: none; } h3 a:hover { text-decoration: underline; }
   .unnamed { font-size: 13px; font-weight: 400; color: var(--ink-3); }
@@ -47,564 +52,569 @@
   footer { margin-top: 48px; padding-bottom: 48px; color: var(--ink-2); font-size: 15px; }
   footer p { max-width: 46em; }
   code { font-size: .92em; }
-  @media (max-width: 520px) { .tile { padding: 10px; } .tile b { font-size: 26px; } .tile span { font-size: 13px; } }
+  @media (max-width: 640px) { .tally { grid-template-columns: repeat(3, 1fr); } .tile { padding: 10px; } .tile b { font-size: 26px; } .tile span { font-size: 13px; } }
 </style>
 <script data-goatcounter="https://osm-ontario.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
 <header>
 <h1>Bike parking at Guelph's plazas</h1>
-<p class="lede">Can you lock a bike at the plaza? This goes through 68 open-air, multi-tenant
-plazas in Guelph and checks each against the racks in OpenStreetMap, as of 2026-11-03.</p>
-<p class="lede"><strong>"None mapped" means go and look, not that there is no rack.</strong> OpenStreetMap is
-a volunteer map, and a rack nobody has recorded will not show up here. If you find one, add it: open the
+<p class="lede">Some of Guelph's plazas make it easy to arrive by bike, and they deserve credit for it.
+31 of 68 open-air plazas have earned stars so far, going by the racks in OpenStreetMap as of 2026-11-03.</p>
+<p class="lede">A plaza without stars has not failed anything. OpenStreetMap is a volunteer map, so there may be
+a rack nobody has recorded yet, and if there really is none, that is a chance for a first rack. Found one? Open the
 plaza's link, click Edit, and add a point tagged <code>amenity=bicycle_parking</code>.</p>
-<div class="tally"><button class="tile none" data-filter="none" aria-pressed="false"><b>23</b><span>None mapped</span></button><button class="tile near" data-filter="near" aria-pressed="false"><b>14</b><span>Nearby only</span></button><button class="tile has" data-filter="has" aria-pressed="false"><b>31</b><span>Has bike parking</span></button></div>
+<div class="tally"><button class="tile s3" data-filter="s3" aria-pressed="false"><b>6</b><span>★★★</span></button><button class="tile s2" data-filter="s2" aria-pressed="false"><b>20</b><span>★★</span></button><button class="tile s1" data-filter="s1" aria-pressed="false"><b>5</b><span>★</span></button><button class="tile near" data-filter="near" aria-pressed="false"><b>14</b><span>Rack next door</span></button><button class="tile look" data-filter="look" aria-pressed="false"><b>23</b><span>Go and look</span></button></div>
+<table class="rules">
+<tr><td>★</td><td>A rack on the property</td></tr>
+<tr><td>★★</td><td>A rack you can lock a frame to: stands, a post and ring, lockers or a bike shed</td></tr>
+<tr><td>★★★</td><td>Room for at least 10 bikes at racks like that</td></tr>
+</table>
 </header>
 <main>
 <div class="grid">
-<article class="card none" data-verdict="none">
-<img src="img/w197805877.png" alt="Map of Kortright Plaza" loading="lazy">
-<div class="body">
-<span class="pill">None mapped</span>
-<h3><a href="https://www.openstreetmap.org/way/197805877">Kortright Plaza</a></h3>
-<p class="tenants">Guardian, Vitality Chiropractic Care</p><p>Nearest mapped rack is <a href="https://www.openstreetmap.org/node/14139961003">406 m away</a>.</p>
-</div>
-</article>
-<article class="card none" data-verdict="none">
-<img src="img/w344325628.png" alt="Map of Melran Mall" loading="lazy">
-<div class="body">
-<span class="pill">None mapped</span>
-<h3><a href="https://www.openstreetmap.org/way/344325628">Melran Mall</a></h3>
-<p class="tenants">All Blue Solutions, Automatis Integrated, Cerniuk Construction Ltd., Community of Christ, Desjardins Insurance, Dixon Distilled Spirits…</p><p>Nearest mapped rack is <a href="https://www.openstreetmap.org/node/12798111182">873 m away</a>.</p>
-</div>
-</article>
-<article class="card none" data-verdict="none">
-<img src="img/w773015486.png" alt="Map of Silverwood Plaza" loading="lazy">
-<div class="body">
-<span class="pill">None mapped</span>
-<h3><a href="https://www.openstreetmap.org/way/773015486">Silverwood Plaza</a></h3>
-<p class="tenants">Burger Factory, CBI Home Health, Canadian Mental Health Association, Current Electrical Supply Inc, Investment Planning Counsel, KW Cellular &amp; Gadgets…</p><p>Nearest mapped rack is <a href="https://www.openstreetmap.org/node/13233491582">508 m away</a>.</p>
-</div>
-</article>
-<article class="card none" data-verdict="none">
-<img src="img/w215069449.png" alt="Map of South City Centre" loading="lazy">
-<div class="body">
-<span class="pill">None mapped</span>
-<h3><a href="https://www.openstreetmap.org/way/215069449">South City Centre</a></h3>
-<p>Nearest mapped rack is <a href="https://www.openstreetmap.org/node/14307258547">143 m away</a>.</p>
-</div>
-</article>
-<article class="card none" data-verdict="none">
-<img src="img/w237319873.png" alt="Map of Speedvale Centre" loading="lazy">
-<div class="body">
-<span class="pill">None mapped</span>
-<h3><a href="https://www.openstreetmap.org/way/237319873">Speedvale Centre</a></h3>
-<p class="tenants">7-Eleven, Anytime Fitness, Baskin-Robbins, Candies of Merritt, Cash 4 You, China Express…</p><p>Nearest mapped rack is <a href="https://www.openstreetmap.org/node/9768470960">852 m away</a>.</p>
-</div>
-</article>
-<article class="card none" data-verdict="none">
-<img src="img/w212559744.png" alt="Map of Stonegate Plaza" loading="lazy">
-<div class="body">
-<span class="pill">None mapped</span>
-<h3><a href="https://www.openstreetmap.org/way/212559744">Stonegate Plaza</a></h3>
-<p class="tenants">Cyber Computer, Dough Box, Edible Arrangements, Edo Japan, Manchu Wok, Menchie&#x27;s…</p><p>Nearest mapped rack is <a href="https://www.openstreetmap.org/node/13963396495">128 m away</a>.</p>
-</div>
-</article>
-<article class="card none" data-verdict="none">
-<img src="img/w993366503.png" alt="Map of Sugarbush Plaza" loading="lazy">
-<div class="body">
-<span class="pill">None mapped</span>
-<h3><a href="https://www.openstreetmap.org/way/993366503">Sugarbush Plaza</a></h3>
-<p class="tenants">Most Convenient, OPSEU Guelph Regional Office, Speedvale Pet Hospital, The Nguyen&#x27;s</p><p>Nearest mapped rack is <a href="https://www.openstreetmap.org/node/12798111182">356 m away</a>.</p>
-</div>
-</article>
-<article class="card none" data-verdict="none">
-<img src="img/w773015474.png" alt="Map of Woodlawn Square" loading="lazy">
-<div class="body">
-<span class="pill">None mapped</span>
-<h3><a href="https://www.openstreetmap.org/way/773015474">Woodlawn Square</a></h3>
-<p class="tenants">Big Bargain Wholesale, Canadian Food Inspection Agency, Chuck&#x27;s Roadhouse, DriveTest, McDonald&#x27;s, Original Home Furniture…</p><p>Nearest mapped rack is <a href="https://www.openstreetmap.org/node/13233491582">230 m away</a>.</p>
-</div>
-</article>
-<article class="card none" data-verdict="none">
-<img src="img/w192887202.png" alt="Map of 1388-1398 Gordon Street" loading="lazy">
-<div class="body">
-<span class="pill">None mapped</span>
-<h3><a href="https://www.openstreetmap.org/way/192887202">1388-1398 Gordon Street</a> <span class="unnamed">no name in OSM</span></h3>
-<p class="tenants">Borealis Grille &amp; Bar, Crock A Doodle, Dr. Nafeesa Sheikh Dentistry, Edward Jones, Liberty Tax, Purba Vision…</p><p>Nearest mapped rack is <a href="https://www.openstreetmap.org/node/12327064780">179 m away</a>.</p>
-</div>
-</article>
-<article class="card none" data-verdict="none">
-<img src="img/w773030532.png" alt="Map of 159 Fife Road" loading="lazy">
-<div class="body">
-<span class="pill">None mapped</span>
-<h3><a href="https://www.openstreetmap.org/way/773030532">159 Fife Road</a> <span class="unnamed">no name in OSM</span></h3>
-<p class="tenants">Hale Veterinary Clinic, Hasty Market, Jumbo 3 for 1 Pizza &amp; Wings, Layan Food Market</p><p>Nearest mapped rack is <a href="https://www.openstreetmap.org/node/13233449397">1010 m away</a>.</p>
-</div>
-</article>
-<article class="card none" data-verdict="none">
-<img src="img/w772999948.png" alt="Map of 188-196 Waterloo Avenue" loading="lazy">
-<div class="body">
-<span class="pill">None mapped</span>
-<h3><a href="https://www.openstreetmap.org/way/772999948">188-196 Waterloo Avenue</a> <span class="unnamed">no name in OSM</span></h3>
-<p class="tenants">Buzz Hair Salon, Goldcap Realty, Retro Convenience, Van Allen Insurance</p><p>Nearest mapped rack is <a href="https://www.openstreetmap.org/node/12058128705">310 m away</a>.</p>
-</div>
-</article>
-<article class="card none" data-verdict="none">
-<img src="img/w772951791.png" alt="Map of 204 Yorkshire Street North" loading="lazy">
-<div class="body">
-<span class="pill">None mapped</span>
-<h3><a href="https://www.openstreetmap.org/way/772951791">204 Yorkshire Street North</a> <span class="unnamed">no name in OSM</span></h3>
-<p class="tenants">Barber Glass, Quick Stop Variety, Two Plus Pizza, Valeriote Market &amp; Butchery</p><p>Nearest mapped rack is <a href="https://www.openstreetmap.org/node/12810727443">142 m away</a>.</p>
-</div>
-</article>
-<article class="card none" data-verdict="none">
-<img src="img/w772950211.png" alt="Map of 241-249 Edinburgh Road North" loading="lazy">
-<div class="body">
-<span class="pill">None mapped</span>
-<h3><a href="https://www.openstreetmap.org/way/772950211">241-249 Edinburgh Road North</a> <span class="unnamed">no name in OSM</span></h3>
-<p class="tenants">G&amp;A Locks &amp; Security, Mobility in Motion, Rainbow Variety, Royal City Restaurant</p><p>Nearest mapped rack is <a href="https://www.openstreetmap.org/node/12300313453">255 m away</a>.</p>
-</div>
-</article>
-<article class="card none" data-verdict="none">
-<img src="img/w773013517.png" alt="Map of 3-15 Municipal Street" loading="lazy">
-<div class="body">
-<span class="pill">None mapped</span>
-<h3><a href="https://www.openstreetmap.org/way/773013517">3-15 Municipal Street</a> <span class="unnamed">no name in OSM</span></h3>
-<p class="tenants">CosmoProf, Pizza Trokadero, The Beer Store, The Saffron Indian Restaurant, W Sushi</p><p>Nearest mapped rack is <a href="https://www.openstreetmap.org/node/12402038484">331 m away</a>.</p>
-</div>
-</article>
-<article class="card none" data-verdict="none">
-<img src="img/w358488660.png" alt="Map of 320 Eastview Road" loading="lazy">
-<div class="body">
-<span class="pill">None mapped</span>
-<h3><a href="https://www.openstreetmap.org/way/358488660">320 Eastview Road</a> <span class="unnamed">no name in OSM</span></h3>
-<p class="tenants">East Guelph Medical Clinic, Eastview Physiotherapy, Gino&#x27;s Pizza, Guelph Lake Veterinary Hospital, Guelph Peoples Pharmacy, Hasty Market…</p><p>Nearest mapped rack is <a href="https://www.openstreetmap.org/node/12099376342">1589 m away</a>.</p>
-</div>
-</article>
-<article class="card none" data-verdict="none">
-<img src="img/w399149070.png" alt="Map of 340 Woodlawn Road West" loading="lazy">
-<div class="body">
-<span class="pill">None mapped</span>
-<h3><a href="https://www.openstreetmap.org/way/399149070">340 Woodlawn Road West</a> <span class="unnamed">no name in OSM</span></h3>
-<p class="tenants">All-Risks Insurance Brokers Limited, Asian Food Centre, Buckenham Fireplaces &amp; Grills, Canadian Grill, City View Pools And Patio Furniture, Goodwill Community Store…</p><p>Nearest mapped rack is <a href="https://www.openstreetmap.org/node/12312591588">864 m away</a>.</p>
-</div>
-</article>
-<article class="card none" data-verdict="none">
-<img src="img/w772911624.png" alt="Map of 380 Eramosa Road" loading="lazy">
-<div class="body">
-<span class="pill">None mapped</span>
-<h3><a href="https://www.openstreetmap.org/way/772911624">380 Eramosa Road</a> <span class="unnamed">no name in OSM</span></h3>
-<p class="tenants">Dairy Queen, Dollarama, Food Basics, Guelph Public Library - Bullfrog Mall Branch, KazaMeza, Mary Brown&#x27;s…</p><p>Nearest mapped rack is <a href="https://www.openstreetmap.org/node/13062606915">128 m away</a>.</p>
-</div>
-</article>
-<article class="card none" data-verdict="none">
-<img src="img/w399149099.png" alt="Map of 415-429 Woodlawn Road West" loading="lazy">
-<div class="body">
-<span class="pill">None mapped</span>
-<h3><a href="https://www.openstreetmap.org/way/399149099">415-429 Woodlawn Road West</a> <span class="unnamed">no name in OSM</span></h3>
-<p class="tenants">Tim Hortons, Wendy&#x27;s, World of Hot Tubs</p><p>Nearest mapped rack is <a href="https://www.openstreetmap.org/node/12798111182">1119 m away</a>.</p>
-</div>
-</article>
-<article class="card none" data-verdict="none">
-<img src="img/w773016985.png" alt="Map of 450 Woodlawn Road West" loading="lazy">
-<div class="body">
-<span class="pill">None mapped</span>
-<h3><a href="https://www.openstreetmap.org/way/773016985">450 Woodlawn Road West</a> <span class="unnamed">no name in OSM</span></h3>
-<p class="tenants">Bigelow Flooring, Coconut Coast, Neutron Electronics, Starberry Cafe</p><p>Nearest mapped rack is <a href="https://www.openstreetmap.org/node/12798111182">1039 m away</a>.</p>
-</div>
-</article>
-<article class="card none" data-verdict="none">
-<img src="img/w962456073.png" alt="Map of 465-565 Woodlawn Road West" loading="lazy">
-<div class="body">
-<span class="pill">None mapped</span>
-<h3><a href="https://www.openstreetmap.org/way/962456073">465-565 Woodlawn Road West</a> <span class="unnamed">no name in OSM</span></h3>
-<p class="tenants">A&amp;W, Galaxy Cinemas Guelph, Mandarin, Piper Arms, Sarmazian, Taco Bell</p><p>Nearest mapped rack is <a href="https://www.openstreetmap.org/node/12798111182">1166 m away</a>.</p>
-</div>
-</article>
-<article class="card none" data-verdict="none">
-<img src="img/w772926644.png" alt="Map of 486 Woodlawn Road East" loading="lazy">
-<div class="body">
-<span class="pill">None mapped</span>
-<h3><a href="https://www.openstreetmap.org/way/772926644">486 Woodlawn Road East</a> <span class="unnamed">no name in OSM</span></h3>
-<p class="tenants">Helmand Kebab House, Kings Sports Bar and Grill, Laundromat, Tim Hortons</p><p>Nearest mapped rack is <a href="https://www.openstreetmap.org/node/12757840252">1623 m away</a>.</p>
-</div>
-</article>
-<article class="card none" data-verdict="none">
-<img src="img/w772928901.png" alt="Map of 666 Woolwich Street" loading="lazy">
-<div class="body">
-<span class="pill">None mapped</span>
-<h3><a href="https://www.openstreetmap.org/way/772928901">666 Woolwich Street</a> <span class="unnamed">no name in OSM</span></h3>
-<p class="tenants">Canvision Optical Ltd, Double Double Pizza &amp; Wings, Dutch Toko European Deli, First Choice Hair, Four Seasons Flowers, Little Short Stop…</p><p>Nearest mapped rack is <a href="https://www.openstreetmap.org/node/11450121869">175 m away</a>.</p>
-</div>
-</article>
-<article class="card none" data-verdict="none">
-<img src="img/w773014769.png" alt="Map of 75 Willow Road" loading="lazy">
-<div class="body">
-<span class="pill">None mapped</span>
-<h3><a href="https://www.openstreetmap.org/way/773014769">75 Willow Road</a> <span class="unnamed">no name in OSM</span></h3>
-<p class="tenants">H&amp;R Block, Healing Centre, Little Short Stop, Mickey Nails, Pizza Pizza, Super Coin Laundry…</p><p>Nearest mapped rack is <a href="https://www.openstreetmap.org/node/9789312730">128 m away</a>.</p>
-</div>
-</article>
-<article class="card near" data-verdict="near">
-<img src="img/w556632268.png" alt="Map of Clair Marketplace" loading="lazy">
-<div class="body">
-<span class="pill">Nearby only</span>
-<h3><a href="https://www.openstreetmap.org/way/556632268">Clair Marketplace</a></h3>
-<p class="tenants">COBS Bread, Centurion Coffee, Chocolats Favoris, EasyFinancial, Five Guys, Great Clips…</p><p>Nearest mapped rack is <a href="https://www.openstreetmap.org/node/14298186314">32 m away</a>.</p>
-</div>
-</article>
-<article class="card near" data-verdict="near">
-<img src="img/w354160042.png" alt="Map of Scottsdale Centre" loading="lazy">
-<div class="body">
-<span class="pill">Nearby only</span>
-<h3><a href="https://www.openstreetmap.org/way/354160042">Scottsdale Centre</a></h3>
-<p class="tenants">Fluffy Glaze, Gotcha Bubble Tea, Guelph BBQ, Guelph Public Library - Scottsdale Branch, Guelph Vapour Company, Hanna&#x27;s Nail Bar…</p><p>Nearest mapped rack is <a href="https://www.openstreetmap.org/node/14269222867">80 m away</a>.</p>
-</div>
-</article>
-<article class="card near" data-verdict="near">
-<img src="img/w773015480.png" alt="Map of Silvercreek Business Centre" loading="lazy">
-<div class="body">
-<span class="pill">Nearby only</span>
-<h3><a href="https://www.openstreetmap.org/way/773015480">Silvercreek Business Centre</a></h3>
-<p class="tenants">B.D. Hawkins, Blue Chopstix, Burnside, Butcher Shop and Grocers, Crown Barber Shop, Diamond Flooring…</p><p>Nearest mapped rack is <a href="https://www.openstreetmap.org/node/12564637269">43 m away</a>.</p>
-</div>
-</article>
-<article class="card near" data-verdict="near">
-<img src="img/w773000852.png" alt="Map of 1027 Gordon Street" loading="lazy">
-<div class="body">
-<span class="pill">Nearby only</span>
-<h3><a href="https://www.openstreetmap.org/way/773000852">1027 Gordon Street</a> <span class="unnamed">no name in OSM</span></h3>
-<p class="tenants">Beauty Queen Health Center, Centurion Coffee, Dr. A. Raco Dental Office, Home Hardware, Homelife Power Realty Inc Brokerage, Mary&#x27;s Nails…</p><p>Nearest mapped rack is <a href="https://www.openstreetmap.org/node/12823764356">73 m away</a>.</p>
-</div>
-</article>
-<article class="card near" data-verdict="near">
-<img src="img/w295926658.png" alt="Map of 105 Silvercreek Parkway North" loading="lazy">
-<div class="body">
-<span class="pill">Nearby only</span>
-<h3><a href="https://www.openstreetmap.org/way/295926658">105 Silvercreek Parkway North</a> <span class="unnamed">no name in OSM</span></h3>
-<p class="tenants">Growmark, Paradise Barbershop, Rexall, SV Law, Silvercreek Walk-In Clinic</p><p>Nearest mapped rack is <a href="https://www.openstreetmap.org/node/9789312722">54 m away</a>.</p>
-</div>
-</article>
-<article class="card near" data-verdict="near">
-<img src="img/w295926125.png" alt="Map of 200-206 Silvercreek Parkway North" loading="lazy">
-<div class="body">
-<span class="pill">Nearby only</span>
-<h3><a href="https://www.openstreetmap.org/way/295926125">200-206 Silvercreek Parkway North</a> <span class="unnamed">no name in OSM</span></h3>
-<p class="tenants">Burger King, Cashco Loans, Domino&#x27;s, Kung Fu Tea, L’angolo Cafe, Pita Pit…</p><p>Nearest mapped rack is <a href="https://www.openstreetmap.org/node/12164866906">95 m away</a>.</p>
-</div>
-</article>
-<article class="card near" data-verdict="near">
-<img src="img/w773015473.png" alt="Map of 221-223 Woodlawn Road West" loading="lazy">
-<div class="body">
-<span class="pill">Nearby only</span>
-<h3><a href="https://www.openstreetmap.org/way/773015473">221-223 Woodlawn Road West</a> <span class="unnamed">no name in OSM</span></h3>
-<p class="tenants">3 for 1 Glasses, 9Round, Body Klense, Burrito Boys, Caribbean Delight, Cash Money…</p><p>Nearest mapped rack is <a href="https://www.openstreetmap.org/node/13233491582">51 m away</a>.</p>
-</div>
-</article>
-<article class="card near" data-verdict="near">
-<img src="img/w773015485.png" alt="Map of 252 Silvercreek Parkway North" loading="lazy">
-<div class="body">
-<span class="pill">Nearby only</span>
-<h3><a href="https://www.openstreetmap.org/way/773015485">252 Silvercreek Parkway North</a> <span class="unnamed">no name in OSM</span></h3>
-<p class="tenants">Buns Master, Culligan, Hakim Optical, Mr. Sub, Old Fashioned Deli, Pho Saigon…</p><p>Nearest mapped rack is <a href="https://www.openstreetmap.org/node/12312591588">55 m away</a>.</p>
-</div>
-</article>
-<article class="card near" data-verdict="near">
-<img src="img/w369321286.png" alt="Map of 292-314 Stone Road West" loading="lazy">
-<div class="body">
-<span class="pill">Nearby only</span>
-<h3><a href="https://www.openstreetmap.org/way/369321286">292-314 Stone Road West</a> <span class="unnamed">no name in OSM</span></h3>
-<p class="tenants">Apps Optical, Body Systems Nutrition, Brodie&#x27;s Gaming &amp; Collectables, Cyber Computer, Dairy Queen, Domino&#x27;s…</p><p>Nearest mapped rack is <a href="https://www.openstreetmap.org/node/12206930210">38 m away</a>.</p>
-</div>
-</article>
-<article class="card near" data-verdict="near">
-<img src="img/w772999958.png" alt="Map of 50 Wellington Street East" loading="lazy">
-<div class="body">
-<span class="pill">Nearby only</span>
-<h3><a href="https://www.openstreetmap.org/way/772999958">50 Wellington Street East</a> <span class="unnamed">no name in OSM</span></h3>
-<p class="tenants">A&amp;W, KFC, Tim Hortons, Wendy&#x27;s</p><p>Nearest mapped rack is <a href="https://www.openstreetmap.org/node/14197996496">31 m away</a>.</p>
-</div>
-</article>
-<article class="card near" data-verdict="near">
-<img src="img/w468349505.png" alt="Map of 630-650 Scottsdale Drive" loading="lazy">
-<div class="body">
-<span class="pill">Nearby only</span>
-<h3><a href="https://www.openstreetmap.org/way/468349505">630-650 Scottsdale Drive</a> <span class="unnamed">no name in OSM</span></h3>
-<p class="tenants">Fluffy Glaze, Gotcha Bubble Tea, Guelph BBQ, Guelph Public Library - Scottsdale Branch, Guelph Vapour Company, Hanna&#x27;s Nail Bar…</p><p>Nearest mapped rack is <a href="https://www.openstreetmap.org/node/14269222867">50 m away</a>.</p>
-</div>
-</article>
-<article class="card near" data-verdict="near">
-<img src="img/w772928906.png" alt="Map of 727-777 Woolwich Street" loading="lazy">
-<div class="body">
-<span class="pill">Nearby only</span>
-<h3><a href="https://www.openstreetmap.org/way/772928906">727-777 Woolwich Street</a> <span class="unnamed">no name in OSM</span></h3>
-<p class="tenants">Big Smart Convenience, DUCA, Dairy Queen, Family &amp; Implant Dentistry, Farnworth Memorials, Golden Fish &amp; Chips…</p><p>Nearest mapped rack is <a href="https://www.openstreetmap.org/node/14088696229">35 m away</a>.</p>
-</div>
-</article>
-<article class="card near" data-verdict="near">
-<img src="img/w256252178.png" alt="Map of 926 Paisley Road" loading="lazy">
-<div class="body">
-<span class="pill">Nearby only</span>
-<h3><a href="https://www.openstreetmap.org/way/256252178">926 Paisley Road</a> <span class="unnamed">no name in OSM</span></h3>
-<p class="tenants">Circle K, M&amp;M Food Market, Tranquil Hair &amp; Body, VP Tailors, West End Family Chiropractic</p><p>Nearest mapped rack is <a href="https://www.openstreetmap.org/node/9768470934">38 m away</a>.</p>
-</div>
-</article>
-<article class="card near" data-verdict="near">
-<img src="img/w399321888.png" alt="Map of 951 Gordon Street" loading="lazy">
-<div class="body">
-<span class="pill">Nearby only</span>
-<h3><a href="https://www.openstreetmap.org/way/399321888">951 Gordon Street</a> <span class="unnamed">no name in OSM</span></h3>
-<p class="tenants">Alpenglow Leaf, Bronze Ambition, Dulux Paints, Farm To Paw, Manhattans, Nighthawk Tattoo…</p><p>Nearest mapped rack is <a href="https://www.openstreetmap.org/node/12823829004">64 m away</a>.</p>
-</div>
-</article>
-<article class="card has" data-verdict="has">
-<img src="img/w177867077.png" alt="Map of Arkell Crossing" loading="lazy">
-<div class="body">
-<span class="pill">Has bike parking</span>
-<h3><a href="https://www.openstreetmap.org/way/177867077">Arkell Crossing</a></h3>
-<ul><li><a href="https://www.openstreetmap.org/node/14202513023">stands, holds 5</a></li></ul>
-</div>
-</article>
-<article class="card has" data-verdict="has">
-<img src="img/w208650724.png" alt="Map of Campus Estates Plaza" loading="lazy">
-<div class="body">
-<span class="pill">Has bike parking</span>
-<h3><a href="https://www.openstreetmap.org/way/208650724">Campus Estates Plaza</a></h3>
-<p class="tenants">BarBurrito, Campus Drugmart IDA, Campus Estates Hairstyling, Canada Post, Chatime, City Pizza…</p><ul><li><a href="https://www.openstreetmap.org/node/14161650993">wall loops, holds 6</a></li></ul>
-</div>
-</article>
-<article class="card has" data-verdict="has">
-<img src="img/w217504192.png" alt="Map of Clairfield Commons" loading="lazy">
-<div class="body">
-<span class="pill">Has bike parking</span>
-<h3><a href="https://www.openstreetmap.org/way/217504192">Clairfield Commons</a></h3>
-<p class="tenants">Clair Dental Centre, Food Basics, Iris, Kenzo, PetSmart, Pizza Nova…</p><ul><li><a href="https://www.openstreetmap.org/node/14272107820">stands, holds 4</a></li><li><a href="https://www.openstreetmap.org/node/14272107834">stands, holds 2</a></li><li><a href="https://www.openstreetmap.org/node/14272107846">stands, holds 2</a></li><li><a href="https://www.openstreetmap.org/node/14272107847">stands, holds 2</a></li><li><a href="https://www.openstreetmap.org/node/14298186314">stands, holds 8</a></li></ul>
-</div>
-</article>
-<article class="card has" data-verdict="has">
-<img src="img/w833377075.png" alt="Map of Edinburgh Market Place" loading="lazy">
-<div class="body">
-<span class="pill">Has bike parking</span>
-<h3><a href="https://www.openstreetmap.org/way/833377075">Edinburgh Market Place</a></h3>
-<p class="tenants">Chubbs, Edinburgh Clinic and Pharmacy, Marble Slab Creamery, Massage Addict, Metro, Mucho Burrito…</p><ul><li><a href="https://www.openstreetmap.org/node/12335509795">wall loops, holds 10</a></li><li><a href="https://www.openstreetmap.org/node/12335525353">stands</a></li><li><a href="https://www.openstreetmap.org/node/13963396495">stands, holds 8</a></li></ul>
-</div>
-</article>
-<article class="card has" data-verdict="has">
-<img src="img/w332330004.png" alt="Map of Grange &amp; Victoria Plaza" loading="lazy">
-<div class="body">
-<span class="pill">Has bike parking</span>
-<h3><a href="https://www.openstreetmap.org/way/332330004">Grange &amp; Victoria Plaza</a></h3>
-<p class="tenants">Buck or Two Plus, CIBC, Home Hardware, Planet Bean Coffee, Super Happy Garden, Victoria&#x27;s Pizza</p><ul><li><a href="https://www.openstreetmap.org/node/12530496793">stands, holds 8</a></li></ul>
-</div>
-</article>
-<article class="card has" data-verdict="has">
+<article class="card s3" data-group="s3">
 <img src="img/w197749304.png" alt="Map of Hartsland Market Square" loading="lazy">
 <div class="body">
-<span class="pill">Has bike parking</span>
+<span class="pill" aria-label="3 of 3 stars">★★★</span>
 <h3><a href="https://www.openstreetmap.org/way/197749304">Hartsland Market Square</a></h3>
-<p class="tenants">Anytime Fitness, Dollarama, Golden Fish and Chips, Hasty Market, Kortright Animal Hospital, Loblaw Pharmacy…</p><ul><li><a href="https://www.openstreetmap.org/node/14158765587">stands, covered, holds 2</a></li><li><a href="https://www.openstreetmap.org/node/14158765589">stands, holds 4</a></li><li><a href="https://www.openstreetmap.org/node/14158815860">stands, holds 2</a></li><li><a href="https://www.openstreetmap.org/node/14158815862">stands, covered, holds 2</a></li><li><a href="https://www.openstreetmap.org/node/14158838905">stands, holds 4</a></li><li><a href="https://www.openstreetmap.org/node/14158838906">stands, holds 2</a></li><li><a href="https://www.openstreetmap.org/node/14158838907">safe loops, holds 5</a></li><li><a href="https://www.openstreetmap.org/node/14158838908">stands, covered, holds 2</a></li><li><a href="https://www.openstreetmap.org/node/14158838909">stands, holds 2</a></li><li><a href="https://www.openstreetmap.org/node/14158838910">safe loops, holds 5</a></li><li><a href="https://www.openstreetmap.org/node/14158838911">stands, covered, holds 2</a></li><li><a href="https://www.openstreetmap.org/node/14158838912">stands, holds 2</a></li><li><a href="https://www.openstreetmap.org/node/14158838913">stands, holds 2</a></li><li><a href="https://www.openstreetmap.org/node/14158838914">wall loops, covered, holds 9</a></li><li><a href="https://www.openstreetmap.org/node/14158838915">stands, holds 2</a></li><li><a href="https://www.openstreetmap.org/node/14158838916">stands, holds 2</a></li></ul>
+<p class="tenants">Anytime Fitness, Dollarama, Golden Fish and Chips, Hasty Market, Kortright Animal Hospital, Loblaw Pharmacy…</p><p>16 racks, room for 49 bikes, some covered.</p>
 </div>
 </article>
-<article class="card has" data-verdict="has">
-<img src="img/w287908722.png" alt="Map of Pergola Commons" loading="lazy">
-<div class="body">
-<span class="pill">Has bike parking</span>
-<h3><a href="https://www.openstreetmap.org/way/287908722">Pergola Commons</a></h3>
-<p class="tenants">BMO, BOSS Supplements, Booster Juice, Cherry Blossom Sushi Bar, Convenience Kitchen Food Fair, Dollarama…</p><ul><li><a href="https://www.openstreetmap.org/node/9768470959">bollard</a></li><li><a href="https://www.openstreetmap.org/node/11479641171">stands</a></li><li><a href="https://www.openstreetmap.org/node/11479926870">type not tagged</a></li><li><a href="https://www.openstreetmap.org/node/13233440059">stands, holds 1</a></li><li><a href="https://www.openstreetmap.org/node/14272103029">stands, holds 2</a></li><li><a href="https://www.openstreetmap.org/node/14298053818">rack, holds 7</a></li></ul>
-</div>
-</article>
-<article class="card has" data-verdict="has">
-<img src="img/w256118290.png" alt="Map of Silvercreek Plaza" loading="lazy">
-<div class="body">
-<span class="pill">Has bike parking</span>
-<h3><a href="https://www.openstreetmap.org/way/256118290">Silvercreek Plaza</a></h3>
-<p class="tenants">Adulis Caffe, Canadian Blood Services, Fixway Cellular, Guelph T.V. &amp; Video, Habesha Grocery &amp; Bakery, Helal Store…</p><ul><li><a href="https://www.openstreetmap.org/node/9789312723">bollard</a></li><li><a href="https://www.openstreetmap.org/node/9789312724">stands</a></li><li><a href="https://www.openstreetmap.org/node/9789312725">bollard</a></li><li><a href="https://www.openstreetmap.org/node/9789312726">stands</a></li><li><a href="https://www.openstreetmap.org/node/9789312727">type not tagged</a></li><li><a href="https://www.openstreetmap.org/node/9789312728">bollard</a></li></ul>
-</div>
-</article>
-<article class="card has" data-verdict="has">
-<img src="img/w772928911.png" alt="Map of SmartCentres Guelph" loading="lazy">
-<div class="body">
-<span class="pill">Has bike parking</span>
-<h3><a href="https://www.openstreetmap.org/way/772928911">SmartCentres Guelph</a></h3>
-<p class="tenants">Addition Elle, BMO, Bulk Barn, CIBC, Dollarama, EB Games…</p><ul><li><a href="https://www.openstreetmap.org/node/12713893391">stands</a></li><li><a href="https://www.openstreetmap.org/node/13027046604">stands, holds 2</a></li></ul>
-</div>
-</article>
-<article class="card has" data-verdict="has">
-<img src="img/w208406209.png" alt="Map of Stone Square Plaza" loading="lazy">
-<div class="body">
-<span class="pill">Has bike parking</span>
-<h3><a href="https://www.openstreetmap.org/way/208406209">Stone Square Plaza</a></h3>
-<p class="tenants">Bud’s Cannabis Store, Bulk Barn, CIBC, Dollarama, East Side Mario&#x27;s, Farm Boy…</p><ul><li><a href="https://www.openstreetmap.org/node/11225402345">stands, holds 6</a></li><li><a href="https://www.openstreetmap.org/node/12206912381">stands, holds 5</a></li><li><a href="https://www.openstreetmap.org/node/12206929334">stands, holds 6</a></li><li><a href="https://www.openstreetmap.org/node/12206930210">stands, holds 6</a></li></ul>
-</div>
-</article>
-<article class="card has" data-verdict="has">
-<img src="img/w399321881.png" alt="Map of University Square Plaza" loading="lazy">
-<div class="body">
-<span class="pill">Has bike parking</span>
-<h3><a href="https://www.openstreetmap.org/way/399321881">University Square Plaza</a></h3>
-<p class="tenants">Circle K, Family Chiropractic Centre, Lux Nail Spa, Papa John&#x27;s, RBC Royal Bank, Sequoia Dental…</p><ul><li><a href="https://www.openstreetmap.org/node/12823764356">stands, holds 2</a></li><li><a href="https://www.openstreetmap.org/node/12823829004">stands, covered, holds 2</a></li></ul>
-</div>
-</article>
-<article class="card has" data-verdict="has">
-<img src="img/w177697922.png" alt="Map of Wellington Plaza" loading="lazy">
-<div class="body">
-<span class="pill">Has bike parking</span>
-<h3><a href="https://www.openstreetmap.org/way/177697922">Wellington Plaza</a></h3>
-<p class="tenants">Bare Essentials, F45 Training, Franco and Sons Barber Shop, Fusion Authentic Indian Cuisine, Hanami Izakaya, Manouche…</p><ul><li><a href="https://www.openstreetmap.org/node/12170563930">bollard, covered, holds 8</a></li></ul>
-</div>
-</article>
-<article class="card has" data-verdict="has">
-<img src="img/w256252221.png" alt="Map of West Hills Plaza" loading="lazy">
-<div class="body">
-<span class="pill">Has bike parking</span>
-<h3><a href="https://www.openstreetmap.org/way/256252221">West Hills Plaza</a></h3>
-<p class="tenants">Aqua Nails &amp; Spa, Arnold Hearing Centres, COBS Bread, Dairy Queen, Eyes On Paisley, First Choice Haircutters…</p><ul><li><a href="https://www.openstreetmap.org/node/9768470930">bollard</a></li><li><a href="https://www.openstreetmap.org/node/9768470931">bollard</a></li><li><a href="https://www.openstreetmap.org/node/9768470932">rack</a></li><li><a href="https://www.openstreetmap.org/node/9768470933">stands</a></li></ul>
-</div>
-</article>
-<article class="card has" data-verdict="has">
-<img src="img/w1192488955.png" alt="Map of Westwood Plaza" loading="lazy">
-<div class="body">
-<span class="pill">Has bike parking</span>
-<h3><a href="https://www.openstreetmap.org/way/1192488955">Westwood Plaza</a></h3>
-<p class="tenants">Angel Nails, Big Bear Food Mart, JL Hair &amp; Beauty Supply, Mir Zinger Chick, New Orleans Pizza, Pharmasave…</p><ul><li><a href="https://www.openstreetmap.org/node/9768470920">type not tagged</a></li></ul>
-</div>
-</article>
-<article class="card has" data-verdict="has">
-<img src="img/w208496000.png" alt="Map of Willow West" loading="lazy">
-<div class="body">
-<span class="pill">Has bike parking</span>
-<h3><a href="https://www.openstreetmap.org/way/208496000">Willow West</a></h3>
-<p class="tenants">BarBurrito, Dollar Tree, First Choice Haircutters, Freedom Mobile, Giant Tiger, Gino&#x27;s Pizza…</p><ul><li><a href="https://www.openstreetmap.org/node/9789312729">type not tagged</a></li></ul>
-</div>
-</article>
-<article class="card has" data-verdict="has">
-<img src="img/w239062267.png" alt="Map of 10-20 Woodlawn Road East" loading="lazy">
-<div class="body">
-<span class="pill">Has bike parking</span>
-<h3><a href="https://www.openstreetmap.org/way/239062267">10-20 Woodlawn Road East</a> <span class="unnamed">no name in OSM</span></h3>
-<p class="tenants">Buck or Two, Canadian Tire, City Pizza, Spanky&#x27;s BBQ, Stacked Pancake &amp; Breakfast House, Staples…</p><ul><li><a href="https://www.openstreetmap.org/node/12757840252">stands, holds 2</a></li></ul>
-</div>
-</article>
-<article class="card has" data-verdict="has">
-<img src="img/w295926707.png" alt="Map of 104 Silvercreek Parkway North" loading="lazy">
-<div class="body">
-<span class="pill">Has bike parking</span>
-<h3><a href="https://www.openstreetmap.org/way/295926707">104 Silvercreek Parkway North</a> <span class="unnamed">no name in OSM</span></h3>
-<p class="tenants">Canada Post, Money Direct, Pizzaville, RBC, Sherwin-Williams, Shoppers Drug Mart…</p><ul><li><a href="https://www.openstreetmap.org/node/9789312722">stands, holds 3</a></li></ul>
-</div>
-</article>
-<article class="card has" data-verdict="has">
+<article class="card s3" data-group="s3">
 <img src="img/w215068137.png" alt="Map of 127-201 Stone Road West" loading="lazy">
 <div class="body">
-<span class="pill">Has bike parking</span>
+<span class="pill" aria-label="3 of 3 stars">★★★</span>
 <h3><a href="https://www.openstreetmap.org/way/215068137">127-201 Stone Road West</a> <span class="unnamed">no name in OSM</span></h3>
-<p class="tenants">Best Buy, Canadian Tire, Milestones, Montana&#x27;s, Subway, Walmart Supercentre</p><ul><li><a href="https://www.openstreetmap.org/node/12030078101">stands, holds 10</a></li><li><a href="https://www.openstreetmap.org/node/12335563263">stands, holds 6</a></li><li><a href="https://www.openstreetmap.org/node/13963346866">stands, covered, holds 8</a></li><li><a href="https://www.openstreetmap.org/node/14262171677">stands, holds 16</a></li></ul>
+<p class="tenants">Best Buy, Canadian Tire, Milestones, Montana&#x27;s, Subway, Walmart Supercentre</p><p>4 racks, room for 40 bikes, some covered.</p>
 </div>
 </article>
-<article class="card has" data-verdict="has">
-<img src="img/w399342895.png" alt="Map of 1499-1515 Gordon Street" loading="lazy">
-<div class="body">
-<span class="pill">Has bike parking</span>
-<h3><a href="https://www.openstreetmap.org/way/399342895">1499-1515 Gordon Street</a> <span class="unnamed">no name in OSM</span></h3>
-<p class="tenants">Cavan Coffee, Domino&#x27;s, Dr. Ye &amp; Associates, Gordon Walk-In-Clinic, Guelph Family Health Team, HearingLife…</p><ul><li><a href="https://www.openstreetmap.org/node/14106382405">stands, holds 2</a></li></ul>
-</div>
-</article>
-<article class="card has" data-verdict="has">
-<img src="img/w971832743.png" alt="Map of 170 Silvercreek Parkway North" loading="lazy">
-<div class="body">
-<span class="pill">Has bike parking</span>
-<h3><a href="https://www.openstreetmap.org/way/971832743">170 Silvercreek Parkway North</a> <span class="unnamed">no name in OSM</span></h3>
-<p class="tenants">Fresh Salon &amp; Spa, Greengate Medical Centre Walk-In Clinic, Guardian, Mary Brown&#x27;s, Parties Plus, Plato&#x27;s Closet…</p><ul><li><a href="https://www.openstreetmap.org/node/9789312727">type not tagged</a></li><li><a href="https://www.openstreetmap.org/node/9789312728">bollard</a></li></ul>
-</div>
-</article>
-<article class="card has" data-verdict="has">
-<img src="img/w539479797.png" alt="Map of 200-234 Victoria Road South" loading="lazy">
-<div class="body">
-<span class="pill">Has bike parking</span>
-<h3><a href="https://www.openstreetmap.org/way/539479797">200-234 Victoria Road South</a> <span class="unnamed">no name in OSM</span></h3>
-<p class="tenants">Eggcetra, Ethnic Supermarket, FillStore Convenience, Guelph Eye Care, Mission Thrift Store, Nature&#x27;s Salt Cave…</p><ul><li><a href="https://www.openstreetmap.org/node/11461813869">type not tagged</a></li><li><a href="https://www.openstreetmap.org/node/12270389287">informal</a></li></ul>
-</div>
-</article>
-<article class="card has" data-verdict="has">
-<img src="img/w295926200.png" alt="Map of 208-222 Silvercreek Parkway North" loading="lazy">
-<div class="body">
-<span class="pill">Has bike parking</span>
-<h3><a href="https://www.openstreetmap.org/way/295926200">208-222 Silvercreek Parkway North</a> <span class="unnamed">no name in OSM</span></h3>
-<p class="tenants">24 De Nails Ltd., Dollarama, Downtown Dentistry, Drizzora Desserts, Fairstone Financial, Food Basics…</p><ul><li><a href="https://www.openstreetmap.org/node/12164899589">stands, holds 5</a></li></ul>
-</div>
-</article>
-<article class="card has" data-verdict="has">
-<img src="img/w772928910.png" alt="Map of 21-35 Woodlawn Road West" loading="lazy">
-<div class="body">
-<span class="pill">Has bike parking</span>
-<h3><a href="https://www.openstreetmap.org/way/772928910">21-35 Woodlawn Road West</a> <span class="unnamed">no name in OSM</span></h3>
-<p class="tenants">Boston Pizza, Julia&#x27;s Nail Salon, Uptown Guelph Dental, Wayfare Motel Office, Younique Scrapbook Store</p><ul><li><a href="https://www.openstreetmap.org/node/12713893391">stands</a></li></ul>
-</div>
-</article>
-<article class="card has" data-verdict="has">
-<img src="img/w772911628.png" alt="Map of 265-297 Eramosa Road" loading="lazy">
-<div class="body">
-<span class="pill">Has bike parking</span>
-<h3><a href="https://www.openstreetmap.org/way/772911628">265-297 Eramosa Road</a> <span class="unnamed">no name in OSM</span></h3>
-<p class="tenants">First Choice Haircutters, GoodLife Fitness, Kirtida Kitchen, Rexall, The Co-operators, Zehrs</p><ul><li><a href="https://www.openstreetmap.org/node/13062606915">stands</a></li></ul>
-</div>
-</article>
-<article class="card has" data-verdict="has">
-<img src="img/w399319859.png" alt="Map of 4-124 Clair Road East" loading="lazy">
-<div class="body">
-<span class="pill">Has bike parking</span>
-<h3><a href="https://www.openstreetmap.org/way/399319859">4-124 Clair Road East</a> <span class="unnamed">no name in OSM</span></h3>
-<p class="tenants">BarBurrito, BodySystems Nutrition, CIBC, Chuck&#x27;s Roadhouse, Firehouse Subs, First Choice Haircutters…</p><ul><li><a href="https://www.openstreetmap.org/node/12823720968">rack, holds 5</a></li><li><a href="https://www.openstreetmap.org/node/12823720970">rack, holds 5</a></li><li><a href="https://www.openstreetmap.org/node/12823720971">loops, holds 6</a></li><li><a href="https://www.openstreetmap.org/node/12823787991">loops, holds 6</a></li><li><a href="https://www.openstreetmap.org/node/12823796244">type not tagged, holds 2</a></li><li><a href="https://www.openstreetmap.org/node/12823816372">loops, holds 6</a></li><li><a href="https://www.openstreetmap.org/node/12823816373">loops, holds 6</a></li><li><a href="https://www.openstreetmap.org/node/14272103514">type not tagged, holds 2</a></li><li><a href="https://www.openstreetmap.org/node/14284839880">loops, holds 6</a></li></ul>
-</div>
-</article>
-<article class="card has" data-verdict="has">
-<img src="img/w772928908.png" alt="Map of 51-55 Woodlawn Road West" loading="lazy">
-<div class="body">
-<span class="pill">Has bike parking</span>
-<h3><a href="https://www.openstreetmap.org/way/772928908">51-55 Woodlawn Road West</a> <span class="unnamed">no name in OSM</span></h3>
-<p class="tenants">Coffee Time, End Of The Roll, Mobility in Motion, The Cannabist Shop</p><ul><li><a href="https://www.openstreetmap.org/node/13027046604">stands, holds 2</a></li></ul>
-</div>
-</article>
-<article class="card has" data-verdict="has">
+<article class="card s3" data-group="s3">
 <img src="img/w468349503.png" alt="Map of 617-649 Scottsdale Drive" loading="lazy">
 <div class="body">
-<span class="pill">Has bike parking</span>
+<span class="pill" aria-label="3 of 3 stars">★★★</span>
 <h3><a href="https://www.openstreetmap.org/way/468349503">617-649 Scottsdale Drive</a> <span class="unnamed">no name in OSM</span></h3>
-<p class="tenants">Frontier Diagnostics: Medical Imaging, LCBO, Pizza Hut, Reserved Cannabis, Shoppers Drug Mart</p><ul><li><a href="https://www.openstreetmap.org/node/14269099699">stands, holds 8</a></li><li><a href="https://www.openstreetmap.org/node/14269099700">stands, holds 8</a></li><li><a href="https://www.openstreetmap.org/node/14269222867">stands, holds 8</a></li></ul>
+<p class="tenants">Frontier Diagnostics: Medical Imaging, LCBO, Pizza Hut, Reserved Cannabis, Shoppers Drug Mart</p><p>3 racks, room for 24 bikes.</p>
 </div>
 </article>
-<article class="card has" data-verdict="has">
-<img src="img/w772928904.png" alt="Map of 670-698 Woolwich Street" loading="lazy">
+<article class="card s3" data-group="s3">
+<img src="img/w208406209.png" alt="Map of Stone Square Plaza" loading="lazy">
 <div class="body">
-<span class="pill">Has bike parking</span>
-<h3><a href="https://www.openstreetmap.org/way/772928904">670-698 Woolwich Street</a> <span class="unnamed">no name in OSM</span></h3>
-<p class="tenants">Church&#x27;s Chicken, Dominion Lending Centres, Edward Jones, Family Midwifery Care of Guelph, HearingLife, Pizza Express Guelph…</p><ul><li><a href="https://www.openstreetmap.org/node/11450121869">stands, holds 4</a></li><li><a href="https://www.openstreetmap.org/node/12223080895">stands</a></li><li><a href="https://www.openstreetmap.org/node/12223102222">stands</a></li><li><a href="https://www.openstreetmap.org/node/12223102223">stands</a></li></ul>
+<span class="pill" aria-label="3 of 3 stars">★★★</span>
+<h3><a href="https://www.openstreetmap.org/way/208406209">Stone Square Plaza</a></h3>
+<p class="tenants">Bud’s Cannabis Store, Bulk Barn, CIBC, Dollarama, East Side Mario&#x27;s, Farm Boy…</p><p>4 racks, room for 23 bikes.</p>
 </div>
 </article>
-<article class="card has" data-verdict="has">
-<img src="img/w364715613.png" alt="Map of 715 Wellington Street West" loading="lazy">
-<div class="body">
-<span class="pill">Has bike parking</span>
-<h3><a href="https://www.openstreetmap.org/way/364715613">715 Wellington Street West</a> <span class="unnamed">no name in OSM</span></h3>
-<p class="tenants">Global Pet Foods, Imperial Pharmacy, MM Physio, National Pasta, On the Run, Party Nails…</p><ul><li><a href="https://www.openstreetmap.org/node/13233449397">stands</a></li></ul>
-</div>
-</article>
-<article class="card has" data-verdict="has">
-<img src="img/w772999957.png" alt="Map of 86-100 Gordon Street" loading="lazy">
-<div class="body">
-<span class="pill">Has bike parking</span>
-<h3><a href="https://www.openstreetmap.org/way/772999957">86-100 Gordon Street</a> <span class="unnamed">no name in OSM</span></h3>
-<p class="tenants">Bare Essentials, Domino&#x27;s, Edward Jones, Ewyn Weight Loss Studios, F45 Training, Franco and Sons Barber Shop…</p><ul><li><a href="https://www.openstreetmap.org/node/12170563930">bollard, covered, holds 8</a></li></ul>
-</div>
-</article>
-<article class="card has" data-verdict="has">
+<article class="card s3" data-group="s3">
 <img src="img/w328207036.png" alt="Map of 89-105 Gordon Street" loading="lazy">
 <div class="body">
-<span class="pill">Has bike parking</span>
+<span class="pill" aria-label="3 of 3 stars">★★★</span>
 <h3><a href="https://www.openstreetmap.org/way/328207036">89-105 Gordon Street</a> <span class="unnamed">no name in OSM</span></h3>
-<p class="tenants">Bardo, Freshii, Goodness Me!, LCBO, Starbucks, The Running Works…</p><ul><li><a href="https://www.openstreetmap.org/node/12015891543">stands, holds 4</a></li><li><a href="https://www.openstreetmap.org/node/13233343763">stands</a></li><li><a href="https://www.openstreetmap.org/node/14307672437">stands, holds 6</a></li><li><a href="https://www.openstreetmap.org/node/14314321141">stands, holds 4</a></li><li><a href="https://www.openstreetmap.org/node/14314354018">stands, holds 6</a></li></ul>
+<p class="tenants">Bardo, Freshii, Goodness Me!, LCBO, Starbucks, The Running Works…</p><p>5 racks, room for at least 20 bikes.</p>
+</div>
+</article>
+<article class="card s3" data-group="s3">
+<img src="img/w217504192.png" alt="Map of Clairfield Commons" loading="lazy">
+<div class="body">
+<span class="pill" aria-label="3 of 3 stars">★★★</span>
+<h3><a href="https://www.openstreetmap.org/way/217504192">Clairfield Commons</a></h3>
+<p class="tenants">Clair Dental Centre, Food Basics, Iris, Kenzo, PetSmart, Pizza Nova…</p><p>5 racks, room for 18 bikes.</p>
+</div>
+</article>
+<article class="card s2" data-group="s2">
+<img src="img/w833377075.png" alt="Map of Edinburgh Market Place" loading="lazy">
+<div class="body">
+<span class="pill" aria-label="2 of 3 stars">★★</span>
+<h3><a href="https://www.openstreetmap.org/way/833377075">Edinburgh Market Place</a></h3>
+<p class="tenants">Chubbs, Edinburgh Clinic and Pharmacy, Marble Slab Creamery, Massage Addict, Metro, Mucho Burrito…</p><p>3 racks, room for at least 18 bikes.</p><p class="next">Some rack details are missing from the map. Adding them could already earn a third star.</p>
+</div>
+</article>
+<article class="card s2" data-group="s2">
+<img src="img/w772999957.png" alt="Map of 86-100 Gordon Street" loading="lazy">
+<div class="body">
+<span class="pill" aria-label="2 of 3 stars">★★</span>
+<h3><a href="https://www.openstreetmap.org/way/772999957">86-100 Gordon Street</a> <span class="unnamed">no name in OSM</span></h3>
+<p class="tenants">Bare Essentials, Domino&#x27;s, Edward Jones, Ewyn Weight Loss Studios, F45 Training, Franco and Sons Barber Shop…</p><p>1 rack, room for 8 bikes, some covered.</p><p class="next">Room for 2 more bikes earns the third star.</p>
+</div>
+</article>
+<article class="card s2" data-group="s2">
+<img src="img/w177697922.png" alt="Map of Wellington Plaza" loading="lazy">
+<div class="body">
+<span class="pill" aria-label="2 of 3 stars">★★</span>
+<h3><a href="https://www.openstreetmap.org/way/177697922">Wellington Plaza</a></h3>
+<p class="tenants">Bare Essentials, F45 Training, Franco and Sons Barber Shop, Fusion Authentic Indian Cuisine, Hanami Izakaya, Manouche…</p><p>1 rack, room for 8 bikes, some covered.</p><p class="next">Room for 2 more bikes earns the third star.</p>
+</div>
+</article>
+<article class="card s2" data-group="s2">
+<img src="img/w332330004.png" alt="Map of Grange &amp; Victoria Plaza" loading="lazy">
+<div class="body">
+<span class="pill" aria-label="2 of 3 stars">★★</span>
+<h3><a href="https://www.openstreetmap.org/way/332330004">Grange &amp; Victoria Plaza</a></h3>
+<p class="tenants">Buck or Two Plus, CIBC, Home Hardware, Planet Bean Coffee, Super Happy Garden, Victoria&#x27;s Pizza</p><p>1 rack, room for 8 bikes.</p><p class="next">Room for 2 more bikes earns the third star.</p>
+</div>
+</article>
+<article class="card s2" data-group="s2">
+<img src="img/w295926200.png" alt="Map of 208-222 Silvercreek Parkway North" loading="lazy">
+<div class="body">
+<span class="pill" aria-label="2 of 3 stars">★★</span>
+<h3><a href="https://www.openstreetmap.org/way/295926200">208-222 Silvercreek Parkway North</a> <span class="unnamed">no name in OSM</span></h3>
+<p class="tenants">24 De Nails Ltd., Dollarama, Downtown Dentistry, Drizzora Desserts, Fairstone Financial, Food Basics…</p><p>1 rack, room for 5 bikes.</p><p class="next">Room for 5 more bikes earns the third star.</p>
+</div>
+</article>
+<article class="card s2" data-group="s2">
+<img src="img/w177867077.png" alt="Map of Arkell Crossing" loading="lazy">
+<div class="body">
+<span class="pill" aria-label="2 of 3 stars">★★</span>
+<h3><a href="https://www.openstreetmap.org/way/177867077">Arkell Crossing</a></h3>
+<p>1 rack, room for 5 bikes.</p><p class="next">Room for 5 more bikes earns the third star.</p>
+</div>
+</article>
+<article class="card s2" data-group="s2">
+<img src="img/w399321881.png" alt="Map of University Square Plaza" loading="lazy">
+<div class="body">
+<span class="pill" aria-label="2 of 3 stars">★★</span>
+<h3><a href="https://www.openstreetmap.org/way/399321881">University Square Plaza</a></h3>
+<p class="tenants">Circle K, Family Chiropractic Centre, Lux Nail Spa, Papa John&#x27;s, RBC Royal Bank, Sequoia Dental…</p><p>2 racks, room for 4 bikes, some covered.</p><p class="next">Room for 6 more bikes earns the third star.</p>
+</div>
+</article>
+<article class="card s2" data-group="s2">
+<img src="img/w772928904.png" alt="Map of 670-698 Woolwich Street" loading="lazy">
+<div class="body">
+<span class="pill" aria-label="2 of 3 stars">★★</span>
+<h3><a href="https://www.openstreetmap.org/way/772928904">670-698 Woolwich Street</a> <span class="unnamed">no name in OSM</span></h3>
+<p class="tenants">Church&#x27;s Chicken, Dominion Lending Centres, Edward Jones, Family Midwifery Care of Guelph, HearingLife, Pizza Express Guelph…</p><p>4 racks, room for at least 4 bikes.</p><p class="next">Some rack details are missing from the map. Adding them could already earn a third star.</p>
+</div>
+</article>
+<article class="card s2" data-group="s2">
+<img src="img/w287908722.png" alt="Map of Pergola Commons" loading="lazy">
+<div class="body">
+<span class="pill" aria-label="2 of 3 stars">★★</span>
+<h3><a href="https://www.openstreetmap.org/way/287908722">Pergola Commons</a></h3>
+<p class="tenants">BMO, BOSS Supplements, Booster Juice, Cherry Blossom Sushi Bar, Convenience Kitchen Food Fair, Dollarama…</p><p>6 racks, room for at least 10 bikes.</p><p class="next">Some rack details are missing from the map. Adding them could already earn a third star.</p>
+</div>
+</article>
+<article class="card s2" data-group="s2">
+<img src="img/w295926707.png" alt="Map of 104 Silvercreek Parkway North" loading="lazy">
+<div class="body">
+<span class="pill" aria-label="2 of 3 stars">★★</span>
+<h3><a href="https://www.openstreetmap.org/way/295926707">104 Silvercreek Parkway North</a> <span class="unnamed">no name in OSM</span></h3>
+<p class="tenants">Canada Post, Money Direct, Pizzaville, RBC, Sherwin-Williams, Shoppers Drug Mart…</p><p>1 rack, room for 3 bikes.</p><p class="next">Room for 7 more bikes earns the third star.</p>
+</div>
+</article>
+<article class="card s2" data-group="s2">
+<img src="img/w772928911.png" alt="Map of SmartCentres Guelph" loading="lazy">
+<div class="body">
+<span class="pill" aria-label="2 of 3 stars">★★</span>
+<h3><a href="https://www.openstreetmap.org/way/772928911">SmartCentres Guelph</a></h3>
+<p class="tenants">Addition Elle, BMO, Bulk Barn, CIBC, Dollarama, EB Games…</p><p>2 racks, room for at least 2 bikes.</p><p class="next">Some rack details are missing from the map. Adding them could already earn a third star.</p>
+</div>
+</article>
+<article class="card s2" data-group="s2">
+<img src="img/w399342895.png" alt="Map of 1499-1515 Gordon Street" loading="lazy">
+<div class="body">
+<span class="pill" aria-label="2 of 3 stars">★★</span>
+<h3><a href="https://www.openstreetmap.org/way/399342895">1499-1515 Gordon Street</a> <span class="unnamed">no name in OSM</span></h3>
+<p class="tenants">Cavan Coffee, Domino&#x27;s, Dr. Ye &amp; Associates, Gordon Walk-In-Clinic, Guelph Family Health Team, HearingLife…</p><p>1 rack, room for 2 bikes.</p><p class="next">Room for 8 more bikes earns the third star.</p>
+</div>
+</article>
+<article class="card s2" data-group="s2">
+<img src="img/w239062267.png" alt="Map of 10-20 Woodlawn Road East" loading="lazy">
+<div class="body">
+<span class="pill" aria-label="2 of 3 stars">★★</span>
+<h3><a href="https://www.openstreetmap.org/way/239062267">10-20 Woodlawn Road East</a> <span class="unnamed">no name in OSM</span></h3>
+<p class="tenants">Buck or Two, Canadian Tire, City Pizza, Spanky&#x27;s BBQ, Stacked Pancake &amp; Breakfast House, Staples…</p><p>1 rack, room for 2 bikes.</p><p class="next">Room for 8 more bikes earns the third star.</p>
+</div>
+</article>
+<article class="card s2" data-group="s2">
+<img src="img/w772928908.png" alt="Map of 51-55 Woodlawn Road West" loading="lazy">
+<div class="body">
+<span class="pill" aria-label="2 of 3 stars">★★</span>
+<h3><a href="https://www.openstreetmap.org/way/772928908">51-55 Woodlawn Road West</a> <span class="unnamed">no name in OSM</span></h3>
+<p class="tenants">Coffee Time, End Of The Roll, Mobility in Motion, The Cannabist Shop</p><p>1 rack, room for 2 bikes.</p><p class="next">Room for 8 more bikes earns the third star.</p>
+</div>
+</article>
+<article class="card s2" data-group="s2">
+<img src="img/w256118290.png" alt="Map of Silvercreek Plaza" loading="lazy">
+<div class="body">
+<span class="pill" aria-label="2 of 3 stars">★★</span>
+<h3><a href="https://www.openstreetmap.org/way/256118290">Silvercreek Plaza</a></h3>
+<p class="tenants">Adulis Caffe, Canadian Blood Services, Fixway Cellular, Guelph T.V. &amp; Video, Habesha Grocery &amp; Bakery, Helal Store…</p><p>6 racks, capacity not on the map yet.</p><p class="next">Some rack details are missing from the map. Adding them could already earn a third star.</p>
+</div>
+</article>
+<article class="card s2" data-group="s2">
+<img src="img/w256252221.png" alt="Map of West Hills Plaza" loading="lazy">
+<div class="body">
+<span class="pill" aria-label="2 of 3 stars">★★</span>
+<h3><a href="https://www.openstreetmap.org/way/256252221">West Hills Plaza</a></h3>
+<p class="tenants">Aqua Nails &amp; Spa, Arnold Hearing Centres, COBS Bread, Dairy Queen, Eyes On Paisley, First Choice Haircutters…</p><p>4 racks, capacity not on the map yet.</p><p class="next">Some rack details are missing from the map. Adding them could already earn a third star.</p>
+</div>
+</article>
+<article class="card s2" data-group="s2">
+<img src="img/w364715613.png" alt="Map of 715 Wellington Street West" loading="lazy">
+<div class="body">
+<span class="pill" aria-label="2 of 3 stars">★★</span>
+<h3><a href="https://www.openstreetmap.org/way/364715613">715 Wellington Street West</a> <span class="unnamed">no name in OSM</span></h3>
+<p class="tenants">Global Pet Foods, Imperial Pharmacy, MM Physio, National Pasta, On the Run, Party Nails…</p><p>1 rack, capacity not on the map yet.</p><p class="next">Some rack details are missing from the map. Adding them could already earn a third star.</p>
+</div>
+</article>
+<article class="card s2" data-group="s2">
+<img src="img/w971832743.png" alt="Map of 170 Silvercreek Parkway North" loading="lazy">
+<div class="body">
+<span class="pill" aria-label="2 of 3 stars">★★</span>
+<h3><a href="https://www.openstreetmap.org/way/971832743">170 Silvercreek Parkway North</a> <span class="unnamed">no name in OSM</span></h3>
+<p class="tenants">Fresh Salon &amp; Spa, Greengate Medical Centre Walk-In Clinic, Guardian, Mary Brown&#x27;s, Parties Plus, Plato&#x27;s Closet…</p><p>2 racks, capacity not on the map yet.</p><p class="next">Some rack details are missing from the map. Adding them could already earn a third star.</p>
+</div>
+</article>
+<article class="card s2" data-group="s2">
+<img src="img/w772911628.png" alt="Map of 265-297 Eramosa Road" loading="lazy">
+<div class="body">
+<span class="pill" aria-label="2 of 3 stars">★★</span>
+<h3><a href="https://www.openstreetmap.org/way/772911628">265-297 Eramosa Road</a> <span class="unnamed">no name in OSM</span></h3>
+<p class="tenants">First Choice Haircutters, GoodLife Fitness, Kirtida Kitchen, Rexall, The Co-operators, Zehrs</p><p>1 rack, capacity not on the map yet.</p><p class="next">Some rack details are missing from the map. Adding them could already earn a third star.</p>
+</div>
+</article>
+<article class="card s2" data-group="s2">
+<img src="img/w772928910.png" alt="Map of 21-35 Woodlawn Road West" loading="lazy">
+<div class="body">
+<span class="pill" aria-label="2 of 3 stars">★★</span>
+<h3><a href="https://www.openstreetmap.org/way/772928910">21-35 Woodlawn Road West</a> <span class="unnamed">no name in OSM</span></h3>
+<p class="tenants">Boston Pizza, Julia&#x27;s Nail Salon, Uptown Guelph Dental, Wayfare Motel Office, Younique Scrapbook Store</p><p>1 rack, capacity not on the map yet.</p><p class="next">Some rack details are missing from the map. Adding them could already earn a third star.</p>
+</div>
+</article>
+<article class="card s1" data-group="s1">
+<img src="img/w399319859.png" alt="Map of 4-124 Clair Road East" loading="lazy">
+<div class="body">
+<span class="pill" aria-label="1 of 3 stars">★</span>
+<h3><a href="https://www.openstreetmap.org/way/399319859">4-124 Clair Road East</a> <span class="unnamed">no name in OSM</span></h3>
+<p class="tenants">BarBurrito, BodySystems Nutrition, CIBC, Chuck&#x27;s Roadhouse, Firehouse Subs, First Choice Haircutters…</p><p>9 racks, room for 44 bikes.</p><p class="next">The rack type is not clear on the map. Adding it could already earn a second star.</p>
+</div>
+</article>
+<article class="card s1" data-group="s1">
+<img src="img/w208650724.png" alt="Map of Campus Estates Plaza" loading="lazy">
+<div class="body">
+<span class="pill" aria-label="1 of 3 stars">★</span>
+<h3><a href="https://www.openstreetmap.org/way/208650724">Campus Estates Plaza</a></h3>
+<p class="tenants">BarBurrito, Campus Drugmart IDA, Campus Estates Hairstyling, Canada Post, Chatime, City Pizza…</p><p>1 rack, room for 6 bikes.</p><p class="next">A stand you can lock a frame to earns the second star.</p>
+</div>
+</article>
+<article class="card s1" data-group="s1">
+<img src="img/w208496000.png" alt="Map of Willow West" loading="lazy">
+<div class="body">
+<span class="pill" aria-label="1 of 3 stars">★</span>
+<h3><a href="https://www.openstreetmap.org/way/208496000">Willow West</a></h3>
+<p class="tenants">BarBurrito, Dollar Tree, First Choice Haircutters, Freedom Mobile, Giant Tiger, Gino&#x27;s Pizza…</p><p>1 rack, capacity not on the map yet.</p><p class="next">The rack type is not clear on the map. Adding it could already earn a second star.</p>
+</div>
+</article>
+<article class="card s1" data-group="s1">
+<img src="img/w539479797.png" alt="Map of 200-234 Victoria Road South" loading="lazy">
+<div class="body">
+<span class="pill" aria-label="1 of 3 stars">★</span>
+<h3><a href="https://www.openstreetmap.org/way/539479797">200-234 Victoria Road South</a> <span class="unnamed">no name in OSM</span></h3>
+<p class="tenants">Eggcetra, Ethnic Supermarket, FillStore Convenience, Guelph Eye Care, Mission Thrift Store, Nature&#x27;s Salt Cave…</p><p>2 racks, capacity not on the map yet.</p><p class="next">The rack type is not clear on the map. Adding it could already earn a second star.</p>
+</div>
+</article>
+<article class="card s1" data-group="s1">
+<img src="img/w1192488955.png" alt="Map of Westwood Plaza" loading="lazy">
+<div class="body">
+<span class="pill" aria-label="1 of 3 stars">★</span>
+<h3><a href="https://www.openstreetmap.org/way/1192488955">Westwood Plaza</a></h3>
+<p class="tenants">Angel Nails, Big Bear Food Mart, JL Hair &amp; Beauty Supply, Mir Zinger Chick, New Orleans Pizza, Pharmasave…</p><p>1 rack, capacity not on the map yet.</p><p class="next">The rack type is not clear on the map. Adding it could already earn a second star.</p>
+</div>
+</article>
+<article class="card near" data-group="near">
+<img src="img/w369321286.png" alt="Map of 292-314 Stone Road West" loading="lazy">
+<div class="body">
+<span class="pill">Rack next door</span>
+<h3><a href="https://www.openstreetmap.org/way/369321286">292-314 Stone Road West</a> <span class="unnamed">no name in OSM</span></h3>
+<p class="tenants">Apps Optical, Body Systems Nutrition, Brodie&#x27;s Gaming &amp; Collectables, Cyber Computer, Dairy Queen, Domino&#x27;s…</p><p>Nearest rack on the map is <a href="https://www.openstreetmap.org/node/12206930210">38 m away</a>.</p><p class="next">A first rack on the map earns the first star.</p>
+</div>
+</article>
+<article class="card near" data-group="near">
+<img src="img/w556632268.png" alt="Map of Clair Marketplace" loading="lazy">
+<div class="body">
+<span class="pill">Rack next door</span>
+<h3><a href="https://www.openstreetmap.org/way/556632268">Clair Marketplace</a></h3>
+<p class="tenants">COBS Bread, Centurion Coffee, Chocolats Favoris, EasyFinancial, Five Guys, Great Clips…</p><p>Nearest rack on the map is <a href="https://www.openstreetmap.org/node/14298186314">32 m away</a>.</p><p class="next">A first rack on the map earns the first star.</p>
+</div>
+</article>
+<article class="card near" data-group="near">
+<img src="img/w773015473.png" alt="Map of 221-223 Woodlawn Road West" loading="lazy">
+<div class="body">
+<span class="pill">Rack next door</span>
+<h3><a href="https://www.openstreetmap.org/way/773015473">221-223 Woodlawn Road West</a> <span class="unnamed">no name in OSM</span></h3>
+<p class="tenants">3 for 1 Glasses, 9Round, Body Klense, Burrito Boys, Caribbean Delight, Cash Money…</p><p>Nearest rack on the map is <a href="https://www.openstreetmap.org/node/13233491582">51 m away</a>.</p><p class="next">A first rack on the map earns the first star.</p>
+</div>
+</article>
+<article class="card near" data-group="near">
+<img src="img/w772928906.png" alt="Map of 727-777 Woolwich Street" loading="lazy">
+<div class="body">
+<span class="pill">Rack next door</span>
+<h3><a href="https://www.openstreetmap.org/way/772928906">727-777 Woolwich Street</a> <span class="unnamed">no name in OSM</span></h3>
+<p class="tenants">Big Smart Convenience, DUCA, Dairy Queen, Family &amp; Implant Dentistry, Farnworth Memorials, Golden Fish &amp; Chips…</p><p>Nearest rack on the map is <a href="https://www.openstreetmap.org/node/14088696229">35 m away</a>.</p><p class="next">A first rack on the map earns the first star.</p>
+</div>
+</article>
+<article class="card near" data-group="near">
+<img src="img/w773015480.png" alt="Map of Silvercreek Business Centre" loading="lazy">
+<div class="body">
+<span class="pill">Rack next door</span>
+<h3><a href="https://www.openstreetmap.org/way/773015480">Silvercreek Business Centre</a></h3>
+<p class="tenants">B.D. Hawkins, Blue Chopstix, Burnside, Butcher Shop and Grocers, Crown Barber Shop, Diamond Flooring…</p><p>Nearest rack on the map is <a href="https://www.openstreetmap.org/node/12564637269">43 m away</a>.</p><p class="next">A first rack on the map earns the first star.</p>
+</div>
+</article>
+<article class="card near" data-group="near">
+<img src="img/w399321888.png" alt="Map of 951 Gordon Street" loading="lazy">
+<div class="body">
+<span class="pill">Rack next door</span>
+<h3><a href="https://www.openstreetmap.org/way/399321888">951 Gordon Street</a> <span class="unnamed">no name in OSM</span></h3>
+<p class="tenants">Alpenglow Leaf, Bronze Ambition, Dulux Paints, Farm To Paw, Manhattans, Nighthawk Tattoo…</p><p>Nearest rack on the map is <a href="https://www.openstreetmap.org/node/12823829004">64 m away</a>.</p><p class="next">A first rack on the map earns the first star.</p>
+</div>
+</article>
+<article class="card near" data-group="near">
+<img src="img/w773000852.png" alt="Map of 1027 Gordon Street" loading="lazy">
+<div class="body">
+<span class="pill">Rack next door</span>
+<h3><a href="https://www.openstreetmap.org/way/773000852">1027 Gordon Street</a> <span class="unnamed">no name in OSM</span></h3>
+<p class="tenants">Beauty Queen Health Center, Centurion Coffee, Dr. A. Raco Dental Office, Home Hardware, Homelife Power Realty Inc Brokerage, Mary&#x27;s Nails…</p><p>Nearest rack on the map is <a href="https://www.openstreetmap.org/node/12823764356">73 m away</a>.</p><p class="next">A first rack on the map earns the first star.</p>
+</div>
+</article>
+<article class="card near" data-group="near">
+<img src="img/w773015485.png" alt="Map of 252 Silvercreek Parkway North" loading="lazy">
+<div class="body">
+<span class="pill">Rack next door</span>
+<h3><a href="https://www.openstreetmap.org/way/773015485">252 Silvercreek Parkway North</a> <span class="unnamed">no name in OSM</span></h3>
+<p class="tenants">Buns Master, Culligan, Hakim Optical, Mr. Sub, Old Fashioned Deli, Pho Saigon…</p><p>Nearest rack on the map is <a href="https://www.openstreetmap.org/node/12312591588">55 m away</a>.</p><p class="next">A first rack on the map earns the first star.</p>
+</div>
+</article>
+<article class="card near" data-group="near">
+<img src="img/w295926125.png" alt="Map of 200-206 Silvercreek Parkway North" loading="lazy">
+<div class="body">
+<span class="pill">Rack next door</span>
+<h3><a href="https://www.openstreetmap.org/way/295926125">200-206 Silvercreek Parkway North</a> <span class="unnamed">no name in OSM</span></h3>
+<p class="tenants">Burger King, Cashco Loans, Domino&#x27;s, Kung Fu Tea, L’angolo Cafe, Pita Pit…</p><p>Nearest rack on the map is <a href="https://www.openstreetmap.org/node/12164866906">95 m away</a>.</p><p class="next">A first rack on the map earns the first star.</p>
+</div>
+</article>
+<article class="card near" data-group="near">
+<img src="img/w468349505.png" alt="Map of 630-650 Scottsdale Drive" loading="lazy">
+<div class="body">
+<span class="pill">Rack next door</span>
+<h3><a href="https://www.openstreetmap.org/way/468349505">630-650 Scottsdale Drive</a> <span class="unnamed">no name in OSM</span></h3>
+<p class="tenants">Fluffy Glaze, Gotcha Bubble Tea, Guelph BBQ, Guelph Public Library - Scottsdale Branch, Guelph Vapour Company, Hanna&#x27;s Nail Bar…</p><p>Nearest rack on the map is <a href="https://www.openstreetmap.org/node/14269222867">50 m away</a>.</p><p class="next">A first rack on the map earns the first star.</p>
+</div>
+</article>
+<article class="card near" data-group="near">
+<img src="img/w354160042.png" alt="Map of Scottsdale Centre" loading="lazy">
+<div class="body">
+<span class="pill">Rack next door</span>
+<h3><a href="https://www.openstreetmap.org/way/354160042">Scottsdale Centre</a></h3>
+<p class="tenants">Fluffy Glaze, Gotcha Bubble Tea, Guelph BBQ, Guelph Public Library - Scottsdale Branch, Guelph Vapour Company, Hanna&#x27;s Nail Bar…</p><p>Nearest rack on the map is <a href="https://www.openstreetmap.org/node/14269222867">80 m away</a>.</p><p class="next">A first rack on the map earns the first star.</p>
+</div>
+</article>
+<article class="card near" data-group="near">
+<img src="img/w295926658.png" alt="Map of 105 Silvercreek Parkway North" loading="lazy">
+<div class="body">
+<span class="pill">Rack next door</span>
+<h3><a href="https://www.openstreetmap.org/way/295926658">105 Silvercreek Parkway North</a> <span class="unnamed">no name in OSM</span></h3>
+<p class="tenants">Growmark, Paradise Barbershop, Rexall, SV Law, Silvercreek Walk-In Clinic</p><p>Nearest rack on the map is <a href="https://www.openstreetmap.org/node/9789312722">54 m away</a>.</p><p class="next">A first rack on the map earns the first star.</p>
+</div>
+</article>
+<article class="card near" data-group="near">
+<img src="img/w256252178.png" alt="Map of 926 Paisley Road" loading="lazy">
+<div class="body">
+<span class="pill">Rack next door</span>
+<h3><a href="https://www.openstreetmap.org/way/256252178">926 Paisley Road</a> <span class="unnamed">no name in OSM</span></h3>
+<p class="tenants">Circle K, M&amp;M Food Market, Tranquil Hair &amp; Body, VP Tailors, West End Family Chiropractic</p><p>Nearest rack on the map is <a href="https://www.openstreetmap.org/node/9768470934">38 m away</a>.</p><p class="next">A first rack on the map earns the first star.</p>
+</div>
+</article>
+<article class="card near" data-group="near">
+<img src="img/w772999958.png" alt="Map of 50 Wellington Street East" loading="lazy">
+<div class="body">
+<span class="pill">Rack next door</span>
+<h3><a href="https://www.openstreetmap.org/way/772999958">50 Wellington Street East</a> <span class="unnamed">no name in OSM</span></h3>
+<p class="tenants">A&amp;W, KFC, Tim Hortons, Wendy&#x27;s</p><p>Nearest rack on the map is <a href="https://www.openstreetmap.org/node/14197996496">31 m away</a>.</p><p class="next">A first rack on the map earns the first star.</p>
+</div>
+</article>
+<article class="card look" data-group="look">
+<img src="img/w237319873.png" alt="Map of Speedvale Centre" loading="lazy">
+<div class="body">
+<span class="pill">Go and look</span>
+<h3><a href="https://www.openstreetmap.org/way/237319873">Speedvale Centre</a></h3>
+<p class="tenants">7-Eleven, Anytime Fitness, Baskin-Robbins, Candies of Merritt, Cash 4 You, China Express…</p><p>Nearest rack on the map is <a href="https://www.openstreetmap.org/node/9768470960">852 m away</a>.</p><p class="next">A first rack on the map earns the first star.</p>
+</div>
+</article>
+<article class="card look" data-group="look">
+<img src="img/w344325628.png" alt="Map of Melran Mall" loading="lazy">
+<div class="body">
+<span class="pill">Go and look</span>
+<h3><a href="https://www.openstreetmap.org/way/344325628">Melran Mall</a></h3>
+<p class="tenants">All Blue Solutions, Automatis Integrated, Cerniuk Construction Ltd., Community of Christ, Desjardins Insurance, Dixon Distilled Spirits…</p><p>Nearest rack on the map is <a href="https://www.openstreetmap.org/node/12798111182">873 m away</a>.</p><p class="next">A first rack on the map earns the first star.</p>
+</div>
+</article>
+<article class="card look" data-group="look">
+<img src="img/w399149070.png" alt="Map of 340 Woodlawn Road West" loading="lazy">
+<div class="body">
+<span class="pill">Go and look</span>
+<h3><a href="https://www.openstreetmap.org/way/399149070">340 Woodlawn Road West</a> <span class="unnamed">no name in OSM</span></h3>
+<p class="tenants">All-Risks Insurance Brokers Limited, Asian Food Centre, Buckenham Fireplaces &amp; Grills, Canadian Grill, City View Pools And Patio Furniture, Goodwill Community Store…</p><p>Nearest rack on the map is <a href="https://www.openstreetmap.org/node/12312591588">864 m away</a>.</p><p class="next">A first rack on the map earns the first star.</p>
+</div>
+</article>
+<article class="card look" data-group="look">
+<img src="img/w212559744.png" alt="Map of Stonegate Plaza" loading="lazy">
+<div class="body">
+<span class="pill">Go and look</span>
+<h3><a href="https://www.openstreetmap.org/way/212559744">Stonegate Plaza</a></h3>
+<p class="tenants">Cyber Computer, Dough Box, Edible Arrangements, Edo Japan, Manchu Wok, Menchie&#x27;s…</p><p>Nearest rack on the map is <a href="https://www.openstreetmap.org/node/13963396495">128 m away</a>.</p><p class="next">A first rack on the map earns the first star.</p>
+</div>
+</article>
+<article class="card look" data-group="look">
+<img src="img/w772928901.png" alt="Map of 666 Woolwich Street" loading="lazy">
+<div class="body">
+<span class="pill">Go and look</span>
+<h3><a href="https://www.openstreetmap.org/way/772928901">666 Woolwich Street</a> <span class="unnamed">no name in OSM</span></h3>
+<p class="tenants">Canvision Optical Ltd, Double Double Pizza &amp; Wings, Dutch Toko European Deli, First Choice Hair, Four Seasons Flowers, Little Short Stop…</p><p>Nearest rack on the map is <a href="https://www.openstreetmap.org/node/11450121869">175 m away</a>.</p><p class="next">A first rack on the map earns the first star.</p>
+</div>
+</article>
+<article class="card look" data-group="look">
+<img src="img/w773015486.png" alt="Map of Silverwood Plaza" loading="lazy">
+<div class="body">
+<span class="pill">Go and look</span>
+<h3><a href="https://www.openstreetmap.org/way/773015486">Silverwood Plaza</a></h3>
+<p class="tenants">Burger Factory, CBI Home Health, Canadian Mental Health Association, Current Electrical Supply Inc, Investment Planning Counsel, KW Cellular &amp; Gadgets…</p><p>Nearest rack on the map is <a href="https://www.openstreetmap.org/node/13233491582">508 m away</a>.</p><p class="next">A first rack on the map earns the first star.</p>
+</div>
+</article>
+<article class="card look" data-group="look">
+<img src="img/w773014769.png" alt="Map of 75 Willow Road" loading="lazy">
+<div class="body">
+<span class="pill">Go and look</span>
+<h3><a href="https://www.openstreetmap.org/way/773014769">75 Willow Road</a> <span class="unnamed">no name in OSM</span></h3>
+<p class="tenants">H&amp;R Block, Healing Centre, Little Short Stop, Mickey Nails, Pizza Pizza, Super Coin Laundry…</p><p>Nearest rack on the map is <a href="https://www.openstreetmap.org/node/9789312730">128 m away</a>.</p><p class="next">A first rack on the map earns the first star.</p>
+</div>
+</article>
+<article class="card look" data-group="look">
+<img src="img/w772911624.png" alt="Map of 380 Eramosa Road" loading="lazy">
+<div class="body">
+<span class="pill">Go and look</span>
+<h3><a href="https://www.openstreetmap.org/way/772911624">380 Eramosa Road</a> <span class="unnamed">no name in OSM</span></h3>
+<p class="tenants">Dairy Queen, Dollarama, Food Basics, Guelph Public Library - Bullfrog Mall Branch, KazaMeza, Mary Brown&#x27;s…</p><p>Nearest rack on the map is <a href="https://www.openstreetmap.org/node/13062606915">128 m away</a>.</p><p class="next">A first rack on the map earns the first star.</p>
+</div>
+</article>
+<article class="card look" data-group="look">
+<img src="img/w773015474.png" alt="Map of Woodlawn Square" loading="lazy">
+<div class="body">
+<span class="pill">Go and look</span>
+<h3><a href="https://www.openstreetmap.org/way/773015474">Woodlawn Square</a></h3>
+<p class="tenants">Big Bargain Wholesale, Canadian Food Inspection Agency, Chuck&#x27;s Roadhouse, DriveTest, McDonald&#x27;s, Original Home Furniture…</p><p>Nearest rack on the map is <a href="https://www.openstreetmap.org/node/13233491582">230 m away</a>.</p><p class="next">A first rack on the map earns the first star.</p>
+</div>
+</article>
+<article class="card look" data-group="look">
+<img src="img/w192887202.png" alt="Map of 1388-1398 Gordon Street" loading="lazy">
+<div class="body">
+<span class="pill">Go and look</span>
+<h3><a href="https://www.openstreetmap.org/way/192887202">1388-1398 Gordon Street</a> <span class="unnamed">no name in OSM</span></h3>
+<p class="tenants">Borealis Grille &amp; Bar, Crock A Doodle, Dr. Nafeesa Sheikh Dentistry, Edward Jones, Liberty Tax, Purba Vision…</p><p>Nearest rack on the map is <a href="https://www.openstreetmap.org/node/12327064780">179 m away</a>.</p><p class="next">A first rack on the map earns the first star.</p>
+</div>
+</article>
+<article class="card look" data-group="look">
+<img src="img/w358488660.png" alt="Map of 320 Eastview Road" loading="lazy">
+<div class="body">
+<span class="pill">Go and look</span>
+<h3><a href="https://www.openstreetmap.org/way/358488660">320 Eastview Road</a> <span class="unnamed">no name in OSM</span></h3>
+<p class="tenants">East Guelph Medical Clinic, Eastview Physiotherapy, Gino&#x27;s Pizza, Guelph Lake Veterinary Hospital, Guelph Peoples Pharmacy, Hasty Market…</p><p>Nearest rack on the map is <a href="https://www.openstreetmap.org/node/12099376342">1589 m away</a>.</p><p class="next">A first rack on the map earns the first star.</p>
+</div>
+</article>
+<article class="card look" data-group="look">
+<img src="img/w962456073.png" alt="Map of 465-565 Woodlawn Road West" loading="lazy">
+<div class="body">
+<span class="pill">Go and look</span>
+<h3><a href="https://www.openstreetmap.org/way/962456073">465-565 Woodlawn Road West</a> <span class="unnamed">no name in OSM</span></h3>
+<p class="tenants">A&amp;W, Galaxy Cinemas Guelph, Mandarin, Piper Arms, Sarmazian, Taco Bell</p><p>Nearest rack on the map is <a href="https://www.openstreetmap.org/node/12798111182">1166 m away</a>.</p><p class="next">A first rack on the map earns the first star.</p>
+</div>
+</article>
+<article class="card look" data-group="look">
+<img src="img/w773013517.png" alt="Map of 3-15 Municipal Street" loading="lazy">
+<div class="body">
+<span class="pill">Go and look</span>
+<h3><a href="https://www.openstreetmap.org/way/773013517">3-15 Municipal Street</a> <span class="unnamed">no name in OSM</span></h3>
+<p class="tenants">CosmoProf, Pizza Trokadero, The Beer Store, The Saffron Indian Restaurant, W Sushi</p><p>Nearest rack on the map is <a href="https://www.openstreetmap.org/node/12402038484">331 m away</a>.</p><p class="next">A first rack on the map earns the first star.</p>
+</div>
+</article>
+<article class="card look" data-group="look">
+<img src="img/w772926644.png" alt="Map of 486 Woodlawn Road East" loading="lazy">
+<div class="body">
+<span class="pill">Go and look</span>
+<h3><a href="https://www.openstreetmap.org/way/772926644">486 Woodlawn Road East</a> <span class="unnamed">no name in OSM</span></h3>
+<p class="tenants">Helmand Kebab House, Kings Sports Bar and Grill, Laundromat, Tim Hortons</p><p>Nearest rack on the map is <a href="https://www.openstreetmap.org/node/12757840252">1623 m away</a>.</p><p class="next">A first rack on the map earns the first star.</p>
+</div>
+</article>
+<article class="card look" data-group="look">
+<img src="img/w197805877.png" alt="Map of Kortright Plaza" loading="lazy">
+<div class="body">
+<span class="pill">Go and look</span>
+<h3><a href="https://www.openstreetmap.org/way/197805877">Kortright Plaza</a></h3>
+<p class="tenants">Guardian, Vitality Chiropractic Care</p><p>Nearest rack on the map is <a href="https://www.openstreetmap.org/node/14139961003">406 m away</a>.</p><p class="next">A first rack on the map earns the first star.</p>
+</div>
+</article>
+<article class="card look" data-group="look">
+<img src="img/w993366503.png" alt="Map of Sugarbush Plaza" loading="lazy">
+<div class="body">
+<span class="pill">Go and look</span>
+<h3><a href="https://www.openstreetmap.org/way/993366503">Sugarbush Plaza</a></h3>
+<p class="tenants">Most Convenient, OPSEU Guelph Regional Office, Speedvale Pet Hospital, The Nguyen&#x27;s</p><p>Nearest rack on the map is <a href="https://www.openstreetmap.org/node/12798111182">356 m away</a>.</p><p class="next">A first rack on the map earns the first star.</p>
+</div>
+</article>
+<article class="card look" data-group="look">
+<img src="img/w773030532.png" alt="Map of 159 Fife Road" loading="lazy">
+<div class="body">
+<span class="pill">Go and look</span>
+<h3><a href="https://www.openstreetmap.org/way/773030532">159 Fife Road</a> <span class="unnamed">no name in OSM</span></h3>
+<p class="tenants">Hale Veterinary Clinic, Hasty Market, Jumbo 3 for 1 Pizza &amp; Wings, Layan Food Market</p><p>Nearest rack on the map is <a href="https://www.openstreetmap.org/node/13233449397">1010 m away</a>.</p><p class="next">A first rack on the map earns the first star.</p>
+</div>
+</article>
+<article class="card look" data-group="look">
+<img src="img/w772999948.png" alt="Map of 188-196 Waterloo Avenue" loading="lazy">
+<div class="body">
+<span class="pill">Go and look</span>
+<h3><a href="https://www.openstreetmap.org/way/772999948">188-196 Waterloo Avenue</a> <span class="unnamed">no name in OSM</span></h3>
+<p class="tenants">Buzz Hair Salon, Goldcap Realty, Retro Convenience, Van Allen Insurance</p><p>Nearest rack on the map is <a href="https://www.openstreetmap.org/node/12058128705">310 m away</a>.</p><p class="next">A first rack on the map earns the first star.</p>
+</div>
+</article>
+<article class="card look" data-group="look">
+<img src="img/w772951791.png" alt="Map of 204 Yorkshire Street North" loading="lazy">
+<div class="body">
+<span class="pill">Go and look</span>
+<h3><a href="https://www.openstreetmap.org/way/772951791">204 Yorkshire Street North</a> <span class="unnamed">no name in OSM</span></h3>
+<p class="tenants">Barber Glass, Quick Stop Variety, Two Plus Pizza, Valeriote Market &amp; Butchery</p><p>Nearest rack on the map is <a href="https://www.openstreetmap.org/node/12810727443">142 m away</a>.</p><p class="next">A first rack on the map earns the first star.</p>
+</div>
+</article>
+<article class="card look" data-group="look">
+<img src="img/w772950211.png" alt="Map of 241-249 Edinburgh Road North" loading="lazy">
+<div class="body">
+<span class="pill">Go and look</span>
+<h3><a href="https://www.openstreetmap.org/way/772950211">241-249 Edinburgh Road North</a> <span class="unnamed">no name in OSM</span></h3>
+<p class="tenants">G&amp;A Locks &amp; Security, Mobility in Motion, Rainbow Variety, Royal City Restaurant</p><p>Nearest rack on the map is <a href="https://www.openstreetmap.org/node/12300313453">255 m away</a>.</p><p class="next">A first rack on the map earns the first star.</p>
+</div>
+</article>
+<article class="card look" data-group="look">
+<img src="img/w399149099.png" alt="Map of 415-429 Woodlawn Road West" loading="lazy">
+<div class="body">
+<span class="pill">Go and look</span>
+<h3><a href="https://www.openstreetmap.org/way/399149099">415-429 Woodlawn Road West</a> <span class="unnamed">no name in OSM</span></h3>
+<p class="tenants">Tim Hortons, Wendy&#x27;s, World of Hot Tubs</p><p>Nearest rack on the map is <a href="https://www.openstreetmap.org/node/12798111182">1119 m away</a>.</p><p class="next">A first rack on the map earns the first star.</p>
+</div>
+</article>
+<article class="card look" data-group="look">
+<img src="img/w773016985.png" alt="Map of 450 Woodlawn Road West" loading="lazy">
+<div class="body">
+<span class="pill">Go and look</span>
+<h3><a href="https://www.openstreetmap.org/way/773016985">450 Woodlawn Road West</a> <span class="unnamed">no name in OSM</span></h3>
+<p class="tenants">Bigelow Flooring, Coconut Coast, Neutron Electronics, Starberry Cafe</p><p>Nearest rack on the map is <a href="https://www.openstreetmap.org/node/12798111182">1039 m away</a>.</p><p class="next">A first rack on the map earns the first star.</p>
+</div>
+</article>
+<article class="card look" data-group="look">
+<img src="img/w215069449.png" alt="Map of South City Centre" loading="lazy">
+<div class="body">
+<span class="pill">Go and look</span>
+<h3><a href="https://www.openstreetmap.org/way/215069449">South City Centre</a></h3>
+<p>Nearest rack on the map is <a href="https://www.openstreetmap.org/node/14307258547">143 m away</a>.</p><p class="next">A first rack on the map earns the first star.</p>
 </div>
 </article>
 </div>
@@ -612,8 +622,9 @@ plaza's link, click Edit, and add a point tagged <code>amenity=bicycle_parking</
 <footer>
 <p>A plaza here is open-air, multi-tenant retail with shared surface parking: named plazas and shopping
 centres, plus unnamed retail areas with at least four named businesses mapped inside. Big-box power centres
-count. Enclosed malls, single-tenant buildings and downtown storefronts do not. "Nearby only" means a rack
-within 100 m of the property but not on it. The <a href="https://github.com/skfd/guelph-plaza-bike-parking/blob/main/REPORT.md">full
+count. Enclosed malls, single-tenant buildings and downtown storefronts do not. Ratings use only what the map
+records, so a missing rack type or capacity can hold a plaza back, and each card says what earns its next star.
+"Rack next door" means a rack within 100 m of the property but not on it. The <a href="https://github.com/skfd/guelph-plaza-bike-parking/blob/main/REPORT.md">full
 report</a> has every exclusion and the <a href="plazas.csv">data as CSV</a>.</p>
 <p>Map data and tiles © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, under
 the <a href="https://opendatacommons.org/licenses/odbl/">Open Database Licence</a>.
@@ -625,7 +636,7 @@ tiles.forEach(t => t.addEventListener('click', () => {
   const on = t.getAttribute('aria-pressed') !== 'true';
   tiles.forEach(x => x.setAttribute('aria-pressed', 'false'));
   t.setAttribute('aria-pressed', String(on));
-  cards.forEach(c => { c.hidden = on && c.dataset.verdict !== t.dataset.filter; });
+  cards.forEach(c => { c.hidden = on && c.dataset.group !== t.dataset.filter; });
 }));
 </script>
 </body>
